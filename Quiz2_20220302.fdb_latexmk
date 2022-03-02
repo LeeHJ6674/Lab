@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex Quiz2_20220302"] 1646185575 "Quiz2_20220302.aux" "Quiz2_20220302.bbl" "Quiz2_20220302" 1646186122
+["bibtex Quiz2_20220302"] 1646185575 "Quiz2_20220302.aux" "Quiz2_20220302.bbl" "Quiz2_20220302" 1646195341
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1547851249 69612 d43c8740409d8c756864ce4e3d57a214 ""
   "Quiz2_20220302.aux" 1646186122 364 6608c9509766bdc8dba69985aa7d299c "pdflatex"
   "Quiz2_20220302Notes.bib" 1646186122 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
-  "Quiz2_20220302.blg"
   "Quiz2_20220302.bbl"
-["pdflatex"] 1646186121 "/home/sigma/Lab/Quiz2_20220302.tex" "/home/sigma/Lab/Quiz2_20220302.pdf" "Quiz2_20220302" 1646186122
+  "Quiz2_20220302.blg"
+["pdflatex"] 1646186121 "/home/sigma/Lab/Quiz2_20220302.tex" "/home/sigma/Lab/Quiz2_20220302.pdf" "Quiz2_20220302" 1646195341
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/sigma/Lab/Quiz2_20220302.aux" 1646186122 364 6608c9509766bdc8dba69985aa7d299c ""
-  "/home/sigma/Lab/Quiz2_20220302.tex" 1646186121 6404 32e9df6ece50430885d53de94f104569 ""
+  "/home/sigma/Lab/Quiz2_20220302.tex" 1646195341 6404 32e9df6ece50430885d53de94f104569 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -228,12 +228,12 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1645685152 8258281 06978915380d3cf57d3fcd5054406eef ""
   "Quiz2_20220302.aux" 1646186122 364 6608c9509766bdc8dba69985aa7d299c "pdflatex"
   "Quiz2_20220302.bbl" 1646185575 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Quiz2_20220302"
-  "Quiz2_20220302.tex" 1646186121 6404 32e9df6ece50430885d53de94f104569 ""
+  "Quiz2_20220302.tex" 1646195341 6404 32e9df6ece50430885d53de94f104569 ""
   "defcolor.sty" 1645944908 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   (generated)
-  "Quiz2_20220302.aux"
+  "/home/sigma/Lab/Quiz2_20220302.log"
+  "Quiz2_20220302Notes.bib"
   "Quiz2_20220302.pdf"
   "/home/sigma/Lab/Quiz2_20220302.pdf"
-  "Quiz2_20220302Notes.bib"
   "Quiz2_20220302.log"
-  "/home/sigma/Lab/Quiz2_20220302.log"
+  "Quiz2_20220302.aux"
