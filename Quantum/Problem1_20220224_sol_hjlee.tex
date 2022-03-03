@@ -198,7 +198,7 @@ Therefore, ${(\Delta p_x)}^2  = {(\Delta p_x)}^2_{t=0}$.
     \langle xp_x \rangle = {\langle xp_x \rangle}_{t=0} + \frac{1}{1!}\frac{d}{dt}\langle xp_x \rangle \Bigg{|}_{t=0}t 
     + \frac{1}{2!}\frac{d^2}{dt^2}\langle xp_x \rangle \Bigg{|}_{t=0}t^2+\cdots
   \end{align}
-  Most of derivative calculations about expectation value are using the Hamiltonian.
+  Most derivative calculations about expectation value are using the Hamiltonian.
   \begin{align}
     \frac{d}{dt}\langle xp_x \rangle = \frac{1}{2im\hbar}\langle \left[ xp_x,p^2 \right] \rangle= \frac{1}{m}\langle p^2 \rangle
   \end{align} 
@@ -292,7 +292,7 @@ the expectation value of $p^2$ is,
   \langle p^2 \rangle = -\hbar^2 \int \psi^* \frac{\partial^2 \psi}{\partial x^2}\,dx 
   = -\hbar^2\int \left(\frac{\partial}{\partial x} \left(\psi^* \frac{\partial \psi}{\partial x}\right) - \frac{\partial \psi^*}{\partial x}\frac{\partial \psi}{\partial x}\right)\,dx
 \end{align}
-There are two terms that seems like complicate. But, some of integration in calculation will be cancel since these are even functions and integration range is symmetric.
+There are two terms that seem complicated. But, some of the integration in calculation will be canceled since these are even functions and the integration range is symmetric.
 \begin{align}   
        &\int \frac{\partial}{\partial x}
           \left(\psi^* \frac{\partial \psi}{\partial x}
@@ -333,7 +333,7 @@ Finally, we can calculate $\left( \Delta p \right)^2$,
 \begin{align}
   \left( \Delta p \right)^2 = p_0^2 + \frac{\hbar^2}{2\sigma^2} - p_0^2 = \frac{\hbar^2}{2\sigma^2}
 \end{align}
-Confirm these result does satisfy the Heisenberg's uncertainty principle.
+Confirm these result does satisfy Heisenberg's uncertainty principle.
 \begin{align}
   \Delta x \Delta p = \sqrt{\frac{\hbar^2}{2\sigma^2}\frac{\sigma^2}{2}} = \frac{\hbar}{2}
 \end{align}
@@ -367,13 +367,33 @@ It is in the sense.
       \item[(iii)] $\bm{x}\in\Omega_3 \Longrightarrow \psi_1 = \psi_2 = 0$
     \end{itemize}
     Therefore, $|\psi(\bm{x},t)|^2 = \frac{1}{2}\left[ |\psi_1(\bm{x})|^2+|\psi_2(\bm{x})|^2 \right]$. And the probability density is time-independent.
-    \item[(c)] From a (62),
-      \begin{align*}
+    \item[(c)] From a (62), since $E_2-E_1=\hbar \Omega$,
+      \begin{align}
       |\psi(\bm{x},t)|^2 &= \frac{1}{2}\left[|\psi_1(\bm{x})|^2 + |\psi_2(\bm{x})|^2+e^{-i\omega t}\psi_1^*\psi_2+e^{i\omega t}\psi_1\psi_2^*  \right]
   \\                     &= \frac{1}{2}\left[ |\psi_1(\bm{x})|^2 + |\psi_2(\bm{x})|^2 + e^{-i\omega t}\psi_1^*\psi_2 + {\left(e^{-i\omega t}\psi_1^*\psi_2\right)}^* \right]
-  \\                     &= = \frac{1}{2}\left[ |\psi_1(\bm{x})|^2 + |\psi_2(\bm{x})|^2 + \left(\psi_1^*\psi_2 + {\left(\psi_1^*\psi_2\right)}^*\right)\cos{\omega t} \right]
-      \end{align*}
-    \item[(d)]   
-     
+\end{align}
+Imaginary parts of the last two terms are canceled.
+\begin{align}  
+  |\psi(\bm{x},t)|^2 &= \frac{1}{2}\left[ |\psi_1(\bm{x})|^2 + |\psi_2(\bm{x})|^2 + \left(\psi_1^*\psi_2 + {\left(\psi_1^*\psi_2\right)}^*\right)\cos{\omega t} \right]
+\end{align}
+This result is a periodic function about time because the last term is a periodic function of time and other terms are constant about time.
+    \item[(d)]
+From the continuity equation, We use the integration of this equation because of the right term.
+\begin{align}
+  \int_{\Omega_2}\frac{\partial \rho}{\partial t}\,dr^3 = \int_{\Omega_2}\nabla \cdot \bm{J}\,dr^3
+\end{align}
+The left term can be calculated using (c),
+\begin{align}
+  \frac{\partial\rho}{\partial t} = \frac{\partial}{\partial t}|\psi(\bm{x},t)|^2 = -\omega \psi_1\psi_2\sin\omega t
+\end{align}
+If we integrate this, it will be a zero since $\psi_1$ and $\psi_2$ are orthogonal to each other. Consider the right term. This integration is changed into the surface integration following Green's Theorem.
+\begin{align}
+  \int_{\Omega_2}\nabla \cdot \bm{J}\,dr^3 = \int_{\Omega_2} \bm{J} \cdot\,d\bm{S}
+\end{align}
+Because wave functions are isotropic, a current has the same value in a different direction. It means that this integration is replaced by the just inner product.
+\begin{align}
+  \int_{\Omega_2} \bm{J} \cdot\,d\bm{S} = 4\pi R_2^2\bm{J}\cdot\hat{n}
+\end{align}
+$\hat{n}$ is a vector that is vertical to the surface of a sphere $\Omega_2$.
   \end{itemize}
 \end{document}

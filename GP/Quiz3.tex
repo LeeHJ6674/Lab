@@ -21,10 +21,12 @@
 
 \begin{document}
 
-\title{\Large 2021년 1학기 물리학 I: Quiz 2}
+\title{\Large 2022년 1학기 물리학 I: Quiz 2}
 \author{김현철\footnote{Office: 5S-436D (면담시간 매주s
     화요일-16:00$\sim$20:00)}} 
 \email{hchkim@inha.ac.kr}
+\author{Hui-Jae Lee} 
+\email{hjlee6674@inha.edu}
 \affiliation{Hadron Theory Group, Department of Physics, Inha University,
 Incheon 402-751, Republic of Korea }
 \date{Spring semester, 2022}
@@ -37,7 +39,7 @@ Incheon 402-751, Republic of Korea }
   징계위원회에 회부합니다. One strike out임을 명심하세요.}\\
 \\
 문제는 다음 쪽부터 나옵니다.  \\ \\
-{\bf Date:} 2021년 3월 7일 (월) 15:30-16:15 
+{\bf Date:} 2022년 3월 7일 (월) 15:30-16:15 
 \\
 {\bf 학번:} \hspace{4cm}
 {\bf 이름:} 
@@ -104,7 +106,37 @@ $\vec{B}$는 서로 수직이고, 벡터 $\vec{B}$와 벡터 $\vec{C}$의 끼인
 \end{itemize}
 (이 실험으로 스탭 대령은 무릎뼈가 골절되고, 눈에 심각한 부상을 입어서
 훗날 백내장으로 고생했다고 한다. 이 실험으로 스탭 대령은 자동차에 안전벨트를
-도입하는 데 지대한 공을 세웠다.)
+도입하는 데 지대한 공을 세웠다.) \\
+\noindent {\bf 풀이} 
+\begin{itemize}
+  \item [(가)] 스탭 대령의 처음 속력은 1\,011 km/h 이고 정지하였으므로, 나중 속력은 0 km/h 이다. 걸린 시간 1.40 s 와 단위 환산을 고려하여 다음과 같이 평균 가속도의 크기를 계산할 수 있다.
+  \begin{align}
+    a_{avg} = \left(\frac{(0-1\,011)\mathrm{km/h}}{1.40 \,\mathrm{s}}\right)\times\left(\frac{3600\,\mathrm{s}}{1\,\mathrm{h}}\right)=2\,600\,000\,\mathrm{km/h^2}
+  \end{align} 
+  중력 가속도와 비교하기 위해, 단위를 바꾸어서 표현해보자.
+  \begin{align}
+    \left(\mathrm{\frac{2\,600\,000\,km}{h^2}}\right)\times\left(\mathrm{\frac{1000\,m}{1\,km}}\right)\times\mathrm{\left(\frac{1\,h}{3\,600\,s}\right)^2}=200\,\mathrm{m/s^2}
+  \end{align}
+  중력 가속도의 크기를 1\,G 라고 하면, 다음과 같이 표현할 수 있다.
+  \begin{align}
+  \mathrm{200\,m/s^2}\times\left(\frac{1\,\mathrm{G}}{9.8\,\mathrm{m/s^2}}\right) = 20\,\mathrm{G}
+  \end{align} 
+  스탭 대령은 감속하면서 중력 가속도의 크기의 20배에 해당하는 가속력을 받았다.
+  \item [(나)] 처음 속력과 나중 속력, 평균 가속도를 알고 있으므로, 다음의 공식을 이용해 이동한 거리를 구할 수 있다.
+  \begin{align}
+    v^2=v_0^2+2a_{avg}(x-x_0)
+  \end{align}
+  나중 속력은 $v=\mathrm{0\,km/h}$, 처음 속력은 $v_0=\mathrm{1\,011\,km/h}$, 평균 가속도의 크기는 $a_{avg}=2\,600\,000\mathrm{km/h^2}$ 이다. 스탭 대령은 감속을 하였으므로, 가속력이 들어가는 항의 부호를 -로 바꿔주어야 한다. 감속을 시작한 지점을 시작점으로 생각하면, $x_0=0\,\mathrm{km}$ 이다. $x$ 를 구해보자.
+  \begin{align}
+    0=\left(\mathrm{1\,011\,km/h}\right)^2-2\times\left(2\,600\,000\mathrm{km/h^2}\right)\times x
+  \end{align}    
+  편한 계산을 위해, 구하고자 하는 값을 제외한 모든 값을 반대쪽으로 넘기자.
+  \begin{align}    
+    x=\frac{\left(\mathrm{1\,011\,km/h}\right)^2}{2\times\left(2\,600\,000\mathrm{km/h^2}\right)}=0.1966\,\mathrm{km}=196.6\,\mathrm{m}
+  \end{align}
+  스탭 대령은 감속하는 동안, 196.6\,m 만큼 이동했다.
+\end{itemize}
+
 \newpage
 
 {\color{gray} [문제 풀이 쪽]}
@@ -122,8 +154,26 @@ $\vec{B}$는 서로 수직이고, 벡터 $\vec{B}$와 벡터 $\vec{C}$의 끼인
 \includegraphics[scale=1.0]{Qfig3-2.pdf}  
   \caption{문제 1}
   \label{fig:1}
-\end{figure} 
-
+\end{figure} \\
+\noindent {\bf 풀이} 
+전투기가 비행한 거리를 $d(t)$ 라 하고, 전투기가 위치한 언덕의 높이를 $s(t)$ 라 하면, $d$ 와 $s$ 사이에는 다음의 상관관계가 있다.
+\begin{align}
+  \tan{4.3^\circ} =\frac{s(t)}{d(t)} 
+\end{align}
+우리는 언덕의 높이가 35m 일 때, 전투기가 비행한 시간을 알고 싶다. 전투기가 등속 직선 운동한다고 가정하면, $d(t)$ 는 다음과 같다.
+\begin{align}
+  d(t) = \frac{1\,300\,\mathrm{km}}{1\,\mathrm{h}}\times t
+\end{align}
+식 (7) 에 지금까지의 이야기 한 것들을 대입해보자.
+\begin{align}
+  &\tan{4.3^\circ} \times \left(\frac{1\,300\,\mathrm{km}}{1\,\mathrm{h}}\right) \times \left(\frac{1\mathrm{h}}{3\,600\,\mathrm{s}}\right) \times \left(\frac{1\,000\,\mathrm{m}}{1\,\mathrm{km}}\right) \times t = 35\,\mathrm{m}
+\end{align}
+단위를 고려하여 변환하고 구하고자 하는 변수 $t$ 만 좌항에 남기면 다음과 같다.
+\begin{align}    
+  &0.075\times 360\,\mathrm{m/s}\times t = 35\,\mathrm{m} \\
+  &t=35\,\mathrm{m}\times\left(\frac{1\,\mathrm{s}}{360\,\mathrm{m}}\right) \times \left(\frac{1}{0.075}\right) = 1.3\,\mathrm{s}
+\end{align}
+전투기는 1.3 초 후에 충돌한다.
 \newpage
 
 {\color{gray} [문제 풀이 쪽]}
