@@ -41,25 +41,40 @@ The wave function of this particle is,
 \begin{itemize}
 \item[(1)] From the normalization of the wave function,
 \begin{align}
-          \int |\psi(x,0)|^2\,dx=N^2\int\exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx =1
+          \int_{-\infty}^{\infty} |\psi(x,0)|^2\,dx=N^2\int_{-\infty}^{\infty}\exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx =1.
 \end{align}
-Since a range of integration is entire of real, the translation about $x$ can be negligiable.
+Since a range of integration is all space, the translation about $x$ can be ignored.
 %\begin{align}
-%         N^2\int\exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx =N^2\int\exp\left({-2\left(\frac{x}{2\sigma}\right)}^2\right) \,dx
+%         N^2\int_{-\infty}^{\infty}\exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx =N^2\int_{-\infty}^{\infty}\exp\left({-2\left(\frac{x}{2\sigma}\right)}^2\right) \,dx
 %\end{align} 
-To make a convenient form, change a integral variable.
+To make a compact form, it needs to change an integral variable.
 \begin{align}
-          N^2\int\exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx
-          %N^2\int\exp\left(-2{\left(\frac{x}{2\sigma}\right)}^2\right) \,dx =N^2\int\exp\left({-2\left(\frac{x}{2\sigma}\right)}^2\right) \,dx 
-          =\sqrt{2}\sigma N^2\int e^{-x^2} \,dx
+2{\left(\frac{x-x_0}{2\sigma}\right)}^2={\left(\frac{x-x_0}{\sqrt{2}\sigma}\right)}^2 \longrightarrow t^2,\, dx \longrightarrow  \sqrt{2}\sigma dt
 \end{align}
-We know how to calculate this. Easy way is using a idea of double integration. So,
+Then the wave function changes into more comfort form to integrate.
 \begin{align}
-          \int e^{-x^2} \,dx = \sqrt{\pi},\quad \sqrt{2\pi}\sigma N^2 =1
+          N^2\int_{-\infty}^{\infty}\exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx
+          %N^2\int_{-\infty}^{\infty}\exp\left(-2{\left(\frac{x}{2\sigma}\right)}^2\right) \,dx =N^2\int_{-\infty}^{\infty}\exp\left({-2\left(\frac{x}{2\sigma}\right)}^2\right) \,dx 
+          =\sqrt{2}\sigma N^2\int_{-\infty}^{\infty} e^{-x^2} \,dx
+\end{align}
+To calcualte this integration, we use a idea of double integration,
+\begin{align}
+\int_{-\infty}^{\infty} e^{-(x^2+y^2)}\,dx\,dy &= \int_{0}^{2\pi}\int_{0}^{\infty} e^{-r^2}r\,dr\,d\theta
+                                          \\   &= \int_{0}^{2\pi}\frac{1}{2}\,d\theta = \pi.
+\end{align}
+First double integration about coordinate space can be decomposed.
+\begin{align}
+  \int_{-\infty}^{\infty} e^{-(x^2+y^2)}\,dx\,dy 
+    = \int_{-\infty}^{\infty} e^{-x^2}\,dx\int_{-\infty}^{\infty}e^{-y^2}\,dy
+    = \left(\int_{-\infty}^{\infty} e^{-x^2}\,dx\right)^2
+\end{align}
+From this result,
+\begin{align}
+\int_{-\infty}^{\infty} e^{-x^2} \,dx = \sqrt{\pi},\quad \sqrt{2\pi}\sigma N^2 =1.
 \end{align}
 Finally,
 \begin{align}
-          \, N = {\left(\frac{1}{2\pi\sigma^2}\right)}^{\frac{1}{4}}
+          \, N = {\left(\frac{1}{2\pi\sigma^2}\right)}^{\frac{1}{4}}.
 \end{align}
 \item[(2)] First, we have to find $\phi(p,0)$. It is a fourier transformation of $\psi$.
 \begin{align}
@@ -67,13 +82,18 @@ Finally,
           =\frac{N}{\sqrt{2\pi\hbar}}\int\exp\left(-{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) e^{-\frac{i}{\hbar}px}\,dx
           \\=\frac{N}{\sqrt{2\pi\hbar}}\int\exp\left(-{\left(\frac{x-x_0}{2\sigma}\right)}^2-\frac{i}{\hbar}px\right)\,dx
 \end{align}
-As we did, operate translation and change of variable. And transform a exponential of integrated function into the complete square one about $x$.
+We change a variable for compact form.
+\begin{align}
+  -{\left(\frac{x-x_0}{2\sigma}\right)}^2-\frac{i}{\hbar}px \longrightarrow -t^2-\frac{i}{\hbar}p\,\left(2\sigma t-x_0\right),\,dx \longrightarrow 2\sigma dt
+\end{align}
+ 
+ And transform a exponential of integrated function into the complete square one about $x$.
 \begin{align}
           -x^2-2\frac{i}{\hbar}\sigma px = -{\left( x+\frac{i}{\hbar}\sigma p\right)}^2-\frac{\sigma^2}{\hbar^2}p^2
 \end{align}
 In term of integration of $x$, there is a translation term and it can be negligiable with the same reason in previous. So,
 \begin{align}
-          \phi(p,0) = \frac{2\sigma N}{\sqrt{2\pi\hbar}}\exp\left(-\frac{\sigma^2}{\hbar^2}p^2-\frac{i}{\hbar}x_0p\right)\int e^{-x^2}\,dx
+          \phi(p,0) = \frac{2\sigma N}{\sqrt{2\pi\hbar}}\exp\left(-\frac{\sigma^2}{\hbar^2}p^2-\frac{i}{\hbar}x_0p\right)\int\int_{-\infty}^{\infty} e^{-x^2}\,dx
                     = \sqrt{\frac{2\sigma }{\hbar}}{\left(\frac{1}{2\pi}\right)}^{\frac{1}{4}}\exp\left(-\frac{\sigma^2}{\hbar^2}p^2-\frac{i}{\hbar}x_0p\right)
 \end{align}
 Then, $\phi(0,0)$ is,
@@ -88,8 +108,8 @@ Then, $\phi(0,0)$ is,
 \end{align} 
 \item[(4)] $\psi(x,t)$ is a fourier transformation of $\phi(p,t)$,
 \begin{align}
-          \psi(x,t)=\frac{1}{\sqrt{2\pi\hbar}}\int\phi(p,t) e^{\frac{i}{\hbar}px}\,dp
-          =\frac{1}{\hbar} \sqrt{\frac{\sigma }{\pi}}{\left(\frac{1}{2\pi}\right)}^{\frac{1}{4}} \int \exp\left(-\alpha{\left(p+\frac{ix_0}{2\alpha\hbar}\right)}^2 
+          \psi(x,t)=\frac{1}{\sqrt{2\pi\hbar}}\int\int_{-\infty}^{\infty}\phi(p,t) e^{\frac{i}{\hbar}px}\,dp
+          =\frac{1}{\hbar} \sqrt{\frac{\sigma }{\pi}}{\left(\frac{1}{2\pi}\right)}^{\frac{1}{4}} \int\int_{-\infty}^{\infty} \exp\left(-\alpha{\left(p+\frac{ix_0}{2\alpha\hbar}\right)}^2 
           -\frac{x_0^2}{4\alpha\hbar^2}+\frac{i}{\hbar}px\right)\,dp
 \end{align} 
 A exponential of a integrated function can be changed into the complete square form about $p$.
@@ -101,7 +121,7 @@ A exponential of a integrated function can be changed into the complete square f
 \end{align}
 So,
 \begin{align}
-          \psi(x,t)&=\frac{1}{\hbar} \sqrt{\frac{\sigma }{\pi}}{\left(\frac{1}{2\pi}\right)}^{\frac{1}{4}}\exp\left(-\frac{{(x_0-x)}^2}{4\alpha\hbar^2}\right)\int e^{-\alpha p^2}\,dp
+          \psi(x,t)&=\frac{1}{\hbar} \sqrt{\frac{\sigma }{\pi}}{\left(\frac{1}{2\pi}\right)}^{\frac{1}{4}}\exp\left(-\frac{{(x_0-x)}^2}{4\alpha\hbar^2}\right)\int\int_{-\infty}^{\infty} e^{-\alpha p^2}\,dp
           \\&= \frac{1}{\hbar} \sqrt{\frac{\sigma }{\alpha}}{\left(\frac{1}{2\pi}\right)}^{\frac{1}{4}}\exp\left(-\frac{{(x_0-x)}^2}{4\alpha\hbar^2}\right)
 \end{align}
 \item[(5)] From a (4),  $|\psi(x,\,t)|^2$ and $|\psi(0,\,t)|^2$ are, 
@@ -226,8 +246,8 @@ In this problem, the wave function of a partcle is,
   \begin{itemize}
     \item[(1)] The normalization constant is calculable from the normalization.
     \begin{align}
-      C^2\int \exp\left(-{\left(\frac{x-x_0}{\sigma} \right)}^2\right)\,dx 
-      = C^2\int\exp\left(-{\left(\frac{x-x_0}{\sigma} \right)}^2\right)\,dx 
+      C^2\int_{-\infty}^{\infty} \exp\left(-{\left(\frac{x-x_0}{\sigma} \right)}^2\right)\,dx 
+      = C^2\int_{-\infty}^{\infty}\exp\left(-{\left(\frac{x-x_0}{\sigma} \right)}^2\right)\,dx 
       = C^2\sigma \sqrt{\pi}
     \end{align}
     The result of the noramlizatoin is must be 1. So,
@@ -236,16 +256,16 @@ In this problem, the wave function of a partcle is,
     \end{align}
     \item[(2)]First, let us find the mean value of $x$.
     \begin{align}
-      &\langle x \rangle=\int\psi^*x\psi\,dx 
-        = \frac{1}{\sigma\sqrt{\pi}}\int x \exp\left(-{\left( \frac{x-x_0}{\sigma} \right)}^2\right)\,dx \\
-      &\int x \exp\left(-{\left( \frac{x-x_0}{\sigma} \right)}^2\right)\,dx 
-        = \int x e^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx 
-          + x_0\int e^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx
+      &\langle x \rangle=\int_{-\infty}^{\infty}\psi^*x\psi\,dx 
+        = \frac{1}{\sigma\sqrt{\pi}}\int_{-\infty}^{\infty} x \exp\left(-{\left( \frac{x-x_0}{\sigma} \right)}^2\right)\,dx \\
+      &\int_{-\infty}^{\infty} x \exp\left(-{\left( \frac{x-x_0}{\sigma} \right)}^2\right)\,dx 
+        = \int_{-\infty}^{\infty} x e^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx 
+          + x_0\int_{-\infty}^{\infty} e^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx
     \end{align}
     The first term of the right side is a zero, because $x e^{-{\left(\frac{x}{\sigma}\right)}^2}$ is a even function 
     and this integration is from $-\infty$ to $\infty$. The calculation of the second term is simple.
 \begin{align}
-  x_0\int e^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx = x_0\,\sigma\sqrt{\pi}
+  x_0\int_{-\infty}^{\infty} e^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx = x_0\,\sigma\sqrt{\pi}
 \end{align}
 So, the mean value is a $x_0$.
 \begin{align}
@@ -253,9 +273,9 @@ So, the mean value is a $x_0$.
 \end{align}
 The mean value of $p$ is,
 \begin{align}
-  \langle p \rangle &= -i\hbar \int \psi^* \frac{\partial \psi}{\partial x}\,dx 
-                     = \frac{-i\hbar}{\sigma\sqrt{\pi}}\int \left(\frac{i}{\hbar}p_0-\frac{x-x_0}{\sigma^2}\right)\exp\left( -{\left(\frac{x-x_0}{\sigma}\right)}^2 \right)\,dx
-              \\    &= \frac{-i\hbar}{\sigma\sqrt{\pi}}\left[ \frac{i}{\hbar}p_0\int\exp\left( -{\left(\frac{x-x_0}{\sigma}\right)}^2 \right)\,dx -\int\left( \frac{x-x_0}{\sigma^2}\right)\exp\left( -{\left(\frac{x-x_0}{\sigma}\right)}^2 \right)\,dx\right] 
+  \langle p \rangle &= -i\hbar \int_{-\infty}^{\infty} \psi^* \frac{\partial \psi}{\partial x}\,dx 
+                     = \frac{-i\hbar}{\sigma\sqrt{\pi}}\int_{-\infty}^{\infty} \left(\frac{i}{\hbar}p_0-\frac{x-x_0}{\sigma^2}\right)\exp\left( -{\left(\frac{x-x_0}{\sigma}\right)}^2 \right)\,dx
+              \\    &= \frac{-i\hbar}{\sigma\sqrt{\pi}}\left[ \frac{i}{\hbar}p_0\int_{-\infty}^{\infty}\exp\left( -{\left(\frac{x-x_0}{\sigma}\right)}^2 \right)\,dx -\int_{-\infty}^{\infty}\left( \frac{x-x_0}{\sigma^2}\right)\exp\left( -{\left(\frac{x-x_0}{\sigma}\right)}^2 \right)\,dx\right] 
                      = p_0    
 \end{align}
 Because the second term is a even function about $x=x_0$, it is a zero.
@@ -265,16 +285,16 @@ Because the second term is a even function about $x=x_0$, it is a zero.
     \end{align}
     First we calculate $\langle x^2\rangle$.
     \begin{align}
-      \langle x^2\rangle = \frac{1}{\sigma\sqrt{\pi}}\int x^2 \exp\left(-{\left( \frac{x-x_0}{\sigma} \right)}^2\right)\,dx
-                        = \frac{1}{\sigma\sqrt{\pi}}\left[\int x^2 e^{-{\left( \frac{x}{\sigma} \right)}^2}\,dx
-                                                        +2x_0\int xe^{-{\left( \frac{x}{\sigma} \right)}^2}\,dx
-                                                        +x^2_0\int e^{-{\left( \frac{x}{\sigma} \right)}^2}\,dx\right]
+      \langle x^2\rangle = \frac{1}{\sigma\sqrt{\pi}}\int_{-\infty}^{\infty} x^2 \exp\left(-{\left( \frac{x-x_0}{\sigma} \right)}^2\right)\,dx
+                        = \frac{1}{\sigma\sqrt{\pi}}\left[\int_{-\infty}^{\infty} x^2 e^{-{\left( \frac{x}{\sigma} \right)}^2}\,dx
+                                                        +2x_0\int_{-\infty}^{\infty} xe^{-{\left( \frac{x}{\sigma} \right)}^2}\,dx
+                                                        +x^2_0\int_{-\infty}^{\infty} e^{-{\left( \frac{x}{\sigma} \right)}^2}\,dx\right]
     \end{align}
     The middle term of the right side is zero from a (2) and the last term is $x^2_0\,\sigma\sqrt{\pi}$.
     \begin{align}
-      \int x^2 e^{-{\left( \frac{x}{\sigma} \right)}^2}\,dx = \sigma^3\int x^2 e^{-x^2}\,dx 
+      \int_{-\infty}^{\infty} x^2 e^{-{\left( \frac{x}{\sigma} \right)}^2}\,dx = \sigma^3\int_{-\infty}^{\infty} x^2 e^{-x^2}\,dx 
                                                             = -\frac{1}{2}\sigma^3{\left[xe^{-x^2}\right]}^{\infty}_{-\infty}
-                                                              +\frac{1}{2}\sigma^3\int e^{-x^2}\,dx
+                                                              +\frac{1}{2}\sigma^3\int_{-\infty}^{\infty} e^{-x^2}\,dx
                                                             = \frac{1}{2}\sigma^3\sqrt{\pi}
     \end{align}
     So,
@@ -289,15 +309,15 @@ Because the second term is a even function about $x=x_0$, it is a zero.
     \end{align}
 the expectation value of $p^2$ is,
 \begin{align}
-  \langle p^2 \rangle = -\hbar^2 \int \psi^* \frac{\partial^2 \psi}{\partial x^2}\,dx 
-  = -\hbar^2\int \left(\frac{\partial}{\partial x} \left(\psi^* \frac{\partial \psi}{\partial x}\right) - \frac{\partial \psi^*}{\partial x}\frac{\partial \psi}{\partial x}\right)\,dx
+  \langle p^2 \rangle = -\hbar^2 \int_{-\infty}^{\infty} \psi^* \frac{\partial^2 \psi}{\partial x^2}\,dx 
+  = -\hbar^2\int_{-\infty}^{\infty} \left(\frac{\partial}{\partial x} \left(\psi^* \frac{\partial \psi}{\partial x}\right) - \frac{\partial \psi^*}{\partial x}\frac{\partial \psi}{\partial x}\right)\,dx
 \end{align}
 There are two terms that seem complicated. But, some of the integration in calculation will be canceled since these are even functions and the integration range is symmetric.
 \begin{align}   
-       &\int \frac{\partial}{\partial x}
+       &\int_{-\infty}^{\infty} \frac{\partial}{\partial x}
           \left(\psi^* \frac{\partial \psi}{\partial x}
           \right) \,dx 
-          = \frac{1}{\sigma\sqrt{\pi}}\int\frac{\partial}{\partial x}
+          = \frac{1}{\sigma\sqrt{\pi}}\int_{-\infty}^{\infty}\frac{\partial}{\partial x}
             \left(
               \left(\frac{i}{\hbar}p_0-\frac{x-x_0}{\sigma^2}
               \right)\exp
@@ -306,8 +326,8 @@ There are two terms that seem complicated. But, some of the integration in calcu
                   \right)}^2 
                 \right)
               \right)\,dx = 0
-   \\  &\int \frac{\partial \psi^*}{\partial x}\frac{\partial \psi}{\partial x} \,dx 
-          = \frac{1}{\sigma\sqrt{\pi}}\int
+   \\  &\int_{-\infty}^{\infty} \frac{\partial \psi^*}{\partial x}\frac{\partial \psi}{\partial x} \,dx 
+          = \frac{1}{\sigma\sqrt{\pi}}\int_{-\infty}^{\infty}
             \left(
               \left(\frac{p_0}{\hbar}
                                      \right)^2
@@ -319,11 +339,11 @@ There are two terms that seem complicated. But, some of the integration in calcu
                                         \right)}^2
                                                   \right)\,dx 
           = \left(\frac{p_0}{\hbar}
-                                    \right)^2+\frac{1}{\sigma^2\sqrt{\pi}}\int x^2e^{-x^2}\,dx
+                                    \right)^2+\frac{1}{\sigma^2\sqrt{\pi}}\int_{-\infty}^{\infty} x^2e^{-x^2}\,dx
 \end{align}
 It is a simple gaussian integration.
 \begin{align}
-  \int x^2e^{-x^2}\,dx = -\frac{1}{2}\left[xe^{-x^2}\right]^{\infty}_{-\infty}+\frac{1}{2}\int e^{-x^2}\,dx = \frac{\sqrt{\pi}}{2}
+  \int_{-\infty}^{\infty} x^2e^{-x^2}\,dx = -\frac{1}{2}\left[xe^{-x^2}\right]^{\infty}_{-\infty}+\frac{1}{2}\int_{-\infty}^{\infty} e^{-x^2}\,dx = \frac{\sqrt{\pi}}{2}
 \end{align}
 From these results, we can calculate $\langle p^2 \rangle$.
 \begin{align}
