@@ -1,0 +1,169 @@
+%\documentclass[preprint,tightenlines,showpacs,showkeys,floatfix,
+%nofootinbib,superscriptaddress,fleqn]{revtex4} 
+\documentclass[floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4} 
+%\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
+\usepackage{kotex}
+\usepackage[HWP]{dhucs-interword}
+\usepackage[dvips]{color}
+\usepackage{graphicx}
+\usepackage{bm}
+%\usepackage{fancyhdr}
+%\usepackage{dcolumn}
+\usepackage{defcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage[utf8]{inputenc}
+%\pagestyle{fancy}
+
+\begin{document}
+
+\title{\Large Quantum Mechanics}
+\author{김현철}
+\email{hchkim@inha.ac.kr}
+\affiliation{Hadron Theory Group, Department of Physics, Inha University,
+Incheon 22212, Republic of Korea }
+\date{2021}
+
+\maketitle
+
+\noindent {\bf Due date:} \textbf{\color{red} March 2. 2022} \\ 
+\vspace{2cm}
+
+\section*{\large Problem Set 1}
+\noindent \textbf{Problem 1.}
+The wave function for a free particle is given by
+\begin{align*}
+\psi(x,\,0) = N \exp\left( i\frac{p_0 x}{\hbar}  -\frac{(x-x_0)^2}{4\sigma^2} \right),   
+\end{align*}
+where $\sigma \in \mathbb{R}$ is a contant and $N$ is a normalization
+constant. 
+\begin{itemize}
+\item[(1)] Derive the normalization constant $N$.  
+\item[(2)] Derive the wave function $\phi(0,\,0)$ in momentum space. 
+\item[(3)] Find $\phi(p,\,t)$.
+\item[(4)] Find $\psi(x\,t)$.
+\item[(5)] Show that the the spread in the spatial probability
+  distribution increases with time $t$. Note that the spread is
+  defined as 
+  \begin{align*}
+\mathcal{S}(t) = \frac{|\psi(x,\,t)|^2}{|\psi(0,t)|^2}.    
+  \end{align*}
+\end{itemize}
+\noindent \textbf{Solution}
+\begin{itemize}
+  \item[(1)] From the normalization of the wave function,
+  \begin{align}
+    \int_{-\infty}^{\infty} |\psi(x,0)|^2\,dx=N^2\int_{-\infty}^{\infty}\exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx =1.
+  \end{align}
+Since a range of integration is all space, the translation about $x$ can be ignored.
+%\begin{align}
+%         N^2\int_{-\infty}^{\infty}\exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx =N^2\int_{-\infty}^{\infty}\exp\left({-2\left(\frac{x}{2\sigma}\right)}^2\right) \,dx
+%\end{align} 
+To make a compact form, it needs to change an integral variable.
+  \begin{align}
+    t \equiv \left(\frac{x-x_0}{\sqrt{2}\sigma}\right),\;\;\; dt = \frac{1}{\sqrt{2}\sigma} dx 
+  \end{align}
+Then the wave function changes into more comfort form to integrate.
+  \begin{align}
+    N^2\int_{-\infty}^{\infty}\exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx
+    %N^2\int_{-\infty}^{\infty}\exp\left(-2{\left(\frac{x}{2\sigma}\right)}^2\right) \,dx =N^2\int_{-\infty}^{\infty}\exp\left({-2\left(\frac{x}{2\sigma}\right)}^2\right) \,dx 
+    =\sqrt{2}\sigma N^2\int_{-\infty}^{\infty} e^{-t^2} \,dt
+  \end{align}
+To calcualte this integration, we use a idea of double integration,
+  \begin{align}
+    \int_{-\infty}^{\infty} e^{-(x^2+y^2)}\,dx\,dy &= \int_{0}^{2\pi}\int_{0}^{\infty} e^{-r^2}r\,dr\,d\theta
+    \\   &= \int_{0}^{2\pi}\frac{1}{2}\,d\theta = \pi.
+  \end{align}
+First double integration about coordinate space can be decomposed.
+  \begin{align}
+    \int_{-\infty}^{\infty} e^{-(x^2+y^2)}\,dx\,dy 
+    = \int_{-\infty}^{\infty} e^{-x^2}\,dx\int_{-\infty}^{\infty}e^{-y^2}\,dy
+    = \left(\int_{-\infty}^{\infty} e^{-x^2}\,dx\right)^2
+  \end{align}
+From this result,
+  \begin{align}
+    \int_{-\infty}^{\infty} e^{-x^2} \,dx = \sqrt{\pi},\quad \sqrt{2\pi}\sigma N^2 =1.
+  \end{align}
+Finally we obtain the normalization constant,
+  \begin{align}
+    \,N = {\left(\frac{1}{2\pi\sigma^2}\right)}^{\frac{1}{4}}.
+  \end{align}
+  \item[(2)]  
+  \item[(3)] 
+  \item[(4)] 
+  \item[(5)] 
+  \end{itemize}
+\vspace{0.5cm}
+
+\noindent \textbf{Problem 2.} 
+The Hamiltonian for a free particle is given by
+\begin{align*}
+H  = \frac{p^2}{2m}.
+\end{align*}
+\begin{itemize}
+\item[(1)] Show 
+  \begin{align*}
+    \langle p_x \rangle = \langle p_x\rangle_{t=0}.
+  \end{align*}
+\item[(2)] Show 
+  \begin{align*}
+    \langle x \rangle = \frac{\langle p_x\rangle_{t=0}}{m} t + \langle
+    x \rangle_{t=0}.
+  \end{align*}
+\item[(3)] Show 
+  \begin{align*}
+(\Delta p_x)^2 =  (\Delta p_x)_{t=0}^2  .
+  \end{align*}
+\item[(4)] Find $d(\Delta x)^2/dt$ as a function of time and initial 
+  conditions. 
+\end{itemize}
+\newpage
+
+\noindent \textbf{Problem 3.} 
+The state of a particle is described by the following wavefunction:
+\begin{align*}
+\psi(x) = C\exp\left[
+i\frac{p_0 x}{\hbar} - \frac{(x-x_0)^2}{2\sigma^2} 
+\right]
+\end{align*}
+where $p_0$, $x_0$, and $a$ are real parameters. 
+\begin{itemize}
+\item[(1)] Find the normalization constant $C$.
+\item[(2)] Find the mean values of $x$ and $p$.
+\item[(3)] Find the standard deviations $\Delta x$ and $\Delta p$.
+\end{itemize}
+\vspace{1cm}
+
+\noindent \textbf{Problem $4^*$.}
+Consider a particle and two normalized energy eigenfunctions
+$\psi_1(\bm{x})$ and $\psi_2(\bm{x})$ corresponding to the eigenvalues
+$E_1\neq E_2$. Assume that the eigenfunctions vanish outside the two 
+non-overlapping regions $\Omega_1$ and $\Omega_2$, respectively. 
+\begin{itemize}
+\item[(1)] (a) Show that, if the particle is initially in region
+  $\Omega_1$ then it will stay there forever. 
+\item[(b)] If, initially, the particle is in the state with wave function
+\begin{align*}
+  \psi(\bm{x},\,0) = \frac1{\sqrt{2}} [\psi_1(\bm{x}) +
+  \psi_2(\bm{x})] 
+\end{align*}
+show that the probability density $|\psi(\bm{x},t)|^2$ is independent
+of time. 
+\item[(c)] Now assume that the two regions $\Omega_1$ and $\Omega_2$
+  overlap partially. Starting with the initial wave function of case
+  (b), show that the probability density is a periodic function of 
+time. ($E_2-E_1=\hbar \omega$).
+\item[(d)] Starting with the same initial wave function and assuming
+  that the two eigenfunctions are real and isotropic, take the two
+  partially overlapping regions $\Omega_1$ and $\Omega_2$ to be 
+two concentric spheres of radii $R_1>R_2$. Compute the probability
+current that flows through $\Omega_1$.
+\end{itemize}
+(Problem 4 is a bit difficult. To solve (3), introduce phase
+factors for $\psi_1(\bm{x})$ and $\psi_2(\bm{x})$ and consider the
+interference term when one computes the probability density. To solve
+(4), consider the current density and continuity equation.  
+\end{document}

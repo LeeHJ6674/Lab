@@ -187,8 +187,46 @@ $\vec{B}$는 서로 수직이고, 벡터 $\vec{B}$와 벡터 $\vec{C}$의 끼인
 \item[(나)] 볼트가 낙하거리의 마지막 20\%를 들어설 때의 속력을
   구하여라.
 \item[(다)] 다리 아래 계곡에 도달할 때 볼트의 속력을 구하여라.   
-\end{itemize}
-
+\end{itemize} 
+\noindent {\bf 풀이}
+\begin{itemize}
+  \item[(가)] 총 낙하 거리가 90 m 이므로, 낙하 거리의 20\%는 18 m 이다. 
+  바닥의 높이를 0 m 라 하면, 마지막 20\%를 지나는데 걸리는 시간은 18 m 에서 0 m 에 도달하는데 걸리는 시간과 같다.
+  자유낙하 하는 물체의 높이 $y(t)$ 는 다음과 같다.
+  \begin{align}
+    y(t) = y(0) +v_0\,t-\frac{1}{2}gt^2
+  \end{align}
+  볼트의 초기 높이는 90 m, 초기 속력은 0 $\mathrm{m/s^2}$ 이다. 식에 대입하면,
+  \begin{align}
+    y(t) = 90\,\mathrm{m}-\frac{1}{2}\times (9.80\,\mathrm{m/s^2}) \times t^2.    
+  \end{align}
+  우리가 구하고자 하는 값은 시간이므로, 시간에 대해 표현하면 다음과 같다.
+  \begin{align}
+    t=\sqrt{\frac{90\,\mathrm{m}-y(t)}{4.90\,\mathrm{m/s^2}}}
+  \end{align}
+  낙하 거리 18 m 와 0 m 에 도달하는데 걸리는 시간은 각각 다음과 같다.
+  \begin{align}
+    t_{18\,\mathrm{m}}=\sqrt{\frac{90\,\mathrm{m}-18\,\mathrm{m}}{4.90\,\mathrm{m/s^2}}} = \sqrt{\frac{72\,\mathrm{m}}{4.90\,\mathrm{m/s^2}}}=3.8\,\mathrm{s} \\
+    t_{0\,\mathrm{m}}=\sqrt{\frac{90\,\mathrm{m}-0\,\mathrm{m}}{4.90\,\mathrm{m/s^2}}} = \sqrt{\frac{90\,\mathrm{m}}{4.90\,\mathrm{m/s^2}}}=4.3\,\mathrm{s}
+  \end{align}
+  18 m 에서 0 m 까지 이동하는데 걸리는 시간은 두 지점에 도달하는데 걸리는 시간의 차 이다.
+  \begin{align}
+    t = t_{0\,\mathrm{m}}-t_{18\,\mathrm{m}}= 0.5\mathrm\,{s}
+  \end{align}
+  마지막 20\% 를 지나는데 걸린 시간은 0.5 초 이다.
+  \item[(나)] 식 (15) 로 부터, 낙하 거리 18 m 에 도달하는데 걸린 시간은 3.8 초 이다. 
+  볼트는 자유낙하 하는 운동이므로 중력 가속도를 가속도의 크기로 가지는 등가속도 운동을 한다.
+  \begin{align}
+    v_{18\,\mathrm{m}} = g\,t_{18\,\mathrm{m}} = {4.90\,\mathrm{m/s^2}}\times 3.8\,\mathrm{s} = 19\,\mathrm{m/s}
+  \end{align}
+  마지막 20\% 에 들어설 때 볼트의 속력은 19 m/s 이다.
+  \item[(다)] 식 (16) 으로 부터, 낙하 거리 0 m 에 도달하는데 걸린 시간은 4.3 s 이다.
+  \begin{align}
+    v_{0\,\mathrm{m}} = g\,t_{0\,\mathrm{m}} = {4.90\,\mathrm{m/s^2}}\times 4.3\,\mathrm{s} = 21\,\mathrm{m/s} 
+  \end{align}
+  다리 아래 계곡 즉, 0 m 에 도달할 때 볼트의 속력은 21 m/s 이다.
+\end{itemize} 
+  
 
 \newpage
 

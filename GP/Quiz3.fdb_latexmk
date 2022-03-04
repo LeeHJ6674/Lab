@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1646292379 "/home/sigma/Lab/GP/Quiz3.tex" "/home/sigma/Lab/GP/Quiz3.pdf" "Quiz3" 1646292697
+["pdflatex"] 1646412330 "/home/sigma/Lab/GP/Quiz3.tex" "/home/sigma/Lab/GP/Quiz3.pdf" "Quiz3" 1646412342
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/GP/Quiz3.aux" 1646292379 442 65b5558938c115b134f0f082f81dccf1 ""
-  "/home/sigma/Lab/GP/Quiz3.tex" 1646292696 8747 3cf792fa33db829c93c155eaf5025f12 ""
+  "/home/sigma/Lab/GP/Quiz3.aux" 1646412330 442 d92876e3d2d7a17aefbacf06ed7ede24 ""
+  "/home/sigma/Lab/GP/Quiz3.tex" 1646412341 11107 ebd2bf8ca477f593457d2b0f365bc217 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -236,12 +236,12 @@
   "Qfig3-1-20220307.png" 1646221101 29615 60208a47b4f3d833b87d5fa10b59da5d ""
   "Qfig3-2-20220307.png" 1646221101 408543 711bb0a3b5ac9656221a4c7686d56a0c ""
   "Qfig3-2.pdf" 1646221101 10541 6e45e95e44c0148dad32650ac7946a95 ""
-  "Quiz3.aux" 1646292379 442 65b5558938c115b134f0f082f81dccf1 "pdflatex"
-  "Quiz3.tex" 1646292696 8747 3cf792fa33db829c93c155eaf5025f12 ""
+  "Quiz3.aux" 1646412330 442 d92876e3d2d7a17aefbacf06ed7ede24 "pdflatex"
+  "Quiz3.tex" 1646412341 11107 ebd2bf8ca477f593457d2b0f365bc217 ""
   "defcolor.sty" 1646221108 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   (generated)
-  "/home/sigma/Lab/GP/Quiz3.pdf"
   "Quiz3.pdf"
-  "Quiz3.aux"
   "Quiz3.log"
   "/home/sigma/Lab/GP/Quiz3.log"
+  "/home/sigma/Lab/GP/Quiz3.pdf"
+  "Quiz3.aux"
