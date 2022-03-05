@@ -91,7 +91,47 @@ Finally we obtain the normalization constant,
   \begin{align}
     \,N = {\left(\frac{1}{2\pi\sigma^2}\right)}^{\frac{1}{4}}.
   \end{align}
-  \item[(2)]  
+  \item[(2)]  We will find $\phi(p,0)$ first. $\phi(p,0)$ is the Fourier transform of $\psi(x,0)$.
+  \begin{align}
+    \phi(p,0)=\frac{1}{\sqrt{2\pi\hbar}}
+    \int\psi(x,0) e^{-\frac{i}{\hbar}px}\,dx
+      =\frac{N}{\sqrt{2\pi\hbar}}
+      \int\exp\left(-{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) 
+      e^{-\frac{i}{\hbar}px}\,dx  \\
+      =\frac{N}{\sqrt{2\pi\hbar}}
+      \int\exp\left(-{\left(\frac{x-x_0}{2\sigma}\right)}^2
+      -\frac{i}{\hbar}px\right)\,dx
+  \end{align}
+  To make it compact form, let us erase the translation term and change the variable.
+  \begin{align}
+    u \equiv \frac{x-x_0}{2\sigma},\;\;\; du = \frac{1}{2\sigma} dx 
+  \end{align}
+  Then, a $\phi(p,0)$ is,
+  \begin{align}
+    \phi(p,0)&=\frac{2\sigma N}{\sqrt{2\pi\hbar}}
+    \int\exp\left(-{u}^2-\frac{i}{\hbar}p(2\sigma u+x_0)\right)\,du \\
+             &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+    e^{-\frac{i}{\hbar}px_0}
+    \int\exp\left(-u^2-2\frac{i}{\hbar}\sigma pu\right)\,du.
+  \end{align}
+  And, a exponential of integrated function can be expressed in terms of complete square form about u.
+  \begin{align}
+    -u^2-2\frac{i}{\hbar}\sigma pu 
+    = -{\left( u+\frac{i}{\hbar}\sigma p\right)}^2-\frac{\sigma^2}{\hbar^2}p^2
+  \end{align}
+  $\frac{i}{\hbar}\sigma p$ is the translation term that can be ignored since the integration range is from $-\infty$ to $\infty$,
+  \begin{align}
+    &{\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+    e^{-\frac{i}{\hbar}px_0}
+    \int\exp\left(-u^2-2\frac{i}{\hbar}\sigma pu\right)\,du \\
+    &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+    e^{-\frac{i}{\hbar}px_0}  
+    \int\exp\left(-{\left( u+\frac{i}{\hbar}\sigma p\right)}^2-\frac{\sigma^2}{\hbar^2}p^2\right)\,du
+    = {\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+    e^{-\frac{i}{\hbar}px_0}
+    e^{-\frac{\sigma^2}{\hbar^2}p^2}
+    \int e^{-u^2}\,du
+  \end{align}
   \item[(3)] 
   \item[(4)] 
   \item[(5)] 
