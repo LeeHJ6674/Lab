@@ -96,11 +96,11 @@ Finally we obtain the normalization constant,
     \phi(p,0)=\frac{1}{\sqrt{2\pi\hbar}}
     \int\psi(x,0) e^{-\frac{i}{\hbar}px}\,dx
       =\frac{N}{\sqrt{2\pi\hbar}}
-      \int\exp\left(-{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) 
+      \int\exp\left(i\frac{p_0 x}{\hbar}-{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) 
       e^{-\frac{i}{\hbar}px}\,dx  \\
       =\frac{N}{\sqrt{2\pi\hbar}}
       \int\exp\left(-{\left(\frac{x-x_0}{2\sigma}\right)}^2
-      -\frac{i}{\hbar}px\right)\,dx
+      -\frac{i}{\hbar}(p-p_0)x\right)\,dx
   \end{align}
   To make it compact form, let us erase the translation term and change the variable.
   \begin{align}
@@ -109,30 +109,57 @@ Finally we obtain the normalization constant,
   Then, a $\phi(p,0)$ is,
   \begin{align}
     \phi(p,0)&=\frac{2\sigma N}{\sqrt{2\pi\hbar}}
-    \int\exp\left(-{u}^2-\frac{i}{\hbar}p(2\sigma u+x_0)\right)\,du \\
-             &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
-    e^{-\frac{i}{\hbar}px_0}
-    \int\exp\left(-u^2-2\frac{i}{\hbar}\sigma pu\right)\,du.
+    \int\exp\left(-{u}^2-\frac{i}{\hbar}(p-p_0)(2\sigma u+x_0)\right)\,du \\
+             &={\left(\frac{2\sigma^2}{\pi^3\hbar^2}\right)}^{\frac{1}{4}}
+    e^{-\frac{i}{\hbar}(p-p_0)x_0}
+    \int\exp\left(-u^2-2\frac{i}{\hbar}\sigma (p-p_0)u\right)\,du.
   \end{align}
   And, a exponential of integrated function can be expressed in terms of complete square form about u.
   \begin{align}
-    -u^2-2\frac{i}{\hbar}\sigma pu 
-    = -{\left( u+\frac{i}{\hbar}\sigma p\right)}^2-\frac{\sigma^2}{\hbar^2}p^2
+    -u^2-2\frac{i}{\hbar}\sigma (p-p_0)u 
+    = -{\left( u+\frac{i}{\hbar}\sigma (p-p_0)\right)}^2-\frac{\sigma^2}{\hbar^2}{(p-p_0)}^2
   \end{align}
   $\frac{i}{\hbar}\sigma p$ is the translation term that can be ignored since the integration range is from $-\infty$ to $\infty$,
   \begin{align}
-    &{\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
-    e^{-\frac{i}{\hbar}px_0}
-    \int\exp\left(-u^2-2\frac{i}{\hbar}\sigma pu\right)\,du \\
-    &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
-    e^{-\frac{i}{\hbar}px_0}  
-    \int\exp\left(-{\left( u+\frac{i}{\hbar}\sigma p\right)}^2-\frac{\sigma^2}{\hbar^2}p^2\right)\,du
-    = {\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
-    e^{-\frac{i}{\hbar}px_0}
-    e^{-\frac{\sigma^2}{\hbar^2}p^2}
+    \phi(p,0) &= {\left(\frac{2\sigma^2}{\pi^3\hbar^2}\right)}^{\frac{1}{4}}
+    e^{-\frac{i}{\hbar}(p-p_0)x_0}
+    \int\exp\left(-u^2-2\frac{i}{\hbar}\sigma (p-p_0)u\right)\,du \\
+    &={\left(\frac{2\sigma^2}{\pi^3\hbar^2}\right)}^{\frac{1}{4}}
+    e^{-\frac{i}{\hbar}(p-p_0)x_0}  
+    \int\exp\left(-{\left( u+\frac{i}{\hbar}\sigma (p-p_0)\right)}^2-\frac{\sigma^2}{\hbar^2}(p-p_0)^2\right)\,du \\
+    &= {\left(\frac{2\sigma^2}{\pi^3\hbar^2}\right)}^{\frac{1}{4}}
+    \exp\left( -\frac{i}{\hbar}(p-p_0)x_0-\frac{\sigma^2}{\hbar^2}(p-p_0)^2 \right)
     \int e^{-u^2}\,du
   \end{align}
-  \item[(3)] 
+  So, we obtain a $\phi(p.0)$.
+  \begin{align}
+    \phi(p,0) &= {\left(\frac{2\sigma^2}{\pi^3\hbar^2}\right)}^{\frac{1}{4}}
+    \exp\left( -\frac{i}{\hbar}(p-p_0)x_0-\frac{\sigma^2}{\hbar^2}(p-p_0)^2 \right)
+    \int e^{-u^2}\,du \\
+    &= {\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+    \exp\left( -\frac{i}{\hbar}(p-p_0)x_0-\frac{\sigma^2}{\hbar^2}(p-p_0)^2 \right)
+  \end{align}
+  Finally, $\phi(0,0)$ is,
+  \begin{align}
+    \phi(0,0) = {\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+    \exp\left(-\frac{\sigma^2}{\hbar^2}{p_0}^2+\frac{i}{\hbar}p_0x_0\right).
+  \end{align}
+  \item[(3)]Because it is a free particle, the time evolution of $\phi(p,0)$ is $\phi(p,t)=e^{-i\omega t}\phi(p,0)$ and $\omega = \frac{p^2}{2m\hbar}$.
+  \begin{align}
+    \phi(p,t) &=  {\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+    \exp\left( -\frac{\sigma^2}{\hbar^2}(p-p_0)^2-i\frac{p^2}{2m\hbar} t -\frac{i}{\hbar}(p-p_0)x_0 \right) \\
+    &= {\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+    \exp\left( -\left( \frac{\sigma^2}{\hbar^2} +\frac{it}{2m\hbar}  \right)p^2 + \left( \frac{2\sigma^2}{\hbar^2}p_0-\frac{i}{\hbar}x_0  \right)p - \frac{\sigma^2}{\hbar^2}p_0^2-\frac{i}{\hbar}p_0x_0 \right) \\ 
+    &= {\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+    \exp\left( -\frac{2m\sigma^2+i\hbar t}{2m\hbar^2} p^2 -\frac{2\sigma^2p_0-i\hbar x_0}{\hbar^2}  p-\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2} \right)
+  \end{align}
+  The complete square form of $\phi(p,t)$ is,
+  \begin{align}
+    \phi(p,t) &= {\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+    \exp\left( -\frac{2m\sigma^2+i\hbar t}{2m\hbar^2} p^2 -\frac{2\sigma^2p_0-i\hbar x_0}{\hbar^2}  p-\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2} \right) \\
+    &= {\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+    \exp\left( -\frac{2m\sigma^2+i\hbar t}{2m\hbar^2}{\left( p + \frac{2m\sigma^2p_0-im\hbar x_0}{2m\sigma^2+i\hbar t} \right)}^2 +\frac{(2m\sigma^2p_0-im\hbar x_0)^2}{4m^2\hbar^2\sigma^2+2im\hbar^3 t}  -\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2} \right)
+  \end{align}
   \item[(4)] 
   \item[(5)] 
   \end{itemize}
