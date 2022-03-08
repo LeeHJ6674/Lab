@@ -207,13 +207,61 @@ H  = \frac{p^2}{2m}.
   And the expectation value of $p_x$ in the momentum space is,
   \begin{align}
     \langle p_x \rangle &= \int \phi^*(p,t)\,p_x\,\phi(p,t)\,d^3p
-    =\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\,p_x\,e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)\,d^3p  \\
-    &=\int \phi^*(p,0)\,p_x\,\phi(p,0)\,d^3p = \langle p_x \rangle_{t=0}.
+    =\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\,p_x\,e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)\,d^3p
   \end{align}
- 
-  \item[(2)]
-  \item[(3)]
-  \item[(4)]   
+  The time evolutions are canceled out.
+  \begin{align}      
+    \langle p_x \rangle=\int \phi^*(p,0)\,p_x\,\phi(p,0)\,d^3p = \langle p_x \rangle_{t=0}.
+  \end{align}
+  \item[(2)] The expectation value of $x$ also can be described in the momentum space regarding as the operator in the integration.
+  \begin{align}
+    \langle  x\rangle &= i\hbar\int \phi^*(p,t)\frac{\partial \phi(p,t)}{\partial p_x}\,d^3p 
+    = i\hbar \int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\frac{\partial}{\partial p_x}\left( e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0) \right)\,d^3p  \\
+    &= i\hbar\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\left( -i\frac{p_x}{m\hbar}t\,e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)+e^{-i\frac{p^2}{2m\hbar}t}\frac{\partial \phi(p,0)}{\partial p_x} \right)\,d^3p \\
+    &= i\hbar\int -i\frac{p_x}{m\hbar}t\,|\phi(p,0)|^2+\phi^*(p,0)\frac{\partial \phi(p,0)}{\partial p_x}\,d^3p \\
+    &= \frac{\langle p_x\rangle_{t=0}}{m}t+\langle x\rangle_{t=0} 
+  \end{align}
+  \item[(3)] The definition of the deviation is,
+  \begin{align}
+    (\Delta p_x)^2 = \langle p_x^2 \rangle-\langle p_x \rangle^2. 
+  \end{align}
+  We calculate $\langle p_x^2 \rangle$ in the momentum space and $\langle p_x \rangle^2=\langle p_x \rangle^2_{t=0}$ because of a (31).
+  \begin{align}
+    \langle p_x^2 \rangle &= \int \phi^*(p,t)\,p^2_x\,\phi(p,t)\,d^3p
+  \end{align}
+  From a (29),
+  \begin{align}      
+    \int \phi^*(p,t)\,p^2_x\,\phi(p,t)\,d^3p
+    &= \int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)p^2_x e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)\,d^3p  \\
+    &= \int \phi^*(p,0)p^2_x\phi(p,0)\,d^3p = \langle p^2_x \rangle_{t=0}
+  \end{align}
+  So, we obtain that,
+  \begin{align}
+    \langle p_x^2 \rangle=\langle p_x^2 \rangle_{t=0}.
+  \end{align}
+Finally, the result is,
+\begin{align}
+  (\Delta p_x)^2 = \langle p_x^2\rangle_{t=0}-\langle p_x \rangle^2_{t=0}=(\Delta p_x)^2_{t=0}, 
+  \,\,\, (\Delta p_x)^2=(\Delta p_x)^2_{t=0}. 
+\end{align}
+  \item[(4)] From a (36), the derivative of the deviation is,
+  \begin{align}
+    \frac{d}{dt}(\Delta x)^2 = \frac{d}{dt}\langle x^2 \rangle-\frac{d}{dt}\left(\langle x \rangle^2\right). 
+  \end{align}
+  Before derivation, let us calculate the expectation value $\langle x^2 \rangle$ first.
+  \begin{align}
+    \begin{split}  
+      \langle x^2 \rangle =& -\hbar^2\int \phi^*(p,t)\frac{\partial^2 \phi(p,t)}{\partial p_x^2}\,d^3p
+      = -\hbar^2\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\frac{\partial^2 }{\partial p_x^2}\left(e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)\right)\,d^3p  \\
+      =& -\hbar^2\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\frac{\partial}{\partial p_x}\left(-\frac{p}{m\hbar}te^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)
+      +e^{-i\frac{p^2}{2m\hbar}t}\frac{\partial \phi(p,0)}{\partial p_x}\right)\,d^3p  \\
+      =& -\hbar^2\int \phi^*(p,0)\left[\left(-i\frac{t}{m\hbar}+\left( -i\frac{p_x}{m\hbar}t \right)^2\right)\phi(p,0)
+      -\left(2i\frac{p_xt}{m\hbar}\frac{\partial \phi(p,0)}{\partial p_x}+\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\right) \right]\,d^3p  \\
+      =& \frac{t}{m}\int i\hbar|\phi(p,0)|^2\,d^3p+\frac{t^2}{m^2}\int p_x^2|\phi(p,0)|^2\,d^3p  \\
+      &+\frac{2t}{m}\int \phi^*(p,0) p_x \left(ih\frac{\partial}{\partial p_x}\phi(p,0)\right)\,d^3p-\hbar^2\int\phi^*(p,0)\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\,d^3p  \\
+      =& 
+    \end{split}
+  \end{align}
 \end{itemize} 
 \newpage
 
