@@ -166,7 +166,10 @@ Finally we obtain the normalization constant,
                     -(\hbar x_0-i\sigma^2 p_0)p_0 t}
                    {2m\hbar\sigma^2+i\hbar^2t}.
   \end{align}
-  \item[(4)] 
+  \item[(4)] $\psi(x,t)$ is the Fourier transform of $\phi(p,t)$.
+  \begin{align}
+    \psi(x,t) = \frac{1}{\sqrt{2\pi\hbar}}\int\phi(p,t)e^{\frac{i}{\hbar}px}\,dp = 
+  \end{align}
   \item[(5)] 
   \end{itemize}
 \vspace{0.5cm}
@@ -193,6 +196,25 @@ H  = \frac{p^2}{2m}.
 \item[(4)] Find $d(\Delta x)^2/dt$ as a function of time and initial 
   conditions. 
 \end{itemize}
+\noindent \textbf{Solution}
+\begin{itemize}
+  \item[(1)]The expectation value of physical quantity can be 
+  expressed in coordinate space and momentum space each other.
+  For free particle, the $\phi(p,t)$ is,
+  \begin{align}
+    \phi(p,t)=e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)  .
+  \end{align}
+  And the expectation value of $p_x$ in the momentum space is,
+  \begin{align}
+    \langle p_x \rangle &= \int \phi^*(p,t)\,p_x\,\phi(p,t)\,d^3p
+    =\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\,p_x\,e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)\,d^3p  \\
+    &=\int \phi^*(p,0)\,p_x\,\phi(p,0)\,d^3p = \langle p_x \rangle_{t=0}.
+  \end{align}
+ 
+  \item[(2)]
+  \item[(3)]
+  \item[(4)]   
+\end{itemize} 
 \newpage
 
 \noindent \textbf{Problem 3.} 

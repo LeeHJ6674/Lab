@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1646661288 "/home/sigma/Lab/Quantum/Problem1_20220224_sol_hjlee_new.tex" "/home/sigma/Lab/Quantum/Problem1_20220224_sol_hjlee_new.pdf" "Problem1_20220224_sol_hjlee_new" 1646661288
+["pdflatex"] 1646698101 "/home/sigma/Lab/Quantum/Problem1_20220224_sol_hjlee_new.tex" "/home/sigma/Lab/Quantum/Problem1_20220224_sol_hjlee_new.pdf" "Problem1_20220224_sol_hjlee_new" 1646698101
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/Quantum/Problem1_20220224_sol_hjlee_new.aux" 1646661288 204 a752f23ec9bb24e65132c60e254e45c2 ""
-  "/home/sigma/Lab/Quantum/Problem1_20220224_sol_hjlee_new.tex" 1646661288 10613 3926994fe69f42b5628909f56edf8f7c ""
+  "/home/sigma/Lab/Quantum/Problem1_20220224_sol_hjlee_new.aux" 1646698101 204 a4e47169613318e6bccc6e9f97761cdf ""
+  "/home/sigma/Lab/Quantum/Problem1_20220224_sol_hjlee_new.tex" 1646698101 11464 56f85a8240264270c56d69d901838ce3 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -121,12 +121,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1645685134 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1645685152 8258281 06978915380d3cf57d3fcd5054406eef ""
-  "Problem1_20220224_sol_hjlee_new.aux" 1646661288 204 a752f23ec9bb24e65132c60e254e45c2 "pdflatex"
-  "Problem1_20220224_sol_hjlee_new.tex" 1646661288 10613 3926994fe69f42b5628909f56edf8f7c ""
+  "Problem1_20220224_sol_hjlee_new.aux" 1646698101 204 a4e47169613318e6bccc6e9f97761cdf "pdflatex"
+  "Problem1_20220224_sol_hjlee_new.tex" 1646698101 11464 56f85a8240264270c56d69d901838ce3 ""
   "defcolor.sty" 1646221107 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   (generated)
-  "/home/sigma/Lab/Quantum/Problem1_20220224_sol_hjlee_new.log"
-  "/home/sigma/Lab/Quantum/Problem1_20220224_sol_hjlee_new.pdf"
-  "Problem1_20220224_sol_hjlee_new.log"
   "Problem1_20220224_sol_hjlee_new.aux"
   "Problem1_20220224_sol_hjlee_new.pdf"
+  "/home/sigma/Lab/Quantum/Problem1_20220224_sol_hjlee_new.pdf"
+  "Problem1_20220224_sol_hjlee_new.log"
+  "/home/sigma/Lab/Quantum/Problem1_20220224_sol_hjlee_new.log"
