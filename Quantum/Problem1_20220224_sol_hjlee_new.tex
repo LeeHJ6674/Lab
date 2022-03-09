@@ -264,7 +264,21 @@ Finally, the result is,
   \end{align}
   \begin{align}
     \begin{split}
-      \frac{d}{dt}\left(\langle x \rangle^2\right) = 2 \langle x\rangle\frac{d\langle x\rangle}{dx}
+      \frac{d}{dt}\langle x^2 \rangle=\frac{1}{m}\langle \left[x,p_x\right]\rangle_{t=0}+\frac{2t}{m^2}\langle p_x^2\rangle_{t=0}+\frac{2}{m}\langle x \rangle_{t=0}
+    \end{split}
+  \end{align}
+
+  \begin{align}
+    \begin{split}
+      \frac{d}{dt}\left(\langle x \rangle^2\right) = 2 \langle x\rangle\frac{d}{dt}\langle x\rangle 
+      = 2\left(\frac{t}{m}\langle p_x\rangle_{t=0}+\langle x\rangle_{t=0}\right)\frac{\langle p_x\rangle_{t=0}}{m}
+      = 2\frac{\langle p_x\rangle_{t=0}^2}{m^2}t+\frac{2}{m}\langle x\rangle_{t=0}\langle p_x\rangle_{t=0}
+    \end{split}
+  \end{align}
+  \begin{align}
+    \begin{split}
+      \frac{d}{dt}(\Delta x)^2 =\frac{2}{m^2}\left(\langle p_x^2\rangle_{t=0}+\langle p_x\rangle_{t=0}^2\right)t
+      +\frac{2}{m}\left(\frac{1}{2}\langle \left[x,p_x\right]\rangle_{t=0}-\langle x\rangle_{t=0}\langle p_x\rangle_{t=0}+\langle x \rangle_{t=0} \right)
     \end{split}
   \end{align}
 \end{itemize} 
