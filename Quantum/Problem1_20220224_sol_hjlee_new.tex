@@ -251,15 +251,20 @@ Finally, the result is,
   Before derivation, let us calculate the expectation value $\langle x^2 \rangle$ first.
   \begin{align}
     \begin{split}  
-      \langle x^2 \rangle =& -\hbar^2\int \phi^*(p,t)\frac{\partial^2 \phi(p,t)}{\partial p_x^2}\,d^3p
-      = -\hbar^2\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\frac{\partial^2 }{\partial p_x^2}\left(e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)\right)\,d^3p  \\
+      \langle x^2 \rangle =& -\hbar^2\int\phi^*(p,t)\frac{\partial^2\phi(p,t)}{\partial p_x^2}\,d^3p
+      =  -\hbar^2\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\frac{\partial^2}{\partial p_x^2}\left(e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)\right)\,d^3p  \\
       =& -\hbar^2\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\frac{\partial}{\partial p_x}\left(-\frac{p}{m\hbar}te^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)
-      +e^{-i\frac{p^2}{2m\hbar}t}\frac{\partial \phi(p,0)}{\partial p_x}\right)\,d^3p  \\
-      =& -\hbar^2\int \phi^*(p,0)\left[\left(-i\frac{t}{m\hbar}+\left( -i\frac{p_x}{m\hbar}t \right)^2\right)\phi(p,0)
-      -\left(2i\frac{p_xt}{m\hbar}\frac{\partial \phi(p,0)}{\partial p_x}+\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\right) \right]\,d^3p  \\
+        +e^{-i\frac{p^2}{2m\hbar}t}\frac{\partial\phi(p,0)}{\partial p_x}\right)\,d^3p  \\
+      =& -\hbar^2\int\phi^*(p,0)\left[\left(-i\frac{t}{m\hbar}+\left(-i\frac{p_x}{m\hbar}t \right)^2\right)\phi(p,0)
+      -\left(2i\frac{p_x t}{m\hbar}\frac{\partial \phi(p,0)}{\partial p_x}+\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\right) \right]\,d^3p  \\
       =& \frac{t}{m}\int i\hbar|\phi(p,0)|^2\,d^3p+\frac{t^2}{m^2}\int p_x^2|\phi(p,0)|^2\,d^3p  \\
-      &+\frac{2t}{m}\int \phi^*(p,0) p_x \left(ih\frac{\partial}{\partial p_x}\phi(p,0)\right)\,d^3p-\hbar^2\int\phi^*(p,0)\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\,d^3p  \\
-      =& 
+       &+\frac{2t}{m}\int\phi^*(p,0)p_x\left(ih\frac{\partial}{\partial p_x}\phi(p,0)\right)\,d^3p-\hbar^2\int\phi^*(p,0)\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\,d^3p  \\
+      =&\frac{t}{m}\langle \left[x,p_x\right]\rangle_{t=0}+\frac{t^2}{m^2}\langle p_x^2\rangle_{t=0}+\frac{2t}{m}\langle x \rangle_{t=0}+\langle x^2 \rangle_{t=0}
+    \end{split}
+  \end{align}
+  \begin{align}
+    \begin{split}
+      \frac{d}{dt}\left(\langle x \rangle^2\right) = 2 \langle x\rangle\frac{d\langle x\rangle}{dx}
     \end{split}
   \end{align}
 \end{itemize} 
