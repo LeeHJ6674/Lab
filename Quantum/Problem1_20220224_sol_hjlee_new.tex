@@ -197,26 +197,51 @@ Finally we obtain the normalization constant,
       -\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2} \right)
     \end{split}
   \end{align*}
-  The complete square form of $\phi(p,t)$ is,
-  \begin{align*}
-    \begin{split}
-      \phi(p,t) &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
-      \exp\left(-\frac{2m\sigma^2+i\hbar t}{2m\hbar^2} p^2 
-      -\frac{2\sigma^2p_0-i\hbar x_0}{\hbar^2}p
-      -\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2}\right) \\
-      &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
-    \exp\left(
-      \alpha(t)\left(p+\beta(t)\right)^2+\gamma(t)\right)  \\
-      \alpha(t) &= -\frac{2m\sigma^2+i\hbar t}{2m\hbar^2}, \,\,\,
-      \beta(t) = \frac{2m\sigma^2p_0-im\hbar x_0}{2m\sigma^2+i\hbar t}, \\
-      \gamma(t) &= \frac{-m x_0 \left(\frac{1}{2}\hbar x_0+4i\sigma^2p_0\right)
-      -(\hbar x_0-i\sigma^2 p_0)p_0 t}
-      {2m\hbar\sigma^2+i\hbar^2t}.
-    \end{split}
-  \end{align*}
+  %The complete square form of $\phi(p,t)$ is,
+  %\begin{align*}
+  %  \begin{split}
+  %    \phi(p,t) &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+  %    \exp\left(-\frac{2m\sigma^2+i\hbar t}{2m\hbar^2} p^2 
+  %    -\frac{2\sigma^2p_0-i\hbar x_0}{\hbar^2}p
+  %    -\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2}\right) \\
+  %    &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+  %  \exp\left(
+  %    \alpha(t)\left(p+\beta(t)\right)^2+\gamma(t)\right)  \\
+  %    \alpha(t) &= -\frac{2m\sigma^2+i\hbar t}{2m\hbar^2}, \,\,\,
+  %    \beta(t) = \frac{2m\sigma^2p_0-im\hbar x_0}{2m\sigma^2+i\hbar t}, \\
+  %    \gamma(t) &= \frac{-m x_0 \left(\frac{1}{2}\hbar x_0+4i\sigma^2p_0\right)
+  %    -(\hbar x_0-i\sigma^2 p_0)p_0 t}
+  %    {2m\hbar\sigma^2+i\hbar^2t}.
+  %  \end{split}
+  %\end{align*}
   \item[(4)] $\psi(x,t)$ is the Fourier transform of $\phi(p,t)$.
   \begin{align}
-    \psi(x,t) = \frac{1}{\sqrt{2\pi\hbar}}\int\phi(p,t)e^{\frac{i}{\hbar}px}\,dp = 
+    \psi(x,t) &= \frac{1}{\sqrt{2\pi\hbar}}\int\phi(p,t)e^{\frac{i}{\hbar}px}\,dp  \\
+    &={\left(\frac{\sigma^2}{2\pi^3\hbar^4}\right)}^{\frac{1}{4}}
+    \int\exp\left(-\frac{2m\sigma^2+i\hbar t}{2m\hbar^2} p^2 
+    -\frac{2\sigma^2p_0-i\hbar (x_0+x)}{\hbar^2}p
+    -\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2}\right)\,dp  \\
+    &={\left(\frac{\sigma^2}{2\pi^3\hbar^4}\right)}^{\frac{1}{4}}
+    \int\exp\left(-\frac{2m\sigma^2+i\hbar t}{2m\hbar^2} p^2 
+    -\frac{2\sigma^2p_0-i\hbar (x_0+x)}{\hbar^2}p
+    -\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2}\right)\,dp  \\
+    &={\left(\frac{\sigma^2}{2\pi^3\hbar^4}\right)}^{\frac{1}{4}}
+    \int\exp{\left( \alpha(t)\left(p+\beta(t)\right)^2+\gamma(t) \right)}\,dp
+  \end{align}
+  $\alpha(t)$, $\beta(t)$ and $\gamma(t)$ are the replacement factors that,
+  \begin{align}
+    \begin{split}
+      &\alpha(t) =-\frac{2m\sigma^2+i\hbar t}{2m\hbar^2},\,\,\,
+    \beta(t) =\frac{m(2\sigma^2p_0-i\hbar(x+x_0))}{2m\sigma^2+i\hbar t},  \\
+    &\gamma(t)=-\frac{m\hbar^2(x+x_0)^2+4im\hbar\sigma^2p_0+2\hbar^2x_0p_0
+    +2i\hbar\sigma^2p_0^2t}
+    {2\hbar^2(2m\sigma^2+i\hbar t)}.
+    \end{split}
+  \end{align}
+  This integration is a type of guassian integration.
+  \begin{align}
+    \int\exp{\left( \alpha(t)\left(p+\beta(t)\right)^2+\gamma(t) \right)}\,dp
+    =e^{\gamma(t)}\sqrt{\frac{\pi}{\alpha(t)}}
   \end{align}
   \item[(5)] 
   \end{itemize}
@@ -705,36 +730,37 @@ The probability density is,
 
 \item[(d)]
   From the continuity equation, We use the integration of 
-  this equation because of the right term.
-  \begin{align}
+  this equation because of the right hand side.
+  \begin{align*}
     \int_{\Omega_2}\frac{\partial \rho}{\partial t}\,dr^3 
     = \int_{\Omega_2}\nabla \cdot \bm{J}\,dr^3
-  \end{align}
+  \end{align*}
   The left term can be calculated using the result of (c),
-  \begin{align}
+  \begin{align*}
     \frac{\partial\rho}{\partial t} = \frac{\partial}{\partial t}|
     \psi(\bm{x},t)|^2 
     = -\omega|\psi_1(\bm{x})||\psi_2(\bm{x})|\sin{(\omega t+\alpha_1-\alpha_2)}
-  \end{align}
-  If we integrate this, it will be a zero since $\psi_1$ and 
-  $\psi_2$ are orthogonal to each other. Consider the right term. 
+  \end{align*}
+  If we integrate this about the surface that includes the $\Omega_2$, it will be a zero since $\psi_1$ and 
+  $\psi_2$ are orthogonal in $\Omega_2$ to each other. Consider the right hand side. 
   This integration is changed into the surface integration following 
-  Green's Theorem.
-  \begin{align}
-    \int_{\Omega_2}\nabla \cdot \bm{J}\,dr^3 
-    =\int_{\Omega_2}\bm{J}\cdot\,d\bm{S}
-  \end{align}
+  Green's Theorem. Suppose that surfaces of $\Omega_1$ and $\Omega_2$ are
+  $S_1$ and $S_2$ respectively. Then,
+  \begin{align*}
+    \int_{S_2}\nabla \cdot \bm{J}\,dr^3 
+    =\int_{S_2}\bm{J}\cdot\,d\bm{S}.
+  \end{align*}
   Because wave functions are isotropic, a current has the same value 
   in a different direction. It means that this integration is replaced 
   by the just inner product.
-  \begin{align}
+  \begin{align*}
     \int_{\Omega_2} \bm{J} \cdot\,d\bm{S} = 4\pi R_2^2\bm{J}\cdot\hat{n}
-  \end{align}
+  \end{align*}
   $\hat{n}$ is a vector that is vertical to the surface of 
   a sphere $\Omega_2$. Fianlly,
-  \begin{align}
+  \begin{align*}
     0 = 4\pi R_2^2\bm{J}\cdot\hat{n}
-  \end{align}
+  \end{align*}
   This means that there is no probability current between 
   region $\Omega_1$ and $\Omega_2$.
 \end{itemize}
