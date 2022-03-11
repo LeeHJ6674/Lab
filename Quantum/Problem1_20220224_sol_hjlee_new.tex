@@ -36,7 +36,8 @@ Incheon 22212, Republic of Korea }
 \noindent \textbf{Problem 1.}
 The wave function for a free particle is given by
 \begin{align*}
-\psi(x,\,0) = N \exp\left( i\frac{p_0 x}{\hbar}  -\frac{(x-x_0)^2}{4\sigma^2} \right),   
+\psi(x,\,0) = N \exp\left( i\frac{p_0 x}{\hbar}  
+-\frac{(x-x_0)^2}{4\sigma^2} \right),   
 \end{align*}
 where $\sigma \in \mathbb{R}$ is a contant and $N$ is a normalization
 constant. 
@@ -56,25 +57,36 @@ constant.
 \begin{itemize}
   \item[(1)] From the normalization of the wave function,
   \begin{align}
-    \int_{-\infty}^{\infty} |\psi(x,0)|^2\,dx=N^2\int_{-\infty}^{\infty}\exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx =1.
+    \int_{-\infty}^{\infty} |\psi(x,0)|^2\,dx=N^2\int_{-\infty}^{\infty}
+    \exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx =1.
   \end{align}
-Since a range of integration is all space, the translation about $x$ can be ignored.
+Since a range of integration is all space, the translation 
+about $x$ can be ignored.
 %\begin{align}
-%         N^2\int_{-\infty}^{\infty}\exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx =N^2\int_{-\infty}^{\infty}\exp\left({-2\left(\frac{x}{2\sigma}\right)}^2\right) \,dx
+% N^2\int_{-\infty}^{\infty}
+%\exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx 
+% =N^2\int_{-\infty}^{\infty}
+%\exp\left({-2\left(\frac{x}{2\sigma}\right)}^2\right) \,dx
 %\end{align} 
 To make a compact form, it needs to change an integral variable.
   \begin{align}
-    t \equiv \left(\frac{x-x_0}{\sqrt{2}\sigma}\right),\;\;\; dt = \frac{1}{\sqrt{2}\sigma} dx 
+    t \equiv \left(\frac{x-x_0}{\sqrt{2}\sigma}\right),\;\;\; dt 
+    = \frac{1}{\sqrt{2}\sigma} dx 
   \end{align}
 Then the wave function changes into more comfort form to integrate.
   \begin{align}
-    N^2\int_{-\infty}^{\infty}\exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx
-    %N^2\int_{-\infty}^{\infty}\exp\left(-2{\left(\frac{x}{2\sigma}\right)}^2\right) \,dx =N^2\int_{-\infty}^{\infty}\exp\left({-2\left(\frac{x}{2\sigma}\right)}^2\right) \,dx 
+    N^2\int_{-\infty}^{\infty}\exp\left(-2{\left(
+      \frac{x-x_0}{2\sigma}\right)}^2\right) \,dx
+    %N^2\int_{-\infty}^{\infty}
+    %\exp\left(-2{\left(\frac{x}{2\sigma}\right)}^2\right) \,dx 
+    %=N^2\int_{-\infty}^{\infty}
+    %\exp\left({-2\left(\frac{x}{2\sigma}\right)}^2\right) \,dx 
     =\sqrt{2}\sigma N^2\int_{-\infty}^{\infty} e^{-t^2} \,dt
   \end{align}
 To calcualte this integration, we use a idea of double integration,
   \begin{align}
-    \int_{-\infty}^{\infty} e^{-(x^2+y^2)}\,dx\,dy &= \int_{0}^{2\pi}\int_{0}^{\infty} e^{-r^2}r\,dr\,d\theta
+    \int_{-\infty}^{\infty} e^{-(x^2+y^2)}\,dx\,dy 
+    &= \int_{0}^{2\pi}\int_{0}^{\infty} e^{-r^2}r\,dr\,d\theta
     \\   &= \int_{0}^{2\pi}\frac{1}{2}\,d\theta = \pi.
   \end{align}
 First double integration about coordinate space can be decomposed.
@@ -85,24 +97,28 @@ First double integration about coordinate space can be decomposed.
   \end{align}
 From this result,
   \begin{align}
-    \int_{-\infty}^{\infty} e^{-x^2} \,dx = \sqrt{\pi},\quad \sqrt{2\pi}\sigma N^2 =1.
+    \int_{-\infty}^{\infty} e^{-x^2} \,dx 
+    = \sqrt{\pi},\quad \sqrt{2\pi}\sigma N^2 =1.
   \end{align}
 Finally we obtain the normalization constant,
   \begin{align}
     \,N = {\left(\frac{1}{2\pi\sigma^2}\right)}^{\frac{1}{4}}.
   \end{align}
-  \item[(2)]  We will find $\phi(p,0)$ first. $\phi(p,0)$ is the Fourier transform of $\psi(x,0)$.
+  \item[(2)]  We will find $\phi(p,0)$ first. 
+  $\phi(p,0)$ is the Fourier transform of $\psi(x,0)$.
   \begin{align}
     \phi(p,0)=\frac{1}{\sqrt{2\pi\hbar}}
     \int\psi(x,0) e^{-\frac{i}{\hbar}px}\,dx
       =\frac{N}{\sqrt{2\pi\hbar}}
-      \int\exp\left(i\frac{p_0 x}{\hbar}-{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) 
+      \int\exp\left(i\frac{p_0 x}{\hbar}-{\left(
+        \frac{x-x_0}{2\sigma}\right)}^2\right) 
       e^{-\frac{i}{\hbar}px}\,dx  \\
       =\frac{N}{\sqrt{2\pi\hbar}}
       \int\exp\left(-{\left(\frac{x-x_0}{2\sigma}\right)}^2
       -\frac{i}{\hbar}(p-p_0)x\right)\,dx
   \end{align}
-  To make it compact form, let us erase the translation term and change the variable.
+  To make it compact form, let us erase the translation term 
+  and change the variable.
   \begin{align}
     u \equiv \frac{x-x_0}{2\sigma},\;\;\; du = \frac{1}{2\sigma} dx 
   \end{align}
@@ -110,34 +126,42 @@ Finally we obtain the normalization constant,
   \begin{align}
     \phi(p,0)&=\frac{2\sigma N}{\sqrt{2\pi\hbar}}
     \int\exp\left(-{u}^2-\frac{i}{\hbar}(p-p_0)(2\sigma u+x_0)\right)\,du \\
-             &={\left(\frac{2\sigma^2}{\pi^3\hbar^2}\right)}^{\frac{1}{4}}
+    &={\left(\frac{2\sigma^2}{\pi^3\hbar^2}\right)}^{\frac{1}{4}}
     e^{-\frac{i}{\hbar}(p-p_0)x_0}
     \int\exp\left(-u^2-2\frac{i}{\hbar}\sigma (p-p_0)u\right)\,du.
   \end{align}
-  And, a exponential of integrated function can be expressed in terms of complete square form about u.
+  And, a exponential of integrated function can be expressed 
+  in terms of complete square form about u.
   \begin{align}
     -u^2-2\frac{i}{\hbar}\sigma (p-p_0)u 
-    = -{\left( u+\frac{i}{\hbar}\sigma (p-p_0)\right)}^2-\frac{\sigma^2}{\hbar^2}{(p-p_0)}^2
+    = -{\left( u+\frac{i}{\hbar}\sigma (p-p_0)\right)}^2
+    -\frac{\sigma^2}{\hbar^2}{(p-p_0)}^2
   \end{align}
-  $\frac{i}{\hbar}\sigma p$ is the translation term that can be ignored since the integration range is from $-\infty$ to $\infty$,
+  $\frac{i}{\hbar}\sigma p$ is the translation term that can be ignored 
+  since the integration range is from $-\infty$ to $\infty$,
   \begin{align}
     \phi(p,0) &= {\left(\frac{2\sigma^2}{\pi^3\hbar^2}\right)}^{\frac{1}{4}}
     e^{-\frac{i}{\hbar}(p-p_0)x_0}
     \int\exp\left(-u^2-2\frac{i}{\hbar}\sigma (p-p_0)u\right)\,du \\
     &={\left(\frac{2\sigma^2}{\pi^3\hbar^2}\right)}^{\frac{1}{4}}
     e^{-\frac{i}{\hbar}(p-p_0)x_0}  
-    \int\exp\left(-{\left( u+\frac{i}{\hbar}\sigma (p-p_0)\right)}^2-\frac{\sigma^2}{\hbar^2}(p-p_0)^2\right)\,du \\
+    \int\exp\left(-{\left( u+\frac{i}{\hbar}\sigma (p-p_0)\right)}^2
+    -\frac{\sigma^2}{\hbar^2}(p-p_0)^2\right)\,du \\
     &= {\left(\frac{2\sigma^2}{\pi^3\hbar^2}\right)}^{\frac{1}{4}}
-    \exp\left( -\frac{i}{\hbar}(p-p_0)x_0-\frac{\sigma^2}{\hbar^2}(p-p_0)^2 \right)
+    \exp\left( -\frac{i}{\hbar}(p-p_0)x_0
+    -\frac{\sigma^2}{\hbar^2}(p-p_0)^2 \right)
     \int e^{-u^2}\,du
   \end{align}
   So, we obtain a $\phi(p.0)$.
   \begin{align}
-    \phi(p,0) &= {\left(\frac{2\sigma^2}{\pi^3\hbar^2}\right)}^{\frac{1}{4}}
-    \exp\left( -\frac{i}{\hbar}(p-p_0)x_0-\frac{\sigma^2}{\hbar^2}(p-p_0)^2 \right)
+    \phi(p,0) &= {\left(\frac{2\sigma^2}{\pi^3\hbar^2}\right)}
+    ^{\frac{1}{4}}
+    \exp\left( -\frac{i}{\hbar}(p-p_0)x_0
+    -\frac{\sigma^2}{\hbar^2}(p-p_0)^2 \right)
     \int e^{-u^2}\,du \\
     &= {\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
-    \exp\left( -\frac{i}{\hbar}(p-p_0)x_0-\frac{\sigma^2}{\hbar^2}(p-p_0)^2 \right)
+    \exp\left( -\frac{i}{\hbar}(p-p_0)x_0
+    -\frac{\sigma^2}{\hbar^2}(p-p_0)^2 \right)
   \end{align}
   Finally, $\phi(0,0)$ is,
   \begin{align}
@@ -145,7 +169,8 @@ Finally we obtain the normalization constant,
     \exp\left(-\frac{\sigma^2}{\hbar^2}{p_0}^2+\frac{i}{\hbar}p_0x_0\right).
   \end{align}
   \item[(3)]Because it is a free particle, the time evolution of 
-  $\phi(p,0)$ is $\phi(p,t)=e^{-i\omega t}\phi(p,0)$ and $\omega = \frac{p^2}{2m\hbar}$.
+  $\phi(p,0)$ is $\phi(p,t)=e^{-i\omega t}\phi(p,0)$ 
+  and $\omega = \frac{p^2}{2m\hbar}$.
   \begin{align}
     \phi(p,t) &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
       \exp\left(-\frac{\sigma^2}{\hbar^2}(p-p_0)^2-i\frac{p^2}{2m\hbar}t
@@ -168,12 +193,12 @@ Finally we obtain the normalization constant,
     -\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2}\right) \\
     &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
     \exp\left(
-      \alpha(t)\left(p+\beta(t)\right)^2+\gamma(t)\right)  \\
-        \alpha(t) &= -\frac{2m\sigma^2+i\hbar t}{2m\hbar^2}, \,\,\,
-        \beta(t) = \frac{2m\sigma^2p_0-im\hbar x_0}{2m\sigma^2+i\hbar t}, \\
-        \gamma(t) &= \frac{-m x_0 \left(\frac{1}{2}\hbar x_0+4i\sigma^2p_0\right)
-                    -(\hbar x_0-i\sigma^2 p_0)p_0 t}
-                   {2m\hbar\sigma^2+i\hbar^2t}.
+    \alpha(t)\left(p+\beta(t)\right)^2+\gamma(t)\right)  \\
+    \alpha(t) &= -\frac{2m\sigma^2+i\hbar t}{2m\hbar^2}, \,\,\,
+    \beta(t) = \frac{2m\sigma^2p_0-im\hbar x_0}{2m\sigma^2+i\hbar t}, \\
+    \gamma(t) &= \frac{-m x_0 \left(\frac{1}{2}\hbar x_0+4i\sigma^2p_0\right)
+    -(\hbar x_0-i\sigma^2 p_0)p_0 t}
+    {2m\hbar\sigma^2+i\hbar^2t}.
   \end{align}
   \item[(4)] $\psi(x,t)$ is the Fourier transform of $\phi(p,t)$.
   \begin{align}
@@ -216,22 +241,26 @@ H  = \frac{p^2}{2m}.
   And the expectation value of $p_x$ in the momentum space is,
   \begin{align}
     \langle p_x \rangle &= \int \phi^*(p,t)\,p_x\,\phi(p,t)\,d^3p
-    =\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\,p_x\,e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)\,d^3p
+    =\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\,p_x\,
+    e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)\,d^3p
   \end{align}
   The time evolutions are canceled out.
   \begin{align}      
-    \langle p_x \rangle=\int \phi^*(p,0)\,p_x\,\phi(p,0)\,d^3p = \langle p_x \rangle_{t=0}.
+    \langle p_x \rangle=\int \phi^*(p,0)\,p_x\,\phi(p,0)\,d^3p 
+    = \langle p_x \rangle_{t=0}.
   \end{align}
   \item[(2)] The expectation value of $x$ also can be described in 
   the momentum space regarding as the operator in the integration.
   \begin{align}
-    \langle x\rangle &= i\hbar\int \phi^*(p,t)\frac{\partial \phi(p,t)}{\partial p_x}\,d^3p 
+    \langle x\rangle &= i\hbar\int \phi^*(p,t)
+    \frac{\partial\phi(p,t)}{\partial p_x}\,d^3p 
     =i\hbar\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)
-    \frac{\partial}{\partial p_x}\left(e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0) \right)\,d^3p  \\
+    \frac{\partial}{\partial p_x}\left(e^{-i
+    \frac{p^2}{2m\hbar}t}\phi(p,0)\right)\,d^3p  \\
     &=i\hbar\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)
-      \left(-i\frac{p_x}{m\hbar}t\,e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)
+     \left(-i\frac{p_x}{m\hbar}t\,e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)
      +e^{-i\frac{p^2}{2m\hbar}t}
-      \frac{\partial \phi(p,0)}{\partial p_x}\right)\,d^3p \\
+     \frac{\partial \phi(p,0)}{\partial p_x}\right)\,d^3p \\
     &=i\hbar\int -i\frac{p_x}{m\hbar}t\,|\phi(p,0)|^2
      +\phi^*(p,0)\frac{\partial \phi(p,0)}{\partial p_x}\,d^3p \\
     &=\frac{\langle p_x\rangle_{t=0}}{m}t+\langle x\rangle_{t=0} 
@@ -248,8 +277,9 @@ H  = \frac{p^2}{2m}.
   From a (29),
   \begin{align}      
     \int \phi^*(p,t)\,p^2_x\,\phi(p,t)\,d^3p
-    &= \int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)p^2_x e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)\,d^3p  \\
-    &= \int \phi^*(p,0)p^2_x\phi(p,0)\,d^3p = \langle p^2_x \rangle_{t=0}
+    &=\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)p^2_x 
+    e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)\,d^3p  \\
+    &=\int\phi^*(p,0)p^2_x\phi(p,0)\,d^3p =\langle p^2_x \rangle_{t=0}
   \end{align}
   So, we obtain that,
   \begin{align}
@@ -257,7 +287,9 @@ H  = \frac{p^2}{2m}.
   \end{align}
 Finally, the result is,
 \begin{align}
-  (\Delta p_x)^2 = \langle p_x^2\rangle_{t=0}-\langle p_x \rangle^2_{t=0}=(\Delta p_x)^2_{t=0}, 
+  (\Delta p_x)^2 = \langle p_x^2\rangle_{t=0}
+  -\langle p_x \rangle^2_{t=0}
+  =(\Delta p_x)^2_{t=0}, 
   \,\,\, (\Delta p_x)^2=(\Delta p_x)^2_{t=0}. 
 \end{align}
   \item[(4)] From a (36), the derivative of the deviation is,
@@ -265,27 +297,34 @@ Finally, the result is,
     \frac{d}{dt}(\Delta x)^2=\frac{d}{dt}\langle x^2\rangle
     -\frac{d}{dt}\left(\langle x \rangle^2\right). 
   \end{align}
-  Before derivation, let us calculate the expectation value $\langle x^2 \rangle$ first.
+  Before derivation, let us calculate the expectation value 
+  $\langle x^2 \rangle$ first.
   \begin{align}
     \begin{split}  
-      \langle x^2 \rangle =& -\hbar^2\int\phi^*(p,t)\frac{\partial^2\phi(p,t)}{\partial p_x^2}\,d^3p
+      \langle x^2 \rangle =& -\hbar^2\int\phi^*(p,t)
+      \frac{\partial^2\phi(p,t)}{\partial p_x^2}\,d^3p
       =  -\hbar^2\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)
-      \frac{\partial^2}{\partial p_x^2}\left(e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)\right)\,d^3p  \\
+      \frac{\partial^2}{\partial p_x^2}
+      \left(e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)\right)\,d^3p  \\
       =& -\hbar^2\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)
-      \frac{\partial}{\partial p_x}\left(-i\frac{p_x}{m\hbar}te^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)
-        +e^{-i\frac{p^2}{2m\hbar}t}\frac{\partial\phi(p,0)}{\partial p_x}\right)\,d^3p  \\
+      \frac{\partial}{\partial p_x}
+      \left(-i\frac{p_x}{m\hbar}te^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)
+      +e^{-i\frac{p^2}{2m\hbar}t}
+      \frac{\partial\phi(p,0)}{\partial p_x}\right)\,d^3p  \\
     \end{split}
   \end{align}
 다시 $p_x$ 에 대해 미분해주고, 미분이 존재하는 항과 그렇지 않은 항 끼리 묶어준다.
   \begin{align}
     \begin{split}       
-      \langle x^2 \rangle =& -\hbar^2\int\phi^*(p,0)\left[\left(-i\frac{t}{m\hbar}
+      \langle x^2 \rangle =& -\hbar^2\int\phi^*(p,0)
+      \left[\left(-i\frac{t}{m\hbar}
       +\left(-i\frac{p_x}{m\hbar}t \right)^2\right)\phi(p,0)
       -\left(2i\frac{p_x}{m\hbar}t\,\frac{\partial \phi(p,0)}{\partial p_x}
       -\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\right) \right]\,d^3p  \\
       =&-\hbar^2\int\phi^*(p,0)\left(-i\frac{t}{m\hbar}
       +\left(-i\frac{p_x}{m\hbar}t \right)^2\right)\phi(p,0)\,d^3p  \\
-      &+\hbar^2\int\phi^*(p,0)\left(2i\frac{p_x}{m\hbar}t\,\frac{\partial \phi(p,0)}{\partial p_x}
+      &+\hbar^2\int\phi^*(p,0)\left(2i\frac{p_x}{m\hbar}t\,
+      \frac{\partial\phi(p,0)}{\partial p_x}
       -\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\right)\,d^3p 
     \end{split}
   \end{align}
@@ -295,12 +334,15 @@ Finally, the result is,
     \begin{split}
       &-\hbar^2\int\phi^*(p,0)\left(-i\frac{t}{m\hbar}
       +\left(-i\frac{p_x}{m\hbar}t \right)^2\right)\phi(p,0)\,d^3p 
-      =\frac{t}{m}\int i\hbar|\phi(p,0)|^2\,d^3p+\frac{t^2}{m^2}\int p_x^2|\phi(p,0)|^2\,d^3p \\
-      &=\frac{\langle[x,p_x]\rangle_{t=0}}{m}t+\frac{\langle p_x^2\rangle_{t=0}}{m^2}t^2
+      =\frac{t}{m}\int i\hbar|\phi(p,0)|^2\,d^3p+\frac{t^2}{m^2}
+      \int p_x^2|\phi(p,0)|^2\,d^3p \\
+      &=\frac{\langle[x,p_x]\rangle_{t=0}}{m}t
+      +\frac{\langle p_x^2\rangle_{t=0}}{m^2}t^2
     \end{split}
   \end{align}
 두번째 적분 항은 다음과 같다. 
-$x$ 는 momentum space 에서 연산자 $i\hbar\frac{\partial}{\partial p_x}$ 로 작용한다는 사실에 유의하자.
+$x$ 는 momentum space 에서 연산자 $i\hbar\frac{\partial}{\partial p_x}$ 
+로 작용한다는 사실에 유의하자.
   \begin{align}
     \begin{split}
       \hbar^2\int\phi^*(p,0)\left(2i\frac{p_x}{m\hbar}t\,
@@ -337,7 +379,8 @@ expectation value 의 square 를 계산하자.
       \frac{d}{dt}\left(\langle x \rangle^2\right) 
       &=2\langle x\rangle\frac{d\langle x\rangle}{dt}
       =2\left(\frac{\langle p_x\rangle_{t=0}}{m}t
-      +\langle x\rangle_{t=0}\right)\left(\frac{\langle p_x\rangle_{t=0}}{m}\right)  \\
+      +\langle x\rangle_{t=0}\right)\left(
+        \frac{\langle p_x\rangle_{t=0}}{m}\right)  \\
       &=\frac{2\langle p_x\rangle_{t=0}^2}{m^2}t
       +\frac{2\langle p_x\rangle_{t=0}\langle x\rangle_{t=0}}{m}
     \end{split}
@@ -358,7 +401,8 @@ expectation value 의 square 를 계산하자.
       +\frac{2\left(\Delta p_x\right)^2_{t=0}}{m^2}t
     \end{split}
   \end{align}
-  $\frac{d}{dt}(\Delta x)^2 $ 를 initial conditions 와 $t$ 에 대한 함수로서 나타냈다.
+  $\frac{d}{dt}(\Delta x)^2 $ 를 initial conditions 와 
+  $t$ 에 대한 함수로서 나타냈다.
 \end{itemize} 
 \newpage
 
@@ -396,8 +440,10 @@ The result of the noramlizatoin is must be 1. So,
       \exp\left(-{\left( \frac{x-x_0}{\sigma} \right)}^2\right)\,dx \\
     &\int_{-\infty}^{\infty} x 
     \exp\left(-{\left(\frac{x-x_0}{\sigma} \right)}^2\right)\,dx 
-      = \int_{-\infty}^{\infty} x e^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx 
-        +x_0\int_{-\infty}^{\infty} e^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx
+      = \int_{-\infty}^{\infty} x 
+      e^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx 
+      +x_0\int_{-\infty}^{\infty} 
+      e^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx
   \end{align}
 The first term of the right-hand side is a zero 
 because $x e^{-{\left(\frac{x}{\sigma}\right)}^2}$ 
@@ -416,13 +462,16 @@ The mean value of $p$ is,
     \langle p \rangle &= -i\hbar \int_{-\infty}^{\infty} 
     \psi^*\frac{\partial \psi}{\partial x}\,dx 
     =\frac{-i\hbar}{\sigma\sqrt{\pi}}
-    \int_{-\infty}^{\infty}\left(\frac{i}{\hbar}p_0
+    \int_{-\infty}^{\infty}
+    \left(\frac{i}{\hbar}p_0
     -\frac{x-x_0}{\sigma^2}\right)
     \exp\left(-{\left(\frac{x-x_0}{\sigma}\right)}^2 \right)\,dx \\
-    &=\frac{-i\hbar}{\sigma\sqrt{\pi}}\left[\frac{i}{\hbar}p_0\int_{-\infty}^{\infty}
-    \exp\left( -{\left(\frac{x-x_0}{\sigma}\right)}^2 \right)\,dx 
-    -\int_{-\infty}^{\infty}\left(\frac{x-x_0}{\sigma^2}\right)
-    \exp\left(-{\left(\frac{x-x_0}{\sigma}\right)}^2 \right)\,dx\right] 
+    &=\frac{-i\hbar}{\sigma\sqrt{\pi}}\left[\frac{i}{\hbar}p_0
+    \int_{-\infty}^{\infty}
+    \exp\left(-{\left(\frac{x-x_0}{\sigma}\right)}^2 \right)\,dx 
+    -\int_{-\infty}^{\infty}
+    \left(\frac{x-x_0}{\sigma^2}\right)
+    \exp\left(-{\left(\frac{x-x_0}{\sigma}\right)}^2\right)\,dx\right] 
     = p_0    
   \end{align}
 Because the second term is a even function about $x=x_0$, it is a zero.
@@ -437,32 +486,38 @@ First we calculate $\langle x^2\rangle$.
     \langle x^2\rangle 
     &= \frac{1}{\sigma\sqrt{\pi}}\int_{-\infty}^{\infty} x^2 
     \exp\left(-{\left( \frac{x-x_0}{\sigma}\right)}^2\right)\,dx 
-    = \frac{1}{\sigma\sqrt{\pi}}\int_{-\infty}^{\infty} (x-x_0)^2 
+    = \frac{1}{\sigma\sqrt{\pi}}\int_{-\infty}^{\infty}(x-x_0)^2 
     e^{-{\left( \frac{x}{\sigma}\right)}^2}\,dx 
     \\
     &= \frac{1}{\sigma\sqrt{\pi}}\left[\int_{-\infty}^{\infty} x^2 
     e^{-{\left( \frac{x}{\sigma} \right)}^2}\,dx
-    +2x_0\int_{-\infty}^{\infty} xe^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx
-    +x^2_0\int_{-\infty}^{\infty} e^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx\right]
+    +2x_0\int_{-\infty}^{\infty}xe^{-{\left(
+    \frac{x}{\sigma}\right)}^2}\,dx
+    +x^2_0\int_{-\infty}^{\infty}e^{-{\left(
+    \frac{x}{\sigma}\right)}^2}\,dx\right]
   \end{align}
 The middle term of the right-hand side is zero from a (2) 
 and the last term is $x^2_0\,\sigma\sqrt{\pi}$.
   \begin{align}
-    \int_{-\infty}^{\infty} x^2 e^{-{\left( \frac{x}{\sigma} \right)}^2}\,dx 
-    = \sigma^3\int_{-\infty}^{\infty} x^2 e^{-x^2}\,dx 
-    = -\frac{1}{2}\sigma^3{\left[xe^{-x^2}\right]}^{\infty}_{-\infty}
-      +\frac{1}{2}\sigma^3\int_{-\infty}^{\infty} e^{-x^2}\,dx
-    = \frac{1}{2}\sigma^3\sqrt{\pi}
+    \int_{-\infty}^{\infty} x^2 e^{-{\left(
+      \frac{x}{\sigma}\right)}^2}\,dx 
+    =\sigma^3\int_{-\infty}^{\infty} x^2e^{-x^2}\,dx 
+    =-\frac{1}{2}\sigma^3{\left[xe^{-x^2}\right]}^{\infty}_{-\infty}
+    +\frac{1}{2}\sigma^3\int_{-\infty}^{\infty} 
+    e^{-x^2}\,dx
+    =\frac{1}{2}\sigma^3\sqrt{\pi}
   \end{align}
 So,
   \begin{align}
-    \langle x^2 \rangle = \frac{1}{\sigma\sqrt{\pi}}\left[x^2_0\,\sigma\sqrt{\pi}
+    \langle x^2 \rangle = \frac{1}{\sigma\sqrt{\pi}}
+    \left[x^2_0\,\sigma\sqrt{\pi}
     +\frac{1}{2}\sigma^3\sqrt{\pi}\right]
    =\frac{1}{2}\sigma^2+x_0^2
   \end{align}
 Then $\left(\Delta x\right)^2$ is,
   \begin{align}
-    \left(\Delta x\right)^2 = \frac{1}{2}\sigma^2+x_0^2 - x_0^2 = \frac{1}{2}\sigma^2
+    \left(\Delta x\right)^2 = \frac{1}{2}\sigma^2+x_0^2 
+    - x_0^2 = \frac{1}{2}\sigma^2
   \end{align}
 the expectation value of $p^2$ is,
   \begin{align}
@@ -470,7 +525,8 @@ the expectation value of $p^2$ is,
     \frac{\partial^2 \psi}{\partial x^2}\,dx 
     = -\hbar^2\int_{-\infty}^{\infty} \left(\frac{\partial}{\partial x} 
     \left(\psi^*\frac{\partial \psi}{\partial x}\right) 
-    -\frac{\partial \psi^*}{\partial x}\frac{\partial\psi}{\partial x}\right)\,dx
+    -\frac{\partial \psi^*}{\partial x}
+    \frac{\partial\psi}{\partial x}\right)\,dx
   \end{align}
 Some of the integration in calculation will be canceled out 
 since these are even functions 
@@ -479,18 +535,22 @@ and the integration range is symmetric.
     \int_{-\infty}^{\infty} \frac{\partial}{\partial x}
      \left(\psi^* \frac{\partial \psi}{\partial x}
      \right) \,dx 
-     &=\frac{1}{\sigma\sqrt{\pi}}\int_{-\infty}^{\infty}\frac{\partial}{\partial x}
-      \left(\left(\frac{i}{\hbar}p_0-\frac{x-x_0}{\sigma^2}\right)
-      \exp\left(-{\left(\frac{x-x_0}{\sigma}\right)}^2
-      \right)\right)\,dx = 0 \\
-    \int_{-\infty}^{\infty}
-    \frac{\partial \psi^*}{\partial x}\frac{\partial \psi}{\partial x} \,dx 
+     &=\frac{1}{\sigma\sqrt{\pi}}\int_{-\infty}^{\infty}
+     \frac{\partial}{\partial x}
+     \left(\left(\frac{i}{\hbar}p_0-\frac{x-x_0}{\sigma^2}\right)
+     \exp\left(-{\left(\frac{x-x_0}{\sigma}\right)}^2
+     \right)\right)\,dx = 0 \\
+     \int_{-\infty}^{\infty}
+     \frac{\partial \psi^*}{\partial x}
+     \frac{\partial \psi}{\partial x}\,dx 
       &=\frac{1}{\sigma\sqrt{\pi}}\int_{-\infty}^{\infty}
       \left(\left(\frac{p_0}{\hbar}\right)^2
-      +\left(\frac{x-x_0}{\sigma^2}\right)^2\right)\exp
-      \left(-{\left(\frac{x-x_0}{\sigma} \right)}^2\right)\,dx \\
+      +\left(\frac{x-x_0}{\sigma^2}\right)^2\right)
+      \exp\left(-{\left(\frac{x-x_0}{\sigma}
+      \right)}^2\right)\,dx \\
      &=\left(\frac{p_0}{\hbar}\right)^2
-     +\frac{1}{\sigma^2\sqrt{\pi}}\int_{-\infty}^{\infty} x^2e^{-x^2}\,dx
+     +\frac{1}{\sigma^2\sqrt{\pi}}
+     \int_{-\infty}^{\infty} x^2e^{-x^2}\,dx
   \end{align}
 It is the gaussian integration.
   \begin{align}
@@ -505,15 +565,17 @@ From these results, we can calculate $\langle p^2 \rangle$.
   \end{align}
 Finally, we can calculate $\left( \Delta p \right)^2$,
   \begin{align}
-    \left( \Delta p \right)^2 = p_0^2 + \frac{\hbar^2}{2\sigma^2} - p_0^2 
+    \left( \Delta p \right)^2 = p_0^2 + \frac{\hbar^2}{2\sigma^2}-p_0^2 
     = \frac{\hbar^2}{2\sigma^2}.
   \end{align}
 Confirm these result does satisfy Heisenberg's uncertainty principle.
   \begin{align}
-    \Delta x \Delta p = \sqrt{\frac{\hbar^2}{2\sigma^2}\frac{\sigma^2}{2}} 
+    \Delta x \Delta p =\sqrt{\frac{\hbar^2}{2\sigma^2}
+    \frac{\sigma^2}{2}} 
     = \frac{\hbar}{2}
   \end{align}
-We can confirm that this state does not violate Heisenberg's uncertainty principle.
+We can confirm that this state does not violate 
+Heisenberg's uncertainty principle.
 
 \end{itemize}
 \vspace{1cm}
