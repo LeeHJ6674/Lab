@@ -253,20 +253,87 @@ Finally, the result is,
     \begin{split}  
       \langle x^2 \rangle =& -\hbar^2\int\phi^*(p,t)\frac{\partial^2\phi(p,t)}{\partial p_x^2}\,d^3p
       =  -\hbar^2\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\frac{\partial^2}{\partial p_x^2}\left(e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)\right)\,d^3p  \\
-      =& -\hbar^2\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\frac{\partial}{\partial p_x}\left(-\frac{p}{m\hbar}te^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)
+      =& -\hbar^2\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\frac{\partial}{\partial p_x}\left(-i\frac{p_x}{m\hbar}te^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)
         +e^{-i\frac{p^2}{2m\hbar}t}\frac{\partial\phi(p,0)}{\partial p_x}\right)\,d^3p  \\
-      =& -\hbar^2\int\phi^*(p,0)\left[\left(-i\frac{t}{m\hbar}+\left(-i\frac{p_x}{m\hbar}t \right)^2\right)\phi(p,0)
-      -\left(2i\frac{p_x t}{m\hbar}\frac{\partial \phi(p,0)}{\partial p_x}+\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\right) \right]\,d^3p  \\
-      =& \frac{t}{m}\int i\hbar|\phi(p,0)|^2\,d^3p+\frac{t^2}{m^2}\int p_x^2|\phi(p,0)|^2\,d^3p  \\
-       &+\frac{2t}{m}\int\phi^*(p,0)p_x\left(ih\frac{\partial}{\partial p_x}\phi(p,0)\right)\,d^3p-\hbar^2\int\phi^*(p,0)\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\,d^3p  \\
-      =&\frac{t}{m}\langle \left[x,p_x\right]\rangle_{t=0}+\frac{t^2}{m^2}\langle p_x^2\rangle_{t=0}+\frac{2t}{m}\langle x \rangle_{t=0}+\langle x^2 \rangle_{t=0}
     \end{split}
   \end{align}
+다시 $p_x$ 에 대해 미분해주고, 미분이 존재하는 항과 그렇지 않은 항 끼리 묶어준다.
+  \begin{align}
+    \begin{split}       
+      \langle x^2 \rangle =& -\hbar^2\int\phi^*(p,0)\left[\left(-i\frac{t}{m\hbar}
+      +\left(-i\frac{p_x}{m\hbar}t \right)^2\right)\phi(p,0)
+      -\left(2i\frac{p_x}{m\hbar}t\,\frac{\partial \phi(p,0)}{\partial p_x}
+      -\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\right) \right]\,d^3p  \\
+      =&-\hbar^2\int\phi^*(p,0)\left(-i\frac{t}{m\hbar}
+      +\left(-i\frac{p_x}{m\hbar}t \right)^2\right)\phi(p,0)\,d^3p  \\
+      &+\hbar^2\int\phi^*(p,0)\left(2i\frac{p_x}{m\hbar}t\,\frac{\partial \phi(p,0)}{\partial p_x}
+      -\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\right)\,d^3p 
+    \end{split}
+  \end{align}
+첫번째 적분 항을 먼저 계산해보자. $i\hbar$ 는 momentum space 에서도 canonical commute relation 으로 생각할 수 있다.
   \begin{align}
     \begin{split}
-      \frac{d}{dt}\left(\langle x \rangle^2\right) = 2 \langle x\rangle\frac{d\langle x\rangle}{dx}
+      &-\hbar^2\int\phi^*(p,0)\left(-i\frac{t}{m\hbar}
+      +\left(-i\frac{p_x}{m\hbar}t \right)^2\right)\phi(p,0)\,d^3p 
+      =\frac{t}{m}\int i\hbar|\phi(p,0)|^2\,d^3p+\frac{t^2}{m^2}\int p_x^2|\phi(p,0)|^2\,d^3p \\
+      &=\frac{\langle[x,p_x]\rangle_{t=0}}{m}t+\frac{\langle p_x^2\rangle_{t=0}}{m^2}t^2
     \end{split}
   \end{align}
+두번째 적분 항은 다음과 같다. $x$ 는 momentum space 에서 연산자 $i\hbar\frac{\partial}{\partial p_x}$ 로 작용한다는 사실에 유의하자.
+  \begin{align}
+    \begin{split}
+      \hbar^2\int\phi^*(p,0)\left(2i\frac{p_x}{m\hbar}t\,\frac{\partial \phi(p,0)}{\partial p_x}
+      -\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\right)\,d^3p 
+      =\frac{2t}{m}\int\phi^*(p,0)p_x\left(ih\frac{\partial\phi(p,0)}{\partial p_x}\right)\,d^3p  \\
+      +\int\phi^*(p,0)\left(-\hbar^2\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\right)\,d^3p  \\
+      =\frac{2\langle p_xx\rangle_{t=0}}{m}t+\langle x^2\rangle_{t=0}
+    \end{split}
+  \end{align}
+두 결과를 더해 expectation value $\langle x^2 \rangle$ 를 구할 수 있다.
+  \begin{align}
+    \langle x^2 \rangle 
+    =&\frac{\langle[x,p_x]\rangle_{t=0}}{m}t
+    +\frac{\langle p_x^2\rangle_{t=0}}{m^2}t^2
+    +\frac{2\langle p_xx\rangle_{t=0}}{m}t
+    +\langle x^2\rangle_{t=0}
+  \end{align}
+결국 우리가 구하고자 하는 값 $\frac{d}{dt}(\Delta x)^2 $ 을 구하기 위해, $t$ 에 대해 $\langle x^2 \rangle$ 를 미분하자.
+  \begin{align}
+    \frac{d}{dt}\langle x^2\rangle 
+    &=\frac{\langle[x,p_x]\rangle_{t=0}}{m}
+    +\frac{2\langle p_x^2\rangle_{t=0}}{m^2}t
+    +\frac{2\langle p_xx\rangle_{t=0}}{m} \\
+    &=\frac{\langle xp_x\rangle_{t=0}+\langle p_xx\rangle_{t=0}}{m}
+    +\frac{2\langle p_x^2\rangle_{t=0}}{m^2}t
+  \end{align}
+expectation value 의 square 를 계산하자.
+  \begin{align}
+    \begin{split}
+      \frac{d}{dt}\left(\langle x \rangle^2\right) 
+      &=2\langle x\rangle\frac{d\langle x\rangle}{dt}
+      =2\left(\frac{\langle p_x\rangle_{t=0}}{m}t
+      +\langle x\rangle_{t=0}\right)\left(\frac{\langle p_x\rangle_{t=0}}{m}\right)  \\
+      &=\frac{2\langle p_x\rangle_{t=0}^2}{m^2}t
+      +\frac{2\langle p_x\rangle_{t=0}\langle x\rangle_{t=0}}{m}
+    \end{split}
+  \end{align}
+ 최종적으로, $\frac{d}{dt}(\Delta x)^2 $ 는 두 값을 뺀 값이다.
+  \begin{align}
+    \begin{split}
+      \frac{d}{dt}(\Delta x)^2 
+      &=\frac{d}{dt}\langle x^2 \rangle
+      -\frac{d}{dt}\left(\langle x \rangle^2\right) \\
+      &=\frac{\langle xp_x\rangle_{t=0}+\langle p_xx\rangle_{t=0}}{m}
+      +\frac{2\langle p_x^2\rangle_{t=0}}{m^2}t
+      -\left(\frac{2\langle p_x\rangle_{t=0}^2}{m^2}t
+      +\frac{2\langle p_x\rangle_{t=0}\langle x\rangle_{t=0}}{m}
+      \right) \\
+      &=\frac{\langle xp_x\rangle_{t=0}+\langle p_xx\rangle_{t=0}
+      -2\langle p_x\rangle_{t=0}\langle x\rangle_{t=0}}{m}
+      +\frac{2\left(\Delta p_x\right)^2_{t=0}}{m^2}t
+    \end{split}
+  \end{align}
+  $\frac{d}{dt}(\Delta x)^2 $ 를 initial conditions 와 $t$ 에 대한 함수로서 나타냈다.
 \end{itemize} 
 \newpage
 
