@@ -144,20 +144,29 @@ Finally we obtain the normalization constant,
     \phi(0,0) = {\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
     \exp\left(-\frac{\sigma^2}{\hbar^2}{p_0}^2+\frac{i}{\hbar}p_0x_0\right).
   \end{align}
-  \item[(3)]Because it is a free particle, the time evolution of $\phi(p,0)$ is $\phi(p,t)=e^{-i\omega t}\phi(p,0)$ and $\omega = \frac{p^2}{2m\hbar}$.
+  \item[(3)]Because it is a free particle, the time evolution of 
+  $\phi(p,0)$ is $\phi(p,t)=e^{-i\omega t}\phi(p,0)$ and $\omega = \frac{p^2}{2m\hbar}$.
   \begin{align}
-    \phi(p,t) &=  {\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
-    \exp\left( -\frac{\sigma^2}{\hbar^2}(p-p_0)^2-i\frac{p^2}{2m\hbar} t -\frac{i}{\hbar}(p-p_0)x_0 \right) \\
-    &= {\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
-    \exp\left( -\left( \frac{\sigma^2}{\hbar^2} +\frac{it}{2m\hbar}  \right)p^2 + \left( \frac{2\sigma^2}{\hbar^2}p_0-\frac{i}{\hbar}x_0  \right)p - \frac{\sigma^2}{\hbar^2}p_0^2-\frac{i}{\hbar}p_0x_0 \right) \\ 
-    &= {\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
-    \exp\left( -\frac{2m\sigma^2+i\hbar t}{2m\hbar^2} p^2 -\frac{2\sigma^2p_0-i\hbar x_0}{\hbar^2}  p-\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2} \right)
+    \phi(p,t) &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+      \exp\left(-\frac{\sigma^2}{\hbar^2}(p-p_0)^2-i\frac{p^2}{2m\hbar}t
+      -\frac{i}{\hbar}(p-p_0)x_0 \right) \\
+    &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+      \exp\left(-\left(\frac{\sigma^2}{\hbar^2} 
+     +\frac{it}{2m\hbar}\right)p^2 
+     +\left(\frac{2\sigma^2}{\hbar^2}p_0-\frac{i}{\hbar}x_0\right)p 
+     -\frac{\sigma^2}{\hbar^2}p_0^2-\frac{i}{\hbar}p_0x_0 \right) \\ 
+    &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+      \exp\left(-\frac{2m\sigma^2+i\hbar t}{2m\hbar^2}p^2 
+      -\frac{2\sigma^2p_0-i\hbar x_0}{\hbar^2}p
+      -\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2} \right)
   \end{align}
   The complete square form of $\phi(p,t)$ is,
   \begin{align}
-    \phi(p,t) &= {\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
-    \exp\left( -\frac{2m\sigma^2+i\hbar t}{2m\hbar^2} p^2 -\frac{2\sigma^2p_0-i\hbar x_0}{\hbar^2}  p-\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2} \right) \\
-    &= {\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+    \phi(p,t) &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
+      \exp\left(-\frac{2m\sigma^2+i\hbar t}{2m\hbar^2} p^2 
+    -\frac{2\sigma^2p_0-i\hbar x_0}{\hbar^2}p
+    -\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2}\right) \\
+    &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
     \exp\left(
       \alpha(t)\left(p+\beta(t)\right)^2+\gamma(t)\right)  \\
         \alpha(t) &= -\frac{2m\sigma^2+i\hbar t}{2m\hbar^2}, \,\,\,
@@ -213,19 +222,26 @@ H  = \frac{p^2}{2m}.
   \begin{align}      
     \langle p_x \rangle=\int \phi^*(p,0)\,p_x\,\phi(p,0)\,d^3p = \langle p_x \rangle_{t=0}.
   \end{align}
-  \item[(2)] The expectation value of $x$ also can be described in the momentum space regarding as the operator in the integration.
+  \item[(2)] The expectation value of $x$ also can be described in 
+  the momentum space regarding as the operator in the integration.
   \begin{align}
-    \langle  x\rangle &= i\hbar\int \phi^*(p,t)\frac{\partial \phi(p,t)}{\partial p_x}\,d^3p 
-    = i\hbar \int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\frac{\partial}{\partial p_x}\left( e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0) \right)\,d^3p  \\
-    &= i\hbar\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\left( -i\frac{p_x}{m\hbar}t\,e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)+e^{-i\frac{p^2}{2m\hbar}t}\frac{\partial \phi(p,0)}{\partial p_x} \right)\,d^3p \\
-    &= i\hbar\int -i\frac{p_x}{m\hbar}t\,|\phi(p,0)|^2+\phi^*(p,0)\frac{\partial \phi(p,0)}{\partial p_x}\,d^3p \\
-    &= \frac{\langle p_x\rangle_{t=0}}{m}t+\langle x\rangle_{t=0} 
+    \langle x\rangle &= i\hbar\int \phi^*(p,t)\frac{\partial \phi(p,t)}{\partial p_x}\,d^3p 
+    =i\hbar\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)
+    \frac{\partial}{\partial p_x}\left(e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0) \right)\,d^3p  \\
+    &=i\hbar\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)
+      \left(-i\frac{p_x}{m\hbar}t\,e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)
+     +e^{-i\frac{p^2}{2m\hbar}t}
+      \frac{\partial \phi(p,0)}{\partial p_x}\right)\,d^3p \\
+    &=i\hbar\int -i\frac{p_x}{m\hbar}t\,|\phi(p,0)|^2
+     +\phi^*(p,0)\frac{\partial \phi(p,0)}{\partial p_x}\,d^3p \\
+    &=\frac{\langle p_x\rangle_{t=0}}{m}t+\langle x\rangle_{t=0} 
   \end{align}
   \item[(3)] The definition of the deviation is,
   \begin{align}
     (\Delta p_x)^2 = \langle p_x^2 \rangle-\langle p_x \rangle^2. 
   \end{align}
-  We calculate $\langle p_x^2 \rangle$ in the momentum space and $\langle p_x \rangle^2=\langle p_x \rangle^2_{t=0}$ because of a (31).
+  We calculate $\langle p_x^2 \rangle$ in the momentum space 
+  and $\langle p_x \rangle^2=\langle p_x \rangle^2_{t=0}$ because of a (31).
   \begin{align}
     \langle p_x^2 \rangle &= \int \phi^*(p,t)\,p^2_x\,\phi(p,t)\,d^3p
   \end{align}
@@ -246,14 +262,17 @@ Finally, the result is,
 \end{align}
   \item[(4)] From a (36), the derivative of the deviation is,
   \begin{align}
-    \frac{d}{dt}(\Delta x)^2 = \frac{d}{dt}\langle x^2 \rangle-\frac{d}{dt}\left(\langle x \rangle^2\right). 
+    \frac{d}{dt}(\Delta x)^2=\frac{d}{dt}\langle x^2\rangle
+    -\frac{d}{dt}\left(\langle x \rangle^2\right). 
   \end{align}
   Before derivation, let us calculate the expectation value $\langle x^2 \rangle$ first.
   \begin{align}
     \begin{split}  
       \langle x^2 \rangle =& -\hbar^2\int\phi^*(p,t)\frac{\partial^2\phi(p,t)}{\partial p_x^2}\,d^3p
-      =  -\hbar^2\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\frac{\partial^2}{\partial p_x^2}\left(e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)\right)\,d^3p  \\
-      =& -\hbar^2\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)\frac{\partial}{\partial p_x}\left(-i\frac{p_x}{m\hbar}te^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)
+      =  -\hbar^2\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)
+      \frac{\partial^2}{\partial p_x^2}\left(e^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)\right)\,d^3p  \\
+      =& -\hbar^2\int e^{i\frac{p^2}{2m\hbar}t}\phi^*(p,0)
+      \frac{\partial}{\partial p_x}\left(-i\frac{p_x}{m\hbar}te^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)
         +e^{-i\frac{p^2}{2m\hbar}t}\frac{\partial\phi(p,0)}{\partial p_x}\right)\,d^3p  \\
     \end{split}
   \end{align}
@@ -279,13 +298,17 @@ Finally, the result is,
       &=\frac{\langle[x,p_x]\rangle_{t=0}}{m}t+\frac{\langle p_x^2\rangle_{t=0}}{m^2}t^2
     \end{split}
   \end{align}
-두번째 적분 항은 다음과 같다. $x$ 는 momentum space 에서 연산자 $i\hbar\frac{\partial}{\partial p_x}$ 로 작용한다는 사실에 유의하자.
+두번째 적분 항은 다음과 같다. 
+$x$ 는 momentum space 에서 연산자 $i\hbar\frac{\partial}{\partial p_x}$ 로 작용한다는 사실에 유의하자.
   \begin{align}
     \begin{split}
-      \hbar^2\int\phi^*(p,0)\left(2i\frac{p_x}{m\hbar}t\,\frac{\partial \phi(p,0)}{\partial p_x}
+      \hbar^2\int\phi^*(p,0)\left(2i\frac{p_x}{m\hbar}t\,
+      \frac{\partial \phi(p,0)}{\partial p_x}
       -\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\right)\,d^3p 
-      =\frac{2t}{m}\int\phi^*(p,0)p_x\left(ih\frac{\partial\phi(p,0)}{\partial p_x}\right)\,d^3p  \\
-      +\int\phi^*(p,0)\left(-\hbar^2\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\right)\,d^3p  \\
+      =\frac{2t}{m}\int\phi^*(p,0)p_x
+      \left(ih\frac{\partial\phi(p,0)}{\partial p_x}\right)\,d^3p  \\
+      +\int\phi^*(p,0)\left(
+        -\hbar^2\frac{\partial^2\phi(p,0)}{\partial p_x^2}\right)\,d^3p  \\
       =\frac{2\langle p_xx\rangle_{t=0}}{m}t+\langle x^2\rangle_{t=0}
     \end{split}
   \end{align}
@@ -297,7 +320,8 @@ Finally, the result is,
     +\frac{2\langle p_xx\rangle_{t=0}}{m}t
     +\langle x^2\rangle_{t=0}
   \end{align}
-결국 우리가 구하고자 하는 값 $\frac{d}{dt}(\Delta x)^2 $ 을 구하기 위해, $t$ 에 대해 $\langle x^2 \rangle$ 를 미분하자.
+결국 우리가 구하고자 하는 값 $\frac{d}{dt}(\Delta x)^2 $ 을 구하기 위해, 
+$t$ 에 대해 $\langle x^2 \rangle$ 를 미분하자.
   \begin{align}
     \frac{d}{dt}\langle x^2\rangle 
     &=\frac{\langle[x,p_x]\rangle_{t=0}}{m}
