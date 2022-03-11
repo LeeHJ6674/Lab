@@ -633,70 +633,72 @@ time. ($E_2-E_1=\hbar \omega$).
 two concentric spheres of radii $R_1>R_2$. Compute the probability
 current that flows through $\Omega_1$.
 \end{itemize}
+
 \noindent \textbf{Solution}
 \begin{itemize}
 \item[(a)] The initial state is,
-  \begin{align}
+  \begin{align*}
     \psi(\bm{x},0) = c_1\psi_1(\bm{x})+c_2\psi_2(\bm{x})
-  \end{align} 
+  \end{align*} 
   Since this particle is in region $\Omega_1$, $c_1=1$ and $c_2=0$. 
   The time evolutoin of this particle is,
-  \begin{align}
+  \begin{align*}
     \psi(\bm{x},t) = c_1e^{-\frac{i}{\hbar}E_1t}\psi_1(\bm{x})
     +c_2e^{-\frac{i}{\hbar}E_2t}\psi_2(\bm{x}) 
     = e^{-\frac{i}{\hbar}E_1t}\psi_1(\bm{x})
-  \end{align}
+  \end{align*}
   Since the time evolution is dependent to only $\psi_1(\bm{x})$, 
   it will stay region $\Omega_1$, 
   forever.
 \item[(b)]
   The time evolution is,
-  \begin{align}
+  \begin{align*}
     \psi(\bm{x},t) = \frac{1}{\sqrt{2}}\left[
       e^{-\frac{i}{\hbar}E_1t}\psi_1(\bm{x})
     +e^{-\frac{i}{\hbar}E_2t}\psi_2(\bm{x})\right]
-  \end{align}
+  \end{align*}
   Consider the probability density of this particle.
-  \begin{align}
+  \begin{align}\label{4:dsty}
     |\psi(\bm{x},t)|^2 = \frac{1}{2}\left[|\psi_1(\bm{x})|^2 
     +|\psi_2(\bm{x})|^2
-    +e^{-\frac{i}{\hbar}(E_2-E_1)t}\psi_1^*\psi_2
-    +e^{-\frac{i}{\hbar}(E_1-E_2)t}\psi_1\psi_2^*\right]
+    +e^{-\frac{i}{\hbar}(E_2-E_1)t}\psi_1(\bm{x})^*\psi_2(\bm{x})
+    +e^{-\frac{i}{\hbar}(E_1-E_2)t}\psi_1(\bm{x})\psi_2(\bm{x})^*\right]
   \end{align}
-  Suppose that $\Omega_3$ in $\mathbb{R}^3 $ satisfies that 
-  $\Omega_1 \cap \Omega_3 = \varnothing$ , 
-  $\Omega_2 \cap \Omega_3 = \varnothing$ 
-  and $\Omega_1\cup \Omega_2\cup \Omega_3 = \mathbb{R}$.
-  If $\bm{x}\notin\Omega_1$, then $\psi_1(\bm{x})=0$. 
-  If $\bm{x}\notin\Omega_2$, then $\psi_2(\bm{x})=0$. 
-  And $\psi_1^*\psi_2=\psi_1\psi_2^*=0$ any $\bm{x}\in \mathbb{R}$ 
-  because of following reasons.
-  \begin{itemize}
-    \item[(i)] $\bm{x}\in\Omega_1 \Longrightarrow \psi_2=\psi^*_2=0$
-    \item[(ii)] $\bm{x}\in\Omega_2 \Longrightarrow \psi_1=\psi^*_1=0$
-    \item[(iii)] $\bm{x}\in\Omega_3 \Longrightarrow \psi_1=\psi_2=0$
-  \end{itemize}
-  Therefore, $|\psi(\bm{x},t)|^2=\frac{1}{2}\left[|\psi_1(\bm{x})|^2
-  +|\psi_2(\bm{x})|^2 \right]$. 
-  And the probability density is time-independent.
-\item[(c)] From a (62), since $E_2-E_1=\hbar \Omega$,
+  The last two terms are zero. To prove this, consider three divided regions, 
+  $\Omega_1$, $\Omega_2$, and $\Omega_3$. The union of three regions is a
+  universal space and there is no intersection of each region. In $\Omega_1$,
+  $\psi_2$ and $\psi_2^*$ are zero. In $\Omega_2$, $\psi_1$ and $\psi_1^*$
+  are zero. Finally, $\psi_1$ and $\psi_2$ are zero in $\Omega_3$.
+  For these reason, terms $e^{-\frac{i}{\hbar}(E_2-E_1)t}\psi_1^*\psi_2
+    +e^{-\frac{i}{\hbar}(E_1-E_2)t}\psi_1\psi_2^*$ are always zero.
+  Therefore, 
   \begin{align}
+    |\psi(\bm{x},t)|^2=\frac{1}{2}\left[|\psi_1(\bm{x})|^2
+  +|\psi_2(\bm{x})|^2 \right]. 
+  \end{align}
+  And the probability density is time-independent.
+\item[(c)]In this case, the last two terms of (\ref{4:dsty}) are not zero. 
+The probability density is,
+  \begin{align*}
     |\psi(\bm{x},t)|^2&= \frac{1}{2}\left[|\psi_1(\bm{x})|^2 
     +|\psi_2(\bm{x})|^2
-    +e^{-i\omega t}\psi_1^*\psi_2
-    +e^{i\omega t}\psi_1\psi_2^*\right]  \\
-    &=\frac{1}{2}\left[ |\psi_1(\bm{x})|^2 
-    +|\psi_2(\bm{x})|^2 
-    +e^{-i\omega t}\psi_1^*\psi_2 
-    +{\left(e^{-i\omega t}\psi_1^*\psi_2\right)}^*\right]
-  \end{align}
-  Imaginary parts of the last two terms are canceled.
-  \begin{align}  
-    |\psi(\bm{x},t)|^2 &= \frac{1}{2}\left[ |\psi_1(\bm{x})|^2 
-    +|\psi_2(\bm{x})|^2 
-    +\left(\psi_1^*\psi_2 
-    +{\left(\psi_1^*\psi_2\right)}^*\right)\cos{\omega t} \right]
-  \end{align}
+    +e^{-i\omega t}\psi_1(\bm{x})^*\psi_2(\bm{x})
+    +e^{i\omega t}\psi_1(\bm{x})\psi_2^*(\bm{x})\right]  
+  \end{align*}
+  since $E_2-E_1=\hbar \omega$.
+  $\psi_1$ and $\psi_2$ are the complex function that can be introduced phase factor.
+  \begin{align*}
+      \psi_1(\bm{x}) = |\psi_1(\bm{x})|e^{i\alpha_1},\quad\psi_2(\bm{x}) 
+      = |\psi_2(\bm{x})|e^{i\alpha_2}
+  \end{align*}
+  Then the probability density is,
+  \begin{align*}
+    |\psi(\bm{x},t)|^2&=\frac{1}{2}\left[|\psi_1(\bm{x})|^2 +|\psi_2(\bm{x})|^2
+    +|\psi_1(\bm{x})||\psi_2(\bm{x})|\left(e^{-i(\omega t+\alpha_1-\alpha_2)}
+    +e^{i(\omega t+\alpha_1-\alpha_2)}\right) \right] \\
+    &=\frac{1}{2}\left[|\psi_1(\bm{x})|^2 +|\psi_2(\bm{x})|^2
+    +2|\psi_1(\bm{x})||\psi_2(\bm{x})|\cos{(\omega t+\alpha_1-\alpha_2)} \right].
+  \end{align*}
   This result is a periodic function about time 
   because the last term is a periodic function of 
   time and other terms are constant about time.
@@ -708,11 +710,11 @@ current that flows through $\Omega_1$.
     \int_{\Omega_2}\frac{\partial \rho}{\partial t}\,dr^3 
     = \int_{\Omega_2}\nabla \cdot \bm{J}\,dr^3
   \end{align}
-  The left term can be calculated using (c),
+  The left term can be calculated using the result of (c),
   \begin{align}
     \frac{\partial\rho}{\partial t} = \frac{\partial}{\partial t}|
     \psi(\bm{x},t)|^2 
-    = -\omega \psi_1\psi_2\sin\omega t
+    = -\omega|\psi_1(\bm{x})||\psi_2(\bm{x})|\sin{(\omega t+\alpha_1-\alpha_2)}
   \end{align}
   If we integrate this, it will be a zero since $\psi_1$ and 
   $\psi_2$ are orthogonal to each other. Consider the right term. 
