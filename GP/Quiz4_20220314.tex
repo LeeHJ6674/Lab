@@ -175,7 +175,7 @@ a = \frac{dv}{dt}
 
 \noindent {\bf 문제 3 [10pt]} 
 스키 점프 선수가 트랙의 수평면에 도달해서
-수평방향으로 도약을 했다. 이 때 속력은 20.0 m/s였다. 그리고 수평면과
+수평방향으로 도약을 했다. 이 때 속력은 25.0 m/s였다. 그리고 수평면과
 경사면 사이의 각은 $35.0^\circ$였다. 이 선수는 어느 지점에 착지했을까? 
 \begin{figure}[ht]
   \centering
@@ -184,8 +184,48 @@ a = \frac{dv}{dt}
   \label{fig:2}
 \end{figure}
 
-\noindent {\bf 해답}
-
+\noindent {\bf 해답} 스키 점프 선수가 도약한 지점으로 부터 착지한 지점까지 
+수평 방향으로 떨어진 거리를 $x$, 수직 방향으로 떨어진 거리를 $y$ 라 하자.
+$x$와 $y$ 의 관계는 삼각비로 표현할 수 있다.
+\begin{align}\label{eq:4}
+  \frac{y}{x}=\tan{\phi}
+\end{align}
+스키 점프 선수가 도약하는 동안 수평 방향으로 이동한 거리 $x$ 는 다음과 같다.
+\begin{align}
+  x=v_xt=(25.0\,\mathrm{m/s})t 
+\end{align}
+수직 방향으로는 중력 가속도가 존재하여 등가속도 운동한다. 따라서, 수직 방향으로
+이동한 거리 $y$ 는 다음과 같다.
+\begin{align}
+  y=v_{y,0}t+\frac{1}{2}gt^2=\frac{1}{2}gt^2=\frac{1}{2}(9.80\,\mathrm{m/s^2})t^2
+\end{align}
+관계식 (\ref{eq:4}) 에 대입하면 다음과 같다.
+\begin{align}
+  \tan{\phi} = \frac{y}{x} = \frac{\frac{1}{2}gt^2}{v_xt}=\frac{gt}{2v_x},\,\,\,
+  t=\frac{2v_x\tan{\phi}}{g}
+\end{align}
+도약한 지점과 착지한 지점 사이 거리를 $d$ 라 하면, 
+\begin{align}
+  \begin{split}
+    d&=\sqrt{x^2+y^2}=x\sqrt{1+\left(\frac{y}{x}\right)^2}=v_xt\sqrt{1+\tan^2{\phi}} \\
+    &=\frac{2v_x^2\tan{\phi}}{g}\sqrt{1+\tan^2{\phi}}
+  \end{split}
+\end{align}
+이다.
+경사면의 각도는 $35.0^\circ$ 이고 수평 방향 속력은 $25.0\,\mathrm{m/s}$ 이므로 $d$ 는
+다음과 같다.
+\begin{align}
+  \begin{split}
+    d&=\frac{2(25.0\,\mathrm{m/s})^2\tan{35.0^\circ}}{(9.80\,\mathrm{m/s^2})}\sqrt{1+\tan^2{35.0^\circ}} \\
+    &= \frac{2(25.0\,\mathrm{m/s})^2 (0.700)}{(9.80\,\mathrm{m/s^2})}\sqrt{1+(0.700)^2} \\
+    &= (89.3\,\mathrm{m})(1.22) = 109\,\mathrm{m} \\
+  \end{split}
+\end{align}
+스키 점프 선수는 도약 지점으로 부터 109 m 떨어진 지점에 착지했다.
+%\begin{align}
+%\tan{\phi}=\tan{35.0^\circ}=\frac{y}{x}
+%=\frac{(9.80\,\mathrm{m/s^2})t^2}{2(25.0\,\mathrm{m/s})t }=
+%\end{align}
 
 \vspace{2cm}
 
@@ -199,9 +239,28 @@ a = \frac{dv}{dt}
   \label{fig:4}
 \end{figure}
 그림~\ref{fig:4}에 보여주는 $y_{\mathrm{max}}$를 구하여라. 
-\newpage
 
-{\color{gray} [문제 풀이 쪽]}
-
-\newpage
+\noindent {\bf 해답} 이 공은 중력에 의한 등가속도 운동을 
+하고 있으므로 공의 높이는 다음과 같다.
+\begin{align}
+  y=y_0+v_0t-\frac{1}{2}gt^2
+\end{align}
+$t$ 에 대한 완전제곱 꼴로 바꾸면,
+\begin{align}
+  y=-\frac{1}{2}g\left( t-\frac{v_0}{g} \right)^2+\frac{v_0^2}{2g}+y_0
+\end{align}
+$y$ 의 최댓값이 다음과 같음을 볼 수 있다.
+\begin{align}
+  y_{\mathrm{max}}=\frac{v_0^2}{2g}+y_0
+\end{align}
+초기 높이가 15.0 m, 초기 속력은 10.0 m/s 이므로, $y_{\mathrm{max}}$ 는 다음과 같다.
+\begin{align}
+  \begin{split}
+    y_{\mathrm{max}}&=\frac{v_0^2}{2g}+y_0 
+    = \frac{(10.0\,\mathrm{m/s})^2}{2(9.80\,\mathrm{m/s^2})}+15.0\,\mathrm{m} \\
+    &=5.10\,\mathrm{m}+15.0\,\mathrm{m} \\
+    &=20.1\,\mathrm{m}
+  \end{split}
+\end{align}
+이 공은 지면으로부터 최대 20.1 m 까지 올라간다.
 \end{document}

@@ -1,11 +1,11 @@
 # Fdb version 3
-["pdflatex"] 1647079470 "c:/Users/ogggg/Lab/GP/Quiz4_20220314.tex" "Quiz4_20220314.pdf" "Quiz4_20220314" 1647079472
+["pdflatex"] 1647090770 "c:/Users/ogggg/Lab/GP/Quiz4_20220314.tex" "Quiz4_20220314.pdf" "Quiz4_20220314" 1647093095
   "Qfig4-2.pdf" 1647073967 57034 4348e03ad0b58cb9d1dd281e0d372dc9 ""
   "Qfig4-3.pdf" 1647073968 170091 97f0f9b388b49dd8e5326757fd23135d ""
   "Qfig4-4-20210312.png" 1647073976 36243 026c43ad5099414d82f4659ac92725da ""
-  "Quiz4_20220314.aux" 1647079471 556 25f775f9cba6c1c05a7ecad2861a2428 "pdflatex"
-  "Quiz4_20220314.tex" 1647079468 7650 8d8b434c4afce7ea0ba07bee3b1d745c ""
-  "c:/Users/ogggg/Lab/GP/Quiz4_20220314.tex" 1647079468 7650 8d8b434c4afce7ea0ba07bee3b1d745c ""
+  "Quiz4_20220314.aux" 1647090771 587 c585a0cba6d5dd0200b929a9c988c4bd "pdflatex"
+  "Quiz4_20220314.tex" 1647093094 10376 e68062281cbd07c46c69a1c167661dc5 ""
+  "c:/Users/ogggg/Lab/GP/Quiz4_20220314.tex" 1647093094 10376 e68062281cbd07c46c69a1c167661dc5 ""
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1623476204 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1623475178 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1623475178 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -84,6 +84,7 @@
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbb.tfm" 1623477076 1268 09051c2ad4e890d213990a1b75b38d1c ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbc.tfm" 1623477077 1240 85a8e5ce3892bdfb1ef2a66ee541995a ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbd.tfm" 1623477076 1256 fee2adeaf13befc42aff0b72ea0c6244 ""
+  "c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbe.tfm" 1623477076 1260 77fd885b3485a736ccd4190eb2b1ed4f ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc0.tfm" 1623477076 1252 550ca25062ebc90c66b675808adf8c6d ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc1.tfm" 1623477076 1256 65e23cc1bcd2b64aca8af1f732fed042 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc2.tfm" 1623477076 1252 818c5e98aaef778763029f70d8876c68 ""
@@ -159,6 +160,7 @@
   "c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb" 1623477077 190187 aa1a5b68d939bcebcef3866eb9186e6e ""
   "c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb" 1623477077 194791 7ccd61ce73ad87d2398a101bf0ae6f48 ""
   "c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb" 1623477077 210045 aeed66485b417207ec24aeb1d1771fc0 ""
+  "c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb" 1623477077 249254 9ef3488f76841a54cb9717c071db50ce ""
   "c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb" 1623477077 255779 254eea551840982046a8d4cce781fb7f ""
   "c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb" 1623477077 161865 1dd62a4e3dfd56fb148a53a74cc00076 ""
   "c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb" 1623477077 153768 13ef9e679a6f3e2ee7c7f2d6d2a42147 ""
@@ -232,6 +234,6 @@
   "c:/texlive/2021/texmf.cnf" 1623478425 713 e69b156964470283e0530f5060668171 ""
   "defcolor.sty" 1646574647 30932 07856f451d209ca011d93d3242a7bb09 ""
   (generated)
-  "Quiz4_20220314.aux"
-  "Quiz4_20220314.log"
   "Quiz4_20220314.pdf"
+  "Quiz4_20220314.log"
+  "Quiz4_20220314.aux"
