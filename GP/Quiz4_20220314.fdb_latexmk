@@ -1,11 +1,11 @@
 # Fdb version 3
-["pdflatex"] 1647090770 "c:/Users/ogggg/Lab/GP/Quiz4_20220314.tex" "Quiz4_20220314.pdf" "Quiz4_20220314" 1647093095
+["pdflatex"] 1647106346 "c:/Users/ogggg/Lab/GP/Quiz4_20220314.tex" "Quiz4_20220314.pdf" "Quiz4_20220314" 1647106901
   "Qfig4-2.pdf" 1647073967 57034 4348e03ad0b58cb9d1dd281e0d372dc9 ""
   "Qfig4-3.pdf" 1647073968 170091 97f0f9b388b49dd8e5326757fd23135d ""
   "Qfig4-4-20210312.png" 1647073976 36243 026c43ad5099414d82f4659ac92725da ""
-  "Quiz4_20220314.aux" 1647090771 587 c585a0cba6d5dd0200b929a9c988c4bd "pdflatex"
-  "Quiz4_20220314.tex" 1647093094 10376 e68062281cbd07c46c69a1c167661dc5 ""
-  "c:/Users/ogggg/Lab/GP/Quiz4_20220314.tex" 1647093094 10376 e68062281cbd07c46c69a1c167661dc5 ""
+  "Quiz4_20220314.aux" 1647106347 587 69b82c44dcda38fe62844568d1cb3491 "pdflatex"
+  "Quiz4_20220314.tex" 1647106900 10426 b1c56efd7c44bb4f4a8763fcfd2d0af1 ""
+  "c:/Users/ogggg/Lab/GP/Quiz4_20220314.tex" 1647106900 10426 b1c56efd7c44bb4f4a8763fcfd2d0af1 ""
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1623476204 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1623475178 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1623475178 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -234,6 +234,6 @@
   "c:/texlive/2021/texmf.cnf" 1623478425 713 e69b156964470283e0530f5060668171 ""
   "defcolor.sty" 1646574647 30932 07856f451d209ca011d93d3242a7bb09 ""
   (generated)
-  "Quiz4_20220314.pdf"
   "Quiz4_20220314.log"
+  "Quiz4_20220314.pdf"
   "Quiz4_20220314.aux"

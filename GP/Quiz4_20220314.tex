@@ -83,7 +83,7 @@ Incheon 402-751, Republic of Korea }
       -\left(\frac{1}{2}\right)
       (9.80\,\mathrm{m/s^2})\times t^2 \\
       &=45\,\mathrm{m}+(10.0\,\mathrm{m/s})\times t
-      -(4.90\,\mathrm{m/s^2})\times t^2
+      -(4.90\,\mathrm{m/s^2})\times t^2.
     \end{split}
   \end{align}
   이는 $t$ 에 대한 2차 방정식이다. 해는 $t=-2.18\,\mathrm{s} $ 
@@ -113,10 +113,9 @@ Incheon 402-751, Republic of Korea }
       &=\sqrt{{\left((10.0\,\mathrm{m/s})
       -(41.4\,\mathrm{m/s})\right)}^2
       +{\left((10.0\,\sqrt{3}\,\mathrm{m/s})\right)}^2} \\
-      &=\sqrt{{\left(-31.4\,\mathrm{m/s}\right)}^2
-      +300\,\mathrm{{(m/s)}^2}} \\
-      &=\sqrt{986\,\mathrm{{(m/s)}^2}
-      +300\,\mathrm{{(m/s)}^2}} \\
+      &=\sqrt{{\left(-31.4\right)}^2
+      +300}\,\mathrm{m/s} 
+      =\sqrt{986+300}\,\mathrm{m/s}\\
       &=35.86\,\mathrm{m/s}
     \end{split}
   \end{align}
@@ -142,10 +141,14 @@ a = \frac{dv}{dt}
 \begin{align}
   a\,v(t) = v(t)\frac{dv}{dt}.
 \end{align}
-양변에 $dt$ 를 곱하고 $t^{\prime}=t_0$ 부터 $t^\prime=t$ 까지 적분하자.
+양변을 $t$ 에 대해 $t^{\prime}=t_0$ 부터 $t^\prime=t$ 까지 적분하자.
 \begin{align}\label{eq:3}
-  \int_{t_0}^t a\,v(t^\prime)\,dt^\prime = \int_{v_0}^v v(t^\prime)\,dv(t^\prime)
-  =\frac{1}{2}\left(v^2-v^2_0\right)
+  \begin{split}
+    \int_{t_0}^t a\,v(t^\prime)\,dt^\prime 
+    &=\int_{t_0}^t v(t^\prime)\frac{dv}{dt^\prime}\,dt^\prime  \\
+    &= \int_{v_0}^v v(t^\prime)\,dv(t^\prime)
+    =\frac{1}{2}\left(v^2-v^2_0\right)
+  \end{split}
 \end{align} 
 속력은 위치를 시간에 대해 미분한 값이다. 따라서,
 \begin{align}
@@ -186,7 +189,7 @@ a = \frac{dv}{dt}
 
 \noindent {\bf 해답} 스키 점프 선수가 도약한 지점으로 부터 착지한 지점까지 
 수평 방향으로 떨어진 거리를 $x$, 수직 방향으로 떨어진 거리를 $y$ 라 하자.
-$x$와 $y$ 의 관계는 삼각비로 표현할 수 있다.
+$x$ 와 $y$ 의 관계는 삼각비로 표현할 수 있다.
 \begin{align}\label{eq:4}
   \frac{y}{x}=\tan{\phi}
 \end{align}
