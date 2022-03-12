@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.12)  12 MAR 2022 11:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.12)  12 MAR 2022 15:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/ogggg/Lab/Quantum/Problem1_20220224_sol_hjlee_new.tex
-(c:/Users/ogggg/Lab/Quantum/Problem1_20220224_sol_hjlee_new.tex
+**c:/Users/ogggg/Lab/GP/Quiz_sol_hjlee.tex
+(c:/Users/ogggg/Lab/GP/Quiz_sol_hjlee.tex
 LaTeX2e <2021-06-01>
 L3 programming layer <2021-06-01> (c:/texlive/2021/texmf-dist/tex/latex/revtex4/revtex4.cls
 Document Class: revtex4 2020/09/30 v4.0a (http://publish.aps.org/revtex4/ for documentation)
@@ -67,14 +67,10 @@ LaTeX Info: Redefining \cite on input line 694.
  (c:/texlive/2021/texmf-dist/tex/latex/revtex4/revsymb.sty
 Package: revsymb 2020/09/30 v4.0a (http://publish.aps.org/revtex4/ for documentation)
 LaTeX Info: Redefining \REV@mathfrak on input line 118.
-))
-
-Class revtex4 Warning: No Society specified, using generic APS style.
-
-(c:/texlive/2021/texmf-dist/tex/latex/revtex4/aps.rtx
+)) (c:/texlive/2021/texmf-dist/tex/latex/revtex4/aps.rtx
 File: aps.rtx 2020/09/30 v4.0a (http://publish.aps.org/revtex4/ for documentation)
-) (c:/texlive/2021/texmf-dist/tex/latex/revtex4/10pt.rtx
-File: 10pt.rtx 2020/09/30 v4.0a (http://publish.aps.org/revtex4/ for documentation)
+) (c:/texlive/2021/texmf-dist/tex/latex/revtex4/12pt.rtx
+File: 12pt.rtx 2020/09/30 v4.0a (http://publish.aps.org/revtex4/ for documentation)
 ) (c:/texlive/2021/texmf-dist/tex/latex/cjk-ko/kotex.sty
 Package: kotex 2015/04/19 v1.6 Korean TeX (ko.TeX)
  (c:/texlive/2021/texmf-dist/tex/latex/kotex-utf/kotex.cfg) (c:/texlive/2021/texmf-dist/tex/latex/kotex-utf/kotexutf.sty
@@ -281,36 +277,38 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip57
 \thm@headsep=\skip58
 \dth@everypar=\toks35
+) (c:/texlive/2021/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
 ) (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count276
 \l__pdf_internal_box=\box60
-) (./Problem1_20220224_sol_hjlee_new.aux)
-\openout1 = `Problem1_20220224_sol_hjlee_new.aux'.
+) (./Quiz_sol_hjlee.aux)
+\openout1 = `Quiz_sol_hjlee.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 21.
-LaTeX Font Info:    Trying to load font information for LUC+nanummj on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 22.
+LaTeX Font Info:    Trying to load font information for LUC+nanummj on input line 22.
  (c:/texlive/2021/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 File: lucnanummj.fd 2013/02/12 v0.1 Nanum Myeongjo font definitions
 )
-LaTeX Font Info:    ... okay on input line 21.
-Class revtex4 Info: Unrecognized LaTeX tabular. Please update this document class! (Proceeding with fingers crossed.) on input line 21.
-Class revtex4 Info: cite was not loaded (OK!) on input line 21.
-Class revtex4 Info: multicol was not loaded (OK!) on input line 21.
+LaTeX Font Info:    ... okay on input line 22.
+Class revtex4 Info: Unrecognized LaTeX tabular. Please update this document class! (Proceeding with fingers crossed.) on input line 22.
+Class revtex4 Info: cite was not loaded (OK!) on input line 22.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 22.
  (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count277
@@ -330,27 +328,41 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
- (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+Underfull \hbox (badness 10000) in paragraph at lines 37--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--46
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
+(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6] [7] [8] [9] [10] (./Problem1_20220224_sol_hjlee_new.aux) ) 
+) [1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+[]\OT1/cmr/m/n/12 -----------------------------------------------------------------------------------------------------------------
+ []
+
+[2] [3] (./Quiz_sol_hjlee.aux) ) 
 Here is how much of TeX's memory you used:
- 5490 strings out of 478536
- 75364 string characters out of 5854226
- 441195 words of memory out of 5000000
- 23305 multiletter control sequences out of 15000+600000
- 424941 words of font info for 104 fonts, out of 8000000 for 9000
+ 5606 strings out of 478536
+ 77392 string characters out of 5854226
+ 419460 words of memory out of 5000000
+ 23394 multiletter control sequences out of 15000+600000
+ 440717 words of font info for 157 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,18n,66p,275b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb>
-Output written on Problem1_20220224_sol_hjlee_new.pdf (10 pages, 1429426 bytes).
+ 57i,19n,66p,253b,333s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbac.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbae.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb0.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb1.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb2.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb3.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb4.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbba.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbb.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbc.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbd.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc1.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc2.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd4.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmba.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbb.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmca.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb>
+Output written on Quiz_sol_hjlee.pdf (3 pages, 2361924 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
+ 361 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
