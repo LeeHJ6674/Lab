@@ -55,17 +55,54 @@ Incheon 22212, Republic of Korea }
   \caption{문제 1}
   \label{fig:1}
 \end{figure}
-\newpage
 
-{\color{gray} [문제 풀이 쪽]}
+\noindent {\bf 해답}
+책 Y 는 정지해 있으므로, 책 Y 에 작용하는 알짜힘은 0 N 이다.
 
-\newpage 
+\vspace{2cm}
 
 \noindent {\bf 문제 2 [10pt]}
 화물이 실린 어떤 비행기의 무게는 $2.75\times
-10^6$ N이다. 이 비행기의 엔진 추진력이 $6.35\times10^6$ N이라 면 최저
+10^6$ N이다. 이 비행기의 엔진 추진력이 $6.35\times10^6$ N이라면 최저
 이륙속력인 285 km/h에 도달하기 위해 필요한 활주로의 길이는 최소
 얼마인가?  
+
+\noindent {\bf 해답} 비행기의 무게는 비행기의 질량에 중력 가속도의 크기를
+곱한 값과 같다.
+\begin{align}
+  W=mg,\,\,\,m=\frac{W}{g}
+\end{align}
+비행기가 엔지에 의해 가속될 때, 그 가속도의 크기는 다음과 같다.
+\begin{align}
+  a=\frac{F}{m}=\frac{Fg}{W}
+\end{align}
+비행기가 가속되는 동안, 질주한 거리와 그 때의 속력은 
+다음의 관계에 있다.
+\begin{align}\label{eq:1}
+ v^2-v^2_0 = 2a(x-x_0) 
+\end{align}
+비행기가 초기 위치에서 정지한 상태로 가속한다면, 식 (\ref{eq:1}) 으로
+부터, 속력이 285 km/h 일 때까지 질주한 거리를 알 수 있다.
+\begin{align}
+    v^2 = 2ax = 2\,\frac{Fg}{W}\,x,\,\,\,
+    x=\frac{2Wv^2}{Fg}
+\end{align}
+질주한 거리는 다음과 같다.
+\begin{align}
+  \begin{split}
+    x&=\frac{2Wv^2}{Fg}
+    =\frac{2(2.75\times 10^6\,\mathrm{N}){(285\,\mathrm{km/h})}^2}
+    {(6.35\times 10^6\,\mathrm{N})(9.80\,\mathrm{m/s^2})}
+    \left(\frac{1000\,\mathrm{m}}{1\,\mathrm{km}}\right)
+    \left(\frac{1\,\mathrm{h}}{3600\,\mathrm{s}}\right)^2 \\
+    &=\frac{(7180)(1000)}{(3600)^2}\,\mathrm{km}  \\
+    &=0.554\,\mathrm{km} \\
+    &= 554\,\mathrm{m}
+  \end{split}
+\end{align}
+비행기가 질주한 거리 즉, 최저 이륙속력에 도달하기 위해 필요한 
+활주로의 길이는 554 m 이다.
+%{(285\,\mathrm{km/h})}^2
 \newpage
 
 {\color{gray} [문제 풀이 쪽]}
