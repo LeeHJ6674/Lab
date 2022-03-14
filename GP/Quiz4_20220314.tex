@@ -72,7 +72,7 @@ Incheon 402-751, Republic of Korea }
     v_{x,0}=v_i\sin{\theta_i}=(20.0\,\mathrm{m/s})\sin{30^\circ}
     =(20.0\,\mathrm{m/s})\left(\frac{1}{2}\right)
   \end{align}
-  초기 속력의 방향과 중력 가속도의 방향이 반대라는 사실에 유의하면, 
+  중력은 아래 방향으로 작용하므로,
   시간 $t$ 일 때 이 공의 위치는 다음과 같다.
   \begin{align}
     x=x_0+v_0t-\frac{1}{2}gt^2
@@ -91,7 +91,7 @@ Incheon 402-751, Republic of Korea }
   이는 $t$ 에 대한 2차 방정식이다. 해는 $t=-2.18\,\mathrm{s} $ 
   그리고 $t=4.22\,\mathrm{s}$ 이다. 
   따라서, 걸린 시간은 $4.22\,\mathrm{s}$ 이다.
-  \item[(나)] 수직 방향 속력은 중력 가속도의 영향을 받아 변하지만, 
+  \item[(나)] 
   수평 방향으로는 가속도가 존재하지 않기 때문에 수평 방향 속력은 
   변하지 않는다. 수평 방향 속력은 다음과 같다.
   \begin{align}
@@ -115,9 +115,7 @@ Incheon 402-751, Republic of Korea }
       &=\sqrt{{\left((10.0\,\mathrm{m/s})
       -(41.4\,\mathrm{m/s})\right)}^2
       +{\left((10.0\,\sqrt{3}\,\mathrm{m/s})\right)}^2} \\
-      &=\sqrt{{\left(-31.4\right)}^2
-      +300}\,\mathrm{m/s} 
-      =\sqrt{986+300}\,\mathrm{m/s}\\
+      &=\sqrt{986+300}\,\mathrm{m/s}\\
       &=35.86\,\mathrm{m/s}
     \end{split}
   \end{align}
@@ -143,7 +141,7 @@ a = \frac{dv}{dt}
 \begin{align}
   a\,v(t) = v(t)\frac{dv}{dt}.
 \end{align}
-양변을 $t$ 에 대해 $t^{\prime}=t_0$ 부터 $t^\prime=t$ 까지 적분하자.
+양변을 $t^\prime$ 에 대해 $t^{\prime}=t_0$ 부터 $t^\prime=t$ 까지 적분하자.
 \begin{align}\label{eq:3}
   \begin{split}
     \int_{t_0}^t a\,v(t^\prime)\,dt^\prime 
@@ -169,7 +167,7 @@ a = \frac{dv}{dt}
 \end{align}
 최종적으로,
 \begin{align}
-  v^2 - v_0^2 = 2a(x-x_0)  
+  v^2 - v_0^2 = 2a(x-x_0).
 \end{align}
 %\begin{align}
 %  \int_{t_0}^t av\,dt = \int_{t_0}^t v\frac{dv}{dt}\,dt 
