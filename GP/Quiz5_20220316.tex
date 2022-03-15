@@ -73,7 +73,7 @@ Incheon 22212, Republic of Korea }
 \begin{align}
   W=mg,\,\,\,m=\frac{W}{g}
 \end{align}
-비행기가 엔지에 의해 가속될 때, 그 가속도의 크기는 다음과 같다.
+비행기가 엔진에 의해 가속될 때, 그 가속도의 크기는 다음과 같다.
 \begin{align}
   a=\frac{F}{m}=\frac{Fg}{W}
 \end{align}
@@ -82,8 +82,8 @@ Incheon 22212, Republic of Korea }
 \begin{align}\label{eq:1}
  v^2-v^2_0 = 2a(x-x_0) 
 \end{align}
-비행기가 초기 위치에서 정지한 상태로 가속한다면, 식 (\ref{eq:1}) 으로
-부터, 속력이 285 km/h 일 때까지 질주한 거리를 알 수 있다.
+초기 조건이 $x_0=0,\,\,\,v_0=0$ 로 주어진다면, 식 (\ref{eq:1}) 으로
+부터, 속력이 285 km/h 에 도달할 때까지 질주한 거리를 알 수 있다.
 \begin{align}
     v^2 = 2ax = 2\,\frac{Fg}{W}\,x,\,\,\,
     x=\frac{2Wv^2}{Fg}
@@ -127,7 +127,7 @@ $\theta_2=30.0^\circ$이다.
   14.0t\,\hat{\bm{j}})\,\mathrm{m/s}$로 움직이려면, 
 \end{itemize}
 세 번째 힘은 어떻게 주어져야 하는가? 각각의 경우에 힘을 단위벡터로
-표현하여 나타내어라. 
+표현하여 나타내어라. \\ \\
 
 \noindent {\bf 해답}
 \begin{itemize}
@@ -136,7 +136,7 @@ $\theta_2=30.0^\circ$이다.
   \begin{align}
     \sum\vec{F}=\vec{F}_1 + \vec{F}_2 + \vec{F}_3 = \vec{0}
   \end{align}
-  알짜힘의 $x$ 성분의 크기와 $y$ 성분의 크기는 각각 0 이다.
+  알짜힘의 $x$ 성분과 $y$ 성분은 각각 0 이다.
   \begin{align}
     \begin{split}
       \sum F_x = {F_1}_x + {F_2}_x + {F_3}_x = 0  \\
@@ -181,7 +181,7 @@ $\theta_2=30.0^\circ$이다.
   \end{align}
   $\vec{F_3}$을 단위벡터로 표현하면 다음과 같다.
   \begin{align}\label{eq:2}
-    \vec{F_3}=(1.70\,\hat{\bm{i}} -
+    \vec{F_3}=(1.70\,\hat{\bm{i}} +
     3.06\,\hat{\bm{j}})\,\mathrm{N}
   \end{align}
 %  -------------------------------------------------------------\\
@@ -230,7 +230,7 @@ $\theta_2=30.0^\circ$이다.
 %    \end{split}
 %  \end{align}
   \item[(나)] 레몬이 일정한 속도 $\vec{v} =(13.0\,\hat{\bm{i}} -
-  14.0\,\hat{\bm{j}})\,\mathrm{m/s}$로 움직일 때, 레몬의
+  14.0\,\hat{\bm{j}})\,\mathrm{m/s}$로 움직일 때 레몬의
   가속도는 다음과 같다.
   \begin{align}
     \vec{a} = \frac{1}{m}\sum\vec{F}=\frac{d\vec{v}}{dt} = 0
@@ -239,12 +239,12 @@ $\theta_2=30.0^\circ$이다.
   따라서, 일정한 속도로 움직이기 위해 세 번째 힘은 
   다음과 같이 주어져야 한다.
   \begin{align}
-    \vec{F_3}=(1.70\,\hat{\bm{i}} -
+    \vec{F_3}=(1.70\,\hat{\bm{i}} +
     3.06\,\hat{\bm{j}})\,\mathrm{N}
   \end{align}
   \item[(다)] 레몬이 속도 $\vec{v} =(13.0t\,\hat{\bm{i}} -
-  14.0t\,\hat{\bm{j}})\,\mathrm{m/s}$로 움직일 때, 레몬의
-  가속도와 레몬에 가해지는 알짜힘은 다음과 같다.
+  14.0t\,\hat{\bm{j}})\,\mathrm{m/s}$로 움직일 때, $m$ 을 레몬의 
+  질량이라고 하면 레몬의 가속도와 레몬에 가해지는 알짜힘은 다음과 같다.
   \begin{align}
     \vec{a} = \frac{d\vec{v}}{dt} = (13.0\,\hat{\bm{i}} -
     14.0\,\hat{\bm{j}})\,\mathrm{m/s^2},\,\,\,
@@ -262,7 +262,7 @@ $\theta_2=30.0^\circ$이다.
   \end{align}
   식 (\ref{eq:2}) 에 의해,
   \begin{align}
-    \vec{F_1}+\vec{F_2} = -(1.70\,\hat{\bm{i}} -
+    \vec{F_1}+\vec{F_2} = -(1.70\,\hat{\bm{i}} +
     3.06\,\hat{\bm{j}})\,\mathrm{N}.
   \end{align}
   최종적으로, $\vec{F_3}$ 는 다음과 같다.
@@ -270,10 +270,9 @@ $\theta_2=30.0^\circ$이다.
     \begin{split}
       \vec{F_3} &= -(\vec{F_1}+\vec{F_2})
       +m(13.0\,\hat{\bm{i}} -14.0\,\hat{\bm{j}})\,\mathrm{N}  \\
-      &= (1.70\,\hat{\bm{i}} -
-      3.06\,\hat{\bm{j}})\,\mathrm{N}
+      &= (1.70\,\hat{\bm{i}} +3.06\,\hat{\bm{j}})\,\mathrm{N}
       +m(13.0\,\hat{\bm{i}} -14.0\,\hat{\bm{j}})\,\mathrm{N}  \\
-      &=((1.70+13.0m)\,\hat{\bm{i}}-(3.06+14.0m)\,\hat{\bm{j}})\,\mathrm{N}
+      &=((1.70+13.0m)\,\hat{\bm{i}}+(3.06-14.0m)\,\hat{\bm{j}})\,\mathrm{N}
     \end{split}
   \end{align}
 \end{itemize}
@@ -321,7 +320,8 @@ $\theta_2=30.0^\circ$이다.
 식 (\ref{eq:4}) 와 식 (\ref{eq:5}) 에 의해,
 \begin{align}
   \begin{split}
-    |\vec{D}| &= (1.0\times 10^{-4}\,\mathrm{kg})(9.80\,\mathrm{m/s^2})  \\
+    |\vec{D}| &= \frac{\sqrt{2}}{2}|\vec{T}|
+    = (1.0\times 10^{-4}\,\mathrm{kg})(9.80\,\mathrm{m/s^2})  \\
     &=9.8\times 10^{-4}\,\mathrm{N},
   \end{split}
 \end{align}
