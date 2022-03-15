@@ -182,7 +182,6 @@ Finally we obtain the normalization constant,
   $\phi(p,0)$ is $\phi(p,t)=e^{-i\omega t}\phi(p,0)$ 
   and $\omega = \frac{p^2}{2m\hbar}$.
   \begin{align*}
-    \begin{split} 
       \phi(p,t) &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
       \exp\left(-\frac{\sigma^2}{\hbar^2}(p-p_0)^2-i\frac{p^2}{2m\hbar}t
       -\frac{i}{\hbar}(p-p_0)x_0 \right) \\
@@ -195,7 +194,6 @@ Finally we obtain the normalization constant,
       \exp\left(-\frac{2m\sigma^2+i\hbar t}{2m\hbar^2}p^2 
       -\frac{2\sigma^2p_0-i\hbar x_0}{\hbar^2}p
       -\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2} \right)
-    \end{split}
   \end{align*}
   %The complete square form of $\phi(p,t)$ is,
   %\begin{align*}
@@ -216,34 +214,55 @@ Finally we obtain the normalization constant,
   %\end{align*}
   \item[(4)] $\psi(x,t)$ is the Fourier transform of $\phi(p,t)$.
   \begin{align}
-    \psi(x,t) &= \frac{1}{\sqrt{2\pi\hbar}}\int\phi(p,t)e^{\frac{i}{\hbar}px}\,dp  \\
-    &={\left(\frac{\sigma^2}{2\pi^3\hbar^4}\right)}^{\frac{1}{4}}
-    \int\exp\left(-\frac{2m\sigma^2+i\hbar t}{2m\hbar^2} p^2 
-    -\frac{2\sigma^2p_0-i\hbar (x_0+x)}{\hbar^2}p
-    -\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2}\right)\,dp  \\
-    &={\left(\frac{\sigma^2}{2\pi^3\hbar^4}\right)}^{\frac{1}{4}}
-    \int\exp\left(-\frac{2m\sigma^2+i\hbar t}{2m\hbar^2} p^2 
-    -\frac{2\sigma^2p_0-i\hbar (x_0+x)}{\hbar^2}p
-    -\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2}\right)\,dp  \\
-    &={\left(\frac{\sigma^2}{2\pi^3\hbar^4}\right)}^{\frac{1}{4}}
-    \int\exp{\left( \alpha(t)\left(p+\beta(t)\right)^2+\gamma(t) \right)}\,dp
-  \end{align}
-  $\alpha(t)$, $\beta(t)$ and $\gamma(t)$ are the replacement factors that,
-  \begin{align}
     \begin{split}
-      &\alpha(t) =-\frac{2m\sigma^2+i\hbar t}{2m\hbar^2},\,\,\,
+      \psi(x,t) &= \frac{1}{\sqrt{2\pi\hbar}}\int\phi(p,t)e^{\frac{i}{\hbar}px}\,dp  \\
+      &={\left(\frac{\sigma^2}{2\pi^3\hbar^4}\right)}^{\frac{1}{4}}
+      \int\exp\left(-\frac{2m\sigma^2+i\hbar t}{2m\hbar^2} p^2 
+      -\frac{2\sigma^2p_0-i\hbar (x_0+x)}{\hbar^2}p
+      -\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2}\right)\,dp  \\
+      &={\left(\frac{\sigma^2}{2\pi^3\hbar^4}\right)}^{\frac{1}{4}}
+      \int\exp{\left( -\alpha(t)\left(p+\beta(t)\right)^2+\gamma(x,t) \right)}\,dp
+    \end{split}
+  \end{align}
+  $\alpha(t)$, $\beta(t)$ and $\gamma(x,t)$ are the replacement factors that,
+  \begin{align}
+    \begin{split}\label{eq:abg}
+      &\alpha(t) =\frac{2m\sigma^2+i\hbar t}{2m\hbar^2},\,\,\,
     \beta(t) =\frac{m(2\sigma^2p_0-i\hbar(x+x_0))}{2m\sigma^2+i\hbar t},  \\
-    &\gamma(t)=-\frac{m\hbar^2(x+x_0)^2+4im\hbar\sigma^2p_0+2\hbar^2x_0p_0
-    +2i\hbar\sigma^2p_0^2t}
-    {2\hbar^2(2m\sigma^2+i\hbar t)}.
+    &\gamma(x,t)=\frac{-m\left((x+x_0)+\frac{2i\sigma^2p_0}{\hbar}\right)^2}
+    {4m\sigma^2+2i\hbar t}-\frac{(\sigma^2p_0+i\hbar x_0)p_0}{\hbar^2} \\
     \end{split}
   \end{align}
   This integration is a type of guassian integration.
   \begin{align}
-    \int\exp{\left( \alpha(t)\left(p+\beta(t)\right)^2+\gamma(t) \right)}\,dp
-    =e^{\gamma(t)}\sqrt{\frac{\pi}{\alpha(t)}}
+    \begin{split}
+      \int\exp{\left( -\alpha(t)\left(p+\beta(t)\right)^2+\gamma(x,t) \right)}\,dp
+      =\sqrt{\frac{\pi}{\alpha(t)}}e^{\gamma(x,t)}
+    \end{split}
   \end{align}
-  \item[(5)] 
+  Finally, we obtain $\psi(x,t)$,
+  \begin{align}
+    \psi(x,t) = \left(\frac{2m^2\sigma^2}{\pi}\right)^\frac{1}{4}
+    \sqrt{\frac{1}{2m\sigma^2+i\hbar t}}
+    \exp{\left(\frac{-m\left((x+x_0)+\frac{2i\sigma^2p_0}{\hbar}\right)^2}
+    {4m\sigma^2+2i\hbar t}-\frac{(\sigma^2p_0+i\hbar x_0)p_0}{\hbar^2}\right)}
+  \end{align}
+  \item[(5)] The probability density is,
+  \begin{align}
+    |\psi(x,t)|^2 = \sqrt{\frac{2}{\pi}}\left(\frac{m^2\sigma^2}
+    {4m^2\sigma^4+\hbar^2t^2}\right)e^{|\gamma(x,t)|^2}
+  \end{align}
+  Then, the spread is,
+  \begin{align}
+    \mathcal{S}(t) = \frac{|\psi(x,\,t)|^2}{|\psi(x,0)|^2}
+    =\left(\frac{4m^2\sigma^4}
+    {4m^2\sigma^4+\hbar^2t^2}\right)
+    e^{|\gamma(x,t)|^2-|\gamma(x,0)|^2}
+  \end{align}
+  From (\ref{eq:abg}), $|\gamma(x,t)|^2-|\gamma(x,0)|^2$ is,
+  \begin{align}
+    
+  \end{align}
   \end{itemize}
 \vspace{0.5cm}
 
@@ -290,7 +309,7 @@ H  = \frac{p^2}{2m}.
   \end{align}
   \item[(2)] The expectation value of $x$ also can be described in 
   the momentum space regarding as the operator in the integration.
-  \begin{align*}
+  \begin{align}
     \begin{split}
       \langle x\rangle &= i\hbar\int \phi^*(p,t)
       \frac{\partial\phi(p,t)}{\partial p_x}\,d^3p 
@@ -305,7 +324,7 @@ H  = \frac{p^2}{2m}.
     +\phi^*(p,0)\frac{\partial \phi(p,0)}{\partial p_x}\,d^3p \\
     &=\frac{\langle p_x\rangle_{t=0}}{m}t+\langle x\rangle_{t=0} 
     \end{split}
-  \end{align*}
+  \end{align}
   \item[(3)] The definition of the deviation is,
   \begin{align}\label{def:deviation}
     (\Delta p_x)^2 = \langle p_x^2 \rangle-\langle p_x \rangle^2. 

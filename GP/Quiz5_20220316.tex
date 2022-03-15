@@ -66,24 +66,26 @@ Incheon 22212, Republic of Korea }
 화물이 실린 어떤 비행기의 무게는 $2.75\times
 10^6$ N이다. 이 비행기의 엔진 추진력이 $6.35\times10^6$ N이라면 최저
 이륙속력인 285 km/h에 도달하기 위해 필요한 활주로의 길이는 최소
-얼마인가?  
+얼마인가?  \\
 
-\noindent {\bf 해답} 비행기의 무게는 비행기의 질량에 중력 가속도의 크기를
-곱한 값과 같다.
+\noindent {\bf 해답} 비행기의 무게를 $W$, 질량을 $m$ 이라 하자. 
+무게는 비행기의 질량에 중력 가속도의 크기를
+곱한 값과 같으므로,
 \begin{align}
-  W=mg,\,\,\,m=\frac{W}{g}
+  W=mg,\,\,\,m=\frac{W}{g}.
 \end{align}
-비행기가 엔진에 의해 가속될 때, 그 가속도의 크기는 다음과 같다.
+비행기가 엔진에 의해 가속될 때, 엔진의 추진력을 $F$ 라 하면 
+그 가속도의 크기는 다음과 같이 일정하다.
 \begin{align}
   a=\frac{F}{m}=\frac{Fg}{W}
 \end{align}
-비행기가 가속되는 동안, 질주한 거리와 그 때의 속력은 
-다음의 관계에 있다.
+비행기가 일정한 가속도로 질주하므로 질주한 거리와 그 때의 속력은 
+다음의 식을 통해 구할 수 있다.
 \begin{align}\label{eq:1}
  v^2-v^2_0 = 2a(x-x_0) 
 \end{align}
 초기 조건이 $x_0=0,\,\,\,v_0=0$ 로 주어진다면, 식 (\ref{eq:1}) 으로
-부터, 속력이 285 km/h 에 도달할 때까지 질주한 거리를 알 수 있다.
+부터 속력이 285 km/h 에 도달할 때까지 질주한 거리를 알 수 있다.
 \begin{align}
     v^2 = 2ax = 2\,\frac{Fg}{W}\,x,\,\,\,
     x=\frac{2Wv^2}{Fg}
@@ -144,8 +146,9 @@ $\theta_2=30.0^\circ$이다.
     \end{split}
   \end{align}
   $\vec{F}_1$ 과 $\vec{F}_2$ 는 + $x$ 축을 기준으로 각각
-  $180^\circ-\theta_1$ , $270^\circ+\theta_2$ 만큼 벌어져 있으므로,
-  $x$ 성분은 다음과 같다.
+  $180^\circ-\theta_1$ , $270^\circ+\theta_2$ 만큼 벌어져 있으므로
+  삼각함수의 성질에 따라
+  $x$ 성분과 $y$ 성분을 다음과 같이 구할 수 있다.
   \begin{align}
     \begin{split}
       {F_1}_x + {F_2}_x + {F_3}_x 
@@ -184,51 +187,6 @@ $\theta_2=30.0^\circ$이다.
     \vec{F_3}=(1.70\,\hat{\bm{i}} +
     3.06\,\hat{\bm{j}})\,\mathrm{N}
   \end{align}
-%  -------------------------------------------------------------\\
-%  $\vec{F}_1$ 과 $\vec{F}_2$ 는 + $x$ 축을 기준으로 각각
-%  $180^\circ-\theta_1$ , $270^\circ+\theta_2$ 만큼 벌어져 있으므로,
-%  $\vec{F}_1$ 과 $\vec{F}_2$ 의 각 방향 성분은 다음과 같다.
-%  \begin{align}
-%    \begin{split}
-%      \vec{F}_1=|\vec{F}_1|(\cos{(180^\circ-\theta_1)}\,\hat{\bm{i}} +
-%      \sin{(180^\circ-\theta_1)}\,\hat{\bm{j}})\,\mathrm{N}\\
-%      \vec{F}_2=|\vec{F}_2|(\cos{(270^\circ+\theta_2)}\,\hat{\bm{i}} +
-%      \sin{(270^\circ+\theta_2)}\,\hat{\bm{j}})\,\mathrm{N}
-%    \end{split}
-%  \end{align}
-%  따라서, 알짜힘은,
-%  \begin{align}
-%    \begin{split}
-%      \sum\vec{F}=&\vec{F}_1 + \vec{F}_2 \\
-%      =&|\vec{F}_1|(\cos{(180^\circ-\theta_1)}\,\hat{\bm{i}} 
-%      +\sin{(180^\circ-\theta_1)}\,\hat{\bm{j}})\,\mathrm{N} \\
-%      &+|\vec{F}_2|(\cos{(270^\circ+\theta_2)}\,\hat{\bm{i}} 
-%      +\sin{(270^\circ+\theta_2)}\,\hat{\bm{j}})\,\mathrm{N} \\
-%      =&|\vec{F}_1|(-\cos{\theta_1}\,\hat{\bm{i}} 
-%      +\sin{\theta_1}\,\hat{\bm{j}})\,\mathrm{N}
-%      +|\vec{F}_2|(\sin{\theta_2}\,\hat{\bm{i}} 
-%      -\cos{\theta_2}\,\hat{\bm{j}})\,\mathrm{N}.
-%    \end{split}
-%  \end{align}
-%  $|\vec{F}_1|$는 6.00 이고,
-%  $\theta_1=30.0^\circ$, $|\vec{F}_2|$는 7.00,
-%  $\theta_2=30.0^\circ$이므로, 알짜힘은 다음과 같다.
-%  \begin{align}
-%    \begin{split}
-%      \sum\vec{F}=&6.00(-\cos{30.0^\circ}\,\hat{\bm{i}} 
-%      +\sin{30.0^\circ}\,\hat{\bm{j}})\,\mathrm{N}
-%      +7.00(\sin{30.0^\circ}\,\hat{\bm{i}} 
-%      -\cos{30.0^\circ}\,\hat{\bm{j}})\,\mathrm{N}  \\
-%      =&6.00(-\frac{\sqrt{3}}{2}\,\hat{\bm{i}} 
-%      +\frac{1}{2}\,\hat{\bm{j}})\,\mathrm{N}
-%      +7.00(\frac{1}{2}\,\hat{\bm{i}} 
-%      -\frac{\sqrt{3}}{2}\,\hat{\bm{j}})\,\mathrm{N}  \\
-%      =&(-3.00\sqrt{3}\,\hat{\bm{i}} 
-%      +3.00\,\hat{\bm{j}})\,\mathrm{N}
-%      +(3.50\,\hat{\bm{i}} 
-%      -3.50\sqrt{3}\,\hat{\bm{j}})\,\mathrm{N}
-%    \end{split}
-%  \end{align}
   \item[(나)] 레몬이 일정한 속도 $\vec{v} =(13.0\,\hat{\bm{i}} -
   14.0\,\hat{\bm{j}})\,\mathrm{m/s}$로 움직일 때 레몬의
   가속도는 다음과 같다.
@@ -251,8 +209,6 @@ $\theta_2=30.0^\circ$이다.
     \sum\vec{F}=m\vec{a} =m(13.0\,\hat{\bm{i}} -
     14.0\,\hat{\bm{j}})\,\mathrm{N}
   \end{align}
-  이 알짜힘은 정지해 있는 레몬에 $m(13.0\,\hat{\bm{i}} -
-  14.0\,\hat{\bm{j}})\,\mathrm{N}$ 만큼의 힘을 가한 것과 같다. 
   따라서, $\vec{v} =(13.0t\,\hat{\bm{i}} -
   14.0t\,\hat{\bm{j}})\,\mathrm{m/s}$로 움직일 때 레몬에 가해지는 알짜힘은
   다음과 같다.
@@ -301,7 +257,7 @@ $\theta_2=30.0^\circ$이다.
   \begin{align}\label{eq:3}
     \sum\vec{F}=\vec{W}+\vec{D}+\vec{T} = \vec{0}
   \end{align}
-공에 각 방향으로 작용하는 알짜힘의 크기는 다음과 같다.
+공에 작용하는 알짜힘의 성분은 다음과 같다.
 \begin{align}\label{eq:4}
   \begin{split}
     F_x &= |\vec{D}|-|\vec{T}|\cos{45^{\circ}} \\
@@ -322,7 +278,7 @@ $\theta_2=30.0^\circ$이다.
   \begin{split}
     |\vec{D}| &= \frac{\sqrt{2}}{2}|\vec{T}|
     = (1.0\times 10^{-4}\,\mathrm{kg})(9.80\,\mathrm{m/s^2})  \\
-    &=9.8\times 10^{-4}\,\mathrm{N},
+    &=9.8\times 10^{-4}\,\mathrm{N}.
   \end{split}
 \end{align}
 미는 힘의 크기는 $9.8\times 10^{-4}\,\mathrm{N}$ 이다.
