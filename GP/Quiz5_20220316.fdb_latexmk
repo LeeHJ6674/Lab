@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1647308972 "/home/sigma/Lab/GP/Quiz5_20220316.tex" "/home/sigma/Lab/GP/Quiz5_20220316.pdf" "Quiz5_20220316" 1647308973
+["pdflatex"] 1647310387 "/home/sigma/Lab/GP/Quiz5_20220316.tex" "/home/sigma/Lab/GP/Quiz5_20220316.pdf" "Quiz5_20220316" 1647310401
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/GP/Quiz5_20220316.aux" 1647308973 595 f3d7dac91b2b787ef4d02c4f0b72bdf1 ""
-  "/home/sigma/Lab/GP/Quiz5_20220316.tex" 1647308972 13499 2be30f9a6786cee1c899abd894f0e561 ""
+  "/home/sigma/Lab/GP/Quiz5_20220316.aux" 1647310387 595 f3d7dac91b2b787ef4d02c4f0b72bdf1 ""
+  "/home/sigma/Lab/GP/Quiz5_20220316.tex" 1647310401 13502 4721679aa2c586b759b0806bc54ba701 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -291,12 +291,12 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1645685152 8258281 06978915380d3cf57d3fcd5054406eef ""
   "Qfig5-1.pdf" 1647306410 24943 90a5794f2ab13b9c57f8b5418197db54 ""
   "Qfig6-3-20220316.png" 1647306410 32492 b23c6316acfc2e017f1684a9e12ecc13 ""
-  "Quiz5_20220316.aux" 1647308973 595 f3d7dac91b2b787ef4d02c4f0b72bdf1 "pdflatex"
-  "Quiz5_20220316.tex" 1647308972 13499 2be30f9a6786cee1c899abd894f0e561 ""
+  "Quiz5_20220316.aux" 1647310387 595 f3d7dac91b2b787ef4d02c4f0b72bdf1 "pdflatex"
+  "Quiz5_20220316.tex" 1647310401 13502 4721679aa2c586b759b0806bc54ba701 ""
   "defcolor.sty" 1646221108 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   (generated)
-  "/home/sigma/Lab/GP/Quiz5_20220316.log"
   "Quiz5_20220316.aux"
+  "Quiz5_20220316.log"
+  "/home/sigma/Lab/GP/Quiz5_20220316.log"
   "Quiz5_20220316.pdf"
   "/home/sigma/Lab/GP/Quiz5_20220316.pdf"
-  "Quiz5_20220316.log"
