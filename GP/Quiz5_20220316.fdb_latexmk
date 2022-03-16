@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1647340985 "/home/sigma/Lab/GP/Quiz5_20220316.tex" "/home/sigma/Lab/GP/Quiz5_20220316.pdf" "Quiz5_20220316" 1647340985
+["pdflatex"] 1647340985 "/home/sigma/Lab/GP/Quiz5_20220316.tex" "/home/sigma/Lab/GP/Quiz5_20220316.pdf" "Quiz5_20220316" 1647341165
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/sigma/Lab/GP/Quiz5_20220316.aux" 1647340985 595 f3d7dac91b2b787ef4d02c4f0b72bdf1 ""
   "/home/sigma/Lab/GP/Quiz5_20220316.tex" 1647340985 11629 82e2965144b6bd7b015414fbf3e38c67 ""
@@ -297,6 +297,6 @@
   (generated)
   "Quiz5_20220316.pdf"
   "Quiz5_20220316.log"
-  "/home/sigma/Lab/GP/Quiz5_20220316.log"
   "Quiz5_20220316.aux"
+  "/home/sigma/Lab/GP/Quiz5_20220316.log"
   "/home/sigma/Lab/GP/Quiz5_20220316.pdf"
