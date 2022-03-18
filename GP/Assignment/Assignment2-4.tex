@@ -17,7 +17,7 @@
 \usepackage{amsthm}
 \usepackage[utf8]{inputenc}
  \usepackage{setspace}
- \usepackage{tikz}
+ \usepackage{tikz,pgfplots}
  \usepackage{tkz-euclide}
  \usetikzlibrary{angles}
 %\pagestyle{fancy}
@@ -57,25 +57,51 @@
 
 \noindent{\bf 답:} 
 영철이가 공을 던지는 순간 공의 수직 방향 속력을 $v_0$ 라고 하면, 
-시간에 따른 공의 높이는 다음과 같다.
+시간에 따른 공의 높이는 다음과 같은 $t$ 에 대한 2차 함수이다.
 \begin{align}
-  h = -\frac{1}{2}gt^2+v_0t
-\end{align} 공이 최대 높이에 있을 때의 시간을 $t_h$ 라 하면,
+  h = -\frac{1}{2}gt^2+v_0t.
+\end{align} $h$ 가 $t$ 에 대한 2차 함수이므로
+ 공이 최대 높이에 있을 때의 시간을 $t_h$ 라 하면 다음이 성립한다.
 \begin{align}\label{eq:4.1}
-  \left.\frac{dh}{dt}\right|_{t=t_h} = -gt_h+v_0=0,\,\,\,t_h=\frac{v_0}{g}
+  \left.\frac{dh}{dt}\right|_{t=t_h} 
+  = -gt_h+v_0=0,\,\,\,t_h=\frac{v_0}{g}.
 \end{align}
-영희는 $t_h-2$ 초와
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[baseline]
+    \begin{axis}[
+      ticks=none,
+    axis y line=left,
+    axis x line=bottom,
+    xmax=16,xmin=0,
+    ymin=0,ymax=16,
+    xlabel=$t$,ylabel=$h$,
+    width=8cm,
+    anchor=center,
+    ]
+    \addplot [mark=none,domain=0:20] {-0.3*x^2+4*x} ;
+    \addplot [mark=none,loosely dashed,domain=0:14] {4} node[right] {$h_1$};
+    \addplot [mark=none,loosely dashed,domain=0:14] {10} node[right] {$h_2$};
+    \addplot [thick,densely dotted,domain=0:6] coordinates {(40/6,0)(40/6,15)}
+  node[left] {$t_h$};
+    \end{axis}
+    \end{tikzpicture}
+  \caption{ 문제 4}
+  \label{pic:10}
+\end{figure}
+
+또한, 영희와 순희는 올라가는 공을 보고
+내려가는 공을 본 것이므로, 영희는 $t_h-2$ 초와
 $t_h+2$ 초에 공을 목격했고 순희는 $t_h-1$ 초와 $t_h+1$ 초에 공을 목격했다.
 지면으로부터 영희의 집 사이 거리를 $h_1$, 순희의 집 사이 거리를 $h_2$ 라고 하자. 
 영희가 공을 본 순간 공의 높이는,
 \begin{align}
-  h_1 = -\frac{1}{2}g(t_h-2)^2+v_0(t_h-2) 
-  = -\frac{1}{2}g(t_h+2)^2+v_0(t_h+2) 
+  h_1 = -\frac{1}{2}g(t_h-2)^2+v_0(t_h-2) ,
 \end{align}
 이고 순희가 공을 본 순간 공의 높이는,
 \begin{align}
-  h_2 = -\frac{1}{2}g(t_h-1)^2+v_0(t_h-1) 
-  = -\frac{1}{2}g(t_h+1)^2+v_0(t_h+1) .
+  h_2 = -\frac{1}{2}g(t_h-1)^2+v_0(t_h-1).
 \end{align}
 영희의 집과 순희의 집이 떨어진 거리는 다음과 같다.
 \begin{align}
