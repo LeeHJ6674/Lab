@@ -65,9 +65,9 @@ Inha University, Incheon 22212, Republic of Korea }
 이다. 오른쪽을 양의 방향이라 하면 블록 1, 2, 3 에 수평 방향으로 작용하는 힘 $F_{3x}$ 는 
 다음과 같다.
 \begin{align}
-  F_{3x} = 2Mg - Mg - f_k = Mg - f_k
+  F_{3x} = 2Mg - Mg - f_k = Mg - f_k,
 \end{align}
-$f_k$ 는 마찰력이다. 블록 2 에 작용하는 수직항력을 $N$ 이라 하면,
+$f_k$ 는 마찰력이다. 블록 2 에 작용하는 수직 항력을 $N$ 이라 하면,
 \begin{align}
   f_k = \mu_kN.
 \end{align}
@@ -79,7 +79,7 @@ $f_k$ 는 마찰력이다. 블록 2 에 작용하는 수직항력을 $N$ 이라 
 \begin{align}
   \begin{split}
     \sum F &= Mg - f_k = Mg - \mu_kN \\
-    &= 5M \times (0.500\,\mathrm{m/s^2})
+    &= 5Ma= 5M \times (0.500\,\mathrm{m/s^2})
   \end{split}
 \end{align}
 운동 마찰 계수 $\mu_k$ 는 다음과 같다.
@@ -138,12 +138,31 @@ F_v = mg\cos{\theta},\,\,\,F_p = mg\sin{\theta}
 $1\,600\,\mathrm{kg}$이다. 초속도 2.00 m/s로 내려오던 승강기가 어느
 순간부터 일정한 가속도로 감속하여 5.00 m 더 간 후
 정지하였다. 정지하기까지 승강기를 연결한 줄의 장력은 얼마인가? (단,
-중력가속도는 $9.80\,\mathrm{m/s^2}$이다.)   
-\newpage
+중력가속도는 $9.80\,\mathrm{m/s^2}$이다.)   \\
 
-{\color{gray} [문제 풀이 쪽]}
+\noindent {\bf 풀이}
+승강기는 어느 순간 부터 속력이 줄어드는 등가속도 운동을 하였으므로
+ 승강기에 가해진 가속도의 크기는 다음과 같다.
+\begin{align}
+  -2as = v^2-v_0^2,\,\,\, a = \frac{v_0^2-v^2}{2s}
+\end{align}
+승강기에 작용한 힘은 줄의 장력과 중력이다. 장력을 $T$ 라고 하면
+ 승강기에 작용한 합력은,
+\begin{align}
+  \sum F = ma = T-mg,\,\,\, T = m(a+g)
+\end{align}
+따라서 장력은 다음과 같다.
+\begin{align}
+  \begin{split}
+    T  &= m(a+g)  \\ 
+    &= (1\,600\,\mathrm{kg})\left(\frac{(2.00\,\mathrm{m/s})^2}
+    {2(5.00\,\mathrm{m})}+9.80\,\mathrm{m/s^2}\right) \\
+    &=16300\,\mathrm{N}
+  \end{split}
+\end{align}
+승강기에 작용한 줄의 장력은 $16300\,\mathrm{N}$ 이다.
 
-\newpage
+\vspace{2cm}
 
 \noindent {\bf 문제 4 [40pt]} (\textbf{\color{red} 난이도 상})
 질량이 각각 $m=16$ kg, $M=88$ kg인 두 블록이 
@@ -157,7 +176,7 @@ $\mu_s=0.38$이다. 블록 $M$이 놓여있는 수평면과 $M$ 사이에는 쓸
 \includegraphics[scale=0.3]{Qfig6-4-20220321.png}  
   \caption{문제 4}
   \label{fig:4}
-\end{figure}
+\end{figure}\\
 
 \noindent {\bf 풀이} 우선, 블록 $M$ 이 고정되어 움직이지 않을 때 
 블록 $m$ 이 떨어지지 않기 위한 최소한의 힘을 $\vec{F_0}$ 라고 하자.
