@@ -50,11 +50,26 @@ Inha University, Incheon 22212, Republic of Korea }
 때 받는 끌림힘은 $bv^2$ 형태를 갖는다. 탁구공이 자유낙하를 할 때,
 운동방정식을 세우고, $b$를 구하여라.  
 
-\newpage
+\noindent {\bf 풀이}
 
-{\color{gray} [문제 풀이 쪽]}
-
-\newpage 
+자유낙하 하는 탁구공의 운동방정식은 다음과 같다.
+\begin{align}
+  \sum F = -bv^2+mg
+\end{align}
+시간이 충분히 지나 탁구공의 속력이 끝속력에 도달하면 탁구공의 속력은 
+일정해진다. 이는 탁구공에 작용하는 합력이 0 임을 의미한다. 즉,
+\begin{align}
+  bv^2 = mg,\,\,\, b =\frac{mg}{v^2}.
+\end{align}
+$m = 2.3\,\mathrm{g}$, $v = 9.0\,\mathrm{m/s}$ 이다. 따라서,
+\begin{align}
+  \begin{split}
+    b &= \frac{(2.3\,\mathrm{g})(9.8\,\mathrm{m/s^2})}{( 9.0\,\mathrm{m/s})^2}  \\
+    &= 0.28\,\mathrm{g/m}
+  \end{split}
+  \end{align}
+  b 는 0.28 g/m 이다.
+\vspace{1.cm}
 
 \noindent {\bf 문제 2 [20pt]} 자동차가 급제동을 할 때, 바퀴가
 잠겨서 미끄러지지 않도록 방지하는 장치를 잠김방지 브레이크
@@ -80,11 +95,44 @@ $\mu_k=0.40$이다.
 (자동차가 도로 위에서 미끄러지면(skidding), 타이어가 뜨거워지고,
 마찰계수가 온도에 따라 바뀔 수 있다. 이 온도에 의한 효과는 여기서 무시하여라.)
 
-\newpage
+\noindent {\bf 풀이}
+\begin{itemize}
+  \item[(가)] 문턱 브레이킹을 유지할 때 바퀴는 지면에 대해 계속 회전하므로 지면과 
+  바퀴 사이에 정지 마찰력이 작용한다. 자동차의 질량을 $m$ 이라 하자. 운동 마찰력은,
+  \begin{align}
+    f_s = \mu_s N = \mu_s mg
+  \end{align} 
+이고 이 힘은 자동차가 정지할 때 까지 일정하게 작용한다. 즉,
+\begin{align}
+  ma = f_s,\,\,\, a = \frac{f_s}{m}=\mu_s g.
+\end{align}
+자동차의 가속도가 일정하므로 다음 공식을 적용할 수 있다.
+\begin{align}
+  2as = v^2_0-v^2.
+\end{align}
+자동차의 제동거리 $s$ 는 다음과 같다.
+\begin{align}
+  \begin{split}\label{eq:2-1}
+    s &= \frac{v^2_0-v^2}{2a} = \frac{v^2_0-v^2}{2\mu_s g}  \\
+    &= \frac{(30\,\mathrm{m/s})^2}{2(0.50)(9.8\,\mathrm{m/s^2})}  \\
+    &= 92\,\mathrm{m}
+  \end{split}
+\end{align}
+ABS가 작동한다면 이 자동차의 제동거리는 92 m 이다.
+  \item[(나)] ABS 가 작동하지 않는다면 제동하는 동안 바퀴가 회전하지 않으므로 
+  지면에 대해 운동 마찰력이 작용한다. 식 (\ref{eq:2-1}) 에 의해 이 경우의 
+  제동거리 $s$ 는,
+  \begin{align}
+    \begin{split}
+      s &= \frac{v^2_0-v^2}{2a} = \frac{v^2_0-v^2}{2\mu_k g}  \\
+      &= \frac{(30\,\mathrm{m/s})^2}{2(0.40)(9.8\,\mathrm{m/s^2})}  \\
+      &= 110\,\mathrm{m}
+    \end{split}
+  \end{align}
+  ABS가 작동하지 않는다면 이 자동차의 제동거리는 110 m 이다.
+\end{itemize}
 
-{\color{gray} [문제 풀이 쪽]}
-
-\newpage 
+\vspace{1.cm}
 
 \noindent {\bf 문제 3 [20pt]}
 그림~\ref{fig:3}에서처럼 세 힘을 어떤 물체에 가해 쓸림이 없는
@@ -101,20 +149,37 @@ $F_1=5.00$ N, $F_2=9.00$ N, $F_3=3.00$ N이고, $\vec{F}_2$와 수평선
 \item[(가)] 세 힘이 물체에 해준 알짜일은 얼마인가?
 \item[(나)] 이 물체의 운동에너지는 증가하였는가, 감소하였는가?
 \end{itemize}
-\newpage
 
-{\color{gray} [문제 풀이 쪽]}
+\noindent {\bf 풀이}
+\begin{itemize}
+  \item [(가)] 물체의 왼쪽을 +$x$ 방향, 위쪽을 +$y$ 방향이라 하자.
+   물체에 $x$ 방향으로 작용하는 합력의 크기는 다음과 같다.
+   \begin{align}
+     \sum F_x = F_{1,x}+F_{2,x}+F_{3,x}=|\vec{F_1}|-|\vec{F_2}|\cos{\theta}
+   \end{align}
+   물체는 수평면에서 이동하였으므로 $y$ 방향으로 가해진 힘은 물체에 일을 하지 않았다. 
+   따라서 물체가 움직인 거리를 $d$ 라 하면 세 힘이 물체에 해준 알짜일은 다음과 같다.
+   \begin{align}
+    \begin{split}
+      W &= \sum F_x\,d= \left(|\vec{F_1}|-|\vec{F_2}|\cos{\theta}\right)\,d \\
+      &= \left((5.00\,\mathrm{N})-(9.00\,\mathrm{N})\cos{60.0^\circ}\right)
+      (3.00\,\mathrm{m})  \\
+      &= 1.50\,\mathrm{J}
+    \end{split}
+   \end{align}
+  \item [(나)] 외부에서 물체에 일을 해주었으므로 이 물체의 운동에너지는 
+  증가하였다.
+\end{itemize}
 
-\newpage
+\vspace{1.cm}
 
 \noindent {\bf 문제 4 [10pt]} 
 수평 바닥에 $37.0^\circ$의 각도로 122 N의 힘이 100 kg의 토막에
 작용하여 토막이 5.00 m/s의 일정한 속력으로 수평바닥을 따라 끌려가고
 있다. 힘이 토막에 한 일의 시간변화율은 얼마인가?
 
-\newpage
+\noindent {\bf 풀이}
 
-{\color{gray} [문제 풀이 쪽]}
 
-\newpage
+
 \end{document}
