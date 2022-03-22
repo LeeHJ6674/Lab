@@ -25,6 +25,8 @@
 \author{김현철\footnote{Office: 5S-436D (면담시간 매주
     화요일-16:00$\sim$20:00)}} 
 \email{hchkim@inha.ac.kr}
+\author{Lee Hui-Jae} 
+\email{hjlee6674@inha.edu}
 \affiliation{Hadron Theory Group, Department of Physics,
 Inha University, Incheon 22212, Republic of Korea }
 \date{Spring semester, 2022}
@@ -104,9 +106,11 @@ $\mu_s=0.04$이다. 이 달걀이 프라이팬에서 미끄러지려면 프라�
 프라이팬에 수직한 방향과 프라이팬에 평행한 방향으로 분해할 수 있다. 힘의 수직한
 방향 성분을 $F_v$, 평행한 방향 성분을 $F_p$ 이라고 하면,
 \begin{align}
-F_v = mg\cos{\theta},\,\,\,F_p = mg\sin{\theta}  
+F_v = mg\cos{\theta},\,\,\,F_p = mg\sin{\theta}  .
 \end{align} 
-이 달걀에 작용하는 수직항력은 $F_v$ 의 반작용이므로 정지 마찰력 $f_s$ 는,
+달걀은 힘 $F_v$ 로 프라이팬을 누르게 되고 프라이팬은 같은 크기로 달걀을 밀어내는데,
+이 밀어내는 힘이 달걀에 작용하는 수직 항력이 된다.
+이 달걀에 작용하는 수직 항력은 $F_v$ 의 반작용이므로 정지 마찰력 $f_s$ 는,
 \begin{align}
   \begin{split}
     f_s &= \mu_s N = \mu_s F_v \\
@@ -124,11 +128,11 @@ F_v = mg\cos{\theta},\,\,\,F_p = mg\sin{\theta}
 \end{align}
 를 만족하는 가장 작은 $\theta$ 는 다음과 같이 구한다.
 \begin{align}
-  \frac{1}{\mu_s} = \frac{1}{0.04} > \cot{\theta} .
+  \tan{\theta} > \mu_s = 0.04
 \end{align}
-양변에 $\cot^{-1}$ 을 가해주면,
+양변에 $\tan^{-1}$ 을 가해주면,
   \begin{align}
-  \theta < \cot^{-1}{\left(\frac{1}{0.04}\right)} \approx 2.30^\circ
+  \theta > \tan^{-1}{0.04} \approx 2.30^\circ
 \end{align}
 이므로 경사각이 $2.30^\circ$ 보다 커지면 달걀이 미끄러진다.
 \vspace{2cm}
@@ -178,61 +182,33 @@ $\mu_s=0.38$이다. 블록 $M$이 놓여있는 수평면과 $M$ 사이에는 쓸
   \label{fig:4}
 \end{figure}\\
 
-\noindent {\bf 풀이} 우선, 블록 $M$ 이 고정되어 움직이지 않을 때 
-블록 $m$ 이 떨어지지 않기 위한 최소한의 힘을 $\vec{F_0}$ 라고 하자.
-이 때는 수직항력이 $\vec{F_0}$ 이고 물체를 끄는 힘이 중력이므로 블록 $m$ 이
-움직이지 않기 위해서는,
-\begin{align}\label{eq:4-1}
-  \mu_s|\vec{F_0}| = mg,\,\,\, |\vec{F_0}| = \frac{mg}{\mu_s}
-\end{align}
-이어야 한다. 블록 $M$ 은 움직일 수 있으므로 $\vec{F}$ 가 블록 $M$ 을 움직이도록
-하기도 한다. 두 블록은 같이 움직이므로 힘 $\vec{F}$ 가 가해질 때 가속도는,
-\begin{align}\label{eq:4-2}
-  a = \frac{|\vec{F}|}{M+m}
-\end{align}
-이다. 블록 $M$ 이 가속하는 원인은 블록 $m$ 이 밀어주는 힘이고 뉴턴의 제 3 법칙에 
-의해 블록 $M$ 은 블록 $m$ 에게 같은 크기의 반작용을 가한다. 반작용의 크기를 
-$F_{Mm}$ 이라 하면 $F_{Mm}$ 은 정확히 블록 $M$ 이 가속하도록 하는 힘과 같은 크기를
-가진다. 따라서,
-\begin{align}\label{eq:4-3}
-  F_{Mm} = Ma.
-\end{align}
-블록 $m$ 에 작용하는 합력의 크기는,
+\noindent {\bf 풀이} 
+두 물체의 가속도 $a$ 는 다음과 같다.
 \begin{align}
-  |\vec{F}|-F_{Mm}
+  a = \frac{|\vec{F}|}{M+m}.
 \end{align}
-이고, 이 합력이 (\ref{eq:4-1}) 을 만족해야 한다. 즉,
-\begin{align}\label{eq:4-4}
-  |\vec{F}|-F_{Mm} = \frac{mg}{\mu_s}
-\end{align}
-이다. $|\vec{F}|$ 를 구해보자. 식 (\ref{eq:4-2}), (\ref{eq:4-3}) 으로 부터,
-\begin{align}
-  F_{Mm} = Ma = \frac{M|\vec{F}|}{M+m}
-\end{align}
-이므로,
-\begin{align}
+ 블록 $m$ 이 블록 $M$ 에게 가하는 힘은,
+ \begin{align}
+   F_{mM} = Ma = \frac{M}{M+m}|\vec{F}|
+ \end{align} 
+ 블록 $M$ 은 이 힘의 반작용으로 같은 크기의 힘을 블록 $m$ 에게 가하고, 
+ 이 힘이 블록 $m$ 의 수직 항력 $N$ 이 된다. 블록 $m$ 이 정지해 있을 때 
+ 블록 $m$ 에 수직 방향으로 작용하는 힘의 합력은,
+ \begin{align}
   \begin{split}
-    |\vec{F}|-F_{Mm} 
-    &=|\vec{F}|-\frac{M|\vec{F}|}{M+m}  \\
-    &=\left(1-\frac{M}{M+m}\right)|\vec{F}|
+    F_y &= mg - \mu_sN \\
+    &= mg - \mu_s F_{mM} = 0
   \end{split}
-\end{align}
-이다. 이를 (\ref{eq:4-4}) 에 대입하면,
-\begin{align}
-  \left(1-\frac{M}{M+m}\right)|\vec{F}|
-  =\left(\frac{m}{M+m}\right)|\vec{F}|
-  = \frac{mg}{\mu_s}
-\end{align}
-이므로,
-\begin{align}
-  |\vec{F}| = \left(\frac{M+m}{m}\right)\frac{mg}{\mu_s}
-  = \frac{(M+m)g}{\mu_s}
-\end{align}
-이다. $m=16$ kg, $M=88$ kg 과 $\mu_s=0.38$ 를 대입하자.
-\begin{align}
-  |\vec{F}| = \frac{(88\,\mathrm{kg}+16\,\mathrm{kg})
-  (9.8\,\mathrm{m/s^2})}{0.38}
-   = 2700\,\mathrm{N}.
-\end{align}
-블록 $m$ 이 미끄러지지 않기 위해, 최소한 2700 N 의 힘으로 밀어주어야 한다.
+ \end{align}
+ 따라서 최소힘 $\vec{F}$ 의 크기는,
+ \begin{align}
+   \begin{split}
+     F_{mM} &= \frac{M}{M+m}|\vec{F}| =\frac{mg}{\mu_s},\,\,\,
+     |\vec{F}| = \left(\frac{M+m}{M}\right)\left(\frac{mg}{\mu_s}\right)  \\
+     |\vec{F}| &= \left(\frac{(88+16)\,\mathrm{kg}}{88\,\mathrm{kg}}\right)
+     \left(\frac{(16\,\mathrm{kg})(9.80\,\mathrm{m/s^2})}{0.38}\right)  \\
+     &= 490\,\mathrm{N}.
+   \end{split}
+ \end{align}
+ 블록 $m$ 이 미끄러지지 않기 위해 필요한 최소 힘은 490 N 이다.
 \end{document}
