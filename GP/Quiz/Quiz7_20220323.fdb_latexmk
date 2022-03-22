@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1647940702 "/home/sigma/Lab/GP/Quiz/Quiz7_20220323.tex" "/home/sigma/Lab/GP/Quiz/Quiz7_20220323.pdf" "Quiz7_20220323" 1647940707
+["pdflatex"] 1647940702 "/home/sigma/Lab/GP/Quiz/Quiz7_20220323.tex" "/home/sigma/Lab/GP/Quiz/Quiz7_20220323.pdf" "Quiz7_20220323" 1647940789
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/GP/Quiz/Quiz7_20220323.aux" 1647940702 237 0fe28c36eaea9596c137aa8dbaafdb1f ""
-  "/home/sigma/Lab/GP/Quiz/Quiz7_20220323.tex" 1647940706 7540 ca8cad5b2971641208cd6e8545ef6fe6 ""
+  "/home/sigma/Lab/GP/Quiz/Quiz7_20220323.aux" 1647940789 237 0fe28c36eaea9596c137aa8dbaafdb1f ""
+  "/home/sigma/Lab/GP/Quiz/Quiz7_20220323.tex" 1647940789 7540 ca8cad5b2971641208cd6e8545ef6fe6 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -227,12 +227,12 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1645685134 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1645685152 8258281 06978915380d3cf57d3fcd5054406eef ""
   "Qfig7-3-20220323.png" 1647601526 35033 2a5cc981e4970daa61dff7182a00ec83 ""
-  "Quiz7_20220323.aux" 1647940702 237 0fe28c36eaea9596c137aa8dbaafdb1f "pdflatex"
-  "Quiz7_20220323.tex" 1647940706 7540 ca8cad5b2971641208cd6e8545ef6fe6 ""
+  "Quiz7_20220323.aux" 1647940789 237 0fe28c36eaea9596c137aa8dbaafdb1f "pdflatex"
+  "Quiz7_20220323.tex" 1647940789 7540 ca8cad5b2971641208cd6e8545ef6fe6 ""
   "defcolor.sty" 1646221108 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   (generated)
-  "/home/sigma/Lab/GP/Quiz/Quiz7_20220323.pdf"
-  "Quiz7_20220323.log"
   "/home/sigma/Lab/GP/Quiz/Quiz7_20220323.log"
+  "Quiz7_20220323.log"
   "Quiz7_20220323.pdf"
   "Quiz7_20220323.aux"
+  "/home/sigma/Lab/GP/Quiz/Quiz7_20220323.pdf"
