@@ -208,6 +208,20 @@ $1\,600\,\mathrm{kg}$이다. 초속도 2.00 m/s로 내려오던 승강기가 어
 \end{align}
 승강기에 작용한 줄의 장력은 $16300\,\mathrm{N}$ 이다.
 
+
+\begin{figure}[bh]
+  \begin{tikzpicture}
+    \draw (0,-2.0) -- (0,2.0);
+    
+    \node[right] (X) at (0,0) {0};
+    \draw [red,very thick,-latex] (0,0.1) -- (0,1.8) 
+    node [left,black] {$T$};
+
+    \draw [red,very thick,-latex] (0,-0.1) -- (0,-1.2) 
+    node [left,black] {$mg$};
+  \end{tikzpicture} \caption{Free body diagram}
+\end{figure}
+
 \vspace{2cm}
 
 \noindent {\bf 문제 4 [40pt]} (\textbf{\color{red} 난이도 상})
@@ -226,7 +240,7 @@ $\mu_s=0.38$이다. 블록 $M$이 놓여있는 수평면과 $M$ 사이에는 쓸
 
 \noindent {\bf 풀이} 
 
-\begin{figure}
+\begin{figure}[h]
   \begin{tikzpicture}
     \draw (-3,0) -- (3,0) node [above] {$+x$};
     \draw [red,very thick,-latex] (0.1,0) -- (2,0) 
