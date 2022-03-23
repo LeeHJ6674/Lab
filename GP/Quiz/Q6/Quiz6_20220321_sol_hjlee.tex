@@ -17,6 +17,7 @@
 \usepackage{amsthm}
 \usepackage[utf8]{inputenc}
  \usepackage{setspace}
+ \usepackage{tikz}
 %\pagestyle{fancy}
 
 \begin{document}
@@ -94,6 +95,26 @@ $f_k$ 는 마찰력이다. 블록 2 에 작용하는 수직 항력을 $N$ 이라
   \end{split}
 \end{align}
 운동 마찰 계수는 0.372 이다.
+
+\begin{figure}
+  \begin{tikzpicture}
+    \draw (-2.5,0) -- (2.5,0) ;
+    \draw (0,-2.5) -- (0,2.5) ;
+    \draw [red,very thick,-latex] (0,0.1) -- (0,2) 
+    node [left,black] {$N$};
+
+    \draw [blue,very thick,-latex] (-0.1,0) -- (-1,0) 
+    node [above,black] {$Mg$};   
+    \draw [blue,very thick,-latex] (-1.1,0) -- (-2.2,0) 
+    node [below,black] {$f_k$};   
+
+    \draw [blue,very thick,-latex] (0.1,0) -- (2,0) 
+    node [above,black] {$2Mg$};    
+    \draw [red,very thick,-latex] (0,-0.1) -- (0,-2) 
+    node [left,black] {$2Mg$};
+  \end{tikzpicture} \caption{Free body diagram}
+\end{figure}
+
 \vspace{2cm}
 
 \noindent {\bf 문제 2 [10pt]} 프라이팬과 달걀 사이의 정지마찰계수는
@@ -102,12 +123,13 @@ $\mu_s=0.04$이다. 이 달걀이 프라이팬에서 미끄러지려면 프라�
 
 
 \noindent {\bf 풀이} 
+
 프라이팬과 수평면이 이루는 각도를 $\theta$ 라고 하자. 달걀에 작용하는 힘을
 프라이팬에 수직한 방향과 프라이팬에 평행한 방향으로 분해할 수 있다. 힘의 수직한
 방향 성분을 $F_v$, 평행한 방향 성분을 $F_p$ 이라고 하면,
 \begin{align}
 F_v = mg\cos{\theta},\,\,\,F_p = mg\sin{\theta}  .
-\end{align} 
+\end{align}
 달걀은 힘 $F_v$ 로 프라이팬을 누르게 되고 프라이팬은 같은 크기로 달걀을 밀어내는데,
 이 밀어내는 힘이 달걀에 작용하는 수직 항력이 된다.
 이 달걀에 작용하는 수직 항력은 $F_v$ 의 반작용이므로 정지 마찰력 $f_s$ 는,
@@ -117,6 +139,26 @@ F_v = mg\cos{\theta},\,\,\,F_p = mg\sin{\theta}  .
     &= \mu_s mg\cos{\theta}.
   \end{split}
 \end{align} 
+
+\begin{figure}
+  \begin{tikzpicture}
+    \draw [rotate=30] (-3,0) -- (3,0) ;
+    \draw [red,very thick,-latex,rotate=30] (0.1,0) -- (1.5,0) 
+    node [above,black] {$f_s$};
+    \draw [red,very thick,-latex,rotate=30] (0,0.1) -- (0,2.6) 
+    node [left,black] {$N$};
+    \draw [rotate=30] (0,-3) -- (0,3) ;
+    \draw [blue,very thick,-latex] (0,-0.1) -- (0,-3) 
+    node [below,black] {$mg$};
+    \draw [blue,very thick,-latex,rotate=30] (0,-0.1) -- (0,-2.6) 
+    node [right,black] {$F_v$};
+    \draw [blue,very thick,-latex,rotate=300] (0,-0.1) -- (0,-1.5) 
+    node [above,black] {$F_p$};
+    \draw[black] (270:1) arc(270:300:1) (300:1) 
+    node [below=10,left,black] {$\theta$};
+  \end{tikzpicture} \caption{Free body diagram}
+\end{figure}
+
 달걀을 미끄러지게 하는 힘은 $F_p$ 이고 정지 마찰력 $f_s$ 는 이 힘과 반대 방향으로
 작용한다. 달걀이 미끄러지기 위해서는 미끄러지게 하는 힘이 정지 마찰력 보다 커야한다. 즉,
 \begin{align}
@@ -183,6 +225,22 @@ $\mu_s=0.38$이다. 블록 $M$이 놓여있는 수평면과 $M$ 사이에는 쓸
 \end{figure}\\
 
 \noindent {\bf 풀이} 
+
+\begin{figure}
+  \begin{tikzpicture}
+    \draw (-3,0) -- (3,0) node [above] {$+x$};
+    \draw [red,very thick,-latex] (0.1,0) -- (2,0) 
+    node [above,black] {$|\vec{F}|$};
+    \draw [red,very thick,-latex] (-0.1,0) -- (-1.6,0) 
+    node [above,black] {$F_{mM}$};
+    \draw (0,-2.5) -- (0,2.5) node [right] {$+y$};
+    \draw [blue,very thick,-latex] (0,0.1) -- (0,1.5) 
+    node [right,black] {$\mu_s N$};
+    \draw [blue,very thick,-latex] (0,-0.1) -- (0,-1.5) 
+    node [right,black] {$mg$};
+  \end{tikzpicture} \caption{Free body diagram}
+\end{figure}
+
 두 물체의 가속도 $a$ 는 다음과 같다.
 \begin{align}
   a = \frac{|\vec{F}|}{M+m}.
