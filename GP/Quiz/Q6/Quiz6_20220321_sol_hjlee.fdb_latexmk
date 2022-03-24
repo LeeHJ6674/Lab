@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1648035248 "/home/sigma/Lab/GP/Quiz/Q6/Quiz6_20220321_sol_hjlee.tex" "/home/sigma/Lab/GP/Quiz/Q6/Quiz6_20220321_sol_hjlee.pdf" "Quiz6_20220321_sol_hjlee" 1648035274
+["pdflatex"] 1648035248 "/home/sigma/Lab/GP/Quiz/Q6/Quiz6_20220321_sol_hjlee.tex" "/home/sigma/Lab/GP/Quiz/Q6/Quiz6_20220321_sol_hjlee.pdf" "Quiz6_20220321_sol_hjlee" 1648087842
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/sigma/Lab/GP/Quiz/Q6/Quiz6_20220321_sol_hjlee.aux" 1648035251 611 e857824e2ebce208057814af611aab37 ""
-  "/home/sigma/Lab/GP/Quiz/Q6/Quiz6_20220321_sol_hjlee.tex" 1648035273 10039 1fc4b1bf8aa86619f59360933310d3dc ""
+  "/home/sigma/Lab/GP/Quiz/Q6/Quiz6_20220321_sol_hjlee.tex" 1648087841 10039 1fc4b1bf8aa86619f59360933310d3dc ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -296,11 +296,11 @@
   "Qfig6-1-20220321.png" 1647601523 83876 d135ca24f2aedf7f48b90ce4efda2e0c ""
   "Qfig6-4-20220321.png" 1647601524 76194 7044ee2522f5293845999f4f5899147a ""
   "Quiz6_20220321_sol_hjlee.aux" 1648035251 611 e857824e2ebce208057814af611aab37 "pdflatex"
-  "Quiz6_20220321_sol_hjlee.tex" 1648035273 10039 1fc4b1bf8aa86619f59360933310d3dc ""
+  "Quiz6_20220321_sol_hjlee.tex" 1648087841 10039 1fc4b1bf8aa86619f59360933310d3dc ""
   "defcolor.sty" 1648002115 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   (generated)
-  "/home/sigma/Lab/GP/Quiz/Q6/Quiz6_20220321_sol_hjlee.pdf"
   "Quiz6_20220321_sol_hjlee.aux"
-  "/home/sigma/Lab/GP/Quiz/Q6/Quiz6_20220321_sol_hjlee.log"
+  "/home/sigma/Lab/GP/Quiz/Q6/Quiz6_20220321_sol_hjlee.pdf"
   "Quiz6_20220321_sol_hjlee.log"
+  "/home/sigma/Lab/GP/Quiz/Q6/Quiz6_20220321_sol_hjlee.log"
   "Quiz6_20220321_sol_hjlee.pdf"
