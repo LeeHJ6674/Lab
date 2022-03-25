@@ -1,6 +1,6 @@
 %\documentclass[preprint,tightenlines,showpacs,showkeys,floatfix,
 %nofootinbib,superscriptaddress,fleqn]{revtex4} 
-\documentclass[floatfix,nofootinbib,superscriptaddress,fleqn,preprint]{revtex4} 
+\documentclass[floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4-2} 
 %\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
 \usepackage[utf]{kotex}
 \usepackage[HWP]{dhucs-interword}
@@ -49,13 +49,56 @@ Inha University, Incheon 22212, Republic of Korea }
   \label{fig:1}
 \end{figure}
 
-\noindent {\bf 풀이}
+\noindent {\bf 풀이:} 
+우선 문제에 대한 자유물체 다이어그램을 그림~\ref{fig:2}와 같이
+그리자. 
+
+\begin{figure}[htp]
+  \centering
+  \begin{tikzpicture}
+    \draw (-1.5,2.5) node {블록 1 :} ;
+    \draw (0,-2.5) -- (0,2.5) ;
+    \draw [blue,very thick,-latex] (0,0.1) -- (0,1.7) 
+    node [left,black] {$T_1$};
+    \draw [blue,very thick,-latex] (0,-0.1) -- (0,-1.2) 
+    node [left,black] {$Mg$};
+  \end{tikzpicture}
+  \hspace{1.6cm}
+  \begin{tikzpicture}
+    \draw (-1.5,2.5) node {블록 2 :} ;
+    \draw (-2.5,0) -- (2.5,0) ;
+    \draw (0,-2.5) -- (0,2.5) ;
+    \draw [red,very thick,-latex] (0,0.1) -- (0,2) 
+    node [left,black] {$N$};
+
+    \draw [blue,very thick,-latex] (-0.1,0) -- (-0.7,0) 
+    node [above,black] {$T_1$};   
+    \draw [blue,very thick,-latex] (-0.8,0) -- (-1.8,0) 
+    node [below,black] {$f_k$};   
+
+    \draw [blue,very thick,-latex] (0.1,0) -- (2,0) 
+    node [above,black] {$T_2$};    
+    \draw [red,very thick,-latex] (0,-0.1) -- (0,-2) 
+    node [left,black] {$2Mg$};
+  \end{tikzpicture}
+  \begin{tikzpicture}
+    \draw (-1.5,2.5) node {블록 3 :} ;
+    \draw (0,-2.5) -- (0,2.5) ;
+    \draw [blue,very thick,-latex] (0,0.1) -- (0,1.6) 
+    node [left,black] {$T_2$};
+    \draw [blue,very thick,-latex] (0,-0.1) -- (0,-2) 
+    node [left,black] {$2Mg$};
+  \end{tikzpicture}
+  \caption{그림 2 : 블록 1,2,3 에 대한 자유물체 다이어그램}
+  \label{fig:2}
+\end{figure}
+
 블록 1과 블록 3에 작용하는 중력의 크기를 각각 $F_1$, $F_2$ 라고 하면,
 \begin{align}
   F_1 = Mg,\,\,\, F_2 = 2Mg
 \end{align}
 이다. 오른쪽을 양의 방향이라 하면 블록 1, 2, 3 에 수평 방향으로 작용하는 힘 $F_{3x}$ 는 
-다음과 같다.
+다음과 같다. 
 \begin{align}
   F_{3x} = 2Mg - Mg - f_k = Mg - f_k,
 \end{align}
@@ -85,24 +128,6 @@ $f_k$ 는 마찰력이다. 블록 2 에 작용하는 수직 항력을 $N$ 이라
 \end{align}
 운동 마찰 계수는 0.372 이다.
 
-\begin{figure}
-  \begin{tikzpicture}
-    \draw (-2.5,0) -- (2.5,0) ;
-    \draw (0,-2.5) -- (0,2.5) ;
-    \draw [red,very thick,-latex] (0,0.1) -- (0,2) 
-    node [left,black] {$N$};
-
-    \draw [blue,very thick,-latex] (-0.1,0) -- (-1,0) 
-    node [above,black] {$Mg$};   
-    \draw [blue,very thick,-latex] (-1.1,0) -- (-2.2,0) 
-    node [below,black] {$f_k$};   
-
-    \draw [blue,very thick,-latex] (0.1,0) -- (2,0) 
-    node [above,black] {$2Mg$};    
-    \draw [red,very thick,-latex] (0,-0.1) -- (0,-2) 
-    node [left,black] {$2Mg$};
-  \end{tikzpicture} \caption{Free body diagram}
-\end{figure}
 
 \vspace{2cm}
 
@@ -111,8 +136,7 @@ $\mu_s=0.04$이다. 이 달걀이 프라이팬에서 미끄러지려면 프라�
 수평면으로부터 몇 도 기울어져야 하는가?  \\
 
 
-\noindent {\bf 풀이} 
-
+\noindent {\bf 풀이:} 
 프라이팬과 수평면이 이루는 각도를 $\theta$ 라고 하자. 달걀에 작용하는 힘을
 프라이팬에 수직한 방향과 프라이팬에 평행한 방향으로 분해할 수 있다. 힘의 수직한
 방향 성분을 $F_v$, 평행한 방향 성분을 $F_p$ 이라고 하면,
@@ -129,7 +153,7 @@ F_v = mg\cos{\theta},\,\,\,F_p = mg\sin{\theta}  .
   \end{split}
 \end{align} 
 
-\begin{figure}
+\begin{figure}[htp]
   \begin{tikzpicture}
     \draw [rotate=30] (-3,0) -- (3,0) ;
     \draw [red,very thick,-latex,rotate=30] (0.1,0) -- (1.5,0) 
@@ -145,7 +169,7 @@ F_v = mg\cos{\theta},\,\,\,F_p = mg\sin{\theta}  .
     node [above,black] {$F_p$};
     \draw[black] (270:1) arc(270:300:1) (300:1) 
     node [below=10,left,black] {$\theta$};
-  \end{tikzpicture} \caption{Free body diagram}
+  \end{tikzpicture} \caption{문제 2}
 \end{figure}
 
 달걀을 미끄러지게 하는 힘은 $F_p$ 이고 정지 마찰력 $f_s$ 는 이 힘과 반대 방향으로
@@ -163,7 +187,7 @@ F_v = mg\cos{\theta},\,\,\,F_p = mg\sin{\theta}  .
 \end{align}
 양변에 $\tan^{-1}$ 을 가해주면,
   \begin{align}
-  \theta > \tan^{-1}{0.04} \approx 2.30^\circ
+  \theta > \tan^{-1}{0.04} \approx 2.3^\circ
 \end{align}
 이므로 경사각이 $2.30^\circ$ 보다 커지면 달걀이 미끄러진다.
 \vspace{2cm}
@@ -176,6 +200,18 @@ $1\,600\,\mathrm{kg}$이다. 초속도 2.00 m/s로 내려오던 승강기가 어
 중력가속도는 $9.80\,\mathrm{m/s^2}$이다.)   \\
 
 \noindent {\bf 풀이}
+\begin{figure}[htp]
+  \begin{tikzpicture}
+    \draw (0,-2.0) -- (0,2.0);
+    
+    \node[right] (X) at (0,0) {0};
+    \draw [red,very thick,-latex] (0,0.1) -- (0,1.8) 
+    node [left,black] {$T$};
+
+    \draw [red,very thick,-latex] (0,-0.1) -- (0,-1.2) 
+    node [left,black] {$mg$};
+  \end{tikzpicture} \caption{Free body diagram}
+\end{figure}
 승강기는 어느 순간 부터 속력이 줄어드는 등가속도 운동을 하였으므로
  승강기에 가해진 가속도의 크기는 다음과 같다.
 \begin{align}
@@ -197,6 +233,9 @@ $1\,600\,\mathrm{kg}$이다. 초속도 2.00 m/s로 내려오던 승강기가 어
 \end{align}
 승강기에 작용한 줄의 장력은 $16300\,\mathrm{N}$ 이다.
 
+
+
+
 \vspace{2cm}
 
 \noindent {\bf 문제 4 [40pt]} (\textbf{\color{red} 난이도 상})
@@ -215,7 +254,7 @@ $\mu_s=0.38$이다. 블록 $M$이 놓여있는 수평면과 $M$ 사이에는 쓸
 
 \noindent {\bf 풀이} 
 
-\begin{figure}
+\begin{figure}[h]
   \begin{tikzpicture}
     \draw (-3,0) -- (3,0) node [above] {$+x$};
     \draw [red,very thick,-latex] (0.1,0) -- (2,0) 
