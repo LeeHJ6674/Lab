@@ -41,7 +41,21 @@ Inha University, Incheon 22212, Republic of Korea }
 때 받는 끌림힘은 $bv^2$ 형태를 갖는다. 탁구공이 자유낙하를 할 때,
 운동방정식을 세우고, $b$를 구하여라.  
 
-\noindent {\bf 풀이:}
+\noindent {\bf 풀이:} 먼저 탁구공에 대한 자유 물체 다이어그램을 그리자.
+\begin{figure}[htp]
+  \centering
+  \begin{tikzpicture}
+    \draw node[black,left] at (0,0) {0} ;
+    \draw (0,-2) -- (0,2) ;
+    \draw [blue,very thick,-latex] (0,0.1) -- (0,1.7) 
+    node [left,black] {$bv^2$};
+    \draw [blue,very thick,-latex] (0,-0.1) -- (0,-1.7) 
+    node [left,black] {$Mg$};
+  \end{tikzpicture}
+  \caption{자유 물체 다이어그램}
+  \label{fig:1}
+\end{figure}
+
 자유낙하 하는 탁구공의 운동방정식은 다음과 같다.
 \begin{align}
   \sum F = -bv^2+mg
@@ -86,7 +100,40 @@ $\mu_k=0.40$이다.
 (자동차가 도로 위에서 미끄러지면(skidding), 타이어가 뜨거워지고,
 마찰계수가 온도에 따라 바뀔 수 있다. 이 온도에 의한 효과는 여기서 무시하여라.)
 
-\noindent {\bf 풀이}
+\noindent {\bf 풀이} 자동차 바퀴에 대한 자유 물체 다이어 그램은 다음과 같다.
+\begin{figure}[htp]
+  \centering
+  \begin{tikzpicture}
+    \draw (-1.5,2.5) node {ABS가 있을 때 :} ;
+    \draw (-2.5,0) -- (2.5,0) ;
+    \draw (0,-2.5) -- (0,2.5) ;
+    \draw [red,very thick,-latex] (0,0.1) -- (0,2) 
+    node [left,black] {$N$};
+
+    \draw [blue,very thick,-latex] (-0.1,0) -- (-1.7,0) 
+    node [above,black] {$f_s$};   
+   
+    \draw [red,very thick,-latex] (0,-0.1) -- (0,-2) 
+    node [left,black] {$mg$};
+  \end{tikzpicture}
+  \begin{tikzpicture}
+    \draw (-1.5,2.5) node {ABS가 없을 때 :} ;
+    \draw (-2.5,0) -- (2.5,0) ;
+    \draw (0,-2.5) -- (0,2.5) ;
+    \draw [red,very thick,-latex] (0,0.1) -- (0,2) 
+    node [left,black] {$N$};
+ 
+    \draw [blue,very thick,-latex] (-0.1,0) -- (-1.2,0) 
+    node [below,black] {$f_k$};   
+  
+    \draw [red,very thick,-latex] (0,-0.1) -- (0,-2) 
+    node [left,black] {$mg$};
+  \end{tikzpicture}
+  \caption{자유 물체 다이어그램}
+  \label{fig:2}
+\end{figure}
+
+
 \begin{itemize}
   \item[(가)] 문턱 브레이킹을 유지할 때 바퀴는 지면에 대해 계속 회전하므로 지면과 
   바퀴 사이에 정지 마찰력이 작용한다. 자동차의 질량을 $m$ 이라 하자. 운동 마찰력은,
@@ -156,7 +203,7 @@ $F_1=5.00$ N, $F_2=9.00$ N, $F_3=3.00$ N이고, $\vec{F}_2$와 수평선
       node [right,black] {$|\vec{F_2}|\sin{\theta}$};
       \draw [blue,very thick,-latex] (0,-0.1) -- (0,-1) 
       node [right,black] {$|\vec{F_3}|$};
-    \end{tikzpicture} \caption{Free body diagram}
+    \end{tikzpicture} \caption{자유 물체 다이어그램}
   \end{figure}
  오른쪽 방향을 $+x$ 방향, 위쪽을 $+y$ 방향이라 하자. 
  물체는 수평면에서 이동하였으므로 $x$ 방향으로 가해진 힘 만이 물체에 일을 해주었다. 
@@ -234,7 +281,35 @@ $\phi_1$, $\phi_2$, $\phi_3$ 이라 하면
 있다. 힘이 토막에 한 일의 시간변화율은 얼마인가?  \\
 
 
-\noindent {\bf 풀이}
+\noindent {\bf 풀이 :} 토막에 대한 자유 물체 다이어그램은 다음과 같다.
+
+\begin{figure}[h]
+  \begin{tikzpicture}
+    \draw (-3,0) -- (3,0) ;
+    \draw [violet,very thick,-latex] (37:0.1) -- (37:2)
+    node [above,black] {$F$};
+
+    \draw [violet,very thick,-latex] (0,0.1) -- (0,1.2);
+    \draw [blue,very thick,-latex] (0,1.2) -- (0,2.3)
+    node [left,black] {$N$};
+
+    \draw [violet,thick,dashed] (37:2)--(0,1.2);
+    \draw [violet,thick,dashed] (37:2)--(1.6,0);
+
+    \draw [violet,very thick,-latex] (0.1,0) -- (1.6,0)
+    node [below,black] {$F_x$};
+
+    \draw [blue,very thick,-latex] (0,-0.1) -- (0,-2.3)
+    node [left,black] {$F_g$};
+
+    \draw [red,very thick,-latex] (-0.1,0) -- (-1,0)
+    node [below,black] {$f_k$};
+
+    \draw (0,-2.5) -- (0,2.5) ;
+
+  \end{tikzpicture} \caption{자유 물체 다이어그램}
+\end{figure}
+
  토막이 일정한 속력으로 수평바닥을 끌려가고 있으므로 
  수평 성분 만이 토막에 일을 해주었다. 힘이 토막에 한 일은 다음과 같다.
  \begin{align}

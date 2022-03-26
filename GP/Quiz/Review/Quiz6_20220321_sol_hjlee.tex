@@ -92,15 +92,13 @@ Inha University, Incheon 22212, Republic of Korea }
   \caption{그림 2 : 블록 1,2,3 에 대한 자유물체 다이어그램}
   \label{fig:2}
 \end{figure}
-
-블록 1과 블록 3에 작용하는 중력의 크기를 각각 $F_1$, $F_2$ 라고 하면,
-\begin{align}
-  F_1 = Mg,\,\,\, F_2 = 2Mg
-\end{align}
-이다. 오른쪽을 양의 방향이라 하면 블록 1, 2, 3 에 수평 방향으로 작용하는 힘 $F_{3x}$ 는 
+블록 1, 2, 3 에 운동 방향으로 작용하는 힘 $F$ 는 
 다음과 같다. 
 \begin{align}
-  F_{3x} = 2Mg - Mg - f_k = Mg - f_k,
+  \begin{split}
+    F &= (M+2M+2M)a=5Ma \\
+    &=2Mg - Mg - f_k = Mg - f_k,
+  \end{split}
 \end{align}
 $f_k$ 는 마찰력이다. 블록 2 에 작용하는 수직 항력을 $N$ 이라 하면,
 \begin{align}
@@ -199,7 +197,7 @@ $1\,600\,\mathrm{kg}$이다. 초속도 2.00 m/s로 내려오던 승강기가 어
 정지하였다. 정지하기까지 승강기를 연결한 줄의 장력은 얼마인가? (단,
 중력가속도는 $9.80\,\mathrm{m/s^2}$이다.)   \\
 
-\noindent {\bf 풀이}
+\noindent {\bf 풀이 :}
 \begin{figure}[htp]
   \begin{tikzpicture}
     \draw (0,-2.0) -- (0,2.0);
@@ -252,20 +250,32 @@ $\mu_s=0.38$이다. 블록 $M$이 놓여있는 수평면과 $M$ 사이에는 쓸
   \label{fig:4}
 \end{figure}\\
 
-\noindent {\bf 풀이} 
+\noindent {\bf 풀이 :} 
 
 \begin{figure}[h]
   \begin{tikzpicture}
+    \draw (-1.5,2.5) node {블록 $m$ :} ;
     \draw (-3,0) -- (3,0) node [above] {$+x$};
     \draw [red,very thick,-latex] (0.1,0) -- (2,0) 
     node [above,black] {$|\vec{F}|$};
-    \draw [red,very thick,-latex] (-0.1,0) -- (-1.6,0) 
-    node [above,black] {$F_{mM}$};
+    \draw [red,very thick,-latex] (-0.1,0) -- (-1.4,0) 
+    node [above,black] {$N_m$};
     \draw (0,-2.5) -- (0,2.5) node [right] {$+y$};
     \draw [blue,very thick,-latex] (0,0.1) -- (0,1.5) 
-    node [right,black] {$\mu_s N$};
+    node [right,black] {$\mu_s N_m$};
     \draw [blue,very thick,-latex] (0,-0.1) -- (0,-1.5) 
     node [right,black] {$mg$};
+  \end{tikzpicture} 
+  \begin{tikzpicture}
+    \draw (-1.5,2.5) node {블록 $M$ :} ;
+    \draw (-3,0) -- (3,0) node [above] {$+x$};
+    \draw [red,very thick,-latex] (0.1,0) -- (1.4,0) 
+    node [above,black] {$N_m$};
+    \draw (0,-2.5) -- (0,2.5) node [right] {$+y$};
+    \draw [blue,very thick,-latex] (0,0.1) -- (0,2) 
+    node [right,black] {$N_M$};
+    \draw [blue,very thick,-latex] (0,-0.1) -- (0,-2) 
+    node [right,black] {$Mg$};
   \end{tikzpicture} \caption{Free body diagram}
 \end{figure}
 
@@ -273,23 +283,22 @@ $\mu_s=0.38$이다. 블록 $M$이 놓여있는 수평면과 $M$ 사이에는 쓸
 \begin{align}
   a = \frac{|\vec{F}|}{M+m}.
 \end{align}
- 블록 $m$ 이 블록 $M$ 에게 가하는 힘은,
+ 블록 $m$ 이 블록 $M$ 에게 가하는 힘을 $N_m$ 이라고 하면,
  \begin{align}
-   F_{mM} = Ma = \frac{M}{M+m}|\vec{F}|
+   N_m = Ma = \frac{M}{M+m}|\vec{F}|
  \end{align} 
  블록 $M$ 은 이 힘의 반작용으로 같은 크기의 힘을 블록 $m$ 에게 가하고, 
- 이 힘이 블록 $m$ 의 수직 항력 $N$ 이 된다. 블록 $m$ 이 정지해 있을 때 
+ 이 힘이 블록 $m$ 의 수직 항력이 된다. 블록 $m$ 이 정지해 있을 때 
  블록 $m$ 에 수직 방향으로 작용하는 힘의 합력은,
  \begin{align}
   \begin{split}
-    F_y &= mg - \mu_sN \\
-    &= mg - \mu_s F_{mM} = 0
+    F_y &= mg - \mu_s N_m = 0
   \end{split}
  \end{align}
  따라서 최소힘 $\vec{F}$ 의 크기는,
  \begin{align}
    \begin{split}
-     F_{mM} &= \frac{M}{M+m}|\vec{F}| =\frac{mg}{\mu_s},\,\,\,
+     N_m &= \frac{M}{M+m}|\vec{F}| =\frac{mg}{\mu_s},\,\,\,
      |\vec{F}| = \left(\frac{M+m}{M}\right)\left(\frac{mg}{\mu_s}\right)  \\
      |\vec{F}| &= \left(\frac{(88+16)\,\mathrm{kg}}{88\,\mathrm{kg}}\right)
      \left(\frac{(16\,\mathrm{kg})(9.80\,\mathrm{m/s^2})}{0.38}\right)  \\
