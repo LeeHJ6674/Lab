@@ -90,44 +90,26 @@
   \caption{ 문제 4}
   \label{pic:10}
 \end{figure}
-
-또한, 영희와 순희는 올라가는 공을 보고
-내려가는 공을 본 것이므로, 영희는 $t_h-2$ 초와
-$t_h+2$ 초에 공을 목격했고 순희는 $t_h-1$ 초와 $t_h+1$ 초에 공을 목격했다.
-지면으로부터 영희의 집 사이 거리를 $h_1$, 순희의 집 사이 거리를 $h_2$ 라고 하자. 
-영희가 공을 본 순간 공의 높이는,
+공이 최대 높이에서 떨어지는 순간을 $t=0$ 라고 생각하면
+내려가는 공을 본 것이므로, 영희는 $2.0$ 초에, 
+순희는 $1.0$ 초에 공을 목격한 것이다.
+최고점과 영희의 집 사이 거리를 $h_1$, 순희의 집사이 거리를 $h_2$ 라고 하면,
 \begin{align}
-  h_1 = -\frac{1}{2}g(t_h-2)^2+v_0(t_h-2) ,
+  h_1 = \frac{1}{2}gt^2=\frac{1}{2}g(2.0\,\mathrm{s})^2 ,
 \end{align}
-이고 순희가 공을 본 순간 공의 높이는,
+이고,
 \begin{align}
-  h_2 = -\frac{1}{2}g(t_h-1)^2+v_0(t_h-1).
+  h_2 = \frac{1}{2}gt^2=\frac{1}{2}g(1.0\,\mathrm{s})^2.
 \end{align}
 영희의 집과 순희의 집이 떨어진 거리는 다음과 같다.
 \begin{align}
   \begin{split}
-    h_2-h_1 =& -\frac{1}{2}g(t_h-1)^2+v_0(t_h-1) 
-    -\left( -\frac{1}{2}g(t_h-2)^2+v_0(t_h-2) \right) \\
-    =& -\frac{1}{2}g\left[ \left(t_h-1\right)^2
-    -\left(t_h-2\right)^2 \right]
-    +v_0[ (t_h-1) - (t_h-2) ].
-  \end{split}
-\end{align}
-곱셈공식 $A^2-B^2=(A-B)(A+B)$ 를 적용하면,
-\begin{align}
-  \begin{split}
-    h_2-h_1 =&-\frac{1}{2}g[(t_h-1)-(t_h-2)][(t_h-1)+(t_h-2)]
-    +v_0  \\
-    =&g\left(\frac{3}{2}-t_h\right)+v_0.
-  \end{split}
-\end{align}
-식 (\ref{eq:4.1}) 에 의해 다음과 같다.
-\begin{align}
-  \begin{split}
-    h_2-h_1 &= g\left(\frac{3}{2}-\frac{v_0}{g}\right)+v_0 
-    =\frac{3}{2}g \,  \\
+    h_1-h_2 =&\frac{1}{2}g(2.0\,\mathrm{s})^2
+    -\frac{1}{2}g(1.0\,\mathrm{s})^2 \\
+    =& \frac{1}{2}(9.8\,\mathrm{m/s^2})(3.0\,\mathrm{s})\\
     &\thickapprox 15\,\mathrm{m}.
   \end{split}
 \end{align}
+
 영희와 순희의 집은 약 15 m 만큼 떨어져 있다.
 \end{document}  
