@@ -1,6 +1,6 @@
 %\documentclass[preprint,tightenlines,showpacs,showkeys,floatfix,
 %nofootinbib,superscriptaddress,fleqn]{revtex4} 
-\documentclass[floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4} 
+\documentclass[floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4-2} 
 %\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
 \usepackage{kotex}
 \usepackage[HWP]{dhucs-interword}
@@ -53,7 +53,7 @@ constant.
 \mathcal{S}(t) = \frac{|\psi(x,\,t)|^2}{|\psi(0,t)|^2}.    
   \end{align*}
 \end{itemize}
-\noindent \textbf{Solution}
+\noindent \textbf{Solution : }
 \begin{itemize}
   \item[(1)] From the normalization of the wave function,
   \begin{align*}
@@ -62,12 +62,6 @@ constant.
   \end{align*}
 Since a range of integration is all space, the translation 
 about $x$ can be ignored.
-%\begin{align}
-% N^2\int_{-\infty}^{\infty}
-%\exp\left(-2{\left(\frac{x-x_0}{2\sigma}\right)}^2\right) \,dx 
-% =N^2\int_{-\infty}^{\infty}
-%\exp\left({-2\left(\frac{x}{2\sigma}\right)}^2\right) \,dx
-%\end{align} 
 To make a compact form, it needs to change an integral variable.
   \begin{align*}
     t \equiv \left(\frac{x-x_0}{\sqrt{2}\sigma}\right),\;\;\; dt 
@@ -77,10 +71,6 @@ Then the wave function changes into more comfort form to integrate.
   \begin{align}\label{eq:gt}
     \int_{-\infty}^{\infty}\exp\left(-2{\left(
       \frac{x-x_0}{2\sigma}\right)}^2\right) \,dx
-    %N^2\int_{-\infty}^{\infty}
-    %\exp\left(-2{\left(\frac{x}{2\sigma}\right)}^2\right) \,dx 
-    %=N^2\int_{-\infty}^{\infty}
-    %\exp\left({-2\left(\frac{x}{2\sigma}\right)}^2\right) \,dx 
     =\sqrt{2}\sigma \int_{-\infty}^{\infty} e^{-t^2} \,dt
   \end{align}
 To calcualte this integration, we use a idea of double integration,
@@ -189,118 +179,102 @@ Finally we obtain the normalization constant,
       \exp\left(-\left(\frac{\sigma^2}{\hbar^2} 
       +\frac{it}{2m\hbar}\right)p^2 
       +\left(\frac{2\sigma^2}{\hbar^2}p_0-\frac{i}{\hbar}x_0\right)p 
-      -\frac{\sigma^2}{\hbar^2}p_0^2-\frac{i}{\hbar}p_0x_0 \right) \\ 
+      -\frac{\sigma^2}{\hbar^2}p_0^2+\frac{i}{\hbar}p_0x_0 \right) \\ 
       &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
       \exp\left(-\frac{2m\sigma^2+i\hbar t}{2m\hbar^2}p^2 
-      -\frac{2\sigma^2p_0-i\hbar x_0}{\hbar^2}p
-      -\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2} \right)
+      +\frac{2\sigma^2p_0-i\hbar x_0}{\hbar^2}p
+      -\frac{\left(\sigma^2p_0-i\hbar x_0\right)p_0}{\hbar^2} \right)
   \end{align*}
-  %The complete square form of $\phi(p,t)$ is,
-  %\begin{align*}
-  %  \begin{split}
-  %    \phi(p,t) &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
-  %    \exp\left(-\frac{2m\sigma^2+i\hbar t}{2m\hbar^2} p^2 
-  %    -\frac{2\sigma^2p_0-i\hbar x_0}{\hbar^2}p
-  %    -\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2}\right) \\
-  %    &={\left(\frac{2\sigma^2}{\pi\hbar^2}\right)}^{\frac{1}{4}}
-  %  \exp\left(
-  %    \alpha(t)\left(p+\beta(t)\right)^2+\gamma(t)\right)  \\
-  %    \alpha(t) &= -\frac{2m\sigma^2+i\hbar t}{2m\hbar^2}, \,\,\,
-  %    \beta(t) = \frac{2m\sigma^2p_0-im\hbar x_0}{2m\sigma^2+i\hbar t}, \\
-  %    \gamma(t) &= \frac{-m x_0 \left(\frac{1}{2}\hbar x_0+4i\sigma^2p_0\right)
-  %    -(\hbar x_0-i\sigma^2 p_0)p_0 t}
-  %    {2m\hbar\sigma^2+i\hbar^2t}.
-  %  \end{split}
-  %\end{align*}
   \item[(4)] $\psi(x,t)$ is the Fourier transform of $\phi(p,t)$.
   \begin{align}
     \begin{split}
       \psi(x,t) &= \frac{1}{\sqrt{2\pi\hbar}}\int\phi(p,t)e^{\frac{i}{\hbar}px}\,dp  \\
       &={\left(\frac{\sigma^2}{2\pi^3\hbar^4}\right)}^{\frac{1}{4}}
       \int\exp\left(-\frac{2m\sigma^2+i\hbar t}{2m\hbar^2} p^2 
-      -\frac{2\sigma^2p_0-i\hbar (x_0+x)}{\hbar^2}p
-      -\frac{\left(\sigma^2p_0+i\hbar x_0\right)p_0}{\hbar^2}\right)\,dp  \\
+      +\frac{2\sigma^2p_0+i\hbar (x-x_0)}{\hbar^2}p
+      -\frac{\left(\sigma^2p_0-i\hbar x_0\right)p_0}{\hbar^2}\right)\,dp  \\
       &={\left(\frac{\sigma^2}{2\pi^3\hbar^4}\right)}^{\frac{1}{4}}
-      \int\exp{\left( -\alpha(t)\left(p+\beta(t)\right)^2+\gamma(x,t) \right)}\,dp
+      \int\exp{\left( -\alpha(t)p^2+\beta(x)p+\gamma\right)}\,dp
     \end{split}
   \end{align}
   $\alpha(t)$, $\beta(t)$ and $\gamma(x,t)$ are the replacement factors that,
   \begin{align}
     \begin{split}\label{eq:abg}
       &\alpha(t) =\frac{2m\sigma^2+i\hbar t}{2m\hbar^2},\,\,\,
-    \beta(t) =\frac{m(2\sigma^2p_0-i\hbar(x+x_0))}{2m\sigma^2+i\hbar t},  \\
-    &\gamma(x,t)=\frac{-m\left((x+x_0)+\frac{2i\sigma^2p_0}{\hbar}\right)^2}
-    {4m\sigma^2+2i\hbar t}-\frac{(\sigma^2p_0+i\hbar x_0)p_0}{\hbar^2} \\
+    \beta(t) =\frac{2\sigma^2p_0+i\hbar(x-x_0)}{\hbar^2},\,\,\,
+    \gamma=\frac{\left(\sigma^2p_0-i\hbar x_0\right)p_0}{\hbar^2} \\
     \end{split}
   \end{align}
   This integration is a type of guassian integration.
   \begin{align}
     \begin{split}
-      \int\exp{\left( -\alpha(t)\left(p+\beta(t)\right)^2+\gamma(x,t) \right)}\,dp
-      =\sqrt{\frac{\pi}{\alpha(t)}}e^{\gamma(x,t)}
+      \int\exp{\left( -\alpha(t)p^2+\beta(x)p+\gamma\right)}\,dp
+      =\sqrt{\frac{\pi}{\alpha(t)}}
+      \exp\left(\frac{(\beta(x))^2}{4\alpha(t)}-\gamma\right)
     \end{split}
   \end{align}
   Finally, we obtain $\psi(x,t)$,
   \begin{align}
-    \psi(x,t) = \left(\frac{2m^2\sigma^2}{\pi}\right)^\frac{1}{4}
-    \sqrt{\frac{1}{2m\sigma^2+i\hbar t}}
-    \exp{\left(\frac{-m\left((x+x_0)+\frac{2i\sigma^2p_0}{\hbar}\right)^2}
-    {4m\sigma^2+2i\hbar t}-\frac{(\sigma^2p_0+i\hbar x_0)p_0}{\hbar^2}\right)}
+    \psi(x,t) &= {\left(\frac{\sigma^2}{2\pi\hbar^4}\right)}^{\frac{1}{4}}
+    \sqrt{\frac{1}{\alpha(t)}}
+    \exp\left(\frac{(\beta(x))^2}{4\alpha(t)}-\gamma\right) \\
+    &={\left(\frac{\sigma^2}{2\pi}\right)}^{\frac{1}{4}}
+    \sqrt{\frac{2m}{2m\sigma^2+i\hbar t}}
+    \exp\left(\frac{m\left(2\sigma^2p_0
+    +i\hbar(x-x_0)^2\right)\left(2m\sigma^2-i\hbar t\right)}
+    {2\hbar^2\left(4m^2\sigma^4+\hbar^2 t^2\right)}
+    -\frac{\left(\sigma^2p_0-i\hbar x\right)p_0}{\hbar^2}\right)
   \end{align}
-  \item[(5)] The probability density is,
+  \item[(5)] Set $\hbar = 1$. Then the probability density is,
   \begin{align}
-    |\psi(x,t)|^2 = \sqrt{\frac{2}{\pi}}\left(\frac{m^2\sigma^2}
-    {4m^2\sigma^4+\hbar^2t^2}\right)e^{|\gamma(x,t)|^2}
+    \begin{split}
+      |\psi(x,t)|^2 &= {\left(\frac{\sigma^2}{2\pi}\right)}^{\frac{1}{2}}
+      \frac{2m}{\sqrt{4m^2\sigma^4+t^2}}
+      \exp\left(
+        \frac{2m^2\sigma^2\left(4\sigma^4p_0^2
+        -\left(x-x_0\right)^2\right)
+        +4m\sigma^2p_0(x-x_0)t}
+        {4m^2\sigma^4+t^2}
+        -2\sigma^2p_0^2\right)  \\
+      &= {\left(\frac{\sigma^2}{2\pi}\right)}^{\frac{1}{2}}
+      \frac{2m}{\sqrt{4m^2\sigma^4+t^2}}
+      \exp\left(
+        \frac{k(x)
+        +4m\sigma^2p_0(x-x_0)t}
+        {4m^2\sigma^4+t^2}
+        -2\sigma^2p_0^2\right), 
+      \end{split}
   \end{align}
-  Then, the spread is,
+  and $k(x)$ is the replacement factor,
+  \begin{align}
+    k(x) = 2m^2\sigma^2\left(4\sigma^4p_0^2
+    -\left(x-x_0\right)^2\right).
+  \end{align}
+  The spread is,
   \begin{align}
     \mathcal{S}(t) = \frac{|\psi(x,\,t)|^2}{|\psi(x,0)|^2}
-    =\left(\frac{4m^2\sigma^4}
-    {4m^2\sigma^4+\hbar^2t^2}\right)
-    e^{|\gamma(x,t)|^2-|\gamma(x,0)|^2}
+    = \sqrt{\frac{4m^2\sigma^4}{4m^2\sigma^4+t^2}}
+    \exp\left(
+      \frac{k(x)
+    +4m\sigma^2p_0(x-x_0)t}
+    {4m^2\sigma^4+t^2}
+    -\frac{k(x)}
+    {4m^2\sigma^4}
+    \right)
   \end{align}
-  From (\ref{eq:abg}), $|\gamma(x,t)|^2$ and $|\gamma(x,0)|^2$ is,
-  \begin{align}
-    \begin{split}
-      |\gamma(x,t)|^2
-      =&-\frac{4\hbar^2p_0^2(\hbar^2x_0^2+\sigma^4p_0^2)t^2
-      +m\hbar^2p_0[-4\hbar^2x_0(x+x_0)^2+8p_0\sigma^4(x+2x_0)]t}
-      {\hbar^4(16m^2\sigma^4+4\hbar^2t^2)}\\
-      &-\frac{{(m\hbar^2{(x+x_0)}^2)}^2+{(2m\sigma^2\hbar p_0(x+2x_0))}^2}
-      {\hbar^4(16m^2\sigma^4+4\hbar^2t^2)}
-    \end{split}
-  \end{align}
-  \begin{align}
-    |\gamma(x,0)|^2
-    =-\frac{{(m\hbar^2{(x+x_0)}^2)}^2+{(2m\sigma^2\hbar p_0(x+2x_0))}^2}
-    {16m^2\sigma^4\hbar^4}
-  \end{align}
-  \end{itemize}
-  Since the numerator of $|\gamma(x,t)|^2$ is a 
-  quadratic polynomial of $t$ and $|\gamma(x,0)|^2$ is constant about $t$,
-  the spread is,
-  \begin{align}
-    \begin{split}
-      &\mathcal{S}(t) = \left(\frac{4m^2\sigma^4}
-      {4m^2\sigma^4+\hbar^2t^2}\right)
-      e^{|\gamma(x,t)|^2-|\gamma(x,0)|^2}
-      =\left(\frac{4m^2\sigma^4}
-      {4m^2\sigma^4+\hbar^2t^2}\right)A
-      \exp{\left(-\frac{at^2
-      +bt+c}
-      {\hbar^4(16m^2\sigma^4+4\hbar^2t^2)}\right)}
-    \end{split}
-  \end{align}
-  When constants $A,\,a,\,b$ and $c$ are,
-  \begin{align}
-    \begin{split}
-      &A = e^{-|\gamma(x,0)|^2},\,\,\,
-      a = 4\hbar^2p_0^2(\hbar^2x_0^2+\sigma^4p_0^2),\,\,\,
-      b = m\hbar^2p_0[-4\hbar^2x_0(x+x_0)^2+8p_0\sigma^4(x+2x_0)] \\
-      &c = {(m\hbar^2{(x+x_0)}^2)}^2+{(2m\sigma^2\hbar p_0(x+2x_0))}^2
-    \end{split}
-  \end{align}
-
+Suppose that $\sigma = 0.6$, $m=2$, $x_0=2$ and $p_0=2$. Through the 
+FIG. \ref{pic:1-1} and FIG. \ref{pic:1-2}, we know that $|\psi|^2$ is spread and the
+spread $\mathcal{S}(t)$ is increases with time t.
+  \begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.6]{1.pdf}  
+    \caption{Normalized $|\psi|^2$ in different time}
+    \label{pic:1-1}
+    \includegraphics[scale=0.6]{2.jpg} 
+    \caption{$\mathcal{S}(t)$ with $x=10$}
+    \label{pic:1-2}
+  \end{figure}
+\end{itemize}
 \vspace{0.5cm}
 
 \noindent \textbf{Problem 2.} 
@@ -325,7 +299,8 @@ H  = \frac{p^2}{2m}.
 \item[(4)] Find $d(\Delta x)^2/dt$ as a function of time and initial 
   conditions. 
 \end{itemize}
-\noindent \textbf{Solution}
+
+\noindent \textbf{Solution : }
 \begin{itemize}
   \item[(1)]The expectation value of physical quantity can be 
   expressed in coordinate space and momentum space each other.
@@ -411,10 +386,10 @@ Finally, the result is,
       \frac{\partial}{\partial p_x}
       \left(-i\frac{p_x}{m\hbar}te^{-i\frac{p^2}{2m\hbar}t}\phi(p,0)
       +e^{-i\frac{p^2}{2m\hbar}t}
-      \frac{\partial\phi(p,0)}{\partial p_x}\right)\,d^3p  \\
+      \frac{\partial\phi(p,0)}{\partial p_x}\right)\,d^3p . \\
     \end{split}
   \end{align*}
-다시 $p_x$ 에 대해 미분해주고, 미분이 존재하는 항과 그렇지 않은 항 끼리 묶어준다.
+  Operate differentiative again,
   \begin{align*}
     \begin{split}       
       \langle x^2 \rangle =& -\hbar^2\int\phi^*(p,0)
@@ -426,11 +401,11 @@ Finally, the result is,
       +\left(-i\frac{p_x}{m\hbar}t \right)^2\right)\phi(p,0)\,d^3p  \\
       &+\hbar^2\int\phi^*(p,0)\left(2i\frac{p_x}{m\hbar}t\,
       \frac{\partial\phi(p,0)}{\partial p_x}
-      -\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\right)\,d^3p 
+      -\frac{\partial^2 \phi(p,0)}{\partial p_x^2}\right)\,d^3p .
     \end{split}
   \end{align*}
-첫번째 적분 항을 먼저 계산해보자. $i\hbar$ 는 momentum space 
-에서도 canonical commute relation 으로 생각할 수 있다.
+  $i\hbar $ can be ragarded as the canonical commute relation $[x,p_x]$
+  in the momentum space.
   \begin{align*}
     \begin{split}
       &-\hbar^2\int\phi^*(p,0)\left(-i\frac{t}{m\hbar}
@@ -438,12 +413,11 @@ Finally, the result is,
       =\frac{t}{m}\int i\hbar|\phi(p,0)|^2\,d^3p+\frac{t^2}{m^2}
       \int p_x^2|\phi(p,0)|^2\,d^3p \\
       &=\frac{\langle[x,p_x]\rangle_{t=0}}{m}t
-      +\frac{\langle p_x^2\rangle_{t=0}}{m^2}t^2
+      +\frac{\langle p_x^2\rangle_{t=0}}{m^2}t^2.
     \end{split}
   \end{align*}
-두번째 적분 항은 다음과 같다. 
-$x$ 는 momentum space 에서 연산자 $i\hbar\frac{\partial}{\partial p_x}$ 
-로 작용한다는 사실에 유의하자.
+  Since $x$ is a operator in the momentum space, 
+  the second integration term is,
   \begin{align*}
     \begin{split}
       \hbar^2\int\phi^*(p,0)\left(2i\frac{p_x}{m\hbar}t\,
@@ -453,19 +427,20 @@ $x$ 는 momentum space 에서 연산자 $i\hbar\frac{\partial}{\partial p_x}$
       \left(ih\frac{\partial\phi(p,0)}{\partial p_x}\right)\,d^3p  \\
       +\int\phi^*(p,0)\left(
         -\hbar^2\frac{\partial^2\phi(p,0)}{\partial p_x^2}\right)\,d^3p  \\
-      =\frac{2\langle p_xx\rangle_{t=0}}{m}t+\langle x^2\rangle_{t=0}
+      =\frac{2\langle p_xx\rangle_{t=0}}{m}t+\langle x^2\rangle_{t=0}.
     \end{split}
   \end{align*}
-두 결과를 더해 expectation value $\langle x^2 \rangle$ 를 구할 수 있다.
-  \begin{align}
+  We obtain the expectation value $\langle x^2 \rangle$ summing these 
+  two result.
+  \begin{align}\label{eq:2-1}
     \langle x^2 \rangle 
     =&\frac{\langle[x,p_x]\rangle_{t=0}}{m}t
     +\frac{\langle p_x^2\rangle_{t=0}}{m^2}t^2
     +\frac{2\langle p_xx\rangle_{t=0}}{m}t
-    +\langle x^2\rangle_{t=0}
+    +\langle x^2\rangle_{t=0}.
   \end{align}
-결국 우리가 구하고자 하는 값 $\frac{d}{dt}(\Delta x)^2 $ 을 구하기 위해, 
-$t$ 에 대해 $\langle x^2 \rangle$ 를 미분하자.
+  What we want is $\frac{d}{dt}(\Delta x)^2 $. 
+  Differentiative (\ref{eq:2-1}),
   \begin{align}
     \begin{split}
       \frac{d}{dt}\langle x^2\rangle 
@@ -473,10 +448,10 @@ $t$ 에 대해 $\langle x^2 \rangle$ 를 미분하자.
       +\frac{2\langle p_x^2\rangle_{t=0}}{m^2}t
       +\frac{2\langle p_xx\rangle_{t=0}}{m} \\
       &=\frac{\langle xp_x\rangle_{t=0}+\langle p_xx\rangle_{t=0}}{m}
-      +\frac{2\langle p_x^2\rangle_{t=0}}{m^2}t
+      +\frac{2\langle p_x^2\rangle_{t=0}}{m^2}t.
     \end{split}
   \end{align}
-expectation value 의 square 를 계산하자.
+  Calculate the expectation value of the square.
   \begin{align}
     \begin{split}
       \frac{d}{dt}\left(\langle x \rangle^2\right) 
@@ -485,10 +460,10 @@ expectation value 의 square 를 계산하자.
       +\langle x\rangle_{t=0}\right)\left(
         \frac{\langle p_x\rangle_{t=0}}{m}\right)  \\
       &=\frac{2\langle p_x\rangle_{t=0}^2}{m^2}t
-      +\frac{2\langle p_x\rangle_{t=0}\langle x\rangle_{t=0}}{m}
+      +\frac{2\langle p_x\rangle_{t=0}\langle x\rangle_{t=0}}{m}.
     \end{split}
   \end{align}
- 최종적으로, $\frac{d}{dt}(\Delta x)^2 $ 는 두 값을 뺀 값이다.
+  $\frac{d}{dt}(\Delta x)^2 $ is the difference of two values.
   \begin{align}
     \begin{split}
       \frac{d}{dt}(\Delta x)^2 
@@ -501,20 +476,18 @@ expectation value 의 square 를 계산하자.
       \right) \\
       &=\frac{\langle xp_x\rangle_{t=0}+\langle p_xx\rangle_{t=0}
       -2\langle p_x\rangle_{t=0}\langle x\rangle_{t=0}}{m}
-      +\frac{2\left(\Delta p_x\right)^2_{t=0}}{m^2}t
+      +\frac{2\left(\Delta p_x\right)^2_{t=0}}{m^2}t.
     \end{split}
   \end{align}
-  $\frac{d}{dt}(\Delta x)^2 $ 를 initial conditions 와 
-  $t$ 에 대한 함수로서 나타냈다.
 \end{itemize} 
-\newpage
+\vspace{0.5cm}
 
 \noindent \textbf{Problem 3.} 
 The state of a particle is described by the following wavefunction:
 \begin{align*}
 \psi(x) = C\exp\left[
 i\frac{p_0 x}{\hbar} - \frac{(x-x_0)^2}{2\sigma^2} 
-\right]
+\right].
 \end{align*}
 where $p_0$, $x_0$, and $a$ are real parameters. 
 \begin{itemize}
@@ -522,7 +495,7 @@ where $p_0$, $x_0$, and $a$ are real parameters.
 \item[(2)] Find the mean values of $x$ and $p$.
 \item[(3)] Find the standard deviations $\Delta x$ and $\Delta p$.
 \end{itemize}
-\noindent \textbf{Solution}
+\noindent \textbf{Solution : }
 \begin{itemize}
   \item[(1)] The constant $C$ is calculable from the normalization.
   \begin{align*}
@@ -530,11 +503,11 @@ where $p_0$, $x_0$, and $a$ are real parameters.
     \exp\left(-{\left(\frac{x-x_0}{\sigma} \right)}^2\right)\,dx 
     = C^2\int_{-\infty}^{\infty}
     \exp\left(-{\left(\frac{x-x_0}{\sigma} \right)}^2\right)\,dx 
-    = C^2\sigma \sqrt{\pi}
+    = C^2\sigma \sqrt{\pi}.
   \end{align*}
 The result of the noramlizatoin is must be 1. So,
   \begin{align}
-    C = {\left(\frac{1}{\sigma \sqrt{\pi}}\right)}^{\frac{1}{2}}
+    C = {\left(\frac{1}{\sigma \sqrt{\pi}}\right)}^{\frac{1}{2}}.
   \end{align}
 \item[(2)]First, let us find the mean value of $x$.
   \begin{align*}
@@ -547,7 +520,7 @@ The result of the noramlizatoin is must be 1. So,
       = \int_{-\infty}^{\infty} x 
       e^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx 
       +x_0\int_{-\infty}^{\infty} 
-      e^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx
+      e^{-{\left(\frac{x}{\sigma}\right)}^2}\,dx.
     \end{split}
   \end{align*}
 The first term of the right-hand side is a zero 
@@ -715,7 +688,7 @@ two concentric spheres of radii $R_1>R_2$. Compute the probability
 current that flows through $\Omega_1$.
 \end{itemize}
 
-\noindent \textbf{Solution}
+\noindent \textbf{Solution : }
 \begin{itemize}
 \item[(a)] The initial state is,
   \begin{align*}
