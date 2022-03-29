@@ -326,6 +326,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmad.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmcd.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmcf.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmca.tfm
 INPUT /home/sigma/Lab/GP/Test/FirstExam_20220330.bbl
 INPUT /home/sigma/Lab/GP/Test/FirstExam_20220330.bbl
 INPUT /home/sigma/Lab/GP/Test/FirstExam_20220330.aux
@@ -381,9 +383,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmca.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcf.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb

@@ -127,21 +127,296 @@ m이고, 비탈면이 끝나고 지면과 나란한 지점부터 스키 선수�
     \end{split}
   \end{align}
   \item[(2)] 스키 점프 선수가 스키 점프대를 떠날 때의 속력을 초기 속력이라고 하자. 
-  각 방향으로의 초기 속력은 $v_{xi}=32\,\mathrm{m/s}$, $v_{yi}=0$ 이다. 
+  각 방향으로의 초기 속력은 $v_{xi}=v_2=32\,\mathrm{m/s}$, $v_{yi}=0$ 이다. 
   스키 점프 선수의 착지 위치의 좌표를 $x_f$, $y_f$ 라고 하면,
-  \begin{align}
-    x_f = d_3\cos{\theta},\,\,\, y_f = -d_3\sin{\theta}
+  \begin{align}\label{eq:2-1}
+    x_f = d_3\cos{\theta},\,\,\, y_f = -d_3\sin{\theta},
   \end{align}
   $y_f$ 가 음수인 이유는 점프하는 순간의 위치를 원점으로 잡았기 때문이다. 
-  $x$ 방향으로는  $y$
-  \item[(3)] 
-  \item[(4)] 
+  $x$ 방향으로는 등속 운동, $y$ 방향으로는 중력에 의한 등가속도 운동을 하므로,
+  \begin{align}
+    x_f = v_{xi}t= d_3\cos{\theta},\,\,\,
+    y_f= -d_3\sin{\theta}=-\frac{1}{2}gt^2.
+  \end{align}
+  $t$ 를 소거하면 $d_3$ 는 다음과 같다.
+  \begin{align}\label{eq:2-2}
+    d_3 = \frac{2v^2_{xi}\sin{\theta}}{g\cos^2{\theta}}
+    =\frac{2(32\,\mathrm{m/s})^2\sin{32^\circ}}
+    {(9.8\,\mathrm{m/s^2})\cos^2{32^\circ}}
+    =154\,\mathrm{m}
+  \end{align}
+  $d_3$ 는 $154\,\mathrm{m}$ 이고 식 (\ref{eq:2-1}) 에 의해
+   착지 위치는 다음과 같다.
+\begin{align}
+  \begin{split}\label{eq:2-3}
+    x_f &= (154\,\mathrm{m})\cos{32^\circ}=131\,\mathrm{m} \\
+    y_f &= -(154\,\mathrm{m})\sin{32^\circ}=-82\,\mathrm{m}.
+  \end{split}
+\end{align}
+  \item[(3)] 중력은 $y$ 방향으로만 일을 해주므로 중력이 해준 일은 모두 $y$ 방향의 
+  운동 에너지 변화량이다. $y$ 방향으로의 움직임 만을 생각하자. 
+  중력이 해준 일은,
+  \begin{align}
+    \begin{split}
+      W = \vec{F_g}\cdot\vec{d_3}=mgd_3\sin{\theta}
+    \end{split}
+  \end{align}
+  이고 이 일의 양이 운동에너지 변화량과 같고 $y$ 방향의 초기 속력이 0 이므로
+  착지할 때 $y$ 방향의 속력을 $v_y$ 라고 하면,
+  \begin{align}
+    \frac{1}{2}mv_y^2=\vec{F_g}\cdot\vec{d_3}=mgd_3\sin{\theta},\,\,\,
+    v_y = \sqrt{2gd_3\sin{\theta}}.
+  \end{align}
+  따라서 $v_y$ 는 다음과 같다.
+  \begin{align}
+    v_y = \sqrt{2(9.8\,\mathrm{m/s^2})(154\,\mathrm{m})\sin{32^\circ}}
+      =40\,\mathrm{m/s}.
+  \end{align}
+  $x$ 방향의 속력은 일정하므로 착지할 때 $x$ 방향의 속력을 $v_x$ 라고 하면
+   $v_x=v_{xi}=32\,\mathrm{m/s}$ 이다. 그러므로 착지할 때의 속력은 다음과 같다.
+   \begin{align}
+    \begin{split}
+      v &= \sqrt{v_x^2+v_y^2} 
+      = \sqrt{(32\,\mathrm{m/s})^2+(37\,\mathrm{m/s})^2}  \\
+      &=49\,\mathrm{m/s}
+    \end{split}
+   \end{align}
+  \item[(4)] 초기 역학적 에너지를 $E_i$, 
+  $d_2$ 지점에서의 역학적 에너지를 $E_2$ 라고 하자. $E_i$ 는,
+  \begin{align}
+    E_i = mgh =mg\left(d_1+d_3\right)\sin{\theta},
+  \end{align}
+  이고 $d_2$ 지점에서의 속력을 $v_2$ 라고 하면 $E_2$ 는,
+  \begin{align}
+    E_2 = mgh + \frac{1}{2}mv^2
+    = mgd_3\sin{\theta} + \frac{1}{2}mv_2^2.
+  \end{align}
+  역학적 에너지는 보존되어야 하므로 $E_i=E_2$ 이다. 따라서,
+  \begin{align}
+    mg\left(d_1+d_3\right)\sin{\theta}
+    =mgd_3\sin{\theta} + \frac{1}{2}mv_2^2,\,\,\,
+    v_2 = \sqrt{2gd_1\sin{\theta}}.
+  \end{align}
+  $v_2$ 는 다음과 같다.
+  \begin{align}
+    v_2 = \sqrt{2(9.8\,\mathrm{m/s^2})(100\,\mathrm{m})\sin{32^\circ}}
+    = 32\,\mathrm{m/s}.
+  \end{align} 
+ (1) 의 결과와 동일함을 확인할 수 있다.
   \item[(5)] 
-  \item[(6)] 
-  \item[(7)] 
-  \item[(8)] 
-  \item[(9)] 
-  \item[(10)] 
+  마찰력이 작용하는 순간의 자유 물체 다이어 그램을 그려보자. 
+  \begin{figure}[h]
+    \begin{tikzpicture}
+      \draw node at (-2,3) {구간 $d_1$ : }  ;
+      \draw[rotate=-32] (-2.5,0) -- (2.5,0) ;
+      \draw[rotate=-32] (0,-2.5) -- (0,2.5) ;
+      \draw [rotate=-32,red,very thick,-latex] (0,0.1) -- (0,1.5) 
+      node [left,black] {$N_1$};
+      \draw[black] (238:1) arc(232:270:0.9)
+      node [below=4,left,black] {$32^\circ$} ;
+      \draw [violet,very thick,-latex] (0,-0.1) -- (0,-2) 
+      node [right,black] {$F_g$};
+      \draw [rotate=-32,blue,very thick,-latex] (-0.1,0) -- (-1.2,0) 
+      node [left,black] {$f_{k1}$};
+    \end{tikzpicture}
+    \hspace{1cm}
+    \begin{tikzpicture}
+      \draw node at (-2,3) {구간 $d_2$ : }  ;
+      \draw (-2,0) -- (2,0) ;
+      \draw (0,-2) -- (0,2) ;
+      \draw [red,very thick,-latex] (0,0.1) -- (0,1.5) 
+      node [left,black] {$N_2$};
+      \draw [blue,very thick,-latex] (-0.1,0) -- (-1.1,0) 
+      node [above,black] {$f_{k2}$};
 
+      \draw [violet,very thick,-latex] (0,-0.1) -- (0,-2) 
+      node [right,black] {$F_g$};
+    \end{tikzpicture} \caption{자유 물체 다이어 그램}
+  \end{figure}
+  각 구간에 작용하는 마찰력을 고려한다면 각 구간에서 스키 점프 선수가 받는
+  알짜힘을 구할 수 있다. 구간 $d_1$ 에서 작용하는 마찰력을 $f_{k1}$ 이라 하고 
+  구간 $d_2$ 에 작용하는 마찰력을 $f_{k2}$ 라 하면 각 구간에서 받는  알짜힘 
+  $W_1$, $W_2$ 는,
+  \begin{align}
+    W = W_1+W_2 = F_g d_1\cos{\left(\frac{\pi}{2}-\theta\right)}
+    -f_{k1}d_1-f_{k2}d_2,
+  \end{align} 
+  $f_{k1}=\mu_kN_1$, $f_{k2}=\mu_kN_2$ 이다.
+  각 구간에서 스키 점프 선수에게 작용하는 수직항력
+  $N_1$, $N_2$ 은 수직항력의 방향과 중력의 방향을 고려했을 때,
+  \begin{align}\label{eq:5-1}
+    N_1 = F_g\cos{\theta},\,\,\,N_2=F_g,\,\,\,F_g=mg
+  \end{align}
+  이므로,
+  \begin{align}
+    \begin{split}
+      W &= F_g d_1\cos{\left(\frac{\pi}{2}-\theta\right)}
+      -\mu_kF_gd_1\cos{\theta}-\mu_kF_gd_2  \\
+      &= mg\left( d_1\sin{\theta}-\mu_k(d_1\cos{\theta}-d_2) \right)
+    \end{split}
+  \end{align}
+  중력이 해준 일은 운동 에너지의 변화량과 같으므로,
+  \begin{align}
+      W = \frac{1}{2}mv^2_2 
+      =mg\left(d_1\sin{\theta}-\mu_k(d_1\cos{\theta}-d_2)\right),\,\,\,
+      v_2=\sqrt{2g\left( d_1\sin{\theta}-\mu_k(d_1\cos{\theta}-d_2)\right)}.
+  \end{align} 
+  따라서 스키 점프대를 떠날 때 속력은,
+  \begin{align}
+    \begin{split}
+      v_2&=\sqrt{2g\left( d_1\sin{\theta}-\mu_k(d_1\cos{\theta}-d_2)\right)} \\
+      &= \sqrt{2(9.8\,\mathrm{m/s^2})
+      \left((100\,\mathrm{m})\sin{32^\circ}
+      -(0.1)((100\,\mathrm{m})\cos{32^\circ}-(2\,\mathrm{m}))\right)} \\
+      &= 29\,\mathrm{m/s}.
+    \end{split}
+  \end{align}
+  \item[(6)] 식 (\ref{eq:2-2}) 에 의해 구간 $d_1$, $d_2$ 에서 마찰력을
+  받은 경우 $d_3$ 는
+  \begin{align}
+    \begin{split}
+      d_3 = \frac{2v^2_2\sin{\theta}}{g\cos^2{\theta}}
+      =\frac{2(29\,\mathrm{m/s})^2\sin{32^\circ}}
+      {(9.8\,\mathrm{m/s^2})\cos^2{32^\circ}}
+      =130\,\mathrm{m},
+    \end{split}
+  \end{align} 
+  이고 식 (\ref{eq:2-3}) 에 의해 착지 위치는 다음과 같다.
+  \begin{align}
+    \begin{split}
+      x_f &= d_3\cos{\theta}
+      =\frac{2v^2_2\sin{\theta}}{g\cos{\theta}}
+      =\frac{2(29\,\mathrm{m/s})^2\sin{32^\circ}}
+      {(9.8\,\mathrm{m/s^2})\cos{32^\circ}}
+      =107\,\mathrm{m} \\
+      y_f &= -d_3\sin{\theta}
+      =\frac{2v^2_2\sin^2{\theta}}{g\cos{\theta}}
+      =\frac{2(29\,\mathrm{m/s})^2\sin^2{32^\circ}}
+      {(9.8\,\mathrm{m/s^2})\cos^2{32^\circ}}
+      =-67\,\mathrm{m}.
+    \end{split}
+  \end{align}
+  \item[(7)] 스키 점프 선수는 두 구간 $d_1$ 과 $d_2$ 에서 마찰력을 받는다. 
+  마찰력에 의해 잃는 힘을 $W_f$ 라고 하면,
+  \begin{align}
+    W_f = f_{k1}d_1+f_{k2}d_2  = \mu_k(N_1d_1+N_2d_2),
+  \end{align}
+  이고 식 (\ref{eq:5-1}) 에 의해,
+  \begin{align}
+    \begin{split}
+      W_f &= \mu_kmg(d_1\cos{\theta}+d_2)  \\
+      &= (0.1)(700\,\mathrm{N})\left((100\,\mathrm{m})\cos{32^\circ}+2\,\mathrm{m}\right) \\
+      &= 6076\,\mathrm{J}
+    \end{split}
+  \end{align}
+  마찰에 의해 잃은 일은 $6076\,\mathrm{J}$ 이다.
+  \item[(8)] 마찰에 의해 운동 에너지의 일부가 다른 형태의 에너지로 변형되었으므로 운동 에너지 보존은
+   지켜지지 않는다. 그 때 변형된 에너지의 양은 $6076\,\mathrm{J}$ 이다.
+  \item[(9)] 공기저항이 작용한다 하면 스키 점프 선수가 공중에 머무를 때의
+   자유 물체 다이어 그램은 다음과 같다.
+  \begin{figure}[h]
+    \begin{tikzpicture}
+      \draw (-1.5,0) -- (1.5,0) ;
+      \draw (0,-1.5) -- (0,1.5) ;
+      \draw [blue,very thick,-latex] (-0.1,0) -- (-1.1,0) 
+      node [above,black] {$|\vec{F_d}|$};
+      \draw [violet,very thick,-latex] (0,-0.1) -- (0,-2) 
+      node [right,black] {$F_g$};
+    \end{tikzpicture} \caption{자유 물체 다이어 그램}
+  \end{figure}
+  오른쪽을 $+x$ 방향이라 하자. 운동 방정식을 세워보면 각 방향으로 스키 점프 선수가 받는 힘은,
+  \begin{align}
+    \begin{split}
+      \sum F_x &= ma_x = -|\vec{F_d}| = -700\,\mathrm{N} \\
+      \sum F_y &= ma_y = F_g = mg 
+    \end{split}
+  \end{align}
+  이다. 각 방향으로 힘이 일정하게 작용하므로 스키 점프 선수는 
+  $x$ 방향과 $y$ 방향으로 등가속도 운동한다. 스키 점프 선수가 
+  점프대를 떠날 때 $y$ 방향의 속력은 0 이므로 
+  그때의 속력을 $v_{xi}=v_2$ 라고 하면 각 방향으로의 착지 위치 $x_f$, $y_f$ 
+  는 다음과 같이 쓸 수 있다.
+  \begin{align}
+    \begin{split}\label{eq:9-1}
+      x_f &=d_3\cos{\theta}= v_{xi}t+\frac{1}{2}a_xt^2 = v_2t+\frac{1}{2}a_xt^2,\,\,\,
+      a_x=-\frac{|\vec{F_d}|}{m}  \\
+      y_f &=-d_3\sin{\theta}= -\frac{1}{2}a_yt^2 = -\frac{1}{2}gt^2.
+    \end{split}
+  \end{align}
+  두번째 식으로 부터 $t$ 는,
+  \begin{align}\label{eq:9-2}
+    t = \sqrt{\frac{2d_3\sin{\theta}}{g}},
+  \end{align}
+  이고 이를 첫번째 식에 넣으면,
+  \begin{align}
+    d_3\cos{\theta}=v_2\sqrt{\frac{2d_3\sin{\theta}}{g}}+\frac{a_xd_3\sin{\theta}}{g}
+    =v_2\sqrt{\frac{2d_3\sin{\theta}}{g}}-\frac{|\vec{F_d}|d_3\sin{\theta}}{mg}.
+  \end{align}
+  이 식을 $d_3$ 에 대해 정리해보자.
+  \begin{align}
+    \left(1+\frac{|\vec{F_d}|\sin{\theta}}{mg\cos{\theta}}\right)d_3
+    =v_2\sqrt{\frac{2d_3\sin{\theta}}{g\cos^2{\theta}}},\,\,\,
+  \end{align}
+  양변을 $\sqrt{d_3}$ 로 나누고 좌항에 $d_3$ 만 남기면,
+  \begin{align}
+    \sqrt{d_3}=\left(\frac{mg\cos{\theta}}{mg\cos{\theta}
+    +|\vec{F_d}|\sin{\theta}}\right)
+    \sqrt{\frac{2v_2^2\sin{\theta}}{g\cos^2{\theta}}}.
+  \end{align}
+  따라서 $d_3$ 는,
+  \begin{align}
+    d_3=\left(\frac{mg\cos{\theta}}{mg\cos{\theta}
+    +|\vec{F_d}|\sin{\theta}}\right)^2
+   \frac{2v_2^2\sin{\theta}}{g\cos^2{\theta}},
+  \end{align}
+  이다. 최종적으로 $d_3$ 을 계산하면 다음과 같다.
+  \begin{align}
+    \begin{split}
+      d_3 &=\left(\frac{(700\,\mathrm{N})\cos{32^\circ}}{(700\,\mathrm{N})\cos{32^\circ}
+      +(100\,\mathrm{N})\sin{32^\circ}}\right)^2
+      \frac{2(29\,\mathrm{m/s})^2\sin{32^\circ}}{(9.8\mathrm{m/s^2})\cos^2{32^\circ}} \\
+      &= 107\,\mathrm{m}.
+    \end{split}
+  \end{align} 
+  이 결과를 식 (\ref{eq:9-1}) 에 대입하면,
+  \begin{align}
+    \begin{split}
+      x_f &= d_3\cos{\theta}= (107\,\mathrm{m})\cos{32^\circ} =  91\,\mathrm{m} \\
+      y_f &=-d_3\sin{\theta}= (107\,\mathrm{m})\sin{32^\circ} = -57\,\mathrm{m},
+    \end{split}
+  \end{align}
+  스키 점프 선수의 착지 위치를 구할 수 있다.
+  \item[(10)] 지점 $d_3$ 에서의 각 방향에 대한 속력을 $v_{xf}$, $v_{yf}$ 라 하면,
+  \begin{align}
+    \begin{split}
+      v_{x f} &= v_{xi}-a_x t = v_2 - \frac{|\vec{F_d}|}{m}t,\,\,\,m=\frac{F_g}{g} \\
+      v_{y f} &= -gt
+    \end{split}
+  \end{align} 
+  식 (\ref{eq:9-2}) 으로 부터 $x$ 방향 속력은,
+  \begin{align}
+    \begin{split}
+      v_{x f} &=  v_2 - \frac{|\vec{F_d}|g}{F_g}\sqrt{\frac{2d_3\sin{\theta}}{g}} \\
+      &= (29\,\mathrm{m/s}) - \frac{(100\,\mathrm{N})(9.8\,\mathrm{m/s^2})}
+      {(700\,\mathrm{N})}\sqrt{\frac{2(107\,\mathrm{m})\sin{32^\circ}}
+      {(9.8\,\mathrm{m/s^2})}}  \\
+      &= 24\,\mathrm{m/s},
+    \end{split}
+  \end{align}
+  이고, $y$ 방향 속력은,
+  \begin{align}
+    \begin{split}
+      v_{y f} &= -\sqrt{2d_3g\sin{\theta}}  \\
+      &=-\sqrt{2(107\,\mathrm{m})(9.8\,\mathrm{m/s^2})\sin{32^\circ}} \\
+      &=-33\,\mathrm{m/s}
+    \end{split}
+  \end{align}
+  이다. 따라서 지점 $d_3$ 에서의 속력은 다음과 같다.
+  \begin{align}
+    \begin{split}
+      v &= \sqrt{v_{xf}^2+v_{yf}^2} = \sqrt{(24\,\mathrm{m/s})^2+(33\,\mathrm{m/s})^2} \\
+      &= 41\,\mathrm{m/s}
+    \end{split}
+  \end{align}
 \end{itemize} 
 \end{document}
