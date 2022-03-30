@@ -1,6 +1,8 @@
 from locale import ABDAY_1
 l=[]
+
 # The answer of (a) is function mk1.
+
 k=input('')
 def mk1(k):
   n=int(k)
@@ -13,8 +15,9 @@ def mk1(k):
       else:
         continue
   return l
-print(mk1(k))
+
 # The answer of (b) is function mk2.
+
 a=input('')
 b=input('')
 def mk2(a,b):
@@ -26,9 +29,11 @@ def mk2(a,b):
       if m%b1!=0:
         m1+=m
   return m1
-print(mk2(a,b))
+
 # The answer of (c) is function mk3.
+
 aa=input('')
+
 def mk3(aa):
   ll=[]
   aa1=int(aa)
@@ -38,8 +43,9 @@ def mk3(aa):
   if len(ll)==1:
     print("%d is a prime number."%aa1)
   return ll  
-print(mk3(aa))
+
 # The answer of (d) is function mk4.
+
 x=input('')
 y=input('')
 def mk4(x,y):
@@ -50,14 +56,16 @@ def mk4(x,y):
   yd=[]
   ydd=[]
   s=int()
-  for x2 in range(2,x1+1):
+  for x2 in range(2,x1+2):
+    if x1 == 1:
+      xd.append(x1)
     if x1%x2==0:
       xd.append(x2)
-  #print(xd)
-  for y2 in range(2,y1+1):
+  for y2 in range(2,y1+2):
+    if y1 == 1:
+      yd.append(y1)
     if y1%y2==0:
       yd.append(y2)
-  #print(yd)
   for i in range(1,1001):
     for j in xd:
       if i%j==0:
@@ -68,24 +76,11 @@ def mk4(x,y):
       if i%j==0:
         ydd.append(i)
         break
-  #print(xdd)
-  #print(ydd)
   xs=set(xdd)
   ys=set(ydd)
   ts=xs.union(ys)
-  #print(ts)
   tl=list(ts)
-  #print(tl)
   for i in tl:
     s+=i
   ss=500500-s
   return ss
-print(mk4(6,35))
-print(mk4(30,154))
-
-print("Total result is,\n")
-print(mk1(k))
-print(mk2(a,b))
-print(mk3(aa))
-print(mk4(6,35))
-print(mk4(30,154))
