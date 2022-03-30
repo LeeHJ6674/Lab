@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex FirstExam_20220330"] 1648542352 "FirstExam_20220330.aux" "FirstExam_20220330.bbl" "FirstExam_20220330" 1648542461
+["bibtex FirstExam_20220330"] 1648639967 "FirstExam_20220330.aux" "FirstExam_20220330.bbl" "FirstExam_20220330" 1648640349
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1547851249 69612 d43c8740409d8c756864ce4e3d57a214 ""
-  "FirstExam_20220330.aux" 1648542460 965 a5ab3d1adfea8ea87d214ea31892c8a7 "pdflatex"
-  "FirstExam_20220330Notes.bib" 1648542460 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "FirstExam_20220330.aux" 1648640246 995 ab596b2bb1675469df7f5be2e42c8575 "pdflatex"
+  "FirstExam_20220330Notes.bib" 1648640246 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
   "FirstExam_20220330.blg"
   "FirstExam_20220330.bbl"
-["pdflatex"] 1648542460 "/home/sigma/Lab/GP/Test/FirstExam_20220330.tex" "/home/sigma/Lab/GP/Test/FirstExam_20220330.pdf" "FirstExam_20220330" 1648542461
+["pdflatex"] 1648640246 "/home/sigma/Lab/GP/Test/FirstExam_20220330.tex" "/home/sigma/Lab/GP/Test/FirstExam_20220330.pdf" "FirstExam_20220330" 1648640349
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/GP/Test/FirstExam_20220330.aux" 1648542460 965 a5ab3d1adfea8ea87d214ea31892c8a7 ""
-  "/home/sigma/Lab/GP/Test/FirstExam_20220330.tex" 1648542459 17819 4cace957ebd86f9c90f0d5416d29840a ""
+  "/home/sigma/Lab/GP/Test/FirstExam_20220330.aux" 1648640246 995 ab596b2bb1675469df7f5be2e42c8575 ""
+  "/home/sigma/Lab/GP/Test/FirstExam_20220330.tex" 1648640349 17475 3d4bb7cc9950f595737f33423b9c41ee ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -77,6 +77,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbc.tfm" 1364599308 1240 85a8e5ce3892bdfb1ef2a66ee541995a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbd.tfm" 1364599308 1256 fee2adeaf13befc42aff0b72ea0c6244 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbe.tfm" 1364599308 1260 77fd885b3485a736ccd4190eb2b1ed4f ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbf.tfm" 1364599308 1252 3e21672d85b2e99da608e46c573cc388 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc0.tfm" 1364599308 1252 550ca25062ebc90c66b675808adf8c6d ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc1.tfm" 1364599308 1256 65e23cc1bcd2b64aca8af1f732fed042 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc2.tfm" 1364599308 1252 818c5e98aaef778763029f70d8876c68 ""
@@ -141,6 +142,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbc.pfb" 1364599308 194791 eb778945691cde522cea41f45be527cc ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbd.pfb" 1364599308 210045 0496e7ed75c1e71b1766c023ef7a266b ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb" 1364599308 249254 a12d5b0b84b9f147b22671ef42e71ca6 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbf.pfb" 1364599308 313041 c9f0aa4e8dd7d4717ae4a300bccf7b63 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb" 1364599308 255779 fdfc954d6fbf12a349b0f0048856b5ae ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb" 1364599308 161865 4f209de35b3f8f8bf0c6bd2626c71039 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb" 1364599308 153768 774715bfa19c744cd0c61d8837698d54 ""
@@ -278,15 +280,15 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1645685134 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1645685152 8258281 06978915380d3cf57d3fcd5054406eef ""
-  "FirstExam_20220330.aux" 1648542460 965 a5ab3d1adfea8ea87d214ea31892c8a7 "pdflatex"
-  "FirstExam_20220330.bbl" 1648542352 1982 35453d3875d823f0ec9445e740a573d9 "bibtex FirstExam_20220330"
-  "FirstExam_20220330.tex" 1648542459 17819 4cace957ebd86f9c90f0d5416d29840a ""
+  "FirstExam_20220330.aux" 1648640246 995 ab596b2bb1675469df7f5be2e42c8575 "pdflatex"
+  "FirstExam_20220330.bbl" 1648639967 1982 35453d3875d823f0ec9445e740a573d9 "bibtex FirstExam_20220330"
+  "FirstExam_20220330.tex" 1648640349 17475 3d4bb7cc9950f595737f33423b9c41ee ""
   "QFig9-20220330.png" 1648429455 139376 013af4fcf42cabf00db9db0d542bddd1 ""
   "defcolor.sty" 1646221108 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   (generated)
   "FirstExam_20220330.pdf"
   "/home/sigma/Lab/GP/Test/FirstExam_20220330.pdf"
-  "FirstExam_20220330Notes.bib"
+  "/home/sigma/Lab/GP/Test/FirstExam_20220330.log"
   "FirstExam_20220330.log"
   "FirstExam_20220330.aux"
-  "/home/sigma/Lab/GP/Test/FirstExam_20220330.log"
+  "FirstExam_20220330Notes.bib"
