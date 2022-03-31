@@ -3,8 +3,8 @@ INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/sigma/Lab/GP/Test/FirstExam_20220330.tex
-OUTPUT /home/sigma/Lab/GP/Test/FirstExam_20220330.log
+INPUT /home/sigma/Lab/GP/Test/FirstExam_20220330_sol_hjlee(1).tex
+OUTPUT /home/sigma/Lab/GP/Test/FirstExam_20220330_sol_hjlee(1).log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-2.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-2.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/revtex/aps4-2.rtx
@@ -187,9 +187,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
 INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-INPUT /home/sigma/Lab/GP/Test/FirstExam_20220330.aux
-INPUT /home/sigma/Lab/GP/Test/FirstExam_20220330.aux
-OUTPUT /home/sigma/Lab/GP/Test/FirstExam_20220330.aux
+INPUT /home/sigma/Lab/GP/Test/FirstExam_20220330_sol_hjlee(1).aux
+INPUT /home/sigma/Lab/GP/Test/FirstExam_20220330_sol_hjlee(1).aux
+OUTPUT /home/sigma/Lab/GP/Test/FirstExam_20220330_sol_hjlee(1).aux
 INPUT /usr/share/texlive/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -198,7 +198,7 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-OUTPUT /home/sigma/Lab/GP/Test/FirstExam_20220330Notes.bib
+OUTPUT /home/sigma/Lab/GP/Test/FirstExam_20220330_sol_hjlee(1)Notes.bib
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
@@ -299,7 +299,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc6.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb0.tfm
 INPUT /home/sigma/Lab/GP/Test/QFig9-20220330.png
 INPUT /home/sigma/Lab/GP/Test/QFig9-20220330.png
-OUTPUT /home/sigma/Lab/GP/Test/FirstExam_20220330.pdf
+OUTPUT /home/sigma/Lab/GP/Test/FirstExam_20220330_sol_hjlee(1).pdf
 INPUT /home/sigma/Lab/GP/Test/QFig9-20220330.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc2.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd0.tfm
@@ -318,8 +318,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd4.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjbd4.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjbc7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbf.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmcd.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbb.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmcc.tfm
@@ -327,11 +325,13 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb2.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmad.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbf.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmcd.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmcf.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmca.tfm
-INPUT /home/sigma/Lab/GP/Test/FirstExam_20220330.bbl
-INPUT /home/sigma/Lab/GP/Test/FirstExam_20220330.bbl
-INPUT /home/sigma/Lab/GP/Test/FirstExam_20220330.aux
+INPUT /home/sigma/Lab/GP/Test/FirstExam_20220330_sol_hjlee(1).bbl
+INPUT /home/sigma/Lab/GP/Test/FirstExam_20220330_sol_hjlee(1).bbl
+INPUT /home/sigma/Lab/GP/Test/FirstExam_20220330_sol_hjlee(1).aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb

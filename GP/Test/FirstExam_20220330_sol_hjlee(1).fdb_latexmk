@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex FirstExam_20220330"] 1648639967 "FirstExam_20220330.aux" "FirstExam_20220330.bbl" "FirstExam_20220330" 1648640349
+["bibtex FirstExam_20220330_sol_hjlee(1)"] 1648719101 "FirstExam_20220330_sol_hjlee(1).aux" "FirstExam_20220330_sol_hjlee(1).bbl" "FirstExam_20220330_sol_hjlee(1)" 1648719102
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1547851249 69612 d43c8740409d8c756864ce4e3d57a214 ""
-  "FirstExam_20220330.aux" 1648640246 995 ab596b2bb1675469df7f5be2e42c8575 "pdflatex"
-  "FirstExam_20220330Notes.bib" 1648640246 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "FirstExam_20220330_sol_hjlee(1).aux" 1648719102 1116 3b0db878d114502b8db1762b72daff7c "pdflatex"
+  "FirstExam_20220330_sol_hjlee(1)Notes.bib" 1648719102 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
-  "FirstExam_20220330.blg"
-  "FirstExam_20220330.bbl"
-["pdflatex"] 1648640246 "/home/sigma/Lab/GP/Test/FirstExam_20220330.tex" "/home/sigma/Lab/GP/Test/FirstExam_20220330.pdf" "FirstExam_20220330" 1648640349
+  "FirstExam_20220330_sol_hjlee(1).blg"
+  "FirstExam_20220330_sol_hjlee(1).bbl"
+["pdflatex"] 1648719101 "/home/sigma/Lab/GP/Test/FirstExam_20220330_sol_hjlee(1).tex" "/home/sigma/Lab/GP/Test/FirstExam_20220330_sol_hjlee(1).pdf" "FirstExam_20220330_sol_hjlee(1)" 1648719102
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/GP/Test/FirstExam_20220330.aux" 1648640246 995 ab596b2bb1675469df7f5be2e42c8575 ""
-  "/home/sigma/Lab/GP/Test/FirstExam_20220330.tex" 1648640349 17475 3d4bb7cc9950f595737f33423b9c41ee ""
+  "/home/sigma/Lab/GP/Test/FirstExam_20220330_sol_hjlee(1).aux" 1648719102 1116 3b0db878d114502b8db1762b72daff7c ""
+  "/home/sigma/Lab/GP/Test/FirstExam_20220330_sol_hjlee(1).tex" 1648719102 18460 3689f7b7a79276b1d626ad43ae077845 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -280,15 +280,15 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1645685134 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1645685152 8258281 06978915380d3cf57d3fcd5054406eef ""
-  "FirstExam_20220330.aux" 1648640246 995 ab596b2bb1675469df7f5be2e42c8575 "pdflatex"
-  "FirstExam_20220330.bbl" 1648639967 1982 35453d3875d823f0ec9445e740a573d9 "bibtex FirstExam_20220330"
-  "FirstExam_20220330.tex" 1648640349 17475 3d4bb7cc9950f595737f33423b9c41ee ""
+  "FirstExam_20220330_sol_hjlee(1).aux" 1648719102 1116 3b0db878d114502b8db1762b72daff7c "pdflatex"
+  "FirstExam_20220330_sol_hjlee(1).bbl" 1648719101 1982 35453d3875d823f0ec9445e740a573d9 "bibtex FirstExam_20220330_sol_hjlee(1)"
+  "FirstExam_20220330_sol_hjlee(1).tex" 1648719102 18460 3689f7b7a79276b1d626ad43ae077845 ""
   "QFig9-20220330.png" 1648429455 139376 013af4fcf42cabf00db9db0d542bddd1 ""
   "defcolor.sty" 1646221108 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   (generated)
-  "FirstExam_20220330.pdf"
-  "/home/sigma/Lab/GP/Test/FirstExam_20220330.pdf"
-  "/home/sigma/Lab/GP/Test/FirstExam_20220330.log"
-  "FirstExam_20220330.log"
-  "FirstExam_20220330.aux"
-  "FirstExam_20220330Notes.bib"
+  "FirstExam_20220330_sol_hjlee(1)Notes.bib"
+  "FirstExam_20220330_sol_hjlee(1).log"
+  "FirstExam_20220330_sol_hjlee(1).pdf"
+  "/home/sigma/Lab/GP/Test/FirstExam_20220330_sol_hjlee(1).pdf"
+  "FirstExam_20220330_sol_hjlee(1).aux"
+  "/home/sigma/Lab/GP/Test/FirstExam_20220330_sol_hjlee(1).log"

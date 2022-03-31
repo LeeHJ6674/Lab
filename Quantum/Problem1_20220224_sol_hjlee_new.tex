@@ -188,7 +188,8 @@ Finally we obtain the normalization constant,
   \item[(4)] $\psi(x,t)$ is the Fourier transform of $\phi(p,t)$.
   \begin{align}
     \begin{split}
-      \psi(x,t) &= \frac{1}{\sqrt{2\pi\hbar}}\int\phi(p,t)e^{\frac{i}{\hbar}px}\,dp  \\
+      \psi(x,t) &= \frac{1}{\sqrt{2\pi\hbar}}
+      \int\phi(p,t)e^{\frac{i}{\hbar}px}\,dp  \\
       &={\left(\frac{\sigma^2}{2\pi^3\hbar^4}\right)}^{\frac{1}{4}}
       \int\exp\left(-\frac{2m\sigma^2+i\hbar t}{2m\hbar^2} p^2 
       +\frac{2\sigma^2p_0+i\hbar (x-x_0)}{\hbar^2}p
@@ -263,8 +264,9 @@ Finally we obtain the normalization constant,
     \right)
   \end{align}
 Suppose that $\sigma = 0.6$, $m=2$, $x_0=2$ and $p_0=2$. Through the 
-FIG. \ref{pic:1-1} and FIG. \ref{pic:1-2}, we know that $|\psi|^2$ is spread and the
-spread $\mathcal{S}(t)$ is increases with time t.
+FIG. \ref{pic:1-1} and FIG. \ref{pic:1-2}, we can confirm that 
+$|\psi|^2$ is spread and the spread $\mathcal{S}(t)$ is 
+increases with time t.
   \begin{figure}[htbp]
     \centering
     \includegraphics[scale=0.6]{1.pdf}  
@@ -342,7 +344,8 @@ H  = \frac{p^2}{2m}.
     (\Delta p_x)^2 = \langle p_x^2 \rangle-\langle p_x \rangle^2. 
   \end{align}
   We calculate $\langle p_x^2 \rangle$ in the momentum space 
-  and $\langle p_x \rangle^2=\langle p_x \rangle^2_{t=0}$ because of (\ref{thm:px}).
+  and $\langle p_x \rangle^2=\langle p_x \rangle^2_{t=0}$ because 
+  of (\ref{thm:px}).
   \begin{align*}
     \begin{split}
       \langle p_x^2 \rangle &= \int \phi^*(p,t)\,p^2_x\,\phi(p,t)\,d^3p
@@ -558,7 +561,8 @@ Because the second term is a even function about $x=x_0$, it is a zero.
 
 \item[(3)] From (\ref{def:deviation}), we use the definition of the deviation.
   \begin{align}
-    {(\Delta x)}^2 = \langle x^2\rangle - \langle x\rangle^2 ,\quad {(\Delta p)}^2 
+    {(\Delta x)}^2 = \langle x^2\rangle 
+    - \langle x\rangle^2 ,\quad {(\Delta p)}^2 
     = \langle p^2\rangle - \langle p\rangle^2 
   \end{align}
 First we calculate $\langle x^2\rangle$.
@@ -740,7 +744,8 @@ The probability density is,
     +e^{i\omega t}\psi_1(\bm{x})\psi_2^*(\bm{x})\right]  
   \end{align*}
   since $E_2-E_1=\hbar \omega$.
-  $\psi_1$ and $\psi_2$ are the complex function that can be introduced phase factor.
+  $\psi_1$ and $\psi_2$ are the complex function that can be 
+  introduced phase factor.
   \begin{align*}
       \psi_1(\bm{x}) = |\psi_1(\bm{x})|e^{i\alpha_1},\quad\psi_2(\bm{x}) 
       = |\psi_2(\bm{x})|e^{i\alpha_2}
@@ -770,8 +775,9 @@ The probability density is,
     \psi(\bm{x},t)|^2 
     = -\omega|\psi_1(\bm{x})||\psi_2(\bm{x})|\sin{(\omega t+\alpha_1-\alpha_2)}
   \end{align*}
-  If we integrate this about the surface that includes the $\Omega_2$, it will be a zero since $\psi_1$ and 
-  $\psi_2$ are orthogonal in $\Omega_2$ to each other. Consider the right hand side. 
+  If we integrate this about the surface that includes the $\Omega_2$, 
+  it will be a zero since $\psi_1$ and $\psi_2$ are orthogonal in 
+  $\Omega_2$ to each other. Consider the right hand side. 
   This integration is changed into the surface integration following 
   Green's Theorem. Suppose that surfaces of $\Omega_1$ and $\Omega_2$ are
   $S_1$ and $S_2$ respectively. Then,
