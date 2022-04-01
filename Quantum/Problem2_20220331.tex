@@ -1,0 +1,180 @@
+%\documentclass[preprint,tightenlines,showpacs,showkeys,floatfix,
+%nofootinbib,superscriptaddress,fleqn]{revtex4} 
+\documentclass[floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4} 
+%\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
+\usepackage{kotex}
+\usepackage[HWP]{dhucs-interword}
+\usepackage[dvips]{color}
+\usepackage{graphicx}
+\usepackage{bm}
+%\usepackage{fancyhdr}
+%\usepackage{dcolumn}
+\usepackage{defcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage[utf8]{inputenc}
+%\pagestyle{fancy}
+
+\begin{document}
+
+\title{\Large Quantum Mechanics}
+\author{김현철}
+\email{hchkim@inha.ac.kr}
+\affiliation{Hadron Theory Group, Department of Physics, Inha University,
+Incheon 22212, Republic of Korea }
+\date{2021}
+
+\maketitle
+
+\noindent {\bf Due date:} \textbf{\color{red} April 9, 2022} \\ 
+\vspace{2cm}
+
+\section*{\large Problem Set 2}
+\noindent \textbf{Problem 1.}
+A constant electric field $\mathcal{E}$ is exerted on a charged linear
+harmonic oscillator. 
+\begin{itemize}
+\item[(1)] Write down the corresponding Schr\"odinger equation. 
+\item[(2)] Derive the eigenvalues and eigenvectors of the charged
+  linear oscillators under a uniform electric field. 
+\item[(3)] Discuss the change in energy levels and physics. 
+  eigenstates. 
+\end{itemize}
+Hint: Use the operator method.
+\vspace{0.5cm}
+
+\noindent \textbf{Problem 2.} 
+The generating function $S(x,t)$ for the Hermite polynomial $H_n(x)$
+is defined as 
+\begin{align}
+S(x,t) = e^{x^2-(t-x)^2} = e^{-t^2 + 2 t x} = \sum_{n=0}^\infty
+  \frac{H_n(x)}{n!} t^n.  
+\label{eq:1}
+\end{align}
+\begin{itemize}
+\item[(1)] Using this generating function, derive the Hermite
+  differential equation. 
+\item[(2)] Derive the following formula from Eq.~\eqref{eq:1}:
+  \begin{align}
+H_n(x) = (-1)^n e^{x^2} \frac{d^n}{dx^n} e^{-x^2}    ,
+  \end{align}
+which is called the Rodrigues representation of the Hermite
+polynomial. 
+\item[(3)] Using Eq.~\eqref{eq:1}, derive the orthogonal relation of
+  the Hermite polynomials
+  \begin{align}
+    \int_{-\infty}^\infty e^{-x^2} H_n(x) H_m(x) dx = 2^n \sqrt{\pi}
+    n! \delta_{nm}.
+  \end{align}
+\item[(4)] Prove that
+  \begin{align}
+    \left(2x-\frac{d}{dx}\right)^n 1 = H_n(x),
+  \end{align}
+\item[(5)] Prove
+  \begin{align}
+    \int_{-\infty}^\infty x e^{-x^2} H_n(x) H_m(x) dx = \sqrt{\pi}
+    2^{n-1} n!\delta_{m,n-1} + \sqrt{\pi} 2^n (n+1)! \delta_{m,n+1}.
+  \end{align}
+\item[(6)] Prove
+  \begin{align}
+    \int_{-\infty}^\infty x^2 e^{-x^2} H_n(x) H_n(x) dx = 
+\sqrt{\pi} 2^n n! \left(n+\frac12\right).
+  \end{align}
+\end{itemize}
+\vspace{1cm}
+
+\noindent \textbf{Problem 3.} 
+Given the eigenfunctions and eigenenergies of the SHO, 
+\begin{itemize}
+\item[(1)] Compute the kinetic and potential energies at the $n^{th}$
+  level.  Show that the results satisfy the virial theorem. 
+\item[(2)] Show that the $n^{th}$ state of the SHO satisfies 
+  \begin{align}
+    \Delta x \Delta p = \left(n+\frac12\right)\hbar.
+  \end{align}
+\end{itemize}
+
+\vspace{1cm}
+
+\noindent \textbf{Problem 4.}
+If a wavefunction desribes a mixed state of the eigenstates of the SHO
+given as 
+\begin{align}
+  \psi(x,t) = \frac1{\sqrt{2}}[\psi_0(x,t) + \psi_1(x,t)] ,
+\end{align}
+\begin{itemize}
+\item[(1)] Investigate how the probability density changes in time. 
+\item[(2)] Prove the following relations 
+  \begin{align}
+\langle E\rangle &= \langle H\rangle =\hbar \omega    ,\cr
+\langle x \rangle &= \frac1{\sqrt{2\alpha}}\cos\omega t,\cr
+\langle p \rangle &= -\sqrt{\frac{\alpha}{2}}\hbar \sin\omega t,
+ \end{align}
+where $\alpha = \sqrt{m\omega/\hbar}$.
+ \item[(3)] If 
+   \begin{align}
+ \psi(x,t) = \frac1{\sqrt{2}}[e^{i\delta_0} \psi_0(x,t) + e^{i\delta}
+     \psi_1(x,t)],     
+   \end{align}
+discuss the effects of the phase factors $\delta_0$ and $\delta$ on
+$\langle x\rangle$ and $\langle p\rangle$.
+\end{itemize}
+ \vspace{1cm}
+
+\noindent \textbf{Problem 5.}
+Derive the wavefunction in momentum space, which corresponds to the
+eigenfunctions for the SHO in coordinates, $\psi_n(x)$. 
+\vspace{1cm}
+
+\noindent \textbf{Problem 6.}
+At $t=0$, the wavefunction for a state is described by
+\begin{align}
+\psi(x,0) = \sum_n A_n u_n(x) =
+  \left(\frac{\alpha^2}{\pi}\right)^{1/4} e^{-\alpha^2(x-a)^2/2}  .
+\end{align}
+show that after some time $t$, the probability density changes in time
+as 
+\begin{align}
+|\pi(x,t)|^2  =  \left(\frac{\alpha^2}{\pi}\right)^{1/4}e^{-\alpha^2
+  (x-a\cos\omega t)^2}
+\end{align}
+and discuss the result. 
+\vspace{1cm}
+
+\noindent \textbf{Problem 7.} THe Einstein model for a solid
+assumes that it consists of many SHOs. If the $N$ atoms are similar
+each other and oscillate similarly in average, the solid can be
+explained in terms of $N$ SHOs. At a given temperature $T$, $N$ atoms
+are in thermal equilibrium. Then, the Boltzmann distribution is given
+by 
+\begin{align}
+P_n = \frac1{Z} e^{-E_n/kT}   
+\end{align}
+with
+\begin{align}
+  Z = \sum_n e^{-E_n/kT}, 
+\end{align}
+where
+\begin{align}
+E_n = \left(n+\frac12\right)\hbar \omega .
+\end{align}
+\begin{itemize}
+\item[(1)] Derive the mean energy per an SHO 
+  \begin{align}
+    \langle E\rangle = \frac{\hbar\omega}{e^{\hbar\omega/kT}-1} +
+    \frac12 \hbar \omega.
+  \end{align}
+\item[(2)] If $U$ is the internal energy of the solid, derive the
+  specific heat with constant volume 
+  \begin{align}
+    C_V = \frac{\partial U}{\partial T}.
+  \end{align}
+Show that when $T$ is large, $C_V=3R$.
+\item[(3)] Discuss the physics related to this problem as far as you
+  can. 
+\end{itemize}
+
+\end{document}
