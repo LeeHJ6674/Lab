@@ -93,9 +93,9 @@ $\theta=30.0^\circ$만큼 기울어져 있는 면 위에 질량이 12.0 kg인
     E_i = mgh = mgd\sin{\theta},\,\,\, m = 12.0\,\mathrm{kg}.
   \end{align}
   나무토막이 용수철을 압축시켜 정지하였으므로 나무토막이 가지고 있던 모든 역학적 에너지가
-  용수철의 탄성 위치에너지로 전환되었다. 따라서,
+  용수철의 탄성 위치에너지로 전환되었다. 용수철이 압축된 길이를 $x_f$ 라고 하면,
   \begin{align}\label{eq:1-1}
-    E_i = mgd\sin{\theta} = \frac{1}{2}kx^2,\,\,\, x = 5.50\,\mathrm{cm}
+    E_i = mgd\sin{\theta} = \frac{1}{2}kx_f^2,\,\,\, x_f = 5.50\,\mathrm{cm}
     =5.50\times 10^{-2}\mathrm{m}.
   \end{align}
   용수철은 270 N 의 힘을 받을 때 2.00 cm 만큼 압축되므로 용수철 상수 $k$는,
@@ -106,11 +106,11 @@ $\theta=30.0^\circ$만큼 기울어져 있는 면 위에 질량이 12.0 kg인
   식 (\ref{eq:1-1})에 의해 나무토막이 내려온 거리 $d$는 다음과 같다.
   \begin{align}
     \begin{split}
-      d &= \frac{kx^2}{2mg\sin{\theta}}
+      d &= \frac{kx_f^2}{2mg\sin{\theta}}
       =\frac{(270\,\mathrm{N})(5.50\times 10^{-2}\mathrm{m})^2}
       {2(2.00\times 10^{-2}\,\mathrm{m})(12.0\,\mathrm{kg})
       (9.80\,\mathrm{m/s^2})\sin{30.0^\circ}} \\
-      &= 0.347\,\mathrm{m}\\
+      &= 3.47\times 10^{-1}\mathrm{m}  \\
       &=34.7\,\mathrm{cm}.
     \end{split}
   \end{align}
@@ -120,36 +120,38 @@ $\theta=30.0^\circ$만큼 기울어져 있는 면 위에 질량이 12.0 kg인
     E_s = \frac{1}{2}mv^2+mgd_s\sin{\theta},\,\,\,d_s = 5.50\,\mathrm{cm}
     =5.50\times 10^{-2}\mathrm{m}.
   \end{align}
-  역학적 에너지는 보존되어야 하므로 이 에너지는 나무토막이 정지했을 때 
-  전환된 용수철의 탄성 위치에너지와 같다.
+  역학적 에너지는 보존되어야 하므로 이 에너지는 처음 역학적 에너지 $E_i$ 와 같다. 따라서,
   \begin{align}
-    E_s = \frac{1}{2}mv^2+mgd_s\sin{\theta} = \frac{1}{2}kx^2
+    E_s = E_i,\,\,\,\frac{1}{2}mv^2+mgd_s\sin{\theta} = mgd\sin{\theta}.
   \end{align}
   따라서 이 때의 속력은,
   \begin{align}
     \begin{split}
-      v &= \sqrt{\frac{kx^2}{m}-2gd_s\sin{\theta}}
-      =sqrt{\frac{(270\,\mathrm{N})\left(5.50\times 10^{-2}\,\mathrm{m}\right)^2}
-      {(12.0\,\mathrm{kg})
-      (2.00\times 10^{-2}\,\mathrm{m})}-2(9.80\,\mathrm{m/s^2})
-      (5.50\times 10^{-2}\,\mathrm{m})\sin{30.0^\circ}} \\
+      v &= \sqrt{2gd\sin{\theta}-2gd_s\sin{\theta}}
+      = \sqrt{2g(d-d_s)\sin{\theta}}  \\
+      &= \sqrt{2(9.80\,\mathrm{m/s^2})
+      \left((3.47\times 10^{-1}\mathrm{m})
+      -(5.50\times 10^{-2}\mathrm{m})\right)
+      \sin{30.0^\circ}} \\
       &= 1.69\,\mathrm{m/s}.
     \end{split}
   \end{align}
 \end{itemize}
 
-\vspace{3cm}
+\vspace{1cm}
 
 \noindent {\bf 문제 2. (50 pt)} 
 어떤 아이가 그림~\ref{fig:2}처럼
 반지름이 $R$인 반구 모양의 얼음 위에 앉아 있다가 무시할 수 있는 아주
 작은 처음속력으로 미끄러지기 시작한다. 
+
 \begin{figure}[ht]
   \centering
 \includegraphics[scale=0.5]{Qfig9-3-20210330.png}  
   \caption{문제 2}
   \label{fig:2}
 \end{figure}
+
 얼음과 아이 사이에 쓸림이 없다고 가정한다면, 아이가 얼음에서 떠나는
 높이는 어디인가?
 
@@ -217,20 +219,25 @@ $R_f$를 얼음의 반지름 $R$과 $\theta$의 삼각비로 표현할 수 있�
 있다. 질소원자(N)는 수소원자들이 바닥을 이루는 피라미드의 꼭지점에
 있다. 질소 대 수소의 원자질량 비율은 13.9이고, 질소에서 수소까지의
 거리는 $L=10.14\times 10^{-11}$ m이다. 
+
 \begin{figure}[ht]
   \centering
 \includegraphics[scale=0.3]{Qfig9-4-20220330.png}  
   \caption{문제 3}
   \label{fig:3}
 \end{figure}
+
 암모니아분자의 질량중심의
 \begin{itemize}
 \item[(가)] $x$ 좌표
 \item[(나)] $y$ 좌표는 각각 무엇인가? 
 \end{itemize}
+
 \noindent {\bf 풀이 : } 
+
 \begin{itemize}
   \item[(가)] 
+
   \begin{figure}[htbp]
     \centering
     \begin{tikzpicture}
@@ -246,25 +253,15 @@ $R_f$를 얼음의 반지름 $R$과 $\theta$의 삼각비로 표현할 수 있�
       \draw (B) -- (C);
       \draw (C) -- (A);
       \coordinate (O) at (0,0);
-      \draw node[above] at (O) {$0$};
+      \draw node[above] at (O) {$N$};
       \draw[dotted] (O) -- (B);
       \draw[dotted] (O) -- (C);
       \draw[dotted] (O) -- (A);
-%      \draw[rotate=30] (0,-2) -- (0,1.5); 
-%      \draw[rotate=30] (-2.5,0) -- (2.5,0);
-%  
-%      \draw[red,very thick,-latex] (0,-0.1) -- (0,-2) 
-%      node [left,black] {$F_g$};
-%      \draw[rotate=30,blue,very thick,-latex] (0,0.1)--(0,1.28)
-%      node [above,black,right] {$N$};
-%      \draw[violet,rotate=30,very thick,-latex] (0.1,0)--(1,0)
-%      node [above,black] {$f_s$};
-%      \draw[] (0,-0.5) arc(270:300:0.5) (0,0.5)
-%      node [below=45,right=-2.5] {$30^\circ$};
-    \end{tikzpicture}
+    \end{tikzpicture}\caption{위에서 내려다 본 원자들의 위치}
   \end{figure}
   
-  $x$축 위에 위치한 수소 원자 부터 반 시계 방향으로 1, 2, 3번 수소라 
+  정삼각형의 중심을 원점, 
+  $x$축 위에 위치한 수소 원자 부터 반시계 방향으로 1, 2, 3번 수소라 
   하자. 질량 중심의 $x$ 좌표를 $x_{cm}$이라 하면 $x_{cm}$은,
   \begin{align}
     x_{cm} = \frac{m_{N}x_{N} + m_{H}x_{H1} + m_{H}x_{H2} + m_{H}x_{H3}}
@@ -287,26 +284,15 @@ $R_f$를 얼음의 반지름 $R$과 $\theta$의 삼각비로 표현할 수 있�
     \end{split}
   \end{align}
   따라서 $x_{cm}$은 0 이다.
-%  질소 대 수소의 원자질량 비율이 13.9 이므로,
-%  \begin{align}
-%    \frac{m_N}{m_H} = 13.9.
-%  \end{align}
-%  따라서 $x_{cm}$은 다음과 같이 구할 수 있다.
-%  \begin{align}
-%    \begin{split}
-%      x_{cm} = \frac{m_{H}x_{H1} + m_{H}x_{H2} + m_{H}x_{H3}}
-%      {m_{N} + 3m_{H}}
-%      = \frac{d -\frac{1}{2}d -\frac{1}{2}d}
-%      {\frac{m_{N}}{m_{H}} + 3} \\
-%      =\frac{}{}
-%    \end{split}
-%  \end{align}
   \item[(나)] 질량 중심의 $y$ 좌표를 $y_{cm}$이라 하면 $y_{cm}$은,
   \begin{align}
     y_{cm} = \frac{m_{N}y_{N} + m_{H}y_{H1} + m_{H}y_{H2} + m_{H}y_{H3}}
     {m_{N} + m_{H} + m_{H} + m_{H}}.
   \end{align}
-  모든 수소 원자들은 $y=0$ 평면에 위치해 있으므로 $y$ 좌표가 0 이다. 
+  모든 수소 원자들은 $y=0$ 평면에 위치해 있으므로 $y$ 좌표가 0 이다. 즉,
+  \begin{align}
+    y_{H1}=y_{H2}=y_{H3}=0.
+  \end{align}
   그림~\ref{fig:3}로 부터 질소 원자의 $y$ 좌표는,
   \begin{align}
     y_{N} = \sqrt{L^2-d^2},

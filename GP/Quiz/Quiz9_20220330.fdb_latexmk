@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex Quiz9_20220330"] 1648893519 "Quiz9_20220330.aux" "Quiz9_20220330.bbl" "Quiz9_20220330" 1648893955
+["bibtex Quiz9_20220330"] 1649039574 "Quiz9_20220330.aux" "Quiz9_20220330.bbl" "Quiz9_20220330" 1649039804
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1547851249 69612 d43c8740409d8c756864ce4e3d57a214 ""
-  "Quiz9_20220330.aux" 1648893954 939 794cee9d3abc514ca576221763128e42 "pdflatex"
-  "Quiz9_20220330Notes.bib" 1648893954 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "Quiz9_20220330.aux" 1649039762 1061 c121afd04e7c5b51ee6092d0a82755b9 "pdflatex"
+  "Quiz9_20220330Notes.bib" 1649039762 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
   "Quiz9_20220330.blg"
   "Quiz9_20220330.bbl"
-["pdflatex"] 1648893953 "/home/sigma/Lab/GP/Quiz/Quiz9_20220330.tex" "/home/sigma/Lab/GP/Quiz/Quiz9_20220330.pdf" "Quiz9_20220330" 1648893955
+["pdflatex"] 1649039761 "/home/sigma/Lab/GP/Quiz/Quiz9_20220330.tex" "/home/sigma/Lab/GP/Quiz/Quiz9_20220330.pdf" "Quiz9_20220330" 1649039804
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/GP/Quiz/Quiz9_20220330.aux" 1648893954 939 794cee9d3abc514ca576221763128e42 ""
-  "/home/sigma/Lab/GP/Quiz/Quiz9_20220330.tex" 1648893953 12763 dcafcfd10321ef87d6272241dbebc29f ""
+  "/home/sigma/Lab/GP/Quiz/Quiz9_20220330.aux" 1649039762 1061 c121afd04e7c5b51ee6092d0a82755b9 ""
+  "/home/sigma/Lab/GP/Quiz/Quiz9_20220330.tex" 1649039804 11984 5b970ec7fb2762df2eecc5b6153c6735 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -276,14 +276,14 @@
   "Qfig9-2-20210330.png" 1647601534 88116 effc56fb07d9f1a386970e195b221c18 ""
   "Qfig9-3-20210330.png" 1647601535 89433 3d9f09f3baeae3055b778d24de9ca850 ""
   "Qfig9-4-20220330.png" 1647601536 90553 603495808127feabfefc3fc8d5bba27d ""
-  "Quiz9_20220330.aux" 1648893954 939 794cee9d3abc514ca576221763128e42 "pdflatex"
-  "Quiz9_20220330.bbl" 1648893519 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Quiz9_20220330"
-  "Quiz9_20220330.tex" 1648893953 12763 dcafcfd10321ef87d6272241dbebc29f ""
+  "Quiz9_20220330.aux" 1649039762 1061 c121afd04e7c5b51ee6092d0a82755b9 "pdflatex"
+  "Quiz9_20220330.bbl" 1649039575 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Quiz9_20220330"
+  "Quiz9_20220330.tex" 1649039804 11984 5b970ec7fb2762df2eecc5b6153c6735 ""
   "defcolor.sty" 1646221108 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   (generated)
-  "Quiz9_20220330.log"
+  "/home/sigma/Lab/GP/Quiz/Quiz9_20220330.log"
   "Quiz9_20220330.aux"
-  "Quiz9_20220330Notes.bib"
   "/home/sigma/Lab/GP/Quiz/Quiz9_20220330.pdf"
   "Quiz9_20220330.pdf"
-  "/home/sigma/Lab/GP/Quiz/Quiz9_20220330.log"
+  "Quiz9_20220330Notes.bib"
+  "Quiz9_20220330.log"
