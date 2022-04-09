@@ -94,7 +94,7 @@ Hint: Use the operator method.
     = \hbar\omega\left(a^\dagger a + \frac{1}{2}\right)
     = \hbar\omega\left(a a^\dagger - \frac{1}{2}\right).
   \end{align}
-  Now, recall a constant electric field $\mathcal{E}$. From Eq. \eqref{eq:1-1}
+  Now, recall a constant electric field $\mathcal{E}$. From Eq.~\eqref{eq:1-1}
    and \eqref{eq:1-3}, hamiltonian is,
    \begin{align}
     H = \hbar\omega\left(a^\dagger a + \frac{1}{2}-q\mathcal{E}x\right)
@@ -126,7 +126,7 @@ Hint: Use the operator method.
      \kappa = -\frac{q\mathcal{E}}{2\hbar\omega}\sqrt{\frac{2\hbar}{m\omega}}
      = -\frac{1}{\omega}\frac{q\mathcal{E}}{\sqrt{2\hbar m\omega}}.
    \end{align}
-   Then Eq. \eqref{eq:1-4} is,
+   Then Eq.~\eqref{eq:1-4} is,
    \begin{align}
      H = \hbar\omega\left[a^\dagger a-\kappa\left(a+a^\dagger\right)
      +\frac{1}{2}\right]
@@ -142,7 +142,7 @@ Hint: Use the operator method.
    \begin{align}
      H = \hbar\omega\left( b^\dagger b -\left(\kappa^2-\frac{1}{2}\right)\right).
    \end{align}
-   The Schr\"odinger equation and reduced equation from Eq. \eqref{eq:1-2} 
+   The Schr\"odinger equation and reduced equation from Eq.~\eqref{eq:1-2} 
    and \eqref{eq:1-5} are,
    \begin{align}
      \begin{split}
@@ -190,7 +190,7 @@ polynomial.
     2^{n-1} n!\delta_{m,n-1} + \sqrt{\pi} 2^n (n+1)! \delta_{m,n+1}.
   \end{align}
 \item[(6)] Prove
-  \begin{align}
+  \begin{align}\label{eq:2}
     \int_{-\infty}^\infty x^2 e^{-x^2} H_n(x) H_n(x) dx = 
 \sqrt{\pi} 2^n n! \left(n+\frac12\right).
   \end{align}
@@ -199,10 +199,10 @@ polynomial.
 \noindent \textbf{Answer : }
 \begin{itemize}
 \item[(1)] The Hermite differential eqaution is,
-\begin{align}
+\begin{align}\label{eq:2-1}
   \frac{d^2y}{dx^2}-2x\frac{dy}{dx}+\lambda y = 0,
 \end{align}
-$\lambda$ is a any constant. Then,
+$\lambda$ is a any constant. Derivatives for $x$ of generating function $S$ are,
 \begin{align}\label{eq:2-2}
   \begin{split}
     &\frac{dS}{dx} = 2tS = \sum^\infty_{n=0}\frac{H^\prime_n(x)}{n!}t^n  \\
@@ -211,19 +211,262 @@ $\lambda$ is a any constant. Then,
 \end{align}
 And,
 \begin{align}\label{eq:2-3}
-  \frac{dS}{dt} = 2(-t+x)S = \sum^\infty_{n=0}\frac{H_n(x)}{(n-1)!}t^{n-1}.
+  \frac{dS}{dt} = 2(-t+x)S = \sum^\infty_{n=0}\frac{H_n(x)}{n!}nt^{n-1}
+  =-\frac{dS}{dx} +2xS.
 \end{align}
-Substituting Eq. \eqref{eq:2-2} and \eqref{eq:2-3} into Eq. \eqref{eq:1},
-\begin{align}
-  asd
-\end{align} 
-\item[(2)]
-\item[(3)]
-\item[(4)]
-\item[(5)]
-\item[(6)]
+From Eq.~\eqref{eq:2-2},
+\begin{align*}
+  \begin{split}
+    \frac{dS}{dx} &= \frac{1}{2t}\frac{d^2S}{dx^2}
+    =\frac{1}{2}\sum^\infty_{n=0}\frac{H^{\prime\prime}_n(x)}{n!}t^{n-1}  \\
+    2xS &= 2x\frac{1}{2t}\frac{dS}{dt} 
+    =x\sum^\infty_{n=0}\frac{H^{\prime}_n(x)}{n!}t^{n-1}
+  \end{split}
+\end{align*}
+Then Eq.~\eqref{eq:2-3} is,
+\begin{align*}
+  \sum^\infty_{n=0}\frac{H_n(x)}{n!}nt^{n-1}
+  =-\frac{1}{2}\sum^\infty_{n=0}\frac{H^{\prime\prime}_n(x)}{n!}t^{n-1}
+  +x\sum^\infty_{n=0}\frac{H^{\prime}_n(x)}{n!}t^{n-1}.
+\end{align*}
+Finally we obtain,
+\begin{align*}
+  \sum^\infty_{n=0}\left(\frac{H^{\prime\prime}_n(x)
+  -2xH^{\prime}_n(x)+2nH_n(x)}{n!}t^{n-1}\right)=0.
+\end{align*}
+It is true for any $t$ when all coefficient is zero. So,
+\begin{align}\label{eq:2-4}
+  H^{\prime\prime}_n(x)
+  -2xH^{\prime}_n(x)+2nH_n(x)=0.
+\end{align}
+\item[(2)] From Eq.~\eqref{eq:1}, 
+\begin{align*}
+  e^{-(t-x)^2+x^2}=e^{x^2}e^{-(t-x)^2}.
+\end{align*}
+And, 
+\begin{align*}
+  e^{x^2}e^{-(t-x)^2} = \left.e^{x^2}\sum^\infty_{n=0}\frac{t^n}{n!}
+  \frac{d^n}{dt^n}e^{-(t-x)^2}\right|_{t=0} 
+  = \sum^\infty_{n=0}\frac{H_n(x)}{n!}t^n.
+\end{align*}
+Since the series representation is unique,
+\begin{align}\label{eq:2-5}
+  H_n(x)=e^{x^2}\left.\frac{d^n}{dt^n}e^{-(t-x)^2}\right|_{t=0}.
+\end{align}
+If we regard $t$ as just the parameter, Eq.~\eqref{eq:2-5} is true for 
+any $t$. 
+A differential part of a LHS is,
+\begin{align*}
+  \left.\frac{d^n}{dt^n}e^{-(t-x)^2}\right|_{t=0}
+  =\left.(-1)^n\frac{d^n}{dx^n}e^{-(t-x)^2}\right|_{t=0}
+  =(-1)^n\frac{d^n}{dx^n}e^{-x^2}
+\end{align*}
+Finally we obtain,
+\begin{align}\label{eq:2-5-1}
+  H_n(x) = (-1)^ne^{x^2}\frac{d^n}{dx^n}e^{-x^2}.
+\end{align}
+\item[(3)]First, when $t=1$ and $t=-1$, Eq.~\eqref{eq:1} is,
+\begin{align*}
+  \begin{split}
+    e^{2x-1}&=\sum^\infty_{n=0}\frac{H_n(x)}{n!} \\
+    e^{-2x-1}&=\sum^\infty_{n=0}(-1)^n\frac{H_n(x)}{n!}.
+  \end{split}
+\end{align*} 
+For checking the value $2^n \sqrt{\pi}n!$, consider a integration as,
+\begin{align}\label{eq:2-6}
+  \int_{-\infty}^{\infty}e^{-x^2}H_m(x)e^{2x-1}\,dx
+  =\sum_{n=0}^\infty\frac{1}{n!}\int_{-\infty}^{\infty}e^{-x^2}H_m(x)H_n(x)\,dx
+\end{align}
+The RHS is,
+\begin{align*}
+  \int_{-\infty}^{\infty}e^{-x^2}H_m(x)e^{2x-1}\,dx 
+  =(-1)^m\int_{-\infty}^{\infty}e^{2x-1}\frac{d^m}{dx^m}e^{-x^2}\,dx
+\end{align*}
+Using the integration by part to RHS,
+\begin{align*}
+  \begin{split}
+    \int_{-\infty}^{\infty}e^{2x-1}\frac{d^m}{dx^m}e^{-x^2}\,dx  
+    &=\left.e^{2x-1}\frac{d^{m-1}}{dx^{m-1}}e^{-x^2}\right|^\infty_{-\infty}
+    -\int_{-\infty}^{\infty}2e^{2x-1}\frac{d^{m-1}}{dx^{m-1}}e^{-x^2}\,dx \\
+    &=-2\int_{-\infty}^{\infty}e^{2x-1}\frac{d^{m-1}}{dx^{m-1}}e^{-x^2}\,dx 
+  \end{split}
+\end{align*}
+Repetition of the integration by part for $m$ times conserves the 
+form in the integration multiplying $(-2)^m$. 
+\begin{align*}
+  \int_{-\infty}^{\infty}e^{2x-1}\frac{d^m}{dx^m}e^{-x^2}\,dx  
+  =(-2)^m\int_{-\infty}^{\infty}e^{2x-1}e^{-x^2}\,dx=(-2)^m\sqrt{\pi}. 
+\end{align*}
+Therefore, Eq.~\eqref{eq:2-6} is,
+\begin{align*}
+  \sum_{n=0}^\infty\frac{1}{n!}\int_{-\infty}^{\infty}e^{-x^2}H_m(x)H_n(x)\,dx
+  =(-1)^m(-2)^m\sqrt{\pi}=2^m\sqrt{\pi}.
+\end{align*}
+Now, check the orthogonality. From Eq.~\eqref{eq:2-4},
+\begin{align*}
+  e^{x^2}\frac{d}{dx}\left(e^{-x^2}H^\prime_n(x)\right)+2nH_n(x)=0.
+\end{align*}
+Multiplying $e^{-x^2}$,
+\begin{align*}
+  \int_{-\infty}^\infty\frac{d}{dx}\left(e^{-x^2}H^\prime_n(x)\right)H_m(x)\,dx
+  +2n\int_{-\infty}^\infty e^{-x^2}H_n(x)H_m(x)\,dx=0.
+\end{align*}
+Change $m$ and $n$ each other, subtract the previous one,
+\begin{align*}
+  \int_{-\infty}^\infty\frac{d}{dx}\left(e^{-x^2}H^\prime_n\right)H_m
+  -\frac{d}{dx}\left(e^{-x^2}H^\prime_m\right)H_n\,dx
+  +2(n-m)\int_{-\infty}^\infty e^{-x^2}H_n(x)H_m(x)\,dx=0.
+\end{align*}
+Integrations by part of first two terms are, 
+\begin{align*}
+  \begin{split}
+    &\int_{-\infty}^\infty\frac{d}{dx}\left(e^{-x^2}H^\prime_n\right)H_m
+    -\frac{d}{dx}\left(e^{-x^2}H^\prime_m\right)H_n\,dx \\
+    &=\left.e^{-x^2}H^\prime_nH_m\right|_{-\infty}^\infty
+    -\int_{-\infty}^\infty e^{-x^2}H^\prime_nH^\prime_m\,dx
+    -\left.e^{-x^2}H_nH^\prime_m\right|_{-\infty}^\infty
+    +\int_{-\infty}^\infty e^{-x^2}H^\prime_nH^\prime_m\,dx \\
+    &=0.
+  \end{split}
+\end{align*}
+It means that,
+\begin{align*}
+  2(n-m)\int_{-\infty}^\infty e^{-x^2}H_n(x)H_m(x)\,dx=0.
+\end{align*}
+If $n\neq m$, the integration is a zero. For this reason,
+\begin{align*}
+  \sum_{n=0}^\infty\frac{1}{n!}\int_{-\infty}^{\infty}e^{-x^2}H_m(x)H_n(x)\,dx
+  =\frac{1}{m!}\int_{-\infty}^{\infty}e^{-x^2}H_m(x)H_m(x)\,dx
+  =2^m\sqrt{\pi}.
+\end{align*}
+Finally we obtain,
+\begin{align}\label{eq:2-7}
+  \int_{-\infty}^\infty e^{-x^2} H_n(x) H_m(x) dx = 2^nn! \sqrt{\pi}
+   \delta_{nm}.
+\end{align}
+\item[(4)] {\it Proof}. We use the mathematical induction. 
+If $n=0$ and $n=1$, then,
+\begin{align*}
+  H_0(x) = 1,\,\,\,H_1(x)=2x. 
+\end{align*}
+The statement is true. Suppose it is true:
+\begin{align*}
+  H_k(x) = \left(2x-\frac{d}{dx}\right)^k 1.
+\end{align*}
+Then,
+\begin{align*}
+  \begin{split}
+    H_{k+1}(x) &= \left(2x-\frac{d}{dx}\right)\left(2x-\frac{d}{dx}\right)^k 1
+    =\left(2x-\frac{d}{dx}\right)H_k(x)
+  \end{split}
+\end{align*}
+From Eq.~\eqref{eq:2-5-1},
+\begin{align*}
+  \begin{split}
+    \left(2x-\frac{d}{dx}\right)H_k(x)
+    &=\left(2x-\frac{d}{dx}\right)(-1)^ke^{x^2}\frac{d^k}{dx^k}e^{-x^2}  \\
+    &=(-1)^k 2x e^{x^2}\frac{d^k}{dx^k}e^{-x^2}
+    -(-1)^k 2x e^{x^2}\frac{d^k}{dx^k}e^{-x^2}
+    -(-1)^k e^{x^2}\frac{d^{k+1}}{dx^{k+1}}e^{-x^2}  \\
+    &=(-1)^{k+1}= e^{x^2}\frac{d^{k+1}}{dx^{k+1}}e^{-x^2}
+    =H_{k+1}(x).
+  \end{split}
+\end{align*}
+Hence this statement is true for $n=k+1$. \\
+By mathematical induction, 
+this statement is true for any $n$. ~\hfill $\square$
+\item[(5)] {\it Proof}. Set $I_{nm}$,
+\begin{align*}
+  \begin{split}
+    I_{nm} &= \int_{-\infty}^\infty xe^{-x^2}H_n(x)H_m(x) \,dx  \\
+    &=-\left.\frac{1}{2}e^{-x^2}H_n(x)H_m(x)\right|_{-\infty}^\infty
+    +\frac{1}{2}\int_{-\infty}^\infty 
+    e^{-x^2}\left(H^\prime_n(x)H_m(x)+H_n(x)H^\prime_m(x)\right) \,dx \\
+    &=\frac{1}{2}\int_{-\infty}^\infty 
+    e^{-x^2}H^\prime_n(x)H_m(x) \,dx+
+    \frac{1}{2}\int_{-\infty}^\infty 
+    e^{-x^2}H_n(x)H^\prime_m(x) \,dx.
+  \end{split}
+\end{align*}
+From Eq.~\eqref{eq:2-5-1},
+\begin{align}\label{eq:2-8}
+  \begin{split}
+    H^\prime_n(x) &= \frac{d}{dx}\left( (-1)^ne^{x^2}
+    \frac{d^n}{dx^n}e^{-x^2} \right)
+    =(-1)^n\left( 2xe^{x^2}\frac{d^n}{dx^n}e^{-x^2}
+    +e^{x^2}\frac{d^{n+1}}{dx^{n+1}}e^{-x^2} \right)  \\
+    &=2xH_n(x)-H_{n+1}(x).
+  \end{split}
+\end{align}
+Then $I_{nm}$ is,
+\begin{align*}
+  \begin{split}
+    I_{nm} &= \frac{1}{2}\int_{-\infty}^\infty 
+    e^{-x^2}(2xH_n(x)-H_{n+1}(x))H_m(x) \,dx+
+    \frac{1}{2}\int_{-\infty}^\infty 
+    e^{-x^2}H_n(x)(2xH_m(x)-H_{m+1}(x)) \,dx  \\
+    &= 2I_{nm}
+    -\frac{1}{2}\int_{-\infty}^\infty 
+    e^{-x^2}H_{n+1}(x)H_m(x) \,dx
+    -\frac{1}{2}\int_{-\infty}^\infty 
+    e^{-x^2}H_n(x)H_{m+1}(x) \,dx.
+  \end{split}
+\end{align*}
+Hence,
+\begin{align*}
+  I_{nm}=\frac{1}{2}\left(\int_{-\infty}^\infty 
+  e^{-x^2}H_{n+1}(x)H_m(x) \,dx
+  +\int_{-\infty}^\infty 
+  e^{-x^2}H_n(x)H_{m+1}(x) \,dx\right).
+\end{align*}
+From Eq.~\eqref{eq:2-7}, we obtain that,
+\begin{align}\label{eq:2-9}
+  \begin{split}
+    I_{nm}&=\frac{1}{2}\left(2^{n+1}\sqrt{\pi}(n+1)!\delta_{n+1,m}
+    +2^n\sqrt{\pi}n!\delta_{n,m+1} \right)  \\
+    &=2^n\sqrt{\pi}(n+1)!\delta_{n+1,m}
+    +2^{n-1}\sqrt{\pi}n!\delta_{n,m+1}.
+  \end{split}
+\end{align}
+Therefore the statement is true. ~\hfill $\square$
+\item[(6)] {\it Proof}. Eq.~\eqref{eq:2} is,
+\begin{align*}
+  \int_{-\infty}^\infty x^2e^{-x^2}H_nH_n \,dx  
+  =-\left.\frac{1}{2}xe^{-x^2}H_nH_n\right|_{-\infty}^\infty
+  +\int_{-\infty}^\infty xe^{-x^2}H_n^\prime H_n \,dx  
+  -\frac{1}{2}\int_{-\infty}^\infty e^{-x^2}H_nH_n \,dx  .
+\end{align*}
+From Eq.~\eqref{eq:2-8}, the second term of the RHS is,
+\begin{align*}
+  \int_{-\infty}^\infty xe^{-x^2}H_n^\prime H_n \,dx  
+  =\int_{-\infty}^\infty 2x^2e^{-x^2}H_n H_n \,dx 
+  -\int_{-\infty}^\infty xe^{-x^2}H_{n+1}H_n \,dx  .
+\end{align*}
+Hence, 
+\begin{align*}
+  \begin{split}
+    \int_{-\infty}^\infty x^2e^{-x^2}H_nH_n \,dx  
+    &=\int_{-\infty}^\infty 2x^2e^{-x^2}H_n H_n \,dx 
+    -\int_{-\infty}^\infty xe^{-x^2}H_{n+1}H_n \,dx 
+    -\frac{1}{2}\int_{-\infty}^\infty e^{-x^2}H_nH_n \,dx \\
+    &=\int_{-\infty}^\infty xe^{-x^2}H_{n+1}H_n \,dx 
+    +\frac{1}{2}\int_{-\infty}^\infty e^{-x^2}H_nH_n \,dx.
+  \end{split}
+\end{align*}
+From Eq.~\eqref{eq:2-9} and \eqref{eq:2-7},
+\begin{align}\label{eq:2-10}
+  \begin{split}
+    \int_{-\infty}^\infty x^2e^{-x^2}H_nH_n \,dx  
+    &=\sqrt{\pi}2^{n-1}n!\delta_{n+1,n-1}
+    +\sqrt{\pi}2^{n}(n+1)!\delta_{n+1,n+1}
+    -\sqrt{\pi}2^{n-1}n!  \\
+    &=\sqrt{\pi}2^nn!\left(n+\frac{1}{2}\right).
+  \end{split}
+\end{align}
+Therefore the statement is true. ~\hfill $\square$
 \end{itemize}
 
+\vspace{0.5cm}
 
 \noindent \textbf{Problem 3.} 
 Given the eigenfunctions and eigenenergies of the SHO, 
@@ -234,6 +477,156 @@ Given the eigenfunctions and eigenenergies of the SHO,
   \begin{align}
     \Delta x \Delta p = \left(n+\frac12\right)\hbar.
   \end{align}
+\end{itemize}
+
+\noindent \textbf{Answer : }
+\begin{itemize}
+  \item[(1)] The eigenvector and eigenfunction of the SHO are,
+  \begin{align}
+    \psi_n(x)=\psi^*_n(x)= (n!2^n)^{-\frac{1}{2}}
+    \left(\frac{m\omega}{\hbar\pi}\right)^{\frac{1}{4}}
+    \exp\left(-\frac{m\omega}{2\hbar}x^2\right)
+    H_n\left(\sqrt{\frac{m\omega}{\hbar}}x\right),\,\,\,
+    E_n=\left( n+\frac{1}{2} \right)\hbar\omega.
+  \end{align}
+  The expectation value of the kinetic energy is,
+  \begin{align}
+   \langle T_n\rangle = \frac{1}{2m}\int \psi^*_n p^2 \psi_n\,dx
+   =\frac{\langle p^2\rangle}{2m}.
+  \end{align}
+  Since the expectation value of the kinetic energy is an integer multiple 
+  of the square of momentum, we just calculate the expectation value of the 
+  square of momentum. Using the integration by part,
+  \begin{align}\label{eq:3-1}
+    \langle p^2\rangle = -\hbar^2\int \psi^*_n 
+    \frac{\partial^2 \psi_n}{\partial x^2} \,dx
+    =\hbar^2\int\frac{\partial \psi^*_n}{\partial x} 
+    \frac{\partial \psi_n}{\partial x} \,dx
+  \end{align}
+  Changing the variable,
+  \begin{align}\label{eq:3-2}
+    \sqrt{\frac{m\omega}{\hbar}}x = \xi,\,\,\,
+    \frac{\partial \psi_n}{\partial x}
+    =\frac{\partial \psi_n}{\partial \xi}
+    \frac{\partial \xi}{\partial x}
+    =\sqrt{\frac{m\omega}{\hbar}}
+    \frac{\partial \psi_n}{\partial \xi}
+  \end{align}  
+  Then,
+  \begin{align}
+    \frac{\partial \psi_n}{\partial \xi}
+    =(n!2^n)^{-\frac{1}{2}}
+    \left(\frac{m\omega}{\hbar\pi}\right)^{\frac{1}{4}}
+    (-\xi H_n\left(\xi\right) 
+    +H^\prime_n\left(\xi\right))
+    e^{-\frac{\xi^2}{2}}.
+  \end{align}
+  The integration of Eq.~\eqref{eq:3-1} is,
+  \begin{align}
+    \begin{split}
+      \int\frac{\partial \psi^*_n}{\partial x} 
+      \frac{\partial \psi_n}{\partial x} \,dx
+      &= (n!2^n)^{-1}\sqrt{\frac{m\omega}{\hbar\pi}}
+      \frac{m\omega}{\hbar}\int(-\xi H_n\left(\xi\right) 
+      +H^\prime_n\left(\xi\right))^2 e^{-\xi^2}\,
+      \sqrt{\frac{\hbar}{m\omega}}d\xi  \\
+      &= (n!2^n)^{-1}\frac{m\omega}{\hbar\sqrt{\pi}}
+      \int(-\xi H_n\left(\xi\right) 
+      +H^\prime_n\left(\xi\right))^2 e^{-\xi^2}\,d\xi  \\
+    \end{split}
+  \end{align}
+  From Eq.~\eqref{eq:2-8}
+  \begin{align}
+    \begin{split}
+      \int(-\xi H_n\left(\xi\right) 
+      +H^\prime_n\left(\xi\right))^2 e^{-\xi^2}\,d\xi
+      &=\int(-\xi H_n\left(\xi\right) 
+      + 2\xi H_n(\xi)-H_{n+1}(\xi))^2 e^{-\xi^2}\,d\xi  \\
+      &=\int(\xi H_n\left(\xi\right) 
+      -H_{n+1}(\xi))^2 e^{-\xi^2}\,d\xi \\
+      &=\int(
+      (\xi^2H_nH_n-2\xi H_nH_{n+1}+H_{n+1}H_{n+1})  
+      e^{-\xi^2}\,d\xi.
+    \end{split}
+  \end{align}
+  We can use Eq.~\eqref{eq:2-7}, \eqref{eq:2-9} and \eqref{eq:2-10} to calculate 
+  this integration.
+  \begin{align}
+    \begin{split}
+      \int \xi^2 H_n H_n e^{-\xi^2}\,dx 
+      &= 2^nn!\sqrt{\pi}\left( n+\frac{1}{2} \right) \\  
+      \int \xi H_n H_{n+1} e^{-\xi^2}\,dx 
+      &= 2^n(n+1)!\sqrt{\pi}\\  
+      \int  H_{n+1} H_{n+1} e^{-\xi^2}\,dx 
+      &= 2^{n+1}(n+1)!\sqrt{\pi}
+    \end{split}
+  \end{align}
+  Then,
+  \begin{align}
+    \begin{split}
+      \int(-\xi H_n\left(\xi\right) 
+      +H^\prime_n\left(\xi\right))^2 e^{-\xi^2}\,d\xi
+      &= \sqrt{\pi}2^nn!
+      \left(n+\frac{1}{2}-2(n+1)+2(n+1) \right) \\
+      &= \sqrt{\pi}2^nn!\left( n+\frac{1}{2} \right).
+    \end{split}
+  \end{align}
+  Therefore the expectation value of the square of the momentum is,
+  \begin{align}
+    \langle p^2\rangle = \hbar^2\,(n!2^n)^{-1}\frac{m\omega}{\hbar\sqrt{\pi}}\,
+    \sqrt{\pi}2^nn!\left( n+\frac{1}{2} \right)
+    =\hbar m\omega\left( n+\frac{1}{2} \right).
+  \end{align}
+  We obtain the expectation value of the kinetic energy.
+  \begin{align}\label{eq:3-3}
+    \langle T_n\rangle=\frac{\langle p^2\rangle}{2m}
+    =\frac{1}{2}\hbar \omega\left( n+\frac{1}{2} \right).
+  \end{align}
+  The expectation value of the potential energy is,
+  \begin{align}
+    \langle V_n\rangle = \int \psi^*_n \frac{1}{2}m\omega^2x^2 \psi_n \,dx
+    =\frac{1}{2}m\omega^2\int \psi^*_n x^2 \psi_n \,dx
+    =\frac{1}{2}m\omega^2\langle x^2\rangle.
+  \end{align}
+  From Eq.~\eqref{eq:3-2}, the expectation value of the square of $x$ is,
+  \begin{align}
+    \begin{split}
+      \langle x^2\rangle &= \int \psi^*_n x^2 \psi_n \,dx
+      =\langle x^2\rangle ={\left(\frac{\hbar}{m\omega}\right)}^{\frac{3}{2}} 
+      \int \psi^*_n(\xi) \xi^2 \psi_n(\xi) \,d\xi \\
+      &= (n!2^n)^{-1}\sqrt{\frac{m\omega}{\hbar\pi}}
+      {\left(\frac{\hbar}{m\omega}\right)}^{\frac{3}{2}} 
+      \int \xi^2 H_n(\xi) H_n(\xi) e^{-\xi^2}\,d\xi
+    \end{split}    
+  \end{align}
+  The integration part can be calculated by Eq.~\eqref{eq:2-10}.
+  \begin{align}
+    \int \xi^2 H_n(\xi) H_n(\xi) e^{-\xi^2}\,d\xi
+    =\sqrt{\pi}2^nn!\left( n+\frac{1}{2} \right).
+  \end{align}
+  Finally we obtain the expectation value of the potential energy.
+  \begin{align}\label{eq:3-4}
+    \langle V_n\rangle=\frac{1}{2}m\omega^2(n!2^n)^{-1}
+    \sqrt{\frac{m\omega}{\hbar\pi}}
+    {\left(\frac{\hbar}{m\omega}\right)}^{\frac{3}{2}} 
+    \sqrt{\pi}2^nn!\left( n+\frac{1}{2} \right)
+    =\frac{1}{2}\hbar\omega
+    \left( n+\frac{1}{2} \right).
+  \end{align}
+  Let us confirm that the results satisfy the virial theorem. 
+  In this condition the virial theorem is,
+  \begin{align}
+    \left\langle x\frac{\partial V}{\partial x}\right\rangle 
+    = 2\left\langle T\right\rangle .
+  \end{align}
+  Substituting Eq.~\eqref{eq:3-3} and \eqref{eq:3-4},
+  \begin{align}
+  \left\langle x\frac{\partial V}{\partial x}\right\rangle 
+  =m\omega^2\int\psi^*_nx^2\psi_n\,dx = 2\left\langle V_n\right\rangle 
+  =2\left\langle T_n\right\rangle.
+  \end{align}
+  The results satisfy the virial theorem.
+  \item[(2)] 
 \end{itemize}
 
 \vspace{1cm}
