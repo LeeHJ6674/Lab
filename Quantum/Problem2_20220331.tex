@@ -1,6 +1,6 @@
 %\documentclass[preprint,tightenlines,showpacs,showkeys,floatfix,
 %nofootinbib,superscriptaddress,fleqn]{revtex4} 
-\documentclass[floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4} 
+\documentclass[floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4-2} 
 %\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
 \usepackage{kotex}
 \usepackage[HWP]{dhucs-interword}
@@ -44,6 +44,117 @@ harmonic oscillator.
   eigenstates. 
 \end{itemize}
 Hint: Use the operator method.
+
+\noindent \textbf{Answer : }
+\begin{itemize}
+  \item[(1)] A charged particle away from the equilibrium position 
+  has the potential energy when it is in the electric field. 
+  Let a distance from equilibrium position to a particle is $x$.
+  In the constant electric field, the electric potential energy $E_p$ is,
+  \begin{align}
+    E_p = q\mathcal{E}x.
+  \end{align} 
+  Then, the Hamiltonain of the charged linear
+  harmonic oscillator is,
+  \begin{align}\label{eq:1-1}
+    H = \frac{p^2}{2m}+\frac{1}{2}m\omega^2x^2-q\mathcal{E}x.
+  \end{align}
+  So, the Schr\"odinger equation is,
+  \begin{align}\label{eq:1-2}
+    -\frac{\hbar}{2m}\frac{\partial^2\psi}{\partial x^2}
+    +\frac{1}{2}m\omega^2x^2\psi
+    -q\mathcal{E}x\psi = E\psi.
+  \end{align}
+  \item[(2)] First, Suppose that there is no electric field,
+  that is, $\mathcal{E}$ is zero. Then the Schr\"odinger equation and 
+  the energy is,
+  \begin{align}
+    -\frac{\hbar}{2m}\frac{\partial^2\psi}{\partial x^2}
+    +\frac{1}{2}m\omega^2x^2\psi = E\psi,\,\,\, 
+    E_n = \left(\frac{1}{2}+n\right)\hbar\omega.
+  \end{align}
+  It is the Schr\"odinger equation of the simple harmonic oscillator. 
+  In the algebric method to solve the equation, 
+  we defined new operators,
+  \begin{align}
+    \begin{split}
+      a = \sqrt{\frac{m\omega}{2\hbar}}\left(x+i\frac{p}{m\omega}\right),\,\,\,
+      a^\dagger = \sqrt{\frac{m\omega}{2\hbar}}\left(x-i\frac{p}{m\omega}\right). 
+    \end{split}
+  \end{align}
+  And,
+  \begin{align}
+    x = \sqrt{\frac{2\hbar}{m\omega}}\left(\frac{a+a^\dagger}{2}\right),\,\,\,
+    p = \sqrt{2\hbar m\omega}\left(\frac{a-a^\dagger}{2i}\right)
+  \end{align}
+  It is said to ladder operators. Operators is from the hamiltonian of 
+  simple harmonic oscillator,
+  \begin{align}\label{eq:1-3}
+    H = \frac{p^2}{2m}+\frac{1}{2}m\omega^2x^2 
+    = \hbar\omega\left(a^\dagger a + \frac{1}{2}\right)
+    = \hbar\omega\left(a a^\dagger - \frac{1}{2}\right).
+  \end{align}
+  Now, recall a constant electric field $\mathcal{E}$. From Eq. \eqref{eq:1-1}
+   and \eqref{eq:1-3}, hamiltonian is,
+   \begin{align}
+    H = \hbar\omega\left(a^\dagger a + \frac{1}{2}-q\mathcal{E}x\right)
+    = \hbar\omega\left(a^\dagger a + \frac{1}{2}-q\mathcal{E}
+    \sqrt{\frac{2\hbar}{m\omega}}\left(\frac{a+a^\dagger}{2}\right)\right),
+   \end{align}  
+   or,
+   \begin{align}\label{eq:1-4}
+    H = \hbar\omega\left(a a^\dagger - \frac{1}{2}\right)
+    -q\mathcal{E}\sqrt{\frac{2\hbar}{m\omega}}
+    \left(\frac{a+a^\dagger}{2}\right).
+   \end{align}
+   If $\psi_n$ is the eigenvector and $E_n$ is the eigenvalue of $\psi_n$, 
+   the Schr\"odinger equation is,
+   \begin{align}
+    -\frac{\hbar}{2m}\frac{\partial^2\psi_n}{\partial x^2}
+    +\frac{1}{2}m\omega^2x^2\psi_n
+    -q\mathcal{E}x\psi_n = E_n\psi_n,\,\,\, 
+    E_n = \left(\frac{1}{2}+n\right)\hbar\omega+E_m.
+   \end{align}
+   $E_m$ is a energy due to a constant electric field. Then we write the 
+   reduced equation,
+   \begin{align}\label{eq:1-5}
+    -q\mathcal{E}x\psi_n = -q\mathcal{E}\sqrt{\frac{2\hbar}{m\omega}}
+    \left(\frac{a+a^\dagger}{2}\right)\psi_n = E_m\psi_n.
+   \end{align}
+   Define $\kappa$ as,
+   \begin{align}
+     \kappa = -\frac{q\mathcal{E}}{2\hbar\omega}\sqrt{\frac{2\hbar}{m\omega}}
+     = -\frac{1}{\omega}\frac{q\mathcal{E}}{\sqrt{2\hbar m\omega}}.
+   \end{align}
+   Then Eq. \eqref{eq:1-4} is,
+   \begin{align}
+     H = \hbar\omega\left[a^\dagger a-\kappa\left(a+a^\dagger\right)
+     +\frac{1}{2}\right]
+     = \hbar\omega\left[(a^\dagger - \kappa)(a - \kappa) -\kappa^2.
+     +\frac{1}{2}\right]
+   \end{align}
+   Now we define new operators from ladder operators,
+   \begin{align}
+     b = a - \kappa,\,\,\,
+     b^\dagger = a^\dagger - \kappa.
+   \end{align}
+   The hamiltonian can be repersented by new operators.
+   \begin{align}
+     H = \hbar\omega\left( b^\dagger b -\left(\kappa^2-\frac{1}{2}\right)\right).
+   \end{align}
+   The Schr\"odinger equation and reduced equation from Eq. \eqref{eq:1-2} 
+   and \eqref{eq:1-5} are,
+   \begin{align}
+     \begin{split}
+      &\hbar\omega\left( b^\dagger b 
+      -\left(\kappa^2-\frac{1}{2}\right)\right)\psi_n = E_n\psi_n \\
+      &\hbar\omega\kappa\left(b+b^\dagger+2\kappa\right)\psi_n = E_m\psi_n
+      ,\,\,\,E_n = \left(\frac{1}{2}+n\right)\hbar\omega+E_m.
+     \end{split}
+   \end{align}
+  \item[(3)] 
+  \end{itemize}
+
 \vspace{0.5cm}
 
 \noindent \textbf{Problem 2.} 
@@ -84,7 +195,35 @@ polynomial.
 \sqrt{\pi} 2^n n! \left(n+\frac12\right).
   \end{align}
 \end{itemize}
-\vspace{1cm}
+
+\noindent \textbf{Answer : }
+\begin{itemize}
+\item[(1)] The Hermite differential eqaution is,
+\begin{align}
+  \frac{d^2y}{dx^2}-2x\frac{dy}{dx}+\lambda y = 0,
+\end{align}
+$\lambda$ is a any constant. Then,
+\begin{align}\label{eq:2-2}
+  \begin{split}
+    &\frac{dS}{dx} = 2tS = \sum^\infty_{n=0}\frac{H^\prime_n(x)}{n!}t^n  \\
+    &\frac{d^2S}{dx^2} = 4t^2S=\sum^\infty_{n=0}\frac{H^{\prime\prime}_n(x)}{n!}t^n.
+  \end{split}
+\end{align}
+And,
+\begin{align}\label{eq:2-3}
+  \frac{dS}{dt} = 2(-t+x)S = \sum^\infty_{n=0}\frac{H_n(x)}{(n-1)!}t^{n-1}.
+\end{align}
+Substituting Eq. \eqref{eq:2-2} and \eqref{eq:2-3} into Eq. \eqref{eq:1},
+\begin{align}
+  asd
+\end{align} 
+\item[(2)]
+\item[(3)]
+\item[(4)]
+\item[(5)]
+\item[(6)]
+\end{itemize}
+
 
 \noindent \textbf{Problem 3.} 
 Given the eigenfunctions and eigenenergies of the SHO, 
