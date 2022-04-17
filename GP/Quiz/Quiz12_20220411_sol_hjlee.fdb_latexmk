@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex Quiz12_20220411"] 1649757679 "Quiz12_20220411.aux" "Quiz12_20220411.bbl" "Quiz12_20220411" 1649846172
+["bibtex Quiz12_20220411_sol_hjlee"] 1649846201 "Quiz12_20220411_sol_hjlee.aux" "Quiz12_20220411_sol_hjlee.bbl" "Quiz12_20220411_sol_hjlee" 1649846202
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1547851249 69612 d43c8740409d8c756864ce4e3d57a214 ""
-  "Quiz12_20220411.aux" 1649758600 1489 102f22020d7950420ce6326800aa3dce "pdflatex"
-  "Quiz12_20220411Notes.bib" 1649758600 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "Quiz12_20220411_sol_hjlee.aux" 1649846202 1499 7e6e5ad1fd586599cbf2c8eefcc699c1 "pdflatex"
+  "Quiz12_20220411_sol_hjleeNotes.bib" 1649846202 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
-  "Quiz12_20220411.blg"
-  "Quiz12_20220411.bbl"
-["pdflatex"] 1649758600 "/home/sigma/Lab/GP/Quiz/Quiz12_20220411.tex" "/home/sigma/Lab/GP/Quiz/Quiz12_20220411.pdf" "Quiz12_20220411" 1649846172
+  "Quiz12_20220411_sol_hjlee.bbl"
+  "Quiz12_20220411_sol_hjlee.blg"
+["pdflatex"] 1649846201 "/home/sigma/Lab/GP/Quiz/Quiz12_20220411_sol_hjlee.tex" "/home/sigma/Lab/GP/Quiz/Quiz12_20220411_sol_hjlee.pdf" "Quiz12_20220411_sol_hjlee" 1649846202
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/GP/Quiz/Quiz12_20220411.aux" 1649758600 1489 102f22020d7950420ce6326800aa3dce ""
-  "/home/sigma/Lab/GP/Quiz/Quiz12_20220411.tex" 1649846172 17314 99e9fd6b35d7a0a94fdeccf8ae19145f ""
+  "/home/sigma/Lab/GP/Quiz/Quiz12_20220411_sol_hjlee.aux" 1649846202 1499 7e6e5ad1fd586599cbf2c8eefcc699c1 ""
+  "/home/sigma/Lab/GP/Quiz/Quiz12_20220411_sol_hjlee.tex" 1649846172 17314 99e9fd6b35d7a0a94fdeccf8ae19145f ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -281,14 +281,14 @@
   "Qfig12-1.pdf" 1649592329 46464 1d8c3956bdd26440694c63ad9ce4e598 ""
   "Qfig12-2-20210409.png" 1649592318 164490 baf96def60e19760a7f1c0aef52313b0 ""
   "Qfig12-3-20210409.png" 1649592319 76714 18d780747c82792e3cd548a41b053f98 ""
-  "Quiz12_20220411.aux" 1649758600 1489 102f22020d7950420ce6326800aa3dce "pdflatex"
-  "Quiz12_20220411.bbl" 1649757680 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Quiz12_20220411"
-  "Quiz12_20220411.tex" 1649846172 17314 99e9fd6b35d7a0a94fdeccf8ae19145f ""
+  "Quiz12_20220411_sol_hjlee.aux" 1649846202 1499 7e6e5ad1fd586599cbf2c8eefcc699c1 "pdflatex"
+  "Quiz12_20220411_sol_hjlee.bbl" 1649846201 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Quiz12_20220411_sol_hjlee"
+  "Quiz12_20220411_sol_hjlee.tex" 1649846172 17314 99e9fd6b35d7a0a94fdeccf8ae19145f ""
   "defcolor.sty" 1646221108 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   (generated)
-  "/home/sigma/Lab/GP/Quiz/Quiz12_20220411.pdf"
-  "Quiz12_20220411.pdf"
-  "Quiz12_20220411Notes.bib"
-  "/home/sigma/Lab/GP/Quiz/Quiz12_20220411.log"
-  "Quiz12_20220411.log"
-  "Quiz12_20220411.aux"
+  "Quiz12_20220411_sol_hjlee.pdf"
+  "Quiz12_20220411_sol_hjlee.aux"
+  "Quiz12_20220411_sol_hjleeNotes.bib"
+  "/home/sigma/Lab/GP/Quiz/Quiz12_20220411_sol_hjlee.log"
+  "/home/sigma/Lab/GP/Quiz/Quiz12_20220411_sol_hjlee.pdf"
+  "Quiz12_20220411_sol_hjlee.log"

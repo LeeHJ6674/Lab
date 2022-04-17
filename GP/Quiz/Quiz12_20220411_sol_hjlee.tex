@@ -220,11 +220,14 @@ $v_t$라고 하면 기차와 철수의 운동 방향이 반대이므로,
   물체 2가 마찰력인 존재하는 영역에서 운동하면 마찰력에 의해 운동에너지를 잃고 정지한다.
   물체 2에 작용하는 마찰력 $f_k$와 마찰력이 물체 2가 멈출 때 까지 한 일 $W_k$는,
   \begin{align}
-    f_k = \mu_kN = \mu_km_2g,\,\,\,W_f = f_kd=\mu_km_2gd.
+    f_k = \mu_kN = \mu_km_2g,\,\,\,W_k = -f_kd=-\mu_km_2gd.
   \end{align}
-  마찰력이 물체 2에 한 일은 물체 2가 가지고 있던 운동에너지와 같다. 즉,
+  마찰력과 물체가 움직이는 방향이 반대이기 때문에, $W_k$의 부호는 $-$이다. 
+  마찰력이 물체 2에 한 일은 물체 2의 운동에너지 변화량과 같다. 즉,
   \begin{align}
-  W_f =\mu_km_2gd = \frac{1}{2}m_2v_2^2,\,\,\,d=\frac{v_2^2}{2\mu_k g}.
+  W_k = -\mu_km_2gd = \Delta E_k  
+  = 0 - \frac{1}{2}m_2v_2^2 = - \frac{1}{2}m_2v_2^2
+  ,\,\,\,d=\frac{v_2^2}{2\mu_k g}.
   \end{align}
   식 \eqref{eq:2-5}에 의해,
   \begin{align}
@@ -248,11 +251,12 @@ $v_t$라고 하면 기차와 철수의 운동 방향이 반대이므로,
   완전 비탄성충돌한 물체에 작용하는 마찰력 $f_k$와 마찰력이 물체가 멈출 때 까지 
   한 일 $W_k$는,
   \begin{align}
-    f_k = \mu_k N = \mu_k(m_1+m_2),\,\,\,W_f = f_kd=\mu_k(m_1+m_2)gd.
+    f_k = \mu_k N = \mu_k(m_1+m_2),\,\,\,W_k = -f_kd=-\mu_k(m_1+m_2)gd.
   \end{align}
-  $W_k$는 물체가 충돌 후 가지고 있던 운동에너지와 같다. 따라서,
+  $W_k$는 물체의 운동에너지 변화량과 같다. 따라서,
   \begin{align}
-    \mu_k(m_1+m_2)gd = \frac{1}{2}(m_1+m_2)v^2_0 = \frac{1}{2}(m_1+m_2)
+    -\mu_k(m_1+m_2)gd = \Delta E_k 
+    = 0-\frac{1}{2}(m_1+m_2)v^2_0 = -\frac{1}{2}(m_1+m_2)
     \left( \frac{m_1\sqrt{2gh}}{m_1 + m_2} \right)^2.
   \end{align}
   양변을 $(m_1+m_2)$로 나누고 $d$에 대해 정리하면,
@@ -301,22 +305,37 @@ $v_t$라고 하면 기차와 철수의 운동 방향이 반대이므로,
     \begin{tikzpicture}
       \draw (0,-1.5) -- (0,1.5) ;
       \draw (-1.5,0) -- (1.5,0) ;
-      \draw [red,very thick,-latex] (0,-0.1) -- (0,-1.2) 
+      \draw [red,very thick,-latex] (0,-0.1) -- (0,-1.4) 
       node [left,black] {$F_g$};
+      \draw [red,very thick,-latex] (0,-0.1) -- (0,-0.8) 
+      node [right,black] {$N$};
       \draw [blue,very thick,-latex] (-0.1,0) -- (-0.8,0) 
       node [left,above,black] {$f_s$};
     \end{tikzpicture}
     \caption{자유 물체 다이어그램}
     \label{fig:11}
   \end{figure}
-  꼭대기 지점에서 공의 속력을 $v_0$라고 하면 공이 떨어지지 않기 위해 다음을 만족해야한다.
+  초기 높이 $h$에 따라 공이 꼭대기에 위치할 때 속력이 달라진다. $h$가 크면 역학적 에너지 보존에
+  의해 꼭대기에서의 공의 속력 또한 커진다. 꼭대기에서 공의 속력을 
+  $v$라고 하자. 운동방정식은,
   \begin{align}
-    \sum F_y = -F_g = -\frac{mv_0^2}{R},\,\,\,v_0 = \sqrt{gR}
+    \sum F_y = -N-F_g = -\frac{mv^2}{R-r}
   \end{align}
-  에너지 보존 법칙에 의해 꼭대기 지점에서 공의 역학적 에너지의 합은,
+  $N$은 궤도가 공에 주는 수직항력이다. 수직항력과 중력의 합이 구심력이 되어 공이 원궤도를 돌 수 있게
+  해준다. $h$가 커질 수록 $v$도 커지고 수직항력 $N$ 또한 커진다. $h$가 최소일 때는 공이 
+  중력만을 구심력으로 삼아 원형궤도를 돌아야 하는 순간이다. 즉 $N=0$인 순간이다. 
+  그 때 공의 속력을 $v_0$라 하면,
   \begin{align}
-    E_d = E_i = mg(h+r) = mg(2R-r) + \frac{1}{2}mv_0^2+\frac{1}{2}
-    I\omega_0^2,\,\,\,\omega_0 = \frac{v_0}{r}.
+    \sum F_y = -F_g = -\frac{mv_0^2}{R-r},
+  \end{align}
+  이고 $v_0$는 원형궤도를 돌 수 있는 속력의 최소값이므로,
+  \begin{align}\label{eq:4-1}
+    \sqrt{g(R-r)} \leq v,\,\,\,\sqrt{g(R-r)} = v_0.  
+  \end{align}
+  한편, 에너지 보존 법칙에 의해 꼭대기 지점에서 공의 역학적 에너지의 합은,
+  \begin{align}
+    E_d = E_i = mg(h+r) = mg(2R-r) + \frac{1}{2}mv^2+\frac{1}{2}
+    I\omega^2,\,\,\,\omega = \frac{v}{r}.
   \end{align}
   공의 관성 모멘트 $I$는,
   \begin{align}
@@ -325,26 +344,21 @@ $v_t$라고 하면 기차와 철수의 운동 방향이 반대이므로,
   따라서,
   \begin{align}
     \begin{split}
-      mg(h+r) &= mg(2R-r) + \frac{1}{2}\left(m+\frac{2}{5}m\right)v_0^2   \\
-              &= mg(2R-r) + \frac{7}{10}mv_0^2,
+      mg(h+r) &= mg(2R-r) + \frac{1}{2}\left(m+\frac{2}{5}m\right)v^2   \\
+              &= mg(2R-r) + \frac{7}{10}mv^2,
     \end{split}
   \end{align}
-  이다. $v_0$는,
-  \begin{align}\label{eq:4-1}
-    v_0 = \sqrt{\frac{10}{7}g(h-2(R-r))},
+  이다. $v$는,
+  \begin{align}\label{eq:4-2}
+    v = \sqrt{\frac{10}{7}g(h-2(R-r))},
   \end{align}
-  이다. $d=2R$일 때 구심력 $F_p$는 구에 작용하는 중력이다. 공이 원형궤도를 한바퀴 
-  돌기 위해 원심력 $F_f$가 구심력 $F_p$보다 커야 하므로,
+  이다. 식 \eqref{eq:4-1}과 \eqref{eq:4-2}에 의해,
   \begin{align}
-    F_p\leq F_f,\,\,\,mg\leq \frac{mv^2_0}{R},
+    g(R-r) \leq \frac{10}{7}g(h-2(R-r)),\,\,\,\frac{27}{10}(R-r) \leq h,
   \end{align}
-  를 만족해야 한다. 식 \eqref{eq:4-1}에 의해,
+  이다. $r\ll R$이므로 원형궤도를 돌기 위한 $h$의 최소값은 다음과 같다.
   \begin{align}
-    mg\leq \frac{10mg(h-2(R-r))}{7R},\,\,\, 7R\leq 10(h-2(R-r)),
-  \end{align}
-  이다. $r\ll R$이므로 $h$의 최소값은 다음과 같다.
-  \begin{align}
-    \frac{27R}{10(R-r)}=\frac{27}{10}R\leq h.
+    \frac{27}{10}(R-r)=\frac{27}{10}R\leq h.
   \end{align}
   $h$의 최소값은 $2.7R$ 이다.
   \item[(나)] 공이 점 $P$에 있을 때 자유 물체 다이어그램을 그려보면 다음과 같다.
@@ -371,15 +385,15 @@ $v_t$라고 하면 기차와 철수의 운동 방향이 반대이므로,
   따라서 각 방향으로 작용하는 합력을 구해보면 다음과 같다.
   \begin{align}\label{eq:4-1-1}
     \begin{split}
-      \sum F_x &= ma_x = -N = -\frac{mv^2}{R-r}    \\ 
-      \sum F_y &= ma_y .  \\ 
+      \sum F_x &= -N = -\frac{mv^2}{R-r}
     \end{split}
   \end{align}
+  $N$은 궤도가 공에게 작용하는 수직항력이고
   $v$는 점 $P$에서 공의 속력이다. 
   에너지 보존 법칙에 의해,
   \begin{align}
     \begin{split}
-      mg(3R+r) &= mgR + \frac{1}{2}mv^2 + \frac{1}{2}I\left(\frac{v}{R}\right)^2  \\
+      mg(3R+r) &= mgR + \frac{1}{2}mv^2 + \frac{1}{2}I\left(\frac{v}{r}\right)^2  \\
       &= mgR + \frac{1}{2}mv^2 + \frac{1}{5}mv^2.
     \end{split}
   \end{align}
@@ -389,14 +403,14 @@ $v_t$라고 하면 기차와 철수의 운동 방향이 반대이므로,
   \end{align}
   식 \eqref{eq:4-2}를 \eqref{eq:4-1-1}에 대입하여 힘의 $x$성분을 얻을 수 있다.
   \begin{align}
-    ma_x = -\frac{10(2R+r)mg}{7(R-r)} = -\frac{20}{7}mg.
+    \sum F_x = -\frac{10(2R+r)mg}{7(R-r)} = -\frac{20}{7}mg.
   \end{align}
   
   $y$축 방향으로 작용하는 힘은,
   \begin{align}\label{eq:4-3}
-    ma_y = f_s - mg = -mr\alpha,
+    \sum F_y = f_s - mg = -mr\alpha.
   \end{align}
-  이므로 $f_s$는,
+  $\alpha$는 공의 각가속도이다. $f_s$는,
   \begin{align}\label{eq:4-4}
     f_s = mg-mr\alpha.
   \end{align}
@@ -417,7 +431,7 @@ $v_t$라고 하면 기차와 철수의 운동 방향이 반대이므로,
   \end{align}
   이고 식 \eqref{eq:4-3}에 대입하여 $y$축 힘의 성분을 구할 수 있다.
   \begin{align}
-    ma_y = -\frac{5}{7}mg.
+    \sum F_y = -\frac{5}{7}mg.
   \end{align}
 
 \end{itemize}
