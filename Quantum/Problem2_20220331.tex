@@ -65,8 +65,8 @@ Hint: Use the operator method.
     +\frac{1}{2}m\omega^2x^2\psi
     -q\mathcal{E}x\psi = E\psi.
   \end{align}
-  \item[(2)] First, Suppose that there is no electric field,
-  that is, $\mathcal{E}$ is zero. Then the Schr\"odinger equation and 
+  \item[(2)] First, Suppose that there is no electric field.
+  That is, $\mathcal{E}$ is zero. Then the Schr\"odinger equation and 
   the energy is,
   \begin{align}
     -\frac{\hbar}{2m}\frac{\partial^2\psi}{\partial x^2}
@@ -87,14 +87,14 @@ Hint: Use the operator method.
     x = \sqrt{\frac{2\hbar}{m\omega}}\left(\frac{a+a^\dagger}{2}\right),\,\,\,
     p = \sqrt{2\hbar m\omega}\left(\frac{a-a^\dagger}{2i}\right)
   \end{align}
-  It is said to ladder operators. Operators is from the hamiltonian of 
-  simple harmonic oscillator,
+  It is said to be ladder operators. Operators are from the hamiltonian of 
+  the simple harmonic oscillator,
   \begin{align}\label{eq:1-3}
     H = \frac{p^2}{2m}+\frac{1}{2}m\omega^2x^2 
     = \hbar\omega\left(a^\dagger a + \frac{1}{2}\right)
     = \hbar\omega\left(a a^\dagger - \frac{1}{2}\right).
   \end{align}
-  Now, recall a constant electric field $\mathcal{E}$. From Eq.~\eqref{eq:1-1}
+  Now, recall that there is a constant electric field $\mathcal{E}$. From Eq.~\eqref{eq:1-1}
    and \eqref{eq:1-3}, hamiltonian is,
    \begin{align}
     H = \hbar\omega\left(a^\dagger a + \frac{1}{2}-q\mathcal{E}x\right)
@@ -482,7 +482,7 @@ Given the eigenfunctions and eigenenergies of the SHO,
 \noindent \textbf{Answer : }
 \begin{itemize}
   \item[(1)] The eigenvector and eigenfunction of the SHO are,
-  \begin{align}
+  \begin{align}\label{eq:3}
     \psi_n(x)=\psi^*_n(x)= (n!2^n)^{-\frac{1}{2}}
     \left(\frac{m\omega}{\hbar\pi}\right)^{\frac{1}{4}}
     \exp\left(-\frac{m\omega}{2\hbar}x^2\right)
@@ -572,7 +572,7 @@ Given the eigenfunctions and eigenenergies of the SHO,
     \end{split}
   \end{align}
   Therefore the expectation value of the square of the momentum is,
-  \begin{align}
+  \begin{align}\label{eq:3-ps}
     \langle p^2\rangle = \hbar^2\,(n!2^n)^{-1}\frac{m\omega}{\hbar\sqrt{\pi}}\,
     \sqrt{\pi}2^nn!\left( n+\frac{1}{2} \right)
     =\hbar m\omega\left( n+\frac{1}{2} \right).
@@ -604,6 +604,12 @@ Given the eigenfunctions and eigenenergies of the SHO,
     \int \xi^2 H_n(\xi) H_n(\xi) e^{-\xi^2}\,d\xi
     =\sqrt{\pi}2^nn!\left( n+\frac{1}{2} \right).
   \end{align}
+  So, $\langle x^2\rangle$ is,
+  \begin{align}\label{eq:3-xs}
+    \langle x^2\rangle = 
+    \frac{\hbar}{m\omega}
+    \left( n+\frac{1}{2}\right).
+  \end{align}
   Finally we obtain the expectation value of the potential energy.
   \begin{align}\label{eq:3-4}
     \langle V_n\rangle=\frac{1}{2}m\omega^2(n!2^n)^{-1}
@@ -626,7 +632,69 @@ Given the eigenfunctions and eigenenergies of the SHO,
   =2\left\langle T_n\right\rangle.
   \end{align}
   The results satisfy the virial theorem.
-  \item[(2)] 
+  \item[(2)] Let us calculate $\Delta x$ and $\Delta p$. 
+  From the definition, $\Delta x$ and $\Delta p$ are,
+  \begin{align}
+      \Delta x = \sqrt{\left\langle x^2\right\rangle - {\langle x\rangle}^2  },\,\,\,
+      \Delta p = \sqrt{\left\langle p^2\right\rangle - {\langle p\rangle}^2  }.
+  \end{align}
+  $\langle x\rangle$ is,
+  \begin{align}
+    \begin{split}
+      \langle x\rangle = \int x\psi^*\psi\,dx 
+      = (n!2^n)^{-1}\sqrt{\frac{m\omega}{\hbar\pi}}\left(\frac{\hbar}{m\omega}\right)
+      \int \xi H_nH_n e^{-\xi^2}\,d\xi.
+    \end{split}
+  \end{align}
+  Since the integrated term is a even function and integration interval is symmetric,
+  the integration is a zero. Therefore,
+  \begin{align}
+    \langle x\rangle = 0.
+  \end{align}
+  With Eq.~\eqref{eq:3-xs} $\Delta x$ is,
+  \begin{align}
+    \Delta x = \sqrt{\left\langle x^2\right\rangle}
+    = \sqrt{\frac{\hbar}{m\omega}
+    \left( n+\frac{1}{2}\right)}.
+  \end{align}
+  To calculate $\Delta p$,
+  $\langle p\rangle$ is,
+  \begin{align}
+    \langle p\rangle = \int \psi^*p\psi\,dx
+    = -i\hbar\int\psi^*_n
+    \frac{\partial \psi_n}{\partial x} \,dx.
+  \end{align}
+  The integration by part is,
+  \begin{align}
+    \begin{split}
+      \langle p\rangle=-i\hbar\int\psi^*_n
+      \frac{\partial \psi_n}{\partial x} \,dx
+      =i\hbar\int\frac{\partial \psi^*_n}{\partial x}
+      \psi_n \,dx.
+    \end{split}
+  \end{align}
+  From Eq.~\eqref{eq:3}, $\psi = \psi^*$. So,
+  \begin{align}
+    \langle p\rangle=i\hbar\int\frac{\partial \psi^*_n}{\partial x}
+    \psi_n \,dx=i\hbar\int\psi^*_n
+    \frac{\partial \psi_n}{\partial x}\,dx = -\langle p\rangle.
+  \end{align}
+  Therefore,
+  \begin{align}
+    \langle p\rangle = 0.
+  \end{align}
+  With Eq.~\eqref{eq:3-ps} $\Delta p$ is,
+  \begin{align}
+    \Delta p = \sqrt{\left\langle p^2\right\rangle}
+    = \sqrt{\hbar m\omega\left( n+\frac{1}{2} \right)}.
+  \end{align}
+  Finally $\Delta x\Delta p$ si,
+  \begin{align}
+    \Delta x\Delta p = \sqrt{\frac{\hbar}{m\omega}
+    \left(n+\frac{1}{2}\right)}\sqrt{\hbar m\omega
+    \left(n+\frac{1}{2}\right)}
+    =\hbar\left(n+\frac{1}{2}\right).
+  \end{align}
 \end{itemize}
 
 \vspace{1cm}
@@ -659,6 +727,54 @@ $\langle x\rangle$ and $\langle p\rangle$.
 \noindent \textbf{Problem 5.}
 Derive the wavefunction in momentum space, which corresponds to the
 eigenfunctions for the SHO in coordinates, $\psi_n(x)$. 
+
+\noindent \textbf{Answer : }
+We already know that the solution of the Schr\"odinger equation in the 
+coordinate space is,
+\begin{align}\label{eq:6-1}
+  \psi_n(x)=(n!2^n)^{-\frac{1}{2}}
+  \left(\frac{m\omega}{\hbar\pi}\right)^{\frac{1}{4}}
+  \exp\left(-\frac{m\omega}{2\hbar}x^2\right)
+  H_n\left(\sqrt{\frac{m\omega}{\hbar}}x\right).
+\end{align}
+It satisfies the equation,
+\begin{align}\label{eq:6-2}
+  -\frac{\hbar^2}{2m}\frac{\partial^2\psi_n}{\partial x^2}
+  +\frac{1}{2}m\omega^2x^2\psi_n = E_n\psi_n,\,\,\,
+  E_n = \left(n+\frac{1}{2}\right)\hbar\omega.
+\end{align}
+And the wave function in the momentum space safisfies that,
+\begin{align}\label{eq:6-3}
+  \frac{p^2}{2m}\phi_n-\frac{1}{2}m\omega^2\hbar^2
+  \frac{\partial^2\phi_n}{\partial p^2} = \mathcal{E}_n\phi_n. 
+\end{align}
+Multiplying $ 1/{m^2\omega^2}$ to Eq.~\eqref{eq:7-3},
+\begin{align}
+  \frac{p^2}{2m^3\omega^2}\phi_n-\frac{\hbar^2}{2m}
+  \frac{\partial^2\phi_n}{\partial p^2} 
+  = \frac{\mathcal{E}_n}{m^2\omega^2}\phi_n. 
+\end{align}
+Set $1/m^4\omega^2=\omega^2_p$. Then,
+\begin{align}
+  -\frac{\hbar^2}{2m}\frac{\partial^2\phi_n}{\partial p^2} 
+  +\frac{1}{2}m\omega^2_pp^2\phi_n
+  = m^2\omega^2_p\mathcal{E}_n\phi_n. 
+\end{align}
+Since the form of the equation corresponds to Eq.~\eqref{eq:6-2},
+the form of the solution will be the same.
+Comparing the two equations,
+\begin{align}
+  \omega^2x^2 \longrightarrow \omega^2_pp^2 ,\,\,\,
+  E_n \longrightarrow m^2\omega^2_p\mathcal{E}_n.
+\end{align}
+Then $\phi_n(p)$ and $\mathcal{E}$ are,
+\begin{align}
+  \phi_n(p)=(n!2^n)^{-\frac{1}{2}}
+  \left(\frac{m\omega_p}{\hbar\pi}\right)^{\frac{1}{4}}
+  \exp\left(-\frac{m\omega_p}{2\hbar}p^2\right)
+  H_n\left(\sqrt{\frac{m\omega^2_p}{\hbar\omega}}p\right),\,\,\,
+  \mathcal{E}_n = \left(n+\frac{1}{2}\right)m^2\hbar\omega^3.
+\end{align}
 \vspace{1cm}
 
 \noindent \textbf{Problem 6.}
@@ -670,10 +786,124 @@ At $t=0$, the wavefunction for a state is described by
 show that after some time $t$, the probability density changes in time
 as 
 \begin{align}
-|\pi(x,t)|^2  =  \left(\frac{\alpha^2}{\pi}\right)^{1/4}e^{-\alpha^2
+|\psi(x,t)|^2  =  \left(\frac{\alpha^2}{\pi}\right)^{1/4}e^{-\alpha^2
   (x-a\cos\omega t)^2}
 \end{align}
 and discuss the result. 
+
+
+\noindent \textbf{Answer : }
+The wave function in the momentum space $\phi(p,0)$ at $t=0$ is,
+\begin{align}
+  \phi(p,0) = \frac{1}{\sqrt{2\pi\hbar}}
+  \int e^{-\frac{i}{\hbar}px}\psi(x,0)\,dx
+  = \frac{1}{\sqrt{2\pi\hbar}}\left(\frac{\alpha^2}{\pi}\right)^{1/4} 
+  \int \exp{\left(-\frac{i}{\hbar}px-\frac{\alpha^2}{2}(x-a)^2\right)} \,dx.
+\end{align}
+The exponential of the integrated term can be represented into the 
+complete square form about $x$.
+\begin{align}
+  \begin{split}
+    -\frac{i}{\hbar}px-\frac{\alpha^2}{2}(x-a)^2
+    &=-\frac{\alpha^2}{2}x^2+\left(\alpha^2 a
+    -\frac{i}{\hbar}p\right)x-\frac{\alpha^2a^2}{2}\\
+    &=-\frac{\alpha^2}{2}\left(x-\left(a-\frac{i}
+    {\alpha^2\hbar}p\right)\right)^2
+    +\frac{\alpha^2}{2}\left(a-\frac{i}{\alpha^2\hbar}p\right)^2
+    -\frac{\alpha^2a^2}{2}.
+  \end{split}
+\end{align}
+Since the last two terms in the RHS are independent on $x$,
+we just integrate the first term in the RHS and 
+it is the gaussian integration.
+\begin{align}
+  \begin{split}
+    \phi(p,0) &= \frac{1}{\sqrt{2\pi\hbar}}\exp{\left(\frac{\alpha^2}{2}
+    \left(a-\frac{i}{\alpha^2\hbar}p\right)^2
+    -\frac{\alpha^2a^2}{2}\right)}
+    \int\exp{\left(-\frac{\alpha^2}{2}\left[x-\left(a-\frac{i}
+    {\alpha^2\hbar}p\right)\right]^2\right)}\,dx  \\
+    &=\frac{1}{\sqrt{2\pi\hbar}}\sqrt{\frac{2\pi}{\alpha^2}}
+    \exp{\left(\frac{\alpha^2}{2}
+    \left(a-\frac{i}{\alpha^2\hbar}p\right)^2
+    -\frac{\alpha^2a^2}{2}\right)}  \\
+    &= \frac{1}{\alpha\sqrt{\hbar}}
+    \exp{\left(-\frac{p^2}{2\alpha^2\hbar^2}-i\frac{a}{\hbar}p\right)}.
+  \end{split}
+\end{align}
+The wave function in the momentum space $\phi(p,t)$ at any time $t$ that is not a zero is,
+\begin{align}
+  \begin{split}
+    \phi(p,t) &= \exp{\left({-i\omega t}\right)}\phi(p,0)
+    = \frac{1}{\alpha\sqrt{\hbar}}
+    \exp{\left(-i\omega t-\frac{p^2}{2\alpha^2\hbar^2}
+    -i\frac{a}{\hbar}p\right)} \\
+    &=\frac{1}{\alpha\sqrt{\hbar}}
+    \exp{\left(  \right)}.
+  \end{split}
+\end{align}
+To obtain the wave function in the coordinate space at time $t$ that is not a zero,
+we operate Fourier transform into the $\phi(p,t)$.
+
+%The wave function in the momentum space $\phi(p,0)$ at $t=0$ is,
+%\begin{align}
+%  \phi(p,0) = \frac{1}{\sqrt{2\pi\hbar}}
+%  \int e^{-\frac{i}{\hbar}px}\psi(x,0)\,dx
+%  = \frac{1}{\sqrt{2\pi\hbar}}\left(\frac{\alpha^2}{\pi}\right)^{1/4} 
+%  \int \exp{\left(-\frac{i}{\hbar}px-\frac{\alpha^2}{2}(x-a)^2\right)} \,dx.
+%\end{align}
+%The exponential of the integrated term can be represented into the 
+%complete square form about $x$.
+%\begin{align}
+%  \begin{split}
+%    -\frac{i}{\hbar}px-\frac{\alpha^2}{2}(x-a)^2
+%    &=-\frac{\alpha^2}{2}x^2+\left(\alpha^2 a
+%    -\frac{i}{\hbar}p\right)x-\frac{\alpha^2a^2}{2}\\
+%    &=-\frac{\alpha^2}{2}\left(x-\left(a-\frac{i}
+%    {\alpha^2\hbar}p\right)\right)^2
+%    +\frac{\alpha^2}{2}\left(a-\frac{i}{\alpha^2\hbar}p\right)^2
+%    -\frac{\alpha^2a^2}{2}.
+%  \end{split}
+%\end{align}
+%Since the last two terms in the RHS are independent on $x$,
+%we just integrate the first term in the RHS and 
+%it is the gaussian integration.
+%\begin{align}
+%  \begin{split}
+%    \phi(p,0) &= \frac{1}{\sqrt{2\pi\hbar}}\exp{\left(\frac{\alpha^2}{2}
+%    \left(a-\frac{i}{\alpha^2\hbar}p\right)^2
+%    -\frac{\alpha^2a^2}{2}\right)}
+%    \int\exp{\left(-\frac{\alpha^2}{2}\left[x-\left(a-\frac{i}
+%    {\alpha^2\hbar}p\right)\right]^2\right)}\,dx  \\
+%    &=\frac{1}{\sqrt{2\pi\hbar}}\sqrt{\frac{2\pi}{\alpha^2}}
+%    \exp{\left(\frac{\alpha^2}{2}
+%    \left(a-\frac{i}{\alpha^2\hbar}p\right)^2
+%    -\frac{\alpha^2a^2}{2}\right)}  \\
+%    &= \frac{1}{\alpha\sqrt{\hbar}}
+%    \exp{\left(-\frac{p^2}{2\alpha^2\hbar^2}-i\frac{a}{\hbar}p\right)}.
+%  \end{split}
+%\end{align}
+%The wave function in the momentum space $\phi(p,t)$ at any time $t$ that is not a zero is,
+%\begin{align}
+%  \begin{split}
+%    \phi(p,t) &= \exp{\left({-i\frac{p^2}{2m\hbar}t}\right)}\phi(p,0)
+%    = \frac{1}{\alpha\sqrt{\hbar}}
+%    \exp{\left({-i\frac{p^2}{2m\hbar}t}
+%    -\frac{p^2}{2\alpha^2\hbar^2}-i\frac{a}{\hbar}p\right)} \\
+%    &=\frac{1}{\alpha\sqrt{\hbar}}
+%    \exp{\left(\left({-\frac{i\alpha^2\hbar t+m}{2m\alpha^2\hbar^2}}
+%    \right)p^2-i\frac{a}{\hbar}p\right)}.
+%  \end{split}
+%\end{align}
+%To obtain the wave function in the coordinate space at time $t$ that is not a zero,
+%we operate Fourier transform into the $\phi(p,t)$.
+%\begin{align}
+%  \psi(x,t)=\frac{1}{\sqrt{2\pi\hbar}}\frac{1}{\alpha\sqrt{\hbar}}
+%  \int\exp{\left(\frac{i}{\hbar}px\right)}
+%  \exp{\left(\left({-\frac{i\alpha^2\hbar t+m}{2m\alpha^2\hbar^2}}
+%  \right)p^2-i\frac{a}{\hbar}p\right)}\,dp
+%\end{align}
+
 \vspace{1cm}
 
 \noindent \textbf{Problem 7.} THe Einstein model for a solid
@@ -682,15 +912,15 @@ each other and oscillate similarly in average, the solid can be
 explained in terms of $N$ SHOs. At a given temperature $T$, $N$ atoms
 are in thermal equilibrium. Then, the Boltzmann distribution is given
 by 
-\begin{align}
+\begin{align}\label{eq:7-1}
 P_n = \frac1{Z} e^{-E_n/kT}   
 \end{align}
 with
-\begin{align}
+\begin{align}\label{eq:7-2}
   Z = \sum_n e^{-E_n/kT}, 
 \end{align}
 where
-\begin{align}
+\begin{align}\label{eq:7-3}
 E_n = \left(n+\frac12\right)\hbar \omega .
 \end{align}
 \begin{itemize}
@@ -709,4 +939,121 @@ Show that when $T$ is large, $C_V=3R$.
   can. 
 \end{itemize}
 
+\noindent \textbf{Answer : }
+\begin{itemize}
+  \item[(1)] By the definition, the expectation value of the energy is,
+  \begin{align*}
+    \langle E\rangle = \sum_n E_nP_n 
+    = \frac{1}{Z}\sum_n E_n e^{-E_n/kT},   \,\,\,
+    Z = \sum_n P_n.
+  \end{align*}
+  Define $\beta$ as,
+  \begin{align}\label{eq:7-4}
+    \beta =\frac{1}{kT}.
+  \end{align}
+  Then,
+  \begin{align*}
+    \langle E\rangle = \frac{1}{Z}\sum_n E_n e^{-\beta E_n},   \,\,\,
+    Z = \sum_n e^{-\beta E_n}.
+  \end{align*}
+  The summation term is regraded as the deriavtive for $\beta$.
+  \begin{align}\label{eq:7-5}
+    \langle E\rangle = -\frac{1}{Z}\frac{\partial Z}{\partial \beta}
+    = -\frac{\partial (\ln{Z})}{\partial \beta}.
+  \end{align}
+  From Eq.~\eqref{eq:7-3}, $Z$ is,
+  \begin{align*}
+    Z = \sum_n e^{-\beta\hbar\omega(\frac{1}{2}+n)} 
+    = e^{-\frac{1}{2}\beta\hbar\omega}\sum_n e^{-n\beta\hbar\omega}.
+  \end{align*}
+  It is power series with a common ratio $e^{-\beta\hbar\omega}$ 
+  and first term $e^{-\frac{1}{2}\beta\hbar\omega}$.
+  \begin{align}
+    Z = \frac{e^{-\frac{1}{2}\beta\hbar\omega}}{1-e^{-\beta\hbar\omega}}.
+  \end{align}
+  Then $\ln{Z}$ is,
+  \begin{align*}
+    \ln{Z} = \ln{\left(e^{-\frac{1}{2}\beta\hbar\omega}\right)}
+    -\ln{\left(1-e^{-\beta\hbar\omega}\right)}
+    =-\frac{1}{2}\beta\hbar\omega
+    -\ln{\left(1-e^{-\beta\hbar\omega}\right)}.
+  \end{align*}
+  And Eq.~\eqref{eq:7-5} is,
+  \begin{align*}
+      \langle E\rangle = -\frac{\partial (\ln{Z})}{\partial \beta}
+      = \frac{1}{2}\hbar\omega
+      +\frac{\hbar\omega e^{-\beta\hbar\omega}}{1-e^{-\beta\hbar\omega}}  
+  \end{align*}
+  Multiplying $e^{\beta\hbar\omega}$ to the second term of the RHS,
+  \begin{align}
+    \begin{split}\label{eq:7-6}
+      \langle E\rangle &=\frac{1}{2}\hbar\omega
+      +\frac{\hbar\omega}{e^{\beta\hbar\omega}-1} \\
+      &=\frac{\hbar\omega}{e^{\hbar\omega/kT}-1} 
+      + \frac{1}{2}\hbar\omega.
+    \end{split}
+  \end{align}
+  \item[(2)] The first law of the thermodynamics is,
+  \begin{align}
+    dU = dQ - dW.
+  \end{align} 
+  $Q$ and $W$ are the heat supplied to the system and 
+  the work done on the system respectively. In the case of
+  the solid, the volume is the constant and the work is a zero.
+  \begin{align}
+    dW = PdV = 0,\,\,\, dU = dQ.
+  \end{align}
+  By the definition of the specific heat with constant volume,
+  \begin{align}
+    C_V = \left(\frac{\partial Q}{\partial T}\right)_V 
+    =\frac{\partial U}{\partial T}.
+  \end{align}
+  Since $U$ is the total energy of the solid and there are the $N$
+  atoms,
+  \begin{align}
+    U = N\langle E\rangle=\frac{N\hbar\omega}{e^{\hbar\omega/kT}-1} 
+    + \frac{1}{2}N\hbar\omega.
+  \end{align}
+  Hence the specific heat $C_V$ is,
+  \begin{align}\label{eq:7-8}
+    C_V = \frac{\partial U}{\partial T}
+    = \frac{\partial }{\partial T}
+    \left(\frac{N\hbar\omega}{e^{\hbar\omega/kT}-1}\right) 
+    =\frac{N\hbar^2\omega^2e^{\hbar\omega/kT}}
+    {kT^2\left(e^{\hbar\omega/kT}-1\right)^2}.
+  \end{align}
+  Consdiering that the degree of freedom is 3,
+  \begin{align}
+    C_V = \frac{3N\hbar^2\omega^2e^{\hbar\omega/kT}}
+    {kT^2\left(e^{\hbar\omega/kT}-1\right)^2}.
+  \end{align}
+  From Eq.~\eqref{eq:7-4}, Eq.~\eqref{eq:7-8} can be rewritten as,
+  \begin{align}
+    C_V=\frac{3Nk\beta^2\hbar^2\omega^2e^{\beta\hbar\omega}}
+    {\left(e^{\beta\hbar\omega}-1\right)^2}.
+  \end{align}
+  When $T$ is large, $\beta$ is converged to a zero and $e^{-\beta\hbar\omega}$
+  is converged to 1. Then,
+  \begin{align}
+    \lim_{\beta\rightarrow 0}\frac{\beta}
+    {e^{\beta\hbar\omega}-1} = \frac{1}{\hbar\omega}.
+  \end{align}
+  Finally $C_V$ is,
+  \begin{align}
+    C_V = \frac{3Nk\hbar^2\omega^2}
+    {\hbar^2\omega^2}=3Nk = 3nR.
+  \end{align}
+  \item[(3)] From Eq.~\eqref{eq:7-6}, when the temperature is large,
+  the mean energy per an SHO behaves approximately as the linear function.
+   \begin{align}
+    \begin{split}
+      \langle E\rangle &= \frac{1}{2}\hbar\omega 
+      + \hbar\omega\left[e^{\beta\hbar\omega}-1\right]^{-1}
+      =\frac{1}{2}\hbar\omega 
+      + \hbar\omega\left[(1+\hbar\omega\beta+\cdots)-1\right]^{-1}  \\
+      &= 
+    \end{split}
+   \end{align} 
+
+\end{itemize}
 \end{document}

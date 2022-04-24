@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex Problem2_20220331"] 1649499306 "Problem2_20220331.aux" "Problem2_20220331.bbl" "Problem2_20220331" 1649592383
+["bibtex Problem2_20220331"] 1650691162 "Problem2_20220331.aux" "Problem2_20220331.bbl" "Problem2_20220331" 1650691567
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1547851249 69612 d43c8740409d8c756864ce4e3d57a214 ""
-  "Problem2_20220331.aux" 1649499336 1129 747c9b7daa39f0fbebf09be95051e64a "pdflatex"
-  "Problem2_20220331Notes.bib" 1649499336 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "Problem2_20220331.aux" 1650691567 1568 b03e4aace3ae402b1d42efd54310cb30 "pdflatex"
+  "Problem2_20220331Notes.bib" 1650691567 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
-  "Problem2_20220331.blg"
   "Problem2_20220331.bbl"
-["pdflatex"] 1649499336 "/home/sigma/Lab/Quantum/Problem2_20220331.tex" "/home/sigma/Lab/Quantum/Problem2_20220331.pdf" "Problem2_20220331" 1649592383
+  "Problem2_20220331.blg"
+["pdflatex"] 1650691566 "/home/sigma/Lab/Quantum/Problem2_20220331.tex" "/home/sigma/Lab/Quantum/Problem2_20220331.pdf" "Problem2_20220331" 1650691567
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/Quantum/Problem2_20220331.aux" 1649499336 1129 747c9b7daa39f0fbebf09be95051e64a ""
-  "/home/sigma/Lab/Quantum/Problem2_20220331.tex" 1649592382 25031 5794df871bc74586f2e885b52d92cf98 ""
+  "/home/sigma/Lab/Quantum/Problem2_20220331.aux" 1650691567 1568 b03e4aace3ae402b1d42efd54310cb30 ""
+  "/home/sigma/Lab/Quantum/Problem2_20220331.tex" 1650691566 37978 4ebf25e609c9e21761a604dd23218103 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -73,6 +73,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb" 1248133631 36310 f5ddc6715cc60deb16d9db5ded6a9391 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb" 1248133631 35457 884c5a936fbb3fae6a4c18058662d654 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb" 1248133631 35309 940e81a5b9e04201a07e8b33a3ae6e64 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb" 1364599308 151218 e459b242e186c87dffde79fcc66d664a ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb" 1364599308 151674 db7a3ff04ff1c3013035cf02b94eab4f ""
@@ -127,14 +128,14 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1645685134 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1645685152 8258281 06978915380d3cf57d3fcd5054406eef ""
-  "Problem2_20220331.aux" 1649499336 1129 747c9b7daa39f0fbebf09be95051e64a "pdflatex"
-  "Problem2_20220331.bbl" 1649499306 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Problem2_20220331"
-  "Problem2_20220331.tex" 1649592382 25031 5794df871bc74586f2e885b52d92cf98 ""
+  "Problem2_20220331.aux" 1650691567 1568 b03e4aace3ae402b1d42efd54310cb30 "pdflatex"
+  "Problem2_20220331.bbl" 1650691163 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Problem2_20220331"
+  "Problem2_20220331.tex" 1650691566 37978 4ebf25e609c9e21761a604dd23218103 ""
   "defcolor.sty" 1646221107 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   (generated)
+  "Problem2_20220331Notes.bib"
+  "/home/sigma/Lab/Quantum/Problem2_20220331.log"
+  "Problem2_20220331.aux"
   "Problem2_20220331.pdf"
   "/home/sigma/Lab/Quantum/Problem2_20220331.pdf"
   "Problem2_20220331.log"
-  "/home/sigma/Lab/Quantum/Problem2_20220331.log"
-  "Problem2_20220331.aux"
-  "Problem2_20220331Notes.bib"
