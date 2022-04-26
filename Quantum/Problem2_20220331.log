@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.24)  23 APR 2022 14:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.24)  26 APR 2022 00:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -332,50 +332,86 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@postskip=\skip57
 \thm@headsep=\skip58
 \dth@everypar=\toks33
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count197
+\calc@Bcount=\count198
+\calc@Adimen=\dimen153
+\calc@Bdimen=\dimen154
+\calc@Askip=\skip59
+\calc@Bskip=\skip60
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count199
+\calc@Cskip=\skip61
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
-Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document class! (Proceeding with fingers crossed.) on input line 21.
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 21.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 21.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 21.
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count266
+\l_MT_multwidth_dim=\dimen155
+\origjot=\skip62
+\l_MT_shortvdotswithinadjustabove_dim=\dimen156
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen157
+\l_MT_above_intertext_sep=\dimen158
+\l_MT_below_intertext_sep=\dimen159
+\l_MT_above_shortintertext_sep=\dimen160
+\l_MT_below_shortintertext_sep=\dimen161
+) (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+)
+Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document class! (Proceeding with fingers crossed.) on input line 23.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 23.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 23.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 23.
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count197
+\l__kernel_color_stack_int=\count267
 \l__pdf_internal_box=\box62
 ) (/home/sigma/Lab/Quantum/Problem2_20220331.aux)
 \openout1 = `Problem2_20220331.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 21.
-LaTeX Font Info:    Trying to load font information for LUC+nanummj on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 23.
+LaTeX Font Info:    Trying to load font information for LUC+nanummj on input line 23.
  (/usr/share/texlive/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 File: lucnanummj.fd 2013/02/12 v0.1 Nanum Myeongjo font definitions
 )
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    ... okay on input line 23.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count198
-\scratchdimen=\dimen153
+\scratchcounter=\count268
+\scratchdimen=\dimen162
 \scratchbox=\box63
-\nofMPsegments=\count199
-\nofMParguments=\count266
+\nofMPsegments=\count269
+\nofMParguments=\count270
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count267
-\MPscratchDim=\dimen154
-\MPnumerator=\count268
-\makeMPintoPDFobject=\count269
+\MPscratchCnt=\count271
+\MPscratchDim=\dimen163
+\MPnumerator=\count272
+\makeMPintoPDFobject=\count273
 \everyMPtoPDFconversion=\toks35
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -385,30 +421,34 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \openout3 = `Problem2_20220331Notes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 87.
+ (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [1
 Non-PDF special ignored!
 <special> papersize=614.295pt,794.96999pt
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] (/home/sigma/Lab/Quantum/Problem2_20220331.bbl) [13] (/home/sigma/Lab/Quantum/Problem2_20220331.aux) ) 
 Here is how much of TeX's memory you used:
- 5760 strings out of 481239
- 78074 string characters out of 5920377
- 365151 words of memory out of 5000000
- 20909 multiletter control sequences out of 15000+600000
- 546679 words of font info for 76 fonts, out of 8000000 for 9000
+ 6348 strings out of 481239
+ 88701 string characters out of 5920377
+ 377931 words of memory out of 5000000
+ 21477 multiletter control sequences out of 15000+600000
+ 547074 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,18n,31p,258b,217s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb>
-Output written on /home/sigma/Lab/Quantum/Problem2_20220331.pdf (13 pages, 329048 bytes).
+ 34i,18n,31p,258b,268s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/sigma/.texlive2019/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb>
+Output written on /home/sigma/Lab/Quantum/Problem2_20220331.pdf (13 pages, 329398 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
+ 149 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

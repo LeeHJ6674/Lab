@@ -16,6 +16,8 @@
 \usepackage{amscd}
 \usepackage{amsthm}
 \usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{bbm}
 %\pagestyle{fancy}
 
 \begin{document}
@@ -79,10 +81,11 @@ Hint: Use the operator method.
   \begin{align}
     \begin{split}
       a = \sqrt{\frac{m\omega}{2\hbar}}\left(x+i\frac{p}{m\omega}\right),\,\,\,
-      a^\dagger = \sqrt{\frac{m\omega}{2\hbar}}\left(x-i\frac{p}{m\omega}\right). 
+      a^\dagger = \sqrt{\frac{m\omega}{2\hbar}}\left(x-i\frac{p}{m\omega}\right),\,\,\,
+      \left[a,a^\dagger\right] = \mathbbm{I}.
     \end{split}
   \end{align}
-  And,
+  $\mathbbm{I}$ is the identity operator. And,
   \begin{align}
     x = \sqrt{\frac{2\hbar}{m\omega}}\left(\frac{a+a^\dagger}{2}\right),\,\,\,
     p = \sqrt{2\hbar m\omega}\left(\frac{a-a^\dagger}{2i}\right)
@@ -95,63 +98,139 @@ Hint: Use the operator method.
     = \hbar\omega\left(a a^\dagger - \frac{1}{2}\right).
   \end{align}
   Now, recall that there is a constant electric field $\mathcal{E}$. From Eq.~\eqref{eq:1-1}
-   and \eqref{eq:1-3}, hamiltonian is,
+   and \eqref{eq:1-3}, hamiltonian with a constant electric field is,
    \begin{align}
-    H = \hbar\omega\left(a^\dagger a + \frac{1}{2}-q\mathcal{E}x\right)
-    = \hbar\omega\left(a^\dagger a + \frac{1}{2}-q\mathcal{E}
-    \sqrt{\frac{2\hbar}{m\omega}}\left(\frac{a+a^\dagger}{2}\right)\right),
+    H^\prime = \hbar\omega\left(a^\dagger a + \frac{1}{2}-q\mathcal{E}x\right)
+    = \hbar\omega\left(a^\dagger a + \frac{1}{2}-\frac{q\mathcal{E}}{2}
+    \sqrt{\frac{2\hbar}{m\omega}}\left(a+a^\dagger\right)\right),
    \end{align}  
-   or,
-   \begin{align}\label{eq:1-4}
-    H = \hbar\omega\left(a a^\dagger - \frac{1}{2}\right)
-    -q\mathcal{E}\sqrt{\frac{2\hbar}{m\omega}}
-    \left(\frac{a+a^\dagger}{2}\right).
-   \end{align}
-   If $\psi_n$ is the eigenvector and $E_n$ is the eigenvalue of $\psi_n$, 
-   the Schr\"odinger equation is,
+   To eliminate the terms of $a$ and $a^\dagger$, define the new operator $b$.
    \begin{align}
-    -\frac{\hbar}{2m}\frac{\partial^2\psi_n}{\partial x^2}
-    +\frac{1}{2}m\omega^2x^2\psi_n
-    -q\mathcal{E}x\psi_n = E_n\psi_n,\,\,\, 
-    E_n = \left(\frac{1}{2}+n\right)\hbar\omega+E_m.
+    b \coloneqq a + \kappa,\,\,\,
+    \left[a,b\right] = a(a+\kappa)-(a+\kappa)a = aa-aa+\kappa a-\kappa a=0.
    \end{align}
-   $E_m$ is a energy due to a constant electric field. Then we write the 
-   reduced equation,
-   \begin{align}\label{eq:1-5}
-    -q\mathcal{E}x\psi_n = -q\mathcal{E}\sqrt{\frac{2\hbar}{m\omega}}
-    \left(\frac{a+a^\dagger}{2}\right)\psi_n = E_m\psi_n.
-   \end{align}
-   Define $\kappa$ as,
+   With this definition, the new operator $b$ commutes with the old one $a$. 
+   And the adjoint of $b$ is automatically $b^\dagger = a^\dagger+\kappa$.
    \begin{align}
-     \kappa = -\frac{q\mathcal{E}}{2\hbar\omega}\sqrt{\frac{2\hbar}{m\omega}}
-     = -\frac{1}{\omega}\frac{q\mathcal{E}}{\sqrt{2\hbar m\omega}}.
+     \left[b,b^\dagger\right] = \left[(a+\kappa),(a+\kappa)^\dagger\right] = \mathbbm{I}.
    \end{align}
-   Then Eq.~\eqref{eq:1-4} is,
+   Then the hamiltonian with a constant electric field $H^\prime$ is,
    \begin{align}
-     H = \hbar\omega\left[a^\dagger a-\kappa\left(a+a^\dagger\right)
-     +\frac{1}{2}\right]
-     = \hbar\omega\left[(a^\dagger - \kappa)(a - \kappa) -\kappa^2.
-     +\frac{1}{2}\right]
-   \end{align}
-   Now we define new operators from ladder operators,
+    \begin{split}
+      H^\prime &= \hbar\omega\left((a^\dagger+\kappa)(a+\kappa)-\kappa(a+a^\dagger)-\kappa^2
+      + \frac{1}{2}-\frac{q\mathcal{E}}{2}
+      \sqrt{\frac{2\hbar}{m\omega}}\left(a+a^\dagger\right)\right)  \\
+      &=\hbar\omega\left(b^\dagger b-\kappa^2
+      + \frac{1}{2}-\left(\kappa+\frac{q\mathcal{E}}{2}
+      \sqrt{\frac{2\hbar}{m\omega}}\right)\left(a+a^\dagger\right)\right)
+    \end{split}
+   \end{align}.
+   Setting $\kappa$ as,
    \begin{align}
-     b = a - \kappa,\,\,\,
-     b^\dagger = a^\dagger - \kappa.
+    \kappa = -\frac{q\mathcal{E}}{2}
+    \sqrt{\frac{2\hbar}{m\omega}},\,\,\,
+    \kappa+\frac{q\mathcal{E}}{2}
+    \sqrt{\frac{2\hbar}{m\omega}} = 0.
    \end{align}
-   The hamiltonian can be repersented by new operators.
+   Then $H^\prime$ is,
    \begin{align}
-     H = \hbar\omega\left( b^\dagger b -\left(\kappa^2-\frac{1}{2}\right)\right).
+    H^\prime = \hbar\omega\left(b^\dagger b-\kappa^2
+    + \frac{1}{2}\right).
    \end{align}
-   The Schr\"odinger equation and reduced equation from Eq.~\eqref{eq:1-2} 
-   and \eqref{eq:1-5} are,
-   \begin{align}
-     \begin{split}
-      &\hbar\omega\left( b^\dagger b 
-      -\left(\kappa^2-\frac{1}{2}\right)\right)\psi_n = E_n\psi_n \\
-      &\hbar\omega\kappa\left(b+b^\dagger+2\kappa\right)\psi_n = E_m\psi_n
-      ,\,\,\,E_n = \left(\frac{1}{2}+n\right)\hbar\omega+E_m.
-     \end{split}
-   \end{align}
+  %  If $H^\prime $ and $H$ are commute, they are same eigenfunction simultaneously.
+  % \begin{align}
+  %   \begin{split}
+  %     \left[H,H^\prime\right] 
+  %     &= \left[H,H-\frac{q\mathcal{E}}{2}\sqrt{\frac{2\hbar}{m\omega}}
+  %     \left(a+a^\dagger\right)\right] 
+  %     =-\frac{q\mathcal{E}}{2}\sqrt{\frac{2\hbar}{m\omega}}\left(\left[H,
+  %     a\right]+\left[H,a^\dagger\right] \right).
+  %   \end{split}
+  % \end{align}
+  % The commtutors between $H$ and $a$,$a^\dagger$ are,
+  % \begin{align}
+  %   \begin{split}
+  %     \left[H,a\right] &= \left[a^\dagger a,a\right] = \left[a^\dagger,a\right] a = -a  \\
+  %     \left[H,a^\dagger\right] &= \left[a^\dagger a,a^\dagger\right] = a^\dagger\left[a,a^\dagger\right]  = a^\dagger.
+  %   \end{split}
+  % \end{align}
+  %  \begin{align}
+  %   \begin{split}
+  %     \left[H,H^\prime\right] 
+  %     &= \hbar^2\omega^2\left[\left(aa^\dagger-\frac{1}{2}\right),
+  %     \left(b^\dagger b-\kappa^2
+  %     + \frac{1}{2}\right)\right] = aa^\dagger b^\dagger b-b^\dagger baa^\dagger.
+  %   \end{split}
+  %  \end{align}
+  %  Since $a$ and $b$ commute,
+  %  \begin{align}
+  %    \left[a,b^\dagger\right]=\left[a,a^\dagger\right]=\mathbbm{I}.
+  %  \end{align}
+  %  Therefore,
+  %  \begin{align}
+  %   \left[H,H^\prime\right] = aa^\dagger b^\dagger b-b^\dagger baa^\dagger.
+  %  \end{align}
+    We can write the eigenvalue eqaution with the new operator.
+    \begin{align}
+      H^\prime \psi^\prime_n = E^\prime_n\psi^\prime_n.
+    \end{align}
+    Or,
+    \begin{align}
+      \hbar\omega\left(b^\dagger b
+    + \frac{1}{2}\right)\psi^\prime_n = \left(E^\prime_n+\kappa^2\right)\psi^\prime_n.
+    \end{align}
+  %----------------------------------------------
+  %  or,
+  %  \begin{align}\label{eq:1-4}
+  %   H = \hbar\omega\left(a a^\dagger - \frac{1}{2}\right)
+  %   -q\mathcal{E}\sqrt{\frac{2\hbar}{m\omega}}
+  %   \left(\frac{a+a^\dagger}{2}\right).
+  %  \end{align}
+  %  If $\psi_n$ is the eigenvector and $E_n$ is the eigenvalue of $\psi_n$, 
+  %  the Schr\"odinger equation is,
+  %  \begin{align}
+  %   -\frac{\hbar}{2m}\frac{\partial^2\psi_n}{\partial x^2}
+  %   +\frac{1}{2}m\omega^2x^2\psi_n
+  %   -q\mathcal{E}x\psi_n = E_n\psi_n,\,\,\, 
+  %   E_n = \left(\frac{1}{2}+n\right)\hbar\omega+E_m.
+  %  \end{align}
+  %  $E_m$ is a energy due to a constant electric field. Then we write the 
+  %  reduced equation,
+  %  \begin{align}\label{eq:1-5}
+  %   -q\mathcal{E}x\psi_n = -q\mathcal{E}\sqrt{\frac{2\hbar}{m\omega}}
+  %   \left(\frac{a+a^\dagger}{2}\right)\psi_n = E_m\psi_n.
+  %  \end{align}
+  %  Define $\kappa$ as,
+  %  \begin{align}
+  %    \kappa = -\frac{q\mathcal{E}}{2\hbar\omega}\sqrt{\frac{2\hbar}{m\omega}}
+  %    = -\frac{1}{\omega}\frac{q\mathcal{E}}{\sqrt{2\hbar m\omega}}.
+  %  \end{align}
+  %  Then Eq.~\eqref{eq:1-4} is,
+  %  \begin{align}
+  %    H = \hbar\omega\left[a^\dagger a-\kappa\left(a+a^\dagger\right)
+  %    +\frac{1}{2}\right]
+  %    = \hbar\omega\left[(a^\dagger - \kappa)(a - \kappa) -\kappa^2.
+  %    +\frac{1}{2}\right]
+  %  \end{align}
+  %  Now we define new operators from ladder operators,
+  %  \begin{align}
+  %    b = a - \kappa,\,\,\,
+  %    b^\dagger = a^\dagger - \kappa.
+  %  \end{align}
+  %  The hamiltonian can be repersented by new operators.
+  %  \begin{align}
+  %    H = \hbar\omega\left( b^\dagger b -\left(\kappa^2-\frac{1}{2}\right)\right).
+  %  \end{align}
+  %  The Schr\"odinger equation and reduced equation from Eq.~\eqref{eq:1-2} 
+  %  and \eqref{eq:1-5} are,
+  %  \begin{align}
+  %    \begin{split}
+  %     &\hbar\omega\left( b^\dagger b 
+  %     -\left(\kappa^2-\frac{1}{2}\right)\right)\psi_n = E_n\psi_n \\
+  %     &\hbar\omega\kappa\left(b+b^\dagger+2\kappa\right)\psi_n = E_m\psi_n
+  %     ,\,\,\,E_n = \left(\frac{1}{2}+n\right)\hbar\omega+E_m.
+  %    \end{split}
+  %  \end{align}
   \item[(3)] 
   \end{itemize}
 
