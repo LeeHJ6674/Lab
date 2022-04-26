@@ -1,4 +1,4 @@
-\documentclass[floatfix,nofootinbib,superscriptaddress,fleqn,preprint]{revtex4} 
+\documentclass[floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4-2} 
 %\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
 \usepackage[utf]{kotex}
 \usepackage[HWP]{dhucs-interword}
@@ -15,6 +15,7 @@
 \usepackage{amsthm}
 \usepackage[utf8]{inputenc}
  \usepackage{setspace}
+ \usepackage{tikz}
 %\pagestyle{fancy}
 
 \begin{document}
@@ -23,24 +24,14 @@
 \author{김현철\footnote{Office: 5S-436D (면담시간 매주
     화요일-16:00$\sim$20:00)}} 
 \email{hchkim@inha.ac.kr}
-\affiliation{Hadron Theory Group, Department of Physics,
-Inha University, Incheon 22212, Republic of Korea }
+\author{Hwi-Jae Lee} 
+\email{hjlee6674@inha.edu}
+\affiliation{Hadron Theory Group, Department of Physics, Inha
+  University, Incheon 22212, Republic of Korea }
 \date{Spring semester, 2022}
 
-
 \vspace{1.cm}
-\begin{abstract}
-\noindent \textbf{ {\color{red}주의}: \color{blue} 단 한 번의 부정행위도 절대
-  용납하지 않습니다. 적발 시, 학점은 F를 받게 됨은 물론이고,
-  징계위원회에 회부합니다. One strike out임을 명심하세요.}\\
-\\
-문제는 다음 쪽부터 나옵니다.  \\ \\
-{\bf Date:} 2022년 4월 27일 (수) 15:30-16:15
-\\
-{\bf 학번:} \hspace{4cm}
-{\bf 이름:} 
 
-\end{abstract}
 \maketitle
 
 \noindent {\bf 문제 1. (30 pt)} 
@@ -60,11 +51,51 @@ $\mathrm{m/s^2}$이다.
   얼마인가?   
 \end{itemize}
 
- \newpage
+\noindent {\bf 풀이 : }
+중력 $F_g$, 수직항력 $N$, 마찰력 $F_s$
+\begin{figure}[htp]
+  \centering
+  \begin{tikzpicture}
+    \draw (-2.5,0) -- (2.5,0) ;
+    \draw (0,-2.5) -- (0,2.5) ;
+    \draw [blue,very thick,-latex] (0,0.1) -- (0,1.8) 
+    node [right,black] {$N$};
+    \draw [blue,very thick,-latex] (0,-0.1) -- (0,-1.8) 
+    node [right,black] {$F_g$};
+    \draw [red,very thick,-latex] (-0.1,0) -- (-1.6,0) 
+    node [above,black] {$F_s$};
+  \end{tikzpicture}
+  \caption{자유 물체 다이어그램}
+\end{figure}
 
-{\color{gray} [문제 풀이 쪽]}
 
-\newpage
+\begin{itemize}
+  \item[(가)] 바퀴가 회전하도록 하는 힘 = 마찰력, 질량 $m$, 반지름 $r$, 가속도 $a$,
+  각가속도 $\alpha$, 돌림힘 $\tau$
+  \begin{align}
+    \alpha=\frac{a}{r},\,\,\, \tau = F_s r = I\alpha
+  \end{align}
+  마찰력은 반대방향으로 작용
+  \begin{align}
+    \vec{F}_s = -\frac{I\alpha}{r}\hat{\bm i}
+  \end{align}
+  \item[(나)]
+  운동 방정식
+  \begin{align}
+    \sum F = ma = F_{app} - F_s.
+  \end{align}
+  마찰력은
+  \begin{align}
+    F_s=\frac{I\alpha}{r} = F_{app}-ma.
+  \end{align}
+\end{itemize}
+
+
+
+
+
+\vspace{1.cm}
+
 
 \noindent {\bf 문제 2. (30 pt)}
 그림~\ref{fig:2}는 질량이 $m$, 반지름이 $R$인 원형고리와 질량이 $m$,
@@ -81,10 +112,78 @@ $m=2.0$ kg이라고 할 때,
 \item[(가)] 회전축에 대한 강체의 회전관성과
 \item[(나)] 회전축에 대한 각운동량을 각각 구하여라.   
 \end{itemize}
-\newpage
-{\color{gray} [문제 풀이 쪽]}
 
-\newpage
+\noindent {\bf 풀이 : }
+\begin{itemize}
+  \item[(가)] 
+  정사각형일 경우 회전축에 수평한 막대, 수직인 막대를 나누어 생각. $\rho$를 고리의 밀도라 하면
+  수평한 막대의 회전관성 
+  $I_{p}$는,
+  \begin{align}
+    \begin{split}
+      I_{p} = \int r^2\,dm = \rho\int_0^R R^2\,dz + 0 = \rho R^3.  
+    \end{split}
+  \end{align}
+  수직인 막대의 회전관성 $I_{o}$는,
+  \begin{align}
+    \begin{split}
+      I_{0} = \int r^2\,dm = \rho\int_0^R r^2\,dr+\rho\int_0^R r^2\,dr
+      =\frac{2}{3}\rho R^3. 
+    \end{split}
+  \end{align}
+  정사각형 고리의 회전관성은,
+  \begin{align}
+    I_{p}+I_{0} = \frac{5}{3}\rho R^3 = \frac{5}{3}\left(\frac{m}{R}\right) R^3
+    =  \frac{5}{3}mR^2.
+  \end{align}
+ 
+  평행축 정리, 
+  \begin{align}
+    I = I_{cm}+mh^2.
+  \end{align}
+  원형고리의 회전관성 $I_{cir}$,
+  \begin{align}
+    I_{cir} = I_{cm}+mR^2
+  \end{align}
+  원형고리일 경우 밀도 $\rho$는,
+  \begin{align}
+    \rho = \frac{m}{2\pi R}.
+  \end{align}
+  미소질량 $dm^\prime$을 생각하면,
+  \begin{align}
+    dm^\prime = \rho R\,d\theta = \frac{m}{2\pi}\,d\theta.
+  \end{align}
+  $\theta$는 축과 중심을 잇는 선, 중심과 $dm^\prime$을 잇는 선이 이루는 각.
+  $r=R\sin\theta$이므로 $I_{cm}$은,
+  \begin{align}
+    \begin{split}
+      I_{cm} &= \int r^2\,dm^\prime = \frac{m}{2\pi}R^2
+      \int_0^{2\pi}\sin^2\theta\,d\theta
+      = \frac{m}{2\pi}R^2\pi = \frac{1}{2}mR^2.
+    \end{split}
+  \end{align}
+  $I_{cir}$은,
+  \begin{align}
+    \begin{split}
+      I_{cir} = \frac{1}{2}mR^2+mR^2 = \frac{3}{2}mR^2.
+    \end{split}
+  \end{align}
+  총 회전관성 $I$,
+  \begin{align}
+    I = I_p+I_o+I_{cir} = \frac{5}{3}mR^2+\frac{3}{2}mR^2=\frac{19}{6}mR^2.
+  \end{align}
+  \item[(나)] 각속도 $\omega$,
+  \begin{align}
+    \omega = \frac{2\pi}{T}.
+  \end{align}
+  각운동량 $L$,
+  \begin{align}
+    L = I\omega = \frac{2\pi I}{T} = \frac{19\pi mR^2}{3T}.
+  \end{align}
+  \end{itemize}
+
+\vspace{1.cm}
+
 
 \noindent {\bf 문제 3. (40pt)} 
 질량이 4.0 kg이고 길이가 0.50 m인 가늘고 균일한 막대가 수평면에서
@@ -99,17 +198,51 @@ $\theta=60^\circ$의 각도를 이룬다. 총알이 막대에 박히고 충돌 �
   \caption{문제 3}
   \label{fig:3}
 \end{figure}
-\newpage
-{\color{gray} [문제 풀이 쪽]}
 
-\newpage
+\noindent {\bf 풀이 : }
+막대 질량 $m_1$, 막대 길이 $d$, 총알 질량 $m_2$ 총알 속력 $v_2$.
+운동량 보존 법칙 초기 운동량 $L_1$,
+\begin{align}
+  L_1 =|\,\vec{r}\times\vec{p}\,|=\frac{1}{2} m_2v_2d\sin\theta.
+\end{align}
+나중 각운동량 $L_2$,
+\begin{align}
+  L_2 = I_1\omega+ I_2\omega.
+\end{align}
+$I_1$ 막대 회전관성, $I_2$ 총알 회전관성. $I_1$은,
+\begin{align}
+  I_1 = \int r^2\,dm = \rho\int_{-\frac{1}{2}d} ^{\frac{1}{2}d}r^2\,dr
+  =\left(\frac{m_1}{d}\right)\left(\frac{1}{24}d^3
+  -\left(-\frac{1}{24}d^3\right)\right)
+  =\frac{1}{12}m_1d^2.
+\end{align}
+$I_2$는,
+\begin{align}
+  I_2 =  mr^2 = \frac{1}{4}m_2d^2.
+\end{align}
+$L_2$는,
+\begin{align}
+  L_2 = \left(\frac{1}{12}m_1+\frac{1}{4}m_2\right)\omega d^2.
+\end{align}
+운동량 보존 법칙 $L_1=L_2$,
+\begin{align}
+  \frac{1}{2}m_2v_2d\sin\theta=\left(\frac{1}{12}m_1
+  +\frac{1}{4}m_2\right)\omega d^2.
+\end{align}
+$v_2$는,
+\begin{align}
+  v_2 = \left(\frac{1}{6}m_1+\frac{1}{2}m_2\right)\frac{\omega d}{m_2\sin\theta}
+\end{align}
+
+\vspace{1.cm}
+
 
 \noindent {\bf 문제 4. (60pt) {\color{red} 난이도 상}:}
-그림~\ref{fig:4}에서 질량 30 kg의 아이가 질량이 100 kg, 반지름이 2.0
-m인 정지해 있는 원판의 가장자리에 서 있다. 원판의 중심에 있는 회전축에
+그림~\ref{fig:4}에서 질량 $30\,\mathrm{kg}$의 아이가 질량이 $100\,\mathrm{kg}$, 반지름이 
+$2.0\,\mathrm{m}$인 정지해 있는 원판의 가장자리에 서 있다. 원판의 중심에 있는 회전축에
 대한 회전관성은 $150\,\mathrm{kg\cdot m^2}$이다. 이때 친구가 던진
-질량이 1.0 kg인 공을 아이가 잡았다. 공을 잡기 직전에 수평방향인 공의
-속도 $\vec{v}$의 크기는 12 m/s이고 원판의 가장자리의 접선과
+질량이 $1.0\,\mathrm{kg}$인 공을 아이가 잡았다. 공을 잡기 직전에 수평방향인 공의
+속도 $\vec{v}$의 크기는 $12\,\mathrm{m/s}$이고 원판의 가장자리의 접선과
 $\vec{v}$가 이루는 각도는 $37^\circ$이다. 아이가 공을 잡은 직후 원판의
 각속력을 구하여라. 
 \begin{figure}[ht]
@@ -118,8 +251,42 @@ $\vec{v}$가 이루는 각도는 $37^\circ$이다. 아이가 공을 잡은 직�
   \caption{문제 4}
   \label{fig:4}
 \end{figure}
-\newpage
-{\color{gray} [문제 풀이 쪽]}
 
-\newpage
+\noindent {\bf 풀이 : }
+원판 질량 $m_1$, 원판 반지름 $R$, 원판의 회전관성 $I_1$, 
+아이 질량 $m_2$, 공 질량 $m_3$, 공 속력 $v_3$.
+각운동량 보존 법칙, 공을 잡기 직전 각운동량 $L_i$
+\begin{align}
+  L_i =|\,\vec{r}\times\vec{p}\,|
+  = m_3v_3R\sin\left(270^\circ-\phi\right).
+\end{align}
+공을 잡은 후 아이와 공의 회전관성 $I_2$,
+\begin{align}
+  I_2 = mr^2 = (m_2+m_3)R^2.
+\end{align} 
+전체 회전관성 $I$,
+\begin{align}
+  I = I_1 + I_2 = I_1+(m_2+m_3)R^2.
+\end{align}
+공을 잡은 후 각운동량 $L_f$,
+\begin{align}
+  L_f = I\omega = (I_1+(m_2+m_3)R^2)\omega.
+\end{align}
+각운동량 보존 법칙에 의해 $L_i = L_f$,
+\begin{align}
+  m_3v_3R\sin\left(270^\circ-\phi\right)
+  =(I_1+(m_2+m_3)R^2)\omega.
+\end{align}
+각속도 $\omega$,
+\begin{align}
+  \begin{split}
+    \omega &= \frac{m_3v_3R}{2(I_1+(m_2+m_3)R^2)}\sin\left(270^\circ-\phi\right)  \\
+    &= \frac{(1.0\,\mathrm{kg})(12\,\mathrm{m/s})(2.0\,\mathrm{m})}{(150\,\mathrm{kg\cdot m^2})
+    +((30\,\mathrm{kg})+(1.0\,\mathrm{kg}))(2.0\,\mathrm{m})^2}\sin 233^\circ
+    -0.070\,\mathrm{rad/s}.
+  \end{split}
+\end{align}
+\vspace{1.cm}
+
+
 \end{document}
