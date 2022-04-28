@@ -3,8 +3,8 @@ INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427.tex
-OUTPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427.log
+INPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427_sol_hjlee.tex
+OUTPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427_sol_hjlee.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-2.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-2.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/revtex/aps4-2.rtx
@@ -187,9 +187,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
 INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-INPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427.aux
-INPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427.aux
-OUTPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427.aux
+INPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427_sol_hjlee.aux
+INPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427_sol_hjlee.aux
+OUTPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427_sol_hjlee.aux
 INPUT /usr/share/texlive/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -198,7 +198,7 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-OUTPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427Notes.bib
+OUTPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427_sol_hjleeNotes.bib
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
@@ -292,7 +292,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmba.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb3.tfm
 INPUT /home/sigma/Lab/GP/Quiz/Qfig14-1-20220427.png
 INPUT /home/sigma/Lab/GP/Quiz/Qfig14-1-20220427.png
-OUTPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427.pdf
+OUTPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427_sol_hjlee.pdf
 INPUT /home/sigma/Lab/GP/Quiz/Qfig14-1-20220427.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbb.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc8.tfm
@@ -330,9 +330,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjbc0.tfm
 INPUT /home/sigma/Lab/GP/Quiz/Qfig14-4-20220427.png
 INPUT /home/sigma/Lab/GP/Quiz/Qfig14-4-20220427.png
 INPUT /home/sigma/Lab/GP/Quiz/Qfig14-4-20220427.png
-INPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427.bbl
-INPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427.bbl
-INPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427.aux
+INPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427_sol_hjlee.bbl
+INPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427_sol_hjlee.bbl
+INPUT /home/sigma/Lab/GP/Quiz/Quiz14_20220427_sol_hjlee.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
