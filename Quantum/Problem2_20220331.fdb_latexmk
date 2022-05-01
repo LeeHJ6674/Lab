@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex Problem2_20220331"] 1650900053 "Problem2_20220331.aux" "Problem2_20220331.bbl" "Problem2_20220331" 1650900091
+["bibtex Problem2_20220331"] 1651394005 "Problem2_20220331.aux" "Problem2_20220331.bbl" "Problem2_20220331" 1651394383
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1547851249 69612 d43c8740409d8c756864ce4e3d57a214 ""
-  "Problem2_20220331.aux" 1650900091 1503 edf2e37d8110c9c9dcf1ff514115f874 "pdflatex"
-  "Problem2_20220331Notes.bib" 1650900091 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "Problem2_20220331.aux" 1651394257 2246 742d45bdd2312912119302675ed805eb "pdflatex"
+  "Problem2_20220331Notes.bib" 1651394257 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
   "Problem2_20220331.bbl"
   "Problem2_20220331.blg"
-["pdflatex"] 1650900090 "/home/sigma/Lab/Quantum/Problem2_20220331.tex" "/home/sigma/Lab/Quantum/Problem2_20220331.pdf" "Problem2_20220331" 1650900091
+["pdflatex"] 1651394257 "/home/sigma/Lab/Quantum/Problem2_20220331.tex" "/home/sigma/Lab/Quantum/Problem2_20220331.pdf" "Problem2_20220331" 1651394383
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/sigma/.texlive2019/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk" 1650897746 6964 7793254b712fecfb1e0176f5dc45a033 ""
-  "/home/sigma/Lab/Quantum/Problem2_20220331.aux" 1650900091 1503 edf2e37d8110c9c9dcf1ff514115f874 ""
-  "/home/sigma/Lab/Quantum/Problem2_20220331.tex" 1650900090 41310 6508524d56d04f7b50022970e714c96f ""
+  "/home/sigma/Lab/Quantum/Problem2_20220331.aux" 1651394257 2246 742d45bdd2312912119302675ed805eb ""
+  "/home/sigma/Lab/Quantum/Problem2_20220331.tex" 1651394383 52361 010b5150419ce5f1a843466d4f0b8298 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -137,14 +137,14 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1645685134 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1645685152 8258281 06978915380d3cf57d3fcd5054406eef ""
-  "Problem2_20220331.aux" 1650900091 1503 edf2e37d8110c9c9dcf1ff514115f874 "pdflatex"
-  "Problem2_20220331.bbl" 1650900053 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Problem2_20220331"
-  "Problem2_20220331.tex" 1650900090 41310 6508524d56d04f7b50022970e714c96f ""
+  "Problem2_20220331.aux" 1651394257 2246 742d45bdd2312912119302675ed805eb "pdflatex"
+  "Problem2_20220331.bbl" 1651394005 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Problem2_20220331"
+  "Problem2_20220331.tex" 1651394383 52361 010b5150419ce5f1a843466d4f0b8298 ""
   "defcolor.sty" 1646221107 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   (generated)
-  "Problem2_20220331.pdf"
-  "/home/sigma/Lab/Quantum/Problem2_20220331.pdf"
-  "Problem2_20220331.log"
   "/home/sigma/Lab/Quantum/Problem2_20220331.log"
+  "Problem2_20220331.pdf"
+  "Problem2_20220331.log"
   "Problem2_20220331.aux"
   "Problem2_20220331Notes.bib"
+  "/home/sigma/Lab/Quantum/Problem2_20220331.pdf"
