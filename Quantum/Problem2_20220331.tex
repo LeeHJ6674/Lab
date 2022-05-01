@@ -57,7 +57,7 @@ Hint: Use the operator method.
   \begin{align}
     E_p = q\mathcal{E}x.
   \end{align} 
-  Then, the Hamiltonain of the charged linear
+  Then, the Hamiltonian of the charged linear
   harmonic oscillator is,
   \begin{align}\label{eq:1-1}
     H = \frac{p^2}{2m}+\frac{1}{2}m\omega^2x^2-q\mathcal{E}x.
@@ -77,7 +77,7 @@ Hint: Use the operator method.
     E_n = \left(\frac{1}{2}+n\right)\hbar\omega.
   \end{align*}
   It is the Schr\"odinger equation of the simple harmonic oscillator. 
-  In the algebric method to solve the equation, 
+  In the algebraic method to solve the equation, 
   we defined the operators,
   \begin{align*}
       a = \sqrt{\frac{m\omega}{2\hbar}}
@@ -245,9 +245,9 @@ Hint: Use the operator method.
     From the application of Eq.~\eqref{eq:1-13}, as $n$ increases by 1, 
     so does energy by a $\hbar\omega$. And $\psi_n^\prime$ is,
     \begin{align}
-      \psi_n^\prime = A_n(b^\dagger)^n
+      \psi_n^\prime = A_n^\prime(b^\dagger)^n
       \psi_0^\prime
-      = A_n\left(\frac{m\omega}{\pi\hbar}\right)
+      = A_n^\prime\left(\frac{m\omega}{\pi\hbar}\right)
       ^{\frac{1}{4}}
       \left(
         \sqrt{\frac{m\omega}{2\hbar}}
@@ -257,19 +257,19 @@ Hint: Use the operator method.
       {\left(x +\sqrt{\frac{2\hbar}{m\omega}}\kappa\right)}
         ^2\right)}.
     \end{align}
-    $A_n$ is the normalization constant. Substituting $\xi$ as,
+    $A_n^\prime$ is the normalization constant. Substituting $\xi$ as,
     \begin{align}\label{eq:1-16}
       \xi \coloneqq \sqrt{\frac{m\omega}{2\hbar}}x+\kappa,\,\,\,
       dx = \sqrt{\frac{2\hbar}{m\omega}}d\xi.
     \end{align}
     Then,
     \begin{align}
-      \psi_n^\prime=A_n\left(\frac{m\omega}{\pi\hbar}\right)
+      \psi_n^\prime=A_n^\prime\left(\frac{m\omega}{\pi\hbar}\right)
       ^{\frac{1}{4}}
       \left(
       \xi-\frac{1}{2}\frac{d}{d\xi}
       \right)^ne^{-\frac{1}{2}\xi^2}
-      =A_n\left(\frac{m\omega}{\pi\hbar}\right)
+      =A_n^\prime\left(\frac{m\omega}{\pi\hbar}\right)
       ^{\frac{1}{4}}2^{-n}
       H_n(\xi)e^{-\xi^2}.
     \end{align}
@@ -282,67 +282,46 @@ Hint: Use the operator method.
       -\frac{q\mathcal{E}}{m\omega^2}\right).
     \end{align}
     Finally we obtain the exact form of the $n$th eigenvector $\psi^\prime$.
-    \begin{align}
-      \psi_n^\prime=A_n\left(\frac{m\omega}{\pi\hbar}\right)
+    \begin{align}\label{eq:1-15}
+      \psi_n^\prime=A_n^\prime\left(\frac{m\omega}{\pi\hbar}\right)
       ^{\frac{1}{4}}2^{-n}
       H_n\left(\sqrt{\frac{m\omega}{2\hbar}}\left(x
       -\frac{q\mathcal{E}}{m\omega^2}\right)\right)
       \exp{\left(-\frac{m\omega}{2\hbar}\left(x
       -\frac{q\mathcal{E}}{m\omega^2}\right)^2\right)}.
     \end{align}
-  %----------------------------------------------
-  %  or,
-  %  \begin{align}\label{eq:1-4}
-  %   H = \hbar\omega\left(a a^\dagger - \frac{1}{2}\right)
-  %   -q\mathcal{E}\sqrt{\frac{2\hbar}{m\omega}}
-  %   \left(\frac{a+a^\dagger}{2}\right).
-  %  \end{align}
-  %  If $\psi_n$ is the eigenvector and $E_n$ is the eigenvalue of $\psi_n$, 
-  %  the Schr\"odinger equation is,   
-  %  \begin{align}
-  %   -\frac{\hbar}{2m}\frac{\partial^2\psi_n}{\partial x^2}
-  %   +\frac{1}{2}m\omega^2x^2\psi_n
-  %   -q\mathcal{E}x\psi_n = E_n\psi_n,\,\,\, 
-  %   E_n = \left(\frac{1}{2}+n\right)\hbar\omega+E_m.
-  %  \end{align}
-  %  $E_m$ is a energy due to a constant electric field. Then we write the 
-  %  reduced equation,
-  %  \begin{align}\label{eq:1-5}
-  %   -q\mathcal{E}x\psi_n = -q\mathcal{E}\sqrt{\frac{2\hbar}{m\omega}}
-  %   \left(\frac{a+a^\dagger}{2}\right)\psi_n = E_m\psi_n.
-  %  \end{align}
-  %  Define $\kappa$ as,
-  %  \begin{align}
-  %    \kappa = -\frac{q\mathcal{E}}{2\hbar\omega}\sqrt{\frac{2\hbar}{m\omega}}
-  %    = -\frac{1}{\omega}\frac{q\mathcal{E}}{\sqrt{2\hbar m\omega}}.
-  %  \end{align}
-  %  Then Eq.~\eqref{eq:1-4} is,
-  %  \begin{align}
-  %    H = \hbar\omega\left[a^\dagger a-\kappa\left(a+a^\dagger\right)
-  %    +\frac{1}{2}\right]
-  %    = \hbar\omega\left[(a^\dagger - \kappa)(a - \kappa) -\kappa^2.
-  %    +\frac{1}{2}\right]
-  %  \end{align}
-  %  Now we define new operators from ladder operators,
-  %  \begin{align}
-  %    b = a - \kappa,\,\,\,
-  %    b^\dagger = a^\dagger - \kappa.
-  %  \end{align}
-  %  The hamiltonian can be repersented by new operators.
-  %  \begin{align}
-  %    H = \hbar\omega\left( b^\dagger b -\left(\kappa^2-\frac{1}{2}\right)\right).
-  %  \end{align}
-  %  The Schr\"odinger equation and reduced equation from Eq.~\eqref{eq:1-2} 
-  %  and \eqref{eq:1-5} are,
-  %  \begin{align}
-  %    \begin{split}
-  %     &\hbar\omega\left( b^\dagger b 
-  %     -\left(\kappa^2-\frac{1}{2}\right)\right)\psi_n = E_n\psi_n \\
-  %     &\hbar\omega\kappa\left(b+b^\dagger+2\kappa\right)\psi_n = E_m\psi_n
-  %     ,\,\,\,E_n = \left(\frac{1}{2}+n\right)\hbar\omega+E_m.
-  %    \end{split}
-  %  \end{align}
-  \item[(3)] 
+    Eigenvalue $E_0^\prime$ can be obtained Substituting Eq.~\eqref{eq:1-15}
+    into Eq.~\eqref{eq:1-12}.
+    \begin{align}
+      \frac{1}{2}\hbar\omega\psi_0^\prime 
+      = (E_0^\prime+\hbar\omega\kappa^2)\psi^\prime_0,\,\,\,
+      E_0^\prime = \left(\frac{1}{2}-\kappa^2\right)\hbar\omega.
+    \end{align}
+    From Eq.~\eqref{eq:1-6} and \eqref{eq:1-13} $E_n^\prime$ is,
+    \begin{align}
+      E_n^\prime = \left(\frac{1}{2}+n-\kappa^2\right)\hbar\omega
+      = \left(\frac{1}{2}+n
+      -\frac{q^2\mathcal{E}^2}{2\hbar^2 m^2\omega^3}\right)
+      \hbar\omega.
+    \end{align}
+  \item[(3)] Let us compare the energy levels 
+  and eigenstate of SHO with not charged.
+  \begin{align}
+    &\psi_n = B_nH_n\left(\sqrt{\frac{m\omega}{2\hbar}}x\right)
+    \exp{\left(-\frac{m\omega}{2\hbar}x^2\right)},\,\,\,
+    E_n=\left(n+\frac{1}{2}\right)\hbar\omega \\
+    &\psi_n^\prime=B^\prime_nH_n\left(\sqrt{\frac{m\omega}{2\hbar}}
+    \left(x-\frac{q\mathcal{E}}{m\omega^2}\right)\right)
+    \exp{\left(-\frac{m\omega}{2\hbar}\left(x
+    -\frac{q\mathcal{E}}{m\omega^2}\right)^2\right)},\,\,\,
+    E^\prime_n= \left(\frac{1}{2}+n
+    -\frac{q^2\mathcal{E}^2}{2\hbar^2 m^2\omega^3}\right)\hbar\omega.
+  \end{align}
+  The energy levels with a constant electric field are as small as 
+  $\frac{q^2\mathcal{E}^2}{2\hbar m^2\omega^2}$and the eigenvectors
+  with a constant electric field get the effect of shift by 
+  $-\frac{q\mathcal{E}}{m\omega^2}$ without the change of the shape 
+  for any $n$.
   \end{itemize}
 
 \vspace{0.5cm}
@@ -859,7 +838,7 @@ Given the eigenfunctions and eigenenergies of the SHO,
       \left(\frac{\hbar}{m\omega}\right)
       \int \xi H_nH_n e^{-\xi^2}\,d\xi.
   \end{align*}
-  Since the integrated term is a even function and integration 
+  Since the integrated term is an even function and the integration 
   interval is symmetric,
   the integration is a zero. Therefore,
   \begin{align*}
@@ -1040,7 +1019,7 @@ $\langle x\rangle$ and $\langle p\rangle$.
       |\psi_0(x,0)|^2+|\psi_1(x,0)|^2
       +2\psi_0(x,0)\psi_1(x,0)\cos{\omega t}\right]\,dx.
   \end{align}
-  Since the first two terms in the barket are the even functions, 
+  Since the first two terms in the braket are the even functions, 
   these terms can be canceled out.
   \begin{align}\label{eq:4-12}
     \langle x \rangle=\int x\psi_0(x,0)\psi_1(x,0)\cos{\omega t}\,dx.
@@ -1147,53 +1126,95 @@ Derive the wavefunction in momentum space, which corresponds to the
 eigenfunctions for the SHO in coordinates, $\psi_n(x)$. 
 
 \noindent \textbf{Answer : }
-We already know that the solution of the Schr\"odinger equation in the 
+The solution of the Schr\"odinger equation in the 
 coordinate space is,
 
-% \begin{align}\label{eq:6-1}
-%   \psi_n(x)=(n!2^n)^{-\frac{1}{2}}
-%   \left(\frac{m\omega}{\hbar\pi}\right)^{\frac{1}{4}}
-%   \exp\left(-\frac{m\omega}{2\hbar}x^2\right)
-%   H_n\left(\sqrt{\frac{m\omega}{\hbar}}x\right).
-% \end{align}
-% It satisfies the equation,
-% \begin{align}\label{eq:6-2}
-%   -\frac{\hbar^2}{2m}\frac{\partial^2\psi_n}{\partial x^2}
-%   +\frac{1}{2}m\omega^2x^2\psi_n = E_n\psi_n,\,\,\,
-%   E_n = \left(n+\frac{1}{2}\right)\hbar\omega.
-% \end{align}
-% And the wave function in the momentum space safisfies that,
-% \begin{align}\label{eq:6-3}
-%   \frac{p^2}{2m}\phi_n-\frac{1}{2}m\omega^2\hbar^2
-%   \frac{\partial^2\phi_n}{\partial p^2} = \mathcal{E}_n\phi_n. 
-% \end{align}
-% Multiplying $ 1/{m^2\omega^2}$ to Eq.~\eqref{eq:7-3},
-% \begin{align}
-%   \frac{p^2}{2m^3\omega^2}\phi_n-\frac{\hbar^2}{2m}
-%   \frac{\partial^2\phi_n}{\partial p^2} 
-%   = \frac{\mathcal{E}_n}{m^2\omega^2}\phi_n. 
-% \end{align}
-% Set $1/m^4\omega^2=\omega^2_p$. Then,
-% \begin{align}
-%   -\frac{\hbar^2}{2m}\frac{\partial^2\phi_n}{\partial p^2} 
-%   +\frac{1}{2}m\omega^2_pp^2\phi_n
-%   = m^2\omega^2_p\mathcal{E}_n\phi_n. 
-% \end{align}
-% Since the form of the equation corresponds to Eq.~\eqref{eq:6-2},
-% the form of the solution will be the same.
-% Comparing the two equations,
-% \begin{align}
-%   \omega^2x^2 \longrightarrow \omega^2_pp^2 ,\,\,\,
-%   E_n \longrightarrow m^2\omega^2_p\mathcal{E}_n.
-% \end{align}
-% Then $\phi_n(p)$ and $\mathcal{E}$ are,
-% \begin{align}
-%   \phi_n(p)=(n!2^n)^{-\frac{1}{2}}
-%   \left(\frac{m\omega_p}{\hbar\pi}\right)^{\frac{1}{4}}
-%   \exp\left(-\frac{m\omega_p}{2\hbar}p^2\right)
-%   H_n\left(\sqrt{\frac{m\omega^2_p}{\hbar\omega}}p\right),\,\,\,
-%   \mathcal{E}_n = \left(n+\frac{1}{2}\right)m^2\hbar\omega^3.
-% \end{align}
+ \begin{align}\label{eq:5-1}
+   \psi_n(x)=(n!2^n)^{-\frac{1}{2}}
+   \left(\frac{m\omega}{\hbar\pi}\right)^{\frac{1}{4}}
+   \exp\left(-\frac{m\omega}{2\hbar}x^2\right)
+   H_n\left(\sqrt{\frac{m\omega}{\hbar}}x\right).
+ \end{align}
+ It satisfies the equation,
+\begin{align}\label{eq:5-2}
+  -\frac{\hbar^2}{2m}\frac{\partial^2\psi_n}{\partial x^2}
+  +\frac{1}{2}m\omega^2x^2\psi_n = E_n\psi_n,\,\,\,
+  E_n = \left(n+\frac{1}{2}\right)\hbar\omega.
+\end{align}
+The wavefunction in the momentum space $\phi_n(p)$ 
+is the Inverse Fourier Transformation 
+of the wavefunction in the coordinate space $\psi_n(x)$.
+\begin{align}
+  \begin{split}
+    \phi_n(p) &= \frac{1}{\sqrt{2\pi\hbar}}
+    \int \psi_n(x) e^{-\frac{i}{\hbar} px} \, dx \\
+    &= \frac{1}{\sqrt{2\pi\hbar}}(n!2^n)^{-\frac{1}{2}}
+    \left(\frac{m\omega}{\hbar\pi}\right)^{\frac{1}{4}}
+    \int H_n\left(\sqrt{\frac{m\omega}{\hbar}}x\right)
+    \exp{\left( -\frac{m\omega}{2\hbar}x^2
+    -\frac{i}{\hbar} px \right)}\, dx.
+  \end{split}
+\end{align}
+Changing $x$ and $p$ into the dimensionless variables 
+$\xi$ and $p_{\xi}$.
+\begin{align}
+  \xi = \sqrt{\frac{m\omega }{\hbar }}x,\,\,\,
+  p_\xi = \frac{1}{\sqrt{\hbar m \omega}}p.
+\end{align}
+Then $\phi_n(p)$ is,
+\begin{align}
+  \phi_n(p) = \frac{1}{\sqrt{2\pi\hbar}}(n!2^n)^{-\frac{1}{2}}
+  \left(\frac{m\omega}{\hbar\pi}\right)^{\frac{1}{4}}
+  \sqrt{\frac{\hbar }{m\omega }}
+  \int H_n\left( \xi \right)
+  e^{-\frac{1}{2}\xi^2 -i p_\xi\xi }\, d\xi.
+\end{align}
+To find the Inverse Fourier Transformation of the Hermite polynomial,
+let us consider the generating function of the Hermite polynomial.
+\begin{align}\label{eq:5-3}
+  \int e^{-t^2 +2\xi t-\frac{1}{2}\xi^2 -i p_\xi\xi } \,d\xi
+  =\sum_n \frac{t^n}{n!}\int H_n(\xi)
+  e^{-\frac{1}{2}\xi^2 -i p_\xi\xi }\, d\xi.
+\end{align}
+The LHS is the gaussian integration of $\xi$.
+\begin{align}
+  \begin{split}
+    \int e^{-t^2 +2\xi t-\frac{1}{2}\xi^2 -i p_\xi\xi } \,d\xi
+    &=e^{-t^2 }\int e^{-\frac{1}{2}\xi^2+\xi(2t -i p_\xi) } \,d\xi
+    =e^{-t^2 }\int e^{-\frac{1}{2}(\xi-(2t -i p_\xi))^2
+    +\frac{1}{2}(2t-ip_\xi)^2 } \,d\xi  \\
+    &=e^{-t^2 +\frac{1}{2}(2t-ip_\xi)^2}\sqrt{2\pi}
+    =\sqrt{2\pi}e^{t^2-2ip_\xi-\frac{1}{2}p^2_\xi}.
+  \end{split}
+\end{align}
+We can obtain the generating function about $-it$ and $p_\xi$.
+\begin{align}
+  \int e^{-t^2 +2\xi t-\frac{1}{2}\xi^2 -i p_\xi\xi } \,d\xi
+  =\sqrt{2\pi}e^{t^2-2ip_\xi-\frac{1}{2}p^2_\xi}
+  =\sqrt{2\pi}e^{-\frac{1}{2}p^2_\xi}
+  \sum_m\frac{\left(-it\right)^m}{m!}H_m(p_\xi).
+\end{align}
+From Eq.~\eqref{eq:5-3}, the coefficients of $n$th order 
+have to be the same.
+\begin{align}
+  \begin{split}
+    &\sum_n \frac{t^n}{n!}\int H_n(\xi)
+    e^{-\frac{1}{2}\xi^2 -i p_\xi\xi }\, d\xi
+    =\sum_m\frac{\left(-it\right)^m}{m!}H_m(p_\xi)
+    \sqrt{2\pi}e^{-\frac{1}{2}p^2_\xi},  \\
+    &\int H_n(\xi)
+    e^{-\frac{1}{2}\xi^2 -i p_\xi\xi }\, d\xi
+    =(-i)^mH_m(p_\xi)
+    \sqrt{2\pi}e^{-\frac{1}{2}p^2_\xi}.
+  \end{split}
+\end{align}
+Therefore the wavefunction in the momentum space $\phi_n(p)$ is,
+\begin{align}
+  \phi_n(p) = (n!2^n)^{-\frac{1}{2}}
+  \left(\frac{m\omega}{\hbar\pi}\right)^{\frac{1}{4}}
+  \sqrt{\frac{1}{m\omega }}(-i)^nH_n(p_\xi)
+  e^{-\frac{1}{2}p^2_\xi}.
+\end{align}
 \vspace{1cm}
 
 \noindent \textbf{Problem 6.}
@@ -1253,14 +1274,6 @@ Hence $\psi(x,0)$ is,
     H_n(\alpha x)\right).
 \end{align}
 From Eq.~\eqref{eq:6-1} the wavefunction at the time $t$ is,
-%\begin{align}
-%  \begin{split}
-%    \psi(x,t) &= \sum_n A_nu_n(x)\exp{\left(-i\frac{E_n}{\hbar}t\right)}
-%    =\sum_n A_nu_n(x)\exp{\left(-i\left(n+\frac{1}{2}\right)\omega t\right)}  \\
-%    &=\exp{\left(-\frac{1}{2}i\omega t\right)}
-%    \sum_n A_nu_n(x)\exp{\left(-in\omega t\right)}.
-%  \end{split}
-%\end{align}
 \begin{align*}
     \psi(x,t) &= \sum_n A_nu_n(x)e^{-i\frac{E_n}{\hbar}t}
     =\sum_n A_nu_n(x)e^{-i\left(n+\frac{1}{2}\right)\omega t}  \\
@@ -1284,7 +1297,7 @@ Substituting Eq.~\eqref{eq:6-5},
     \left(\frac{\alpha a}{2}e^{-i\omega t} \right)^n
     \right).
 \end{align*}
-The summation can be expressed the generating function for the Hermite polynomial.
+The summation can be expressed as the generating function for the Hermite polynomial.
 \begin{align}
   &\sum_n\left(\frac{H_n(\alpha x)}{n!}
   \left( \frac{\alpha a}{2}e^{-i\omega t} \right)^n
@@ -1343,6 +1356,10 @@ Finally the probability density is,
   =\left(\frac{\alpha^2}{\pi}\right)^{\frac{1}{2}}
   e^{-\alpha^2(x-a\cos{\omega t})^2} .
 \end{align}
+With this probability density, the wavefunction moves between 
+intervals of $2a$ periodically without change in the shape and energy.
+Since, the expectation value of the position and the momentum oscillate 
+with the probability density.
 \vspace{1cm}
 
 \noindent \textbf{Problem 7.} THe Einstein model for a solid
@@ -1444,7 +1461,7 @@ Show that when $T$ is large, $C_V=3R$.
   \end{align} 
   $Q$ and $W$ are the heat supplied to the system and 
   the work done on the system respectively. In the case of
-  the solid, the volume is the constant and the work is a zero.
+  the solid, the volume is constant and the work is a zero.
   \begin{align}
     dW = PdV = 0,\,\,\, dU = dQ.
   \end{align}
@@ -1467,8 +1484,8 @@ Show that when $T$ is large, $C_V=3R$.
     =\frac{N\hbar^2\omega^2e^{\hbar\omega/kT}}
     {kT^2\left(e^{\hbar\omega/kT}-1\right)^2}.
   \end{align}
-  Consdiering that the degree of freedom is 3,
-  \begin{align}
+  Considering that the degree of freedom is 3,
+  \begin{align}\label{eq:7-9}
     C_V = \frac{3N\hbar^2\omega^2e^{\hbar\omega/kT}}
     {kT^2\left(e^{\hbar\omega/kT}-1\right)^2}.
   \end{align}
@@ -1488,17 +1505,26 @@ Show that when $T$ is large, $C_V=3R$.
     C_V = \frac{3Nk\hbar^2\omega^2}
     {\hbar^2\omega^2}=3Nk = 3nR.
   \end{align}
-  \item[(3)] From Eq.~\eqref{eq:7-6}, when the temperature is large,
+  \item[(3)] Let us consider when the temperature is very small.
+  From Eq.~\eqref{eq:7-9},
+  \begin{align}
+    \lim_{T\rightarrow 0}\frac{3N\hbar^2\omega^2e^{\hbar\omega/kT}}
+    {kT^2\left(e^{\hbar\omega/kT}-1\right)^2} = 0.
+  \end{align} 
+  $C_v$ is converged to a zero.
+  From Eq.~\eqref{eq:7-6}, when the temperature is large,
   the mean energy per an SHO behaves approximately as the linear function.
    \begin{align}
     \begin{split}
-      \langle E\rangle &= \frac{1}{2}\hbar\omega 
-      + \hbar\omega\left[e^{\beta\hbar\omega}-1\right]^{-1}
-      =\frac{1}{2}\hbar\omega 
-      + \hbar\omega\left[(1+\hbar\omega\beta+\cdots)-1\right]^{-1}  \\
-      &= 
+      \langle E\rangle &=\frac{1}{2}\hbar\omega
+      +\frac{\hbar\omega}{e^{\beta\hbar\omega}-1} 
+      \approx \frac{1}{2}\hbar\omega
+      +\frac{1}{\beta}-\frac{1}{2}\hbar\omega
+      +\frac{1}{12}\hbar\omega^2\beta+\cdots  \\
+      &\approx \frac{1}{\beta} = kT.
     \end{split}
    \end{align} 
-
+   In high temperatures, the mean energy per an SHO by The Einstein model is
+   directly proportional to temperature.
 \end{itemize}
 \end{document}
