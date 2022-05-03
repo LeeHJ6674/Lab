@@ -16,6 +16,8 @@
 \usepackage[utf8]{inputenc}
  \usepackage{setspace}
  \usepackage{tikz}
+ \usepackage{pgf}
+ 
 %\pagestyle{fancy}
 
 \begin{document}
@@ -128,22 +130,32 @@ $\mu_1=0.40$이고 신발과 바위 사이는 $\mu_2=1.2$이다.
 \begin{figure}[htbp]
   \centering
   \begin{tikzpicture}
-    \draw (0,-2.5) -- (0,2.5); 
-    \draw (-2.5,0) -- (2.5,0);
-    \draw [blue,very thick,-latex] (0.1,0)--(1.5,0) 
-    node [above=2,black] {$N_{2}$};
-    \draw [blue,very thick,-latex] (-0.1,0)--(-1.5,0) 
-    node [above=2,black] {$N_1$};
-
-    \draw[red,very thick,-latex] (0,-0.1) -- (0,-2) 
-    node [left,black] {$F_g$};
-
-    \draw[red,very thick,-latex] (0,0.1)--(0,1.2)
-    node [left,black] {$F_{s1}$};
-    \draw[red,very thick,-latex] (0,0.1)--(0,1.2)
-    node [right,black] {$F_{s2}$};
+    \draw (-2,2) node [] {$x$ 축 방향 : };
+    \draw[blue,very thick,-latex] (0,-2)--(-2.4,-2)
+    node [left,black] {$N_2$};
+    \draw[blue,very thick,-latex] (0,1.6)--(1.6,1.6)
+    node [right,black] {$N_1$};
+    \draw[fill] (0,-2) circle (2pt) node [right,black] {$A$};
+    \draw[thick] [|<->|] (0,-2)--(0,1.6) node [midway,left] {$h$};
   \end{tikzpicture}
+  \centering
+  \begin{tikzpicture}
+    \draw (-2,2) node [] {$y$ 축 방향 : };
+    \draw[fill] (-1.6,0) circle (2pt) node [above,black] {com};
+    \draw[red,very thick,-latex] (-1.6,0) -- (-1.6,-2) 
+    node [left,black] {$F_g$};
+    \draw[red,very thick,-latex] (0.5,0)--(0.5,1.6)
+    node [left,black] {$F_{s1}$};
+    \draw[fill] (1.6,0) circle (2pt) node [below,black] {$A$};
+    \draw[red,very thick,-latex] (1.6,0)--(1.6,1.6)
+    node [right,black] {$F_{s2}$};
+    \draw[thick] [|<->|] (-1.6,0)--(0.5,0) node [midway,below] {$d$};
+    \draw[thick] [<->|] (0.5,0)--(1.6,0) node [midway,below] {$w$};
+  \end{tikzpicture}
+  \caption{자유 물체 다이어그램}
 \end{figure} 
+
+점 $A$는 발과 벽이 닿는 지점
 운동 방정식,
 \begin{align}
   \label{eq:2-1}\sum F_x &= N_{2}-N_{1} = 0,  \\
@@ -164,12 +176,25 @@ $\mu_1=0.40$이고 신발과 바위 사이는 $\mu_2=1.2$이다.
     F_{s1}+F_{s2}= \mu_1N_1+\mu_2N_2= (\mu_1+\mu_2)N_1 =F_g.
   \end{align}
   최소한의 $N_1$은 중력 보다 커야하므로,
-  \begin{align}
+  \begin{align}\label{eq:2-2}
     N_1 \geq \frac{mg}{\mu_1+\mu_2}.
   \end{align}
-  \item[(나)]
+  \item[(나)] 
+  사람은 정지해있으므로 돌림힘 $0$, 점 $A$를 회전축으로 하는
+  돌림힘 계산
+  \begin{align}
+    \sum \tau = N_1 h + F_{s1} w - F_g(w+d) = 0
+  \end{align}
+  $h$에 대해 정리하면
+  \begin{align}\label{eq:2-3}
+    h = \frac{F_g(w+d)-F_{s1} w}{N_1}
+    =\frac{mg(w+d)-\mu_1N_1 w}{N_1}
+  \end{align}
+  수치를 넣어 값을 계산
   \item[(다)]
+  식~\eqref{eq:2-2}로 부터
   \item[(라)]
+  식~\eqref{eq:2-3}로 부터
 \end{itemize}
 
 \vspace{1.cm}
@@ -183,7 +208,7 @@ $\mu_1=0.40$이고 신발과 바위 사이는 $\mu_2=1.2$이다.
 $x$인 위치에 얹혀 있고, 전체 질량은 $m_b+m_p=61.22$
 kg이다. 그림~\ref{fig:3}b는 줄의 장력을 물체의 위치 $x/L$의 함수로
 나타낸 것이다. $T$ 축의 눈금은 $T_a=500$ N, $T_b=700$ N으로 나타낸다. 
-\begin{figure}[ht]
+\begin{figure}[htbp]
   \centering
 \includegraphics[scale=0.4]{Qfig15-3-20220502.png}
   \caption{문제 3}
@@ -196,6 +221,51 @@ kg이다. 그림~\ref{fig:3}b는 줄의 장력을 물체의 위치 $x/L$의 함�
 \end{itemize}
 
 \noindent {\bf 풀이 : } 
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}
+    
+    \coordinate (A) at (-2,0);
+    \coordinate (b) at (0,0);
+    \coordinate (p) at (0.5,0);
+    \coordinate (B) at (2,0);
+    \draw[thick] [|<->|] (A)--(p) node [midway,below] {$x$};
+    \draw[thick] [<->|] (p)--(B) node [midway,below] {$L-x$};
+    \draw[red,very thick,-latex] (A)-- +(0,1.2)
+    node [left,black] {$F_1$};
+    \draw[red,very thick,-latex] (b)-- +(0,-1.2)
+    node [left,black] {$F_{gb}$};
+    \draw[red,very thick,-latex] (p)-- +(0,-1.2)
+    node [right,black] {$F_{gp}$};
+    \draw[red,very thick,-latex] (B)-- +(40:1.5)
+    node [above,black] {$T$};
+    \draw[densely dotted] (B)-- +(1.2,0);
+    \draw[] (B)+(1,0) arc(0:40:1) (B)+(1.2,0.4)
+    node[] {$\theta$};
+    % \draw[fill] (-1.6,0) circle (2pt) node [above,black] {com};
+    % \draw[red,very thick,-latex] (-1.6,0) -- (-1.6,2) 
+    % node [left,black] {$F_g$};
+    % \draw[red,very thick,-latex] (0.5,0)--(0.5,-1.6)
+    % node [left,black] {$F_{s1}$};
+    % \draw[fill] (2,0) circle (2pt) node [below,black] {$A$};
+    % \draw[red,very thick,-latex] (0.2,0)--(0.2,-1.6)
+    % node [below,black] {$F_{s2}$};
+
+    % \draw[thick] [<->|] (0.5,0)--(2,0) node [midway,below] {$L-x$};
+  \end{tikzpicture}
+  \caption{자유 물체 다이어그램}
+\end{figure} 
+
+경첩에 의한 수직항력 $F_1$, 물체에 의한 중력 $F_{gb}$, 막대에 의한 중력 $F_{gp}$,
+케이블에 의한 장력 $T$
+그래프를 수식적으로 표현해보면
+\begin{align}
+  T = \left(\frac{T_b - T_a}{1-0}\right)\frac{x}{L}+T_a
+  =\left(T_b - T_a\right)\frac{x}{L}+T_a
+\end{align}
+경첩을 회전축으로 하는 돌림힘 계산
+
 \begin{itemize}
   \item[(가)]
   \item[(나)]

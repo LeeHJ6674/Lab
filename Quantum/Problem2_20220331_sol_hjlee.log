@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.24)  3 MAY 2022 01:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.24)  3 MAY 2022 01:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/sigma/Lab/Quantum/Problem2_20220331.tex
-(/home/sigma/Lab/Quantum/Problem2_20220331.tex
+**/home/sigma/Lab/Quantum/Problem2_20220331_sol_hjlee.tex
+(/home/sigma/Lab/Quantum/Problem2_20220331_sol_hjlee.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-2.cls
 Document Class: revtex4-2 2019/01/18/14:29:48 4.2c (https://journals.aps.org/revtex/ for documentation)
@@ -377,8 +377,8 @@ Class revtex4-2 Info: multicol was not loaded (OK!) on input line 23.
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count267
 \l__pdf_internal_box=\box62
-) (/home/sigma/Lab/Quantum/Problem2_20220331.aux)
-\openout1 = `Problem2_20220331.aux'.
+) (/home/sigma/Lab/Quantum/Problem2_20220331_sol_hjlee.aux)
+\openout1 = `Problem2_20220331_sol_hjlee.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
@@ -419,33 +419,33 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\openout3 = `Problem2_20220331Notes.bib'.
+\openout3 = `Problem2_20220331_sol_hjleeNotes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 88.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 90.
  (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [1
 Non-PDF special ignored!
 <special> papersize=614.295pt,794.96999pt
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] (/home/sigma/Lab/Quantum/Problem2_20220331.bbl) [17] (/home/sigma/Lab/Quantum/Problem2_20220331.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] (/home/sigma/Lab/Quantum/Problem2_20220331_sol_hjlee.bbl) [17] (/home/sigma/Lab/Quantum/Problem2_20220331_sol_hjlee.aux) ) 
 Here is how much of TeX's memory you used:
  6378 strings out of 481239
- 88960 string characters out of 5920377
- 383420 words of memory out of 5000000
+ 89110 string characters out of 5920377
+ 383450 words of memory out of 5000000
  21507 multiletter control sequences out of 15000+600000
  547074 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,17n,31p,258b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,17n,31p,268b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/sigma/.texlive2019/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb>
-Output written on /home/sigma/Lab/Quantum/Problem2_20220331.pdf (17 pages, 351193 bytes).
+Output written on /home/sigma/Lab/Quantum/Problem2_20220331_sol_hjlee.pdf (17 pages, 353000 bytes).
 PDF statistics:
  161 PDF objects out of 1000 (max. 8388607)
  115 compressed objects within 2 object streams
