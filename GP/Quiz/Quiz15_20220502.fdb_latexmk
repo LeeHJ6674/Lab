@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex Quiz15_20220502"] 1651593701 "Quiz15_20220502.aux" "Quiz15_20220502.bbl" "Quiz15_20220502" 1651594347
+["bibtex Quiz15_20220502"] 1651683634 "Quiz15_20220502.aux" "Quiz15_20220502.bbl" "Quiz15_20220502" 1651683992
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1547851249 69612 d43c8740409d8c756864ce4e3d57a214 ""
-  "Quiz15_20220502.aux" 1651594291 1193 7c1478e13bb1ca6764958c957afb832b "pdflatex"
-  "Quiz15_20220502Notes.bib" 1651594291 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "Quiz15_20220502.aux" 1651683966 1573 6813d22691a9dc68be30125953b1d7e7 "pdflatex"
+  "Quiz15_20220502Notes.bib" 1651683966 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
   "Quiz15_20220502.blg"
   "Quiz15_20220502.bbl"
-["pdflatex"] 1651594291 "/home/sigma/Lab/GP/Quiz/Quiz15_20220502.tex" "/home/sigma/Lab/GP/Quiz/Quiz15_20220502.pdf" "Quiz15_20220502" 1651594347
+["pdflatex"] 1651683965 "/home/sigma/Lab/GP/Quiz/Quiz15_20220502.tex" "/home/sigma/Lab/GP/Quiz/Quiz15_20220502.pdf" "Quiz15_20220502" 1651683992
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/GP/Quiz/Quiz15_20220502.aux" 1651594291 1193 7c1478e13bb1ca6764958c957afb832b ""
-  "/home/sigma/Lab/GP/Quiz/Quiz15_20220502.tex" 1651594347 9940 dc1c6d58ad08f6a653e7d749a5c7a668 ""
+  "/home/sigma/Lab/GP/Quiz/Quiz15_20220502.aux" 1651683966 1573 6813d22691a9dc68be30125953b1d7e7 ""
+  "/home/sigma/Lab/GP/Quiz/Quiz15_20220502.tex" 1651683992 13706 935a9e60a7e060a7fae377430f8d4692 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -285,14 +285,14 @@
   "Qfig15-2-20220502.png" 1651321606 102157 33300ae40201c8804cc820449adea454 ""
   "Qfig15-3-20220502.png" 1651321603 81845 26c1f0911f79a4f8d5a2c609e2c6109e ""
   "Qfig15-4-20220502.png" 1651321604 66471 d7471ff8a49d676d240c9b2db4e4f768 ""
-  "Quiz15_20220502.aux" 1651594291 1193 7c1478e13bb1ca6764958c957afb832b "pdflatex"
-  "Quiz15_20220502.bbl" 1651593701 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Quiz15_20220502"
-  "Quiz15_20220502.tex" 1651594347 9940 dc1c6d58ad08f6a653e7d749a5c7a668 ""
+  "Quiz15_20220502.aux" 1651683966 1573 6813d22691a9dc68be30125953b1d7e7 "pdflatex"
+  "Quiz15_20220502.bbl" 1651683635 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Quiz15_20220502"
+  "Quiz15_20220502.tex" 1651683992 13706 935a9e60a7e060a7fae377430f8d4692 ""
   "defcolor.sty" 1646221108 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   (generated)
-  "/home/sigma/Lab/GP/Quiz/Quiz15_20220502.log"
-  "Quiz15_20220502.log"
-  "/home/sigma/Lab/GP/Quiz/Quiz15_20220502.pdf"
-  "Quiz15_20220502.aux"
   "Quiz15_20220502Notes.bib"
+  "/home/sigma/Lab/GP/Quiz/Quiz15_20220502.pdf"
+  "Quiz15_20220502.log"
   "Quiz15_20220502.pdf"
+  "Quiz15_20220502.aux"
+  "/home/sigma/Lab/GP/Quiz/Quiz15_20220502.log"

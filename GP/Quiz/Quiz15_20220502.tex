@@ -232,8 +232,8 @@ kg이다. 그림~\ref{fig:3}b는 줄의 장력을 물체의 위치 $x/L$의 함�
     \coordinate (B) at (2,0);
     \draw[thick] [|<->|] (A)--(p) node [midway,below] {$x$};
     \draw[thick] [<->|] (p)--(B) node [midway,below] {$L-x$};
-    \draw[red,very thick,-latex] (A)-- +(0,1.2)
-    node [left,black] {$F_1$};
+    %\draw[red,very thick,-latex] (A)-- +(0,1.2)
+    %node [left,black] {$F_1$};
     \draw[red,very thick,-latex] (b)-- +(0,-1.2)
     node [left,black] {$F_{gb}$};
     \draw[red,very thick,-latex] (p)-- +(0,-1.2)
@@ -257,23 +257,52 @@ kg이다. 그림~\ref{fig:3}b는 줄의 장력을 물체의 위치 $x/L$의 함�
   \caption{자유 물체 다이어그램}
 \end{figure} 
 
-경첩에 의한 수직항력 $F_1$, 물체에 의한 중력 $F_{gb}$, 막대에 의한 중력 $F_{gp}$,
+경첩에 의한 수직항력 $F_1$, 물체에 의한 중력 $F_{gp}$, 막대에 의한 중력 $F_{gb}$,
 케이블에 의한 장력 $T$
 그래프를 수식적으로 표현해보면
-\begin{align}
+\begin{align}\label{eq:3-1}
   T = \left(\frac{T_b - T_a}{1-0}\right)\frac{x}{L}+T_a
   =\left(T_b - T_a\right)\frac{x}{L}+T_a
 \end{align}
 경첩을 회전축으로 하는 돌림힘 계산
-
+\begin{align}\label{eq:3-2}
+  \sum \tau = \frac{L}{2}F_{gb} + xF_{gp}-TL\sin\theta=0
+\end{align}
+식~\eqref{eq:3-1}과 같이 $T$에 대해 표현하면
+\begin{align}
+  T = \frac{F_{gp}}{\sin\theta}\frac{x}{L}+\frac{F_{gb}}{2\sin\theta}
+\end{align}
+같은 물리현상을 다루고 있으므로 두 식은 임의의 $x$와 $L$에 대해 성립한다. 따라서
+\begin{align}
+  \label{eq:3-3-1}T_b - T_a &= \frac{F_{gp}}{\sin\theta},  \\
+  \label{eq:3-3-2}T_a &= \frac{F_{gb}}{2\sin\theta}
+\end{align}
 \begin{itemize}
   \item[(가)]
-  \item[(나)]
+  식~\eqref{eq:3-3-1}, \eqref{eq:3-3-2}로 부터
+  \begin{align}
+    T_b+T_a = \frac{F_{gb}+F_{gp}}{\sin\theta}
+  \end{align}
+  따라서 $\sin\theta$는
+  \begin{align}
+    \sin\theta = \frac{F_{gb}+F_{gp}}{T_b+T_a}
+    =\frac{(m_b+m_p)g}{T_b+T_a}
+  \end{align}
+  \item[(나)] 
+    식~\eqref{eq:3-3-2}로 부터
+    \begin{align}
+      T_a &= \frac{m_{b}g}{2\sin\theta}
+      = \frac{m_{b}(T_b+T_a)}{2(m_b+m_p)}
+    \end{align}
+    따라서 $m_b$이므로
+    \begin{align}
+      m_b = \frac{2T_a(m_b+m_p)}{T_b+T_a}
+    \end{align}
   \item[(다)]
+  $m_b+m_p=61.22$ kg이므로
 \end{itemize}
-\vspace{1.cm}
 
-\noindent {\bf 풀이 : } 
+\vspace{1.cm}
 
 \noindent {\bf 문제 4. (40pt)}
 그림~\ref{fig:4}는 질량 103 kg인 균일한 통나무를 반지름 1.20 mm인 두
@@ -293,10 +322,81 @@ $B$보다
 \end{itemize}
 
 \noindent {\bf 풀이 : } 
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}
+    \coordinate (O) at (0,0);
+    \coordinate (A) at (-2,0);
+    \coordinate (B) at (1.5,0);
+    \draw (-2.5,0) -- (2.5,0);
+
+
+    \draw[fill] (O) circle (2pt) node [above,black] {com};
+    \draw[red,very thick,-latex] (A) -- +(0,1.2) 
+    node [left,black] {$T_A$};
+    \draw[red,very thick,-latex] (O)-- +(0,-1.6)
+    node [left,black] {$F_g$};
+    \draw[fill] (1.6,0) circle (2pt) node [below,black] {$A$};
+    \draw[red,very thick,-latex] (B)-- +(0,1)
+    node [right,black] {$T_B$};
+    \draw[thick] [|<->|] (A)--(O) node [midway,below] {$d_A$};
+    \draw[thick] [<->|] (O)--(B) node [midway,below] {$d_B$};
+  \end{tikzpicture}
+  \caption{자유 물체 다이어그램}
+\end{figure} 
+통나무의 운동방정식은 다음과 같이 적을 수 있다.
+\begin{align}
+  \label{eq:4-1-1}\sum F    &= T_A + T_B - F_g   = 0 \\
+  \label{eq:4-1-2}\sum \tau &= T_A d_A - T_B d_B = 0
+\end{align}
 \begin{itemize}
-  \item[(가)]
+  \item[(가)] 
+  강철선 $A$의 원래 길이를 $L_A$, 늘어난 길이를 $\Delta L_A$, 
+  강철선 $B$의 원래 길이를 $L_B$, 늘어난 길이를 $\Delta L_B$, 
+  두 강철선의 단면적을 $S$라 하자.
+  라고 하자. 강철선에 걸리는 장력이 변형력이므로
+  \begin{align}  \label{eq:4-2}
+    \frac{T_A }{S} = E\frac{\Delta L_A}{L_A},\,\,\,
+    \frac{T_B }{S} = E\frac{\Delta L_B}{L_B}
+  \end{align}
+  $r$은 강철선의 지름이고
+  $E$는 강철의 영률로 $2.00\times 10^3\mathrm{N/m^2}$이다.
+  강철선은 처음에 길이 차이가 있었다. 그 길이 차를 $\alpha$라 하면
+  \begin{align}\label{eq:4-3}
+    L_A = L_B - \alpha
+  \end{align}  
+  통나무에 매달려 두 강철선의 길이가 같아졌으므로 
+  \begin{align}
+    \Delta L_A= \Delta L_B + \alpha
+  \end{align}
+  식~\eqref{eq:4-1-1}와~\eqref{eq:4-2}로 부터
+  \begin{align}
+    \frac{ T_AL_A }{ES } = \frac{T_B L_B }{E S} + \alpha
+    =\frac{(F_g-T_A)L_B }{E S} + \alpha
+  \end{align}
+  식~\eqref{eq:4-3}과 함께 $T_A$에 대해 정리하면
+  \begin{align}
+    T_A =  \frac{F_gL_B + ES\alpha}{L_A+L_B}
+    =\frac{(L_A+\alpha )mg + ES\alpha}{2L_A+\alpha}
+  \end{align}
+  $m$은 통나무의 질량이다. 수치를 넣어 정리하면
+  \begin{align}
+    T_A =\frac{(L_A+\alpha )mg + ES\alpha}{2L_A+\alpha}
+  \end{align}
   \item[(나)]
+  식~\eqref{eq:4-1-1}으로 부터
+  \begin{align}
+    T_B = F_g - T_A
+    =mg - \frac{(L_A+\alpha )mg + ES\alpha}{2L_A+\alpha}
+    =\frac{L_A mg-ES\alpha}{2L_A+\alpha}
+  \end{align}
   \item[(다)]
+  식~\eqref{eq:4-1-2}으로 부터
+  \begin{align}
+    \frac{d_A}{d_B} = \frac{T_B}{T_A}
+    =\frac{L_A mg-ES\alpha}{(L_A+\alpha )mg + ES\alpha}
+  \end{align}
 \end{itemize}
 
 \end{document}
