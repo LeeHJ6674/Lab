@@ -76,9 +76,10 @@ Inha University, Incheon 22212, Republic of Korea }
 민물과 벽이 닿는 면적을 $A$라 하자.
 $F$는
 \begin{align}
-  F = \int P\,dA,\,\,\,P = \rho g h
+  F = \int P\,dA,\,\,\,P = \rho g h + P_0
 \end{align}
-이다. $h$는 민물의 깊이이다.
+이다. $h$는 민물의 깊이이고 $P_0$는 대기압이다. 대기압은 벽에 가해지는 전체 힘의
+증가에 영향을 주지 않으므로 무시할 수 있다.
 폭을 $a$라 하면 미소면적 $dA$는 다음과 같이 표현할 수 있다.
 \begin{align}
   dA = a\,dh
@@ -159,12 +160,18 @@ m인 댐의 상류 쪽에 깊이 $S=35.0$ m만큼 물이 차 있다.
   \end{align}
   을 얻는다. 계기압력으로부터 댐에 가해지는 알짜힘은 
   $ 1.88\times 10^9\,\mathrm{N}$이다.
-  \item[(나)] 물에 닿는 면적에 대해 힘이 연속적으로 작용하므로 
+  \item[(나)] 
+  물에 닿는 면적에 대해 힘이 연속적으로 작용하므로 
   각 높이에 작용하는 미소힘에 의한 미소돌림힘 $d\tau$를 찾으면
   \begin{align}
     d\tau = r\sin\theta dF,\,\,\,dF=\rho g Wh\,dh
   \end{align}
-
+  이고 $r\sin\theta=S-h$ 이므로 
+  \begin{align}
+    d\tau = r\sin\theta dF
+    =\rho g W (S-h)h \,dh
+  \end{align}
+  이다. 
   \begin{figure}[htbp]
     \begin{tikzpicture}
     \centering
@@ -190,11 +197,6 @@ m인 댐의 상류 쪽에 깊이 $S=35.0$ m만큼 물이 차 있다.
     \end{tikzpicture}
   \end{figure}
 
-  $r\sin\theta=S-h$ 이므로 
-  \begin{align}
-    d\tau = r\sin\theta dF
-    =\rho g W (S-h)h \,dh
-  \end{align}
   따라서 총 돌림힘은 다음과 같이 구할 수 있다.
   \begin{align}
     \begin{split}\label{eq:2-2}
@@ -238,14 +240,15 @@ m인 댐의 상류 쪽에 깊이 $S=35.0$ m만큼 물이 차 있다.
 넣어야 용수철이 $5.00$ cm만큼 수축하겠는가? 
 
 \noindent {\bf 풀이 : }
-모래를 $m$만큼 넣었을 때 입력 피스톤에 작용하는 압력 $P_{in}$
+모래를 $m$만큼 넣었을 때 입력 피스톤에 작용하는 압력 $P_{in}$은
  \begin{align}
    P_{in} =\frac{F}{A} =\frac{mg}{A_i}
  \end{align}
- 유체가 출력 피스톤에 작용하는 압력 $P_{out}$, 출력 피스톤이 올라가 
+ 이다. 유체가 출력 피스톤에 작용하는 압력 $P_{out}$에 대해 생각해보자. 
+ 출력 피스톤이 올라가 
  스프링을 압축시키면 스프링은 출력 피스톤에 복원력 $F_{out}$을 가한다. 
  출력 피스톤이 스프링을 압축시키는 힘과
- 스프링의 복원력이 평형을 이루면 출력 피스톤과 스프링은 정지한다. 
+ 스프링의 복원력이 평형을 이룰 때 출력 피스톤과 스프링은 정지한다. 
  이 때 $P_{out}$과 $F_{out}$는 다음 관계에 있다.
  \begin{align}
    P_{out} = \frac{F_{out}}{18A_i}
