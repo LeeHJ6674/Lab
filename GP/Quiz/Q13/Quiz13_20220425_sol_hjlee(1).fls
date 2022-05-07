@@ -295,9 +295,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbd.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd1.tfm
 OUTPUT /home/sigma/Lab/GP/Quiz/Q13/Quiz13_20220425_sol_hjlee(1).pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /home/sigma/Lab/GP/Quiz/Q13/pic:1-1.png
-INPUT /home/sigma/Lab/GP/Quiz/Q13/pic:1-1.png
-INPUT /home/sigma/Lab/GP/Quiz/Q13/pic:1-1.png
+INPUT /home/sigma/Lab/GP/Quiz/Q13/pic_1-1.png
+INPUT /home/sigma/Lab/GP/Quiz/Q13/pic_1-1.png
+INPUT /home/sigma/Lab/GP/Quiz/Q13/pic_1-1.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc6.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbe.tfm
