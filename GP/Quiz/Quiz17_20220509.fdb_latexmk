@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex Quiz17_20220509"] 1651924680 "Quiz17_20220509.aux" "Quiz17_20220509.bbl" "Quiz17_20220509" 1651924690
+["bibtex Quiz17_20220509"] 1652115260 "Quiz17_20220509.aux" "Quiz17_20220509.bbl" "Quiz17_20220509" 1652115261
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1547851249 69612 d43c8740409d8c756864ce4e3d57a214 ""
-  "Quiz17_20220509.aux" 1651924689 834 690e76f2049886949954d6a9799d1470 "pdflatex"
-  "Quiz17_20220509Notes.bib" 1651924689 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "Quiz17_20220509.aux" 1652115261 867 02d7f6be9db36dbae10eac2ecca4003f "pdflatex"
+  "Quiz17_20220509Notes.bib" 1652115261 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
   "Quiz17_20220509.bbl"
   "Quiz17_20220509.blg"
-["pdflatex"] 1651924689 "/home/sigma/Lab/GP/Quiz/Quiz17_20220509.tex" "/home/sigma/Lab/GP/Quiz/Quiz17_20220509.pdf" "Quiz17_20220509" 1651924690
+["pdflatex"] 1652115260 "/home/sigma/Lab/GP/Quiz/Quiz17_20220509.tex" "/home/sigma/Lab/GP/Quiz/Quiz17_20220509.pdf" "Quiz17_20220509" 1652115261
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/GP/Quiz/Quiz17_20220509.aux" 1651924689 834 690e76f2049886949954d6a9799d1470 ""
-  "/home/sigma/Lab/GP/Quiz/Quiz17_20220509.tex" 1651924689 16338 d1f948ce6ef1bc58b9a316b89e72d353 ""
+  "/home/sigma/Lab/GP/Quiz/Quiz17_20220509.aux" 1652115261 867 02d7f6be9db36dbae10eac2ecca4003f ""
+  "/home/sigma/Lab/GP/Quiz/Quiz17_20220509.tex" 1652115260 16004 55946b7397812e7de1e1a3c98ff2b1d1 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -91,7 +91,6 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmce.tfm" 1364599308 1260 379a30dae255d34e90879be3f1c14b7b ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd0.tfm" 1364599308 1240 e8e659af107692f2f8b0cc2c654669e4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd1.tfm" 1364599308 1248 f2c1cf8a52c91587f07c6361192c41a9 ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd2.tfm" 1364599308 1248 943f2d80fbccd7a33e9a975ccd6bebf4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd3.tfm" 1364599308 1240 0ba0d8110eaa965fe82649c35aae8a9c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd4.tfm" 1364599308 1256 40f76b39d88f6d1bdc1016620e8e198b ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd5.tfm" 1364599308 1248 528122c0ec5b8fe37c5f9a68d4591379 ""
@@ -154,7 +153,6 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb" 1364599308 154112 a22c73030250b02bd2a0145f6051bc2e ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb" 1364599308 160113 a7d8504ec8f3d4e7fa794704578d1dcf ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb" 1364599308 182472 4a085e9eb9ff323a408388c835c255bd ""
-  "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb" 1364599308 190109 04a5a5925d181af4bf01ec2207d19382 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb" 1364599308 190919 c0b8ee9a31988256013d1799b78bc90b ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd4.pfb" 1364599308 202710 30784c0e01744b6d309ce7b403d77f30 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb" 1364599308 180221 abec42c102a26dbcc461fb4cfef50d74 ""
@@ -278,14 +276,14 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1645685152 8258281 06978915380d3cf57d3fcd5054406eef ""
   "Qfig17-1-20220509.png" 1651853656 54610 830304c5dfb2ae3df16652f1c440bc9f ""
   "Qfig17-4-20220509.png" 1651853655 114125 7bf4dbf741940ed1f985a5eff3661fff ""
-  "Quiz17_20220509.aux" 1651924689 834 690e76f2049886949954d6a9799d1470 "pdflatex"
-  "Quiz17_20220509.bbl" 1651924680 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Quiz17_20220509"
-  "Quiz17_20220509.tex" 1651924689 16338 d1f948ce6ef1bc58b9a316b89e72d353 ""
+  "Quiz17_20220509.aux" 1652115261 867 02d7f6be9db36dbae10eac2ecca4003f "pdflatex"
+  "Quiz17_20220509.bbl" 1652115260 1982 35453d3875d823f0ec9445e740a573d9 "bibtex Quiz17_20220509"
+  "Quiz17_20220509.tex" 1652115260 16004 55946b7397812e7de1e1a3c98ff2b1d1 ""
   "defcolor.sty" 1646221108 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   (generated)
-  "/home/sigma/Lab/GP/Quiz/Quiz17_20220509.log"
-  "Quiz17_20220509Notes.bib"
-  "/home/sigma/Lab/GP/Quiz/Quiz17_20220509.pdf"
   "Quiz17_20220509.log"
   "Quiz17_20220509.aux"
+  "Quiz17_20220509Notes.bib"
   "Quiz17_20220509.pdf"
+  "/home/sigma/Lab/GP/Quiz/Quiz17_20220509.log"
+  "/home/sigma/Lab/GP/Quiz/Quiz17_20220509.pdf"
