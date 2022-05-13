@@ -278,7 +278,7 @@ Hint: Use the operator method.
   \end{itemize}
 
 \vspace{0.5cm}
-
+\newpage
 \noindent \textbf{Problem 2.} 
 The generating function $S(x,t)$ for the Hermite polynomial $H_n(x)$
 is defined as 
@@ -323,296 +323,347 @@ polynomial.
 \end{itemize}
 
 \noindent \textbf{Answer : }
-\begin{itemize}
-\item[(1)] The Hermite differential equation is
-\begin{align}\label{eq:2-1}
-  \frac{d^2y}{dx^2}-2x\frac{dy}{dx}+\lambda y = 0,
-\end{align}
-where $\lambda$ is a non-negative integer. 
-The first and second derivatives of $x$ for generating function $S$ are
-\begin{align}\label{eq:2-2}
-  \begin{split}
-    &\frac{dS}{dx} = 2tS = \sum^\infty_{n=0}
-    \frac{H^\prime_n(x)}{n!}t^n  \\
-    &\frac{d^2S}{dx^2} = 4t^2S=\sum^\infty_{n=0}
-    \frac{H^{\prime\prime}_n(x)}{n!}t^n.
-  \end{split}
-\end{align}
-The first derivative of $t$ is
-\begin{align}\label{eq:2-3}
-  \frac{dS}{dt} = 2(-t+x)S \Longrightarrow \sum^\infty_{n=0}
-  \frac{H_n(x)}{n!}nt^{n-1}
-  =-\frac{dS}{dx} +2xS.
-\end{align}
-Rearranging $S$ in the first and second deriavtive inside Eq.~\eqref{eq:2-2}, we have
-\begin{align}\label{eq:2-3-1}
-  \begin{split}
-    \frac{dS}{dx} &= 
-    \frac{1}{2t}\frac{d^2S}{dx^2}
-    =\frac{1}{2}\sum^\infty_{n=0}
-    \frac{H^{\prime\prime}_n(x)}{n!}t^{n-1} , \\
-    2xS &= 2x\frac{1}{2t}\frac{dS}{dt} 
-    =x\sum^\infty_{n=0}\frac{H^{\prime}_n(x)}{n!}t^{n-1}.
-  \end{split}
-\end{align}
-Inserting Eq.~\eqref{eq:2-3-1} to Eq.~\eqref{eq:2-3}, we get
-\begin{align}
-  \sum^\infty_{n=0}\frac{H_n(x)}{n!}nt^{n-1}
-  =-\frac{1}{2}\sum^\infty_{n=0}\frac{H^{\prime\prime}_n(x)}{n!}t^{n-1}
-  +x\sum^\infty_{n=0}\frac{H^{\prime}_n(x)}{n!}t^{n-1},
-\end{align}
-or
-\begin{align}
-  \sum^\infty_{n=0}\left(\frac{H^{\prime\prime}_n(x)
-  -2xH^{\prime}_n(x)+2nH_n(x)}{n!}t^{n-1}\right)=0.
-\end{align}
-It is true for any $t$ when all coefficient is zero. Finally we obtain
-the hermite differential equation
-\begin{align}\label{eq:2-4}
-  H^{\prime\prime}_n(x)
-  -2xH^{\prime}_n(x)+2nH_n(x)=0.
-\end{align}
-\item[(2)] Carrying out Tayler expansion of Eq.~\eqref{eq:1}, we have
-\begin{align}
-  S(x,t) = e^{x^2}e^{-(t-x)^2} = \left.e^{x^2}\sum^\infty_{n=0}\frac{t^n}{n!}
-  \left(\frac{d^n}{dt^n}e^{-(t-x)^2}\right|_{t=0} \right)
-  = \sum^\infty_{n=0}\frac{H_n(x)}{n!}t^n.
-\end{align}
-Since the series representation is unique,
-\begin{align}\label{eq:2-5}
-  H_n(x)=e^{x^2}\left.\frac{d^n}{dt^n}e^{-(t-x)^2}\right|_{t=0}.
-\end{align}
-If we regard $t$ as just the parameter, Eq.~\eqref{eq:2-5} is true for 
-any $t$. 
-A differential part of a LHS is
-\begin{align}
-  \left.\frac{d^n}{dt^n}e^{-(t-x)^2}\right|_{t=0}
-  =\left.(-1)^n\frac{d^n}{dx^n}e^{-(t-x)^2}\right|_{t=0}
-  =(-1)^n\frac{d^n}{dx^n}e^{-x^2}
-\end{align}
-Finally we obtain,
-\begin{align}\label{eq:2-5-1}
-  H_n(x) = (-1)^ne^{x^2}\frac{d^n}{dx^n}e^{-x^2}.
-\end{align}
-\item[(3)]First, when $t=1$ and $t=-1$, Eq.~\eqref{eq:1} is
-\begin{align}
-  \begin{split}
-    e^{2x-1}&=\sum^\infty_{n=0}\frac{H_n(x)}{n!} \\
-    e^{-2x-1}&=\sum^\infty_{n=0}(-1)^n\frac{H_n(x)}{n!}.
-  \end{split}
-\end{align} 
-For checking the value $2^n \sqrt{\pi}n!$, consider a integration as
-\begin{align}\label{eq:2-6}
-  \int_{-\infty}^{\infty}e^{-x^2}H_m(x)e^{2x-1}\,dx
-  =\sum_{n=0}^\infty\frac{1}{n!}\int_{-\infty}^{\infty}
-  e^{-x^2}H_m(x)H_n(x)\,dx
-\end{align}
-The LHS is
-\begin{align}
-  \int_{-\infty}^{\infty}e^{-x^2}H_m(x)e^{2x-1}\,dx 
-  =(-1)^m\int_{-\infty}^{\infty}e^{2x-1}
-  \frac{d^m}{dx^m}e^{-x^2}\,dx
-\end{align}
-Using the integration by part to LHS,
-\begin{align}
-    \int_{-\infty}^{\infty}e^{2x-1}\frac{d^m}{dx^m}e^{-x^2}\,dx  
-    &=\left.e^{2x-1}
-    \frac{d^{m-1}}{dx^{m-1}}e^{-x^2}\right|^\infty_{-\infty}
-    -\int_{-\infty}^{\infty}2e^{2x-1}
-    \frac{d^{m-1}}{dx^{m-1}}e^{-x^2}\,dx \\
-    &=-2\int_{-\infty}^{\infty}e^{2x-1}
-    \frac{d^{m-1}}{dx^{m-1}}e^{-x^2}\,dx. 
-\end{align}
-Iterating the integration by part $m$ times, we get 
-\begin{align}
-  \int_{-\infty}^{\infty}e^{2x-1}\frac{d^m}{dx^m}e^{-x^2}\,dx  
-  =(-2)^m\int_{-\infty}^{\infty}e^{-(x-1)^2}\,dx=(-2)^m\sqrt{\pi}. 
-\end{align}
-Therefore, Eq.~\eqref{eq:2-6} is
-\begin{align}
-  \sum_{n=0}^\infty\frac{1}{n!}\int_{-\infty}^{\infty}e^{-x^2}
-  H_m(x)H_n(x)\,dx
-  =(-1)^m(-2)^m\sqrt{\pi}=2^m\sqrt{\pi}.
-\end{align}
-Now, let us check the orthogonality. From Eq.~\eqref{eq:2-4},
-\begin{align}\label{eq:2-6-1}
-  e^{x^2}\frac{d}{dx}\left(e^{-x^2}H^\prime_n(x)\right)+2nH_n(x)=0.
-\end{align}
-Multiplying $e^{-x^2}$,
-\begin{align}\label{eq:2-6-2}
-  \int_{-\infty}^\infty\frac{d}{dx}
-  \left(e^{-x^2}H^\prime_n(x)\right)H_m(x)\,dx
-  +2n\int_{-\infty}^\infty e^{-x^2}H_n(x)H_m(x)\,dx=0.
-\end{align}
-This process is applicable to $H_m(x)$. Then,
-\begin{align}\label{eq:2-6-3}
-  \int_{-\infty}^\infty\frac{d}{dx}
-  \left(e^{-x^2}H^\prime_m(x)\right)H_n(x)\,dx
-  +2m\int_{-\infty}^\infty e^{-x^2}H_n(x)H_m(x)\,dx=0.
-\end{align}
-Substracting Eq.~\eqref{eq:2-6-3} to  Eq.~\eqref{eq:2-6-2}, we have
-\begin{align}
-  \int_{-\infty}^\infty\frac{d}{dx}
-  \left(e^{-x^2}H^\prime_n\right)H_m
-  -\frac{d}{dx}\left(e^{-x^2}H^\prime_m\right)H_n\,dx
-  +2(n-m)\int_{-\infty}^\infty e^{-x^2}H_n(x)H_m(x)\,dx=0.
-\end{align}
-Integrations by part of first two terms are
-\begin{align}
-  \begin{split}
-    &\int_{-\infty}^\infty\frac{d}{dx}
-    \left(e^{-x^2}H^\prime_n\right)H_m
-    -\frac{d}{dx}\left(e^{-x^2}H^\prime_m\right)H_n\,dx \\
-    &=\left.e^{-x^2}H^\prime_nH_m\right|_{-\infty}^\infty
-    -\int_{-\infty}^\infty e^{-x^2}H^\prime_nH^\prime_m\,dx
-    -\left.e^{-x^2}H_nH^\prime_m\right|_{-\infty}^\infty
-    +\int_{-\infty}^\infty e^{-x^2}H^\prime_nH^\prime_m\,dx \\
-    &=0.
-  \end{split}
-\end{align}
-It means that
-\begin{align}
-  2(n-m)\int_{-\infty}^\infty e^{-x^2}H_n(x)H_m(x)\,dx=0.
-\end{align}
-If $n\neq m$, the integration is a zero. For this reason,
-\begin{align}
-  \sum_{n=0}^\infty\frac{1}{n!}\int_{-\infty}^{\infty}
-  e^{-x^2}H_m(x)H_n(x)\,dx
-  =\frac{1}{m!}\int_{-\infty}^{\infty}e^{-x^2}H_m(x)H_m(x)\,dx
-  =2^m\sqrt{\pi}.
-\end{align}
-Finally we obtain,
-\begin{align}\label{eq:2-7}
-  \int_{-\infty}^\infty e^{-x^2} H_n(x) H_m(x) dx = 2^nn! \sqrt{\pi}
-   \delta_{nm}.
-\end{align}
-\item[(4)] {\it Proof}. We use the mathematical induction. 
-If $n=0$ and $n=1$, then,
-\begin{align}
-  H_0(x) = 1,\,\,\,H_1(x)=2x. 
-\end{align}
-The statement is true. Suppose it is true:
-\begin{align}
-  H_k(x) = \left(2x-\frac{d}{dx}\right)^k 1.
-\end{align}
-Then,
-\begin{align}
-  \begin{split}
-    H_{k+1}(x) &= \left(2x-\frac{d}{dx}\right)
-    \left(2x-\frac{d}{dx}\right)^k 1
-    =\left(2x-\frac{d}{dx}\right)H_k(x)
-  \end{split}
-\end{align}
-From Eq.~\eqref{eq:2-5-1},
-\begin{align}
-  \begin{split}
-    \left(2x-\frac{d}{dx}\right)H_k(x)
-    &=\left(2x-\frac{d}{dx}\right)(-1)^ke^{x^2}
-    \frac{d^k}{dx^k}e^{-x^2}  \\
-    &=(-1)^k 2x e^{x^2}\frac{d^k}{dx^k}e^{-x^2}
-    -(-1)^k 2x e^{x^2}\frac{d^k}{dx^k}e^{-x^2}
-    -(-1)^k e^{x^2}\frac{d^{k+1}}{dx^{k+1}}e^{-x^2}  \\
-    &=(-1)^{k+1}= e^{x^2}\frac{d^{k+1}}{dx^{k+1}}e^{-x^2}
-    =H_{k+1}(x).
-  \end{split}
-\end{align}
-Hence this statement is true for $n=k+1$. \\
-By mathematical induction, 
-this statement is true for any $n$. ~\hfill $\square$
-\item[(5)] {\it Proof}. Set $I_{nm}$,
-\begin{align}
-  \begin{split}
-    I_{nm} &= \int_{-\infty}^\infty xe^{-x^2}H_n(x)H_m(x) \,dx  \\
-    &=-\left.\frac{1}{2}e^{-x^2}H_n(x)H_m(x)\right|
-    _{-\infty}^\infty
-    +\frac{1}{2}\int_{-\infty}^\infty 
-    e^{-x^2}\left(H^\prime_n(x)H_m(x)+H_n(x)
-    H^\prime_m(x)\right) \,dx \\
-    &=\frac{1}{2}\int_{-\infty}^\infty 
-    e^{-x^2}H^\prime_n(x)H_m(x) \,dx+
-    \frac{1}{2}\int_{-\infty}^\infty 
-    e^{-x^2}H_n(x)H^\prime_m(x) \,dx.
-  \end{split}
-\end{align}
-From Eq.~\eqref{eq:2-5-1},
-\begin{align}\label{eq:2-8}
-  \begin{split}
-    H^\prime_n(x) &= \frac{d}{dx}\left( (-1)^ne^{x^2}
-    \frac{d^n}{dx^n}e^{-x^2} \right)
-    =(-1)^n\left( 2xe^{x^2}\frac{d^n}{dx^n}e^{-x^2}
-    +e^{x^2}\frac{d^{n+1}}{dx^{n+1}}e^{-x^2} \right)  \\
-    &=2xH_n(x)-H_{n+1}(x).
-  \end{split}
-\end{align}
-Then $I_{nm}$ is
-\begin{align}
-  \begin{split}
-    I_{nm} &= \frac{1}{2}\int_{-\infty}^\infty 
-    e^{-x^2}(2xH_n(x)-H_{n+1}(x))H_m(x) \,dx+
-    \frac{1}{2}\int_{-\infty}^\infty 
-    e^{-x^2}H_n(x)(2xH_m(x)-H_{m+1}(x)) \,dx  \\
-    &= 2I_{nm}
-    -\frac{1}{2}\int_{-\infty}^\infty 
-    e^{-x^2}H_{n+1}(x)H_m(x) \,dx
-    -\frac{1}{2}\int_{-\infty}^\infty 
-    e^{-x^2}H_n(x)H_{m+1}(x) \,dx.
-  \end{split}
-\end{align}
-Hence,
-\begin{align}
-  I_{nm}=\frac{1}{2}\left(\int_{-\infty}^\infty 
-  e^{-x^2}H_{n+1}(x)H_m(x) \,dx
-  +\int_{-\infty}^\infty 
-  e^{-x^2}H_n(x)H_{m+1}(x) \,dx\right).
-\end{align}
-From Eq.~\eqref{eq:2-7}, we obtain that,
-\begin{align}\label{eq:2-9}
-  \begin{split}
-    I_{nm}&=\frac{1}{2}\left(2^{n+1}\sqrt{\pi}(n+1)!
-    \delta_{n+1,m}
-    +2^n\sqrt{\pi}n!\delta_{n,m+1} \right)  \\
-    &=2^n\sqrt{\pi}(n+1)!\delta_{n+1,m}
-    +2^{n-1}\sqrt{\pi}n!\delta_{n,m+1}.
-  \end{split}
-\end{align}
-Therefore the statement is true. ~\hfill $\square$
-\item[(6)] {\it Proof}. Eq.~\eqref{eq:2} is
-\begin{align}
-  \int_{-\infty}^\infty x^2e^{-x^2}H_nH_n \,dx  
-  =-\left.\frac{1}{2}xe^{-x^2}H_nH_n\right|_{-\infty}^\infty
-  +\int_{-\infty}^\infty xe^{-x^2}H_n^\prime H_n \,dx  
-  -\frac{1}{2}\int_{-\infty}^\infty e^{-x^2}H_nH_n \,dx  .
-\end{align}
-From Eq.~\eqref{eq:2-8}, the second term of the RHS is
-\begin{align}
-  \int_{-\infty}^\infty xe^{-x^2}H_n^\prime H_n \,dx  
-  =\int_{-\infty}^\infty 2x^2e^{-x^2}H_n H_n \,dx 
-  -\int_{-\infty}^\infty xe^{-x^2}H_{n+1}H_n \,dx  .
-\end{align}
-Hence, 
-\begin{align}
-  \begin{split}
-    \int_{-\infty}^\infty x^2e^{-x^2}H_nH_n \,dx  
-    &=\int_{-\infty}^\infty 2x^2e^{-x^2}H_n H_n \,dx 
-    -\int_{-\infty}^\infty xe^{-x^2}H_{n+1}H_n \,dx 
-    -\frac{1}{2}\int_{-\infty}^\infty e^{-x^2}H_nH_n \,dx \\
-    &=\int_{-\infty}^\infty xe^{-x^2}H_{n+1}H_n \,dx 
-    +\frac{1}{2}\int_{-\infty}^\infty e^{-x^2}H_nH_n \,dx.
-  \end{split}
-\end{align}
-From Eq.~\eqref{eq:2-9} and \eqref{eq:2-7},
-\begin{align}\label{eq:2-10}
-  \begin{split}
-    \int_{-\infty}^\infty x^2e^{-x^2}H_nH_n \,dx  
-    &=\sqrt{\pi}2^{n-1}n!\delta_{n+1,n-1}
-    +\sqrt{\pi}2^{n}(n+1)!\delta_{n+1,n+1}
-    -\sqrt{\pi}2^{n-1}n!  \\
-    &=\sqrt{\pi}2^nn!\left(n+\frac{1}{2}\right).
-  \end{split}
-\end{align}
-Therefore the statement is true. ~\hfill $\square$
-\end{itemize}
 
+% \begin{itemize}
+% \item[(1)] The Hermite differential equation is
+% \begin{align}\label{eq:2-1}
+%   \frac{d^2y}{dx^2}-2x\frac{dy}{dx}+\lambda y = 0,
+% \end{align}
+% where $\lambda$ is a non-negative integer. 
+% The first and second derivatives of $x$ for generating function $S$ are
+% \begin{align}\label{eq:2-2}
+%   \begin{split}
+%     &\frac{dS}{dx} = 2tS = \sum^\infty_{n=0}
+%     \frac{H^\prime_n(x)}{n!}t^n  \\
+%     &\frac{d^2S}{dx^2} = 4t^2S=\sum^\infty_{n=0}
+%     \frac{H^{\prime\prime}_n(x)}{n!}t^n.
+%   \end{split}
+% \end{align}
+% The first derivative of $t$ is
+% \begin{align}\label{eq:2-3}
+%   \frac{dS}{dt} = 2(-t+x)S \Longrightarrow \sum^\infty_{n=0}
+%   \frac{H_n(x)}{n!}nt^{n-1}
+%   =-\frac{dS}{dx} +2xS.
+% \end{align}
+% Rearranging $S$ in the first and second deriavtive inside Eq.~\eqref{eq:2-2}, we have
+% \begin{align}\label{eq:2-3-1}
+%   \begin{split}
+%     \frac{dS}{dx} &= 
+%     \frac{1}{2t}\frac{d^2S}{dx^2}
+%     =\frac{1}{2}\sum^\infty_{n=0}
+%     \frac{H^{\prime\prime}_n(x)}{n!}t^{n-1} , \\
+%     2xS &= 2x\frac{1}{2t}\frac{dS}{dt} 
+%     =x\sum^\infty_{n=0}\frac{H^{\prime}_n(x)}{n!}t^{n-1}.
+%   \end{split}
+% \end{align}
+% Inserting Eq.~\eqref{eq:2-3-1} to Eq.~\eqref{eq:2-3}, we get
+% \begin{align}
+%   \sum^\infty_{n=0}\frac{H_n(x)}{n!}nt^{n-1}
+%   =-\frac{1}{2}\sum^\infty_{n=0}\frac{H^{\prime\prime}_n(x)}{n!}t^{n-1}
+%   +x\sum^\infty_{n=0}\frac{H^{\prime}_n(x)}{n!}t^{n-1},
+% \end{align}
+% or
+% \begin{align}
+%   \sum^\infty_{n=0}\left(\frac{H^{\prime\prime}_n(x)
+%   -2xH^{\prime}_n(x)+2nH_n(x)}{n!}t^{n-1}\right)=0.
+% \end{align}
+% It is true for any $t$ when all coefficient is zero. Finally we obtain
+% the hermite differential equation
+% \begin{align}\label{eq:2-4}
+%   H^{\prime\prime}_n(x)
+%   -2xH^{\prime}_n(x)+2nH_n(x)=0.
+% \end{align}
+% \item[(2)] Carrying out Tayler expansion of Eq.~\eqref{eq:1}, we have
+% \begin{align}
+%   S(x,t) = e^{x^2}e^{-(t-x)^2} = \left.e^{x^2}\sum^\infty_{n=0}\frac{t^n}{n!}
+%   \left(\frac{d^n}{dt^n}e^{-(t-x)^2}\right|_{t=0} \right)
+%   = \sum^\infty_{n=0}\frac{H_n(x)}{n!}t^n.
+% \end{align}
+% Since the series representation is unique,
+% \begin{align}\label{eq:2-5}
+%   H_n(x)=e^{x^2}\left.\frac{d^n}{dt^n}e^{-(t-x)^2}\right|_{t=0}.
+% \end{align}
+% If we regard $t$ as just the parameter, Eq.~\eqref{eq:2-5} is true for 
+% any $t$. 
+% A differential part of a LHS is
+% \begin{align}
+%   \left.\frac{d^n}{dt^n}e^{-(t-x)^2}\right|_{t=0}
+%   =\left.(-1)^n\frac{d^n}{dx^n}e^{-(t-x)^2}\right|_{t=0}
+%   =(-1)^n\frac{d^n}{dx^n}e^{-x^2}
+% \end{align}
+% Finally we obtain,
+% \begin{align}\label{eq:2-5-1}
+%   H_n(x) = (-1)^ne^{x^2}\frac{d^n}{dx^n}e^{-x^2}.
+% \end{align}
+% \item[(3)]First, when $t=1$ and $t=-1$, Eq.~\eqref{eq:1} is
+% \begin{align}
+%   \begin{split}
+%     e^{2x-1}&=\sum^\infty_{n=0}\frac{H_n(x)}{n!} \\
+%     e^{-2x-1}&=\sum^\infty_{n=0}(-1)^n\frac{H_n(x)}{n!}.
+%   \end{split}
+% \end{align} 
+% For checking the value $2^n \sqrt{\pi}n!$, consider a integration as
+% \begin{align}\label{eq:2-6}
+%   \int_{-\infty}^{\infty}e^{-x^2}H_m(x)e^{2x-1}\,dx
+%   =\sum_{n=0}^\infty\frac{1}{n!}\int_{-\infty}^{\infty}
+%   e^{-x^2}H_m(x)H_n(x)\,dx
+% \end{align}
+% The LHS is
+% \begin{align}
+%   \int_{-\infty}^{\infty}e^{-x^2}H_m(x)e^{2x-1}\,dx 
+%   =(-1)^m\int_{-\infty}^{\infty}e^{2x-1}
+%   \frac{d^m}{dx^m}e^{-x^2}\,dx
+% \end{align}
+% Using the integration by part to LHS,
+% \begin{align}
+%     \int_{-\infty}^{\infty}e^{2x-1}\frac{d^m}{dx^m}e^{-x^2}\,dx  
+%     &=\left.e^{2x-1}
+%     \frac{d^{m-1}}{dx^{m-1}}e^{-x^2}\right|^\infty_{-\infty}
+%     -\int_{-\infty}^{\infty}2e^{2x-1}
+%     \frac{d^{m-1}}{dx^{m-1}}e^{-x^2}\,dx \\
+%     &=-2\int_{-\infty}^{\infty}e^{2x-1}
+%     \frac{d^{m-1}}{dx^{m-1}}e^{-x^2}\,dx. 
+% \end{align}
+% Iterating the integration by part $m$ times, we get 
+% \begin{align}
+%   \int_{-\infty}^{\infty}e^{2x-1}\frac{d^m}{dx^m}e^{-x^2}\,dx  
+%   =(-2)^m\int_{-\infty}^{\infty}e^{-(x-1)^2}\,dx=(-2)^m\sqrt{\pi}. 
+% \end{align}
+% Therefore, Eq.~\eqref{eq:2-6} is
+% \begin{align}
+%   \sum_{n=0}^\infty\frac{1}{n!}\int_{-\infty}^{\infty}e^{-x^2}
+%   H_m(x)H_n(x)\,dx
+%   =(-1)^m(-2)^m\sqrt{\pi}=2^m\sqrt{\pi}.
+% \end{align}
+% Now, let us check the orthogonality. From Eq.~\eqref{eq:2-4},
+% \begin{align}\label{eq:2-6-1}
+%   e^{x^2}\frac{d}{dx}\left(e^{-x^2}H^\prime_n(x)\right)+2nH_n(x)=0.
+% \end{align}
+% Multiplying $e^{-x^2}$,
+% \begin{align}\label{eq:2-6-2}
+%   \int_{-\infty}^\infty\frac{d}{dx}
+%   \left(e^{-x^2}H^\prime_n(x)\right)H_m(x)\,dx
+%   +2n\int_{-\infty}^\infty e^{-x^2}H_n(x)H_m(x)\,dx=0.
+% \end{align}
+% This process is applicable to $H_m(x)$. Then,
+% \begin{align}\label{eq:2-6-3}
+%   \int_{-\infty}^\infty\frac{d}{dx}
+%   \left(e^{-x^2}H^\prime_m(x)\right)H_n(x)\,dx
+%   +2m\int_{-\infty}^\infty e^{-x^2}H_n(x)H_m(x)\,dx=0.
+% \end{align}
+% Substracting Eq.~\eqref{eq:2-6-3} to  Eq.~\eqref{eq:2-6-2}, we have
+% \begin{align}
+%   \int_{-\infty}^\infty\frac{d}{dx}
+%   \left(e^{-x^2}H^\prime_n\right)H_m
+%   -\frac{d}{dx}\left(e^{-x^2}H^\prime_m\right)H_n\,dx
+%   +2(n-m)\int_{-\infty}^\infty e^{-x^2}H_n(x)H_m(x)\,dx=0.
+% \end{align}
+% Integrations by part of first two terms are
+% \begin{align}
+%   \begin{split}
+%     &\int_{-\infty}^\infty\frac{d}{dx}
+%     \left(e^{-x^2}H^\prime_n\right)H_m
+%     -\frac{d}{dx}\left(e^{-x^2}H^\prime_m\right)H_n\,dx \\
+%     &=\left.e^{-x^2}H^\prime_nH_m\right|_{-\infty}^\infty
+%     -\int_{-\infty}^\infty e^{-x^2}H^\prime_nH^\prime_m\,dx
+%     -\left.e^{-x^2}H_nH^\prime_m\right|_{-\infty}^\infty
+%     +\int_{-\infty}^\infty e^{-x^2}H^\prime_nH^\prime_m\,dx \\
+%     &=0.
+%   \end{split}
+% \end{align}
+% It means that
+% \begin{align}
+%   2(n-m)\int_{-\infty}^\infty e^{-x^2}H_n(x)H_m(x)\,dx=0.
+% \end{align}
+% If $n\neq m$, the integration is a zero. For this reason,
+% \begin{align}
+%   \sum_{n=0}^\infty\frac{1}{n!}\int_{-\infty}^{\infty}
+%   e^{-x^2}H_m(x)H_n(x)\,dx
+%   =\frac{1}{m!}\int_{-\infty}^{\infty}e^{-x^2}H_m(x)H_m(x)\,dx
+%   =2^m\sqrt{\pi}.
+% \end{align}
+% Finally we obtain,
+% \begin{align}\label{eq:2-7}
+%   \int_{-\infty}^\infty e^{-x^2} H_n(x) H_m(x) dx = 2^nn! \sqrt{\pi}
+%    \delta_{nm}.
+% \end{align}
+% \item[(4)] {\it Proof}. We use the mathematical induction. 
+% If $n=0$ and $n=1$, then,
+% \begin{align}
+%   H_0(x) = 1,\,\,\,H_1(x)=2x. 
+% \end{align}
+% The statement is true. Suppose it is true:
+% \begin{align}
+%   H_k(x) = \left(2x-\frac{d}{dx}\right)^k 1.
+% \end{align}
+% Then,
+% \begin{align}
+%   \begin{split}
+%     H_{k+1}(x) &= \left(2x-\frac{d}{dx}\right)
+%     \left(2x-\frac{d}{dx}\right)^k 1
+%     =\left(2x-\frac{d}{dx}\right)H_k(x)
+%   \end{split}
+% \end{align}
+% From Eq.~\eqref{eq:2-5-1},
+% \begin{align}
+%   \begin{split}
+%     \left(2x-\frac{d}{dx}\right)H_k(x)
+%     &=\left(2x-\frac{d}{dx}\right)(-1)^ke^{x^2}
+%     \frac{d^k}{dx^k}e^{-x^2}  \\
+%     &=(-1)^k 2x e^{x^2}\frac{d^k}{dx^k}e^{-x^2}
+%     -(-1)^k 2x e^{x^2}\frac{d^k}{dx^k}e^{-x^2}
+%     -(-1)^k e^{x^2}\frac{d^{k+1}}{dx^{k+1}}e^{-x^2}  \\
+%     &=(-1)^{k+1}= e^{x^2}\frac{d^{k+1}}{dx^{k+1}}e^{-x^2}
+%     =H_{k+1}(x).
+%   \end{split}
+% \end{align}
+% Hence this statement is true for $n=k+1$. \\
+% By mathematical induction, 
+% this statement is true for any $n$. ~\hfill $\square$
+% \item[(5)] {\it Proof}. Set $I_{nm}$,
+% \begin{align}
+%   \begin{split}
+%     I_{nm} &= \int_{-\infty}^\infty xe^{-x^2}H_n(x)H_m(x) \,dx  \\
+%     &=-\left.\frac{1}{2}e^{-x^2}H_n(x)H_m(x)\right|
+%     _{-\infty}^\infty
+%     +\frac{1}{2}\int_{-\infty}^\infty 
+%     e^{-x^2}\left(H^\prime_n(x)H_m(x)+H_n(x)
+%     H^\prime_m(x)\right) \,dx \\
+%     &=\frac{1}{2}\int_{-\infty}^\infty 
+%     e^{-x^2}H^\prime_n(x)H_m(x) \,dx+
+%     \frac{1}{2}\int_{-\infty}^\infty 
+%     e^{-x^2}H_n(x)H^\prime_m(x) \,dx.
+%   \end{split}
+% \end{align}
+% From Eq.~\eqref{eq:2-5-1},
+% \begin{align}\label{eq:2-8}
+%   \begin{split}
+%     H^\prime_n(x) &= \frac{d}{dx}\left( (-1)^ne^{x^2}
+%     \frac{d^n}{dx^n}e^{-x^2} \right)
+%     =(-1)^n\left( 2xe^{x^2}\frac{d^n}{dx^n}e^{-x^2}
+%     +e^{x^2}\frac{d^{n+1}}{dx^{n+1}}e^{-x^2} \right)  \\
+%     &=2xH_n(x)-H_{n+1}(x).
+%   \end{split}
+% \end{align}
+% Then $I_{nm}$ is
+% \begin{align}
+%   \begin{split}
+%     I_{nm} &= \frac{1}{2}\int_{-\infty}^\infty 
+%     e^{-x^2}(2xH_n(x)-H_{n+1}(x))H_m(x) \,dx+
+%     \frac{1}{2}\int_{-\infty}^\infty 
+%     e^{-x^2}H_n(x)(2xH_m(x)-H_{m+1}(x)) \,dx  \\
+%     &= 2I_{nm}
+%     -\frac{1}{2}\int_{-\infty}^\infty 
+%     e^{-x^2}H_{n+1}(x)H_m(x) \,dx
+%     -\frac{1}{2}\int_{-\infty}^\infty 
+%     e^{-x^2}H_n(x)H_{m+1}(x) \,dx.
+%   \end{split}
+% \end{align}
+% Hence,
+% \begin{align}
+%   I_{nm}=\frac{1}{2}\left(\int_{-\infty}^\infty 
+%   e^{-x^2}H_{n+1}(x)H_m(x) \,dx
+%   +\int_{-\infty}^\infty 
+%   e^{-x^2}H_n(x)H_{m+1}(x) \,dx\right).
+% \end{align}
+% From Eq.~\eqref{eq:2-7}, we obtain that,
+% \begin{align}\label{eq:2-9}
+%   \begin{split}
+%     I_{nm}&=\frac{1}{2}\left(2^{n+1}\sqrt{\pi}(n+1)!
+%     \delta_{n+1,m}
+%     +2^n\sqrt{\pi}n!\delta_{n,m+1} \right)  \\
+%     &=2^n\sqrt{\pi}(n+1)!\delta_{n+1,m}
+%     +2^{n-1}\sqrt{\pi}n!\delta_{n,m+1}.
+%   \end{split}
+% \end{align}
+% Therefore the statement is true. ~\hfill $\square$
+% \item[(6)] {\it Proof}. Eq.~\eqref{eq:2} is
+% \begin{align}
+%   \int_{-\infty}^\infty x^2e^{-x^2}H_nH_n \,dx  
+%   =-\left.\frac{1}{2}xe^{-x^2}H_nH_n\right|_{-\infty}^\infty
+%   +\int_{-\infty}^\infty xe^{-x^2}H_n^\prime H_n \,dx  
+%   -\frac{1}{2}\int_{-\infty}^\infty e^{-x^2}H_nH_n \,dx  .
+% \end{align}
+% From Eq.~\eqref{eq:2-8}, the second term of the RHS is
+% \begin{align}
+%   \int_{-\infty}^\infty xe^{-x^2}H_n^\prime H_n \,dx  
+%   =\int_{-\infty}^\infty 2x^2e^{-x^2}H_n H_n \,dx 
+%   -\int_{-\infty}^\infty xe^{-x^2}H_{n+1}H_n \,dx  .
+% \end{align}
+% Hence, 
+% \begin{align}
+%   \begin{split}
+%     \int_{-\infty}^\infty x^2e^{-x^2}H_nH_n \,dx  
+%     &=\int_{-\infty}^\infty 2x^2e^{-x^2}H_n H_n \,dx 
+%     -\int_{-\infty}^\infty xe^{-x^2}H_{n+1}H_n \,dx 
+%     -\frac{1}{2}\int_{-\infty}^\infty e^{-x^2}H_nH_n \,dx \\
+%     &=\int_{-\infty}^\infty xe^{-x^2}H_{n+1}H_n \,dx 
+%     +\frac{1}{2}\int_{-\infty}^\infty e^{-x^2}H_nH_n \,dx.
+%   \end{split}
+% \end{align}
+% From Eq.~\eqref{eq:2-9} and \eqref{eq:2-7},
+% \begin{align}\label{eq:2-10}
+%   \begin{split}
+%     \int_{-\infty}^\infty x^2e^{-x^2}H_nH_n \,dx  
+%     &=\sqrt{\pi}2^{n-1}n!\delta_{n+1,n-1}
+%     +\sqrt{\pi}2^{n}(n+1)!\delta_{n+1,n+1}
+%     -\sqrt{\pi}2^{n-1}n!  \\
+%     &=\sqrt{\pi}2^nn!\left(n+\frac{1}{2}\right).
+%   \end{split}
+% \end{align}
+% Therefore the statement is true. ~\hfill $\square$
+% \end{itemize}
+Let us use another method.
+In this way, we will solve (5) and (6) using this integration.
+\begin{align}
+  I_{nkp} = \int^{\infty}_{-\infty}H_n(x)H_k(x)e^{-x^2}x^p\,dx.
+  % ,\,\,\,
+  % \sum^\infty_{p=0} \sum^\infty_{n=0} \sum^\infty_{k=0}I_{nkp}
+  % \frac{s^n}{n!}\frac{t^k}{k!}\frac{(2\lambda)^p}{p!}
+  % =\sqrt{\pi}e^{\lambda^2+2(st+\lambda s + \lambda t)}
+\end{align}
+To calculate this integration, let us make every function 
+in the integral into the form of the exponential.
+In the case of Hermite polynomial, it can be using the generation function
+and $x^p$ can be expressed to the power series of the $e^x$.
+\begin{align}
+  S(x,t) = \sum_{n=0}^\infty \frac{t^n}{n!}H_n(x)=e^{-t^2+2tx}
+  \Longrightarrow \sum_{n=0}^\infty\sum_{k=0}^\infty \frac{t^n}{n!}\frac{s^k}{k!}
+  I_{nkp}
+  = \int^{\infty}_{-\infty}e^{-t^2+2tx}e^{-s^2+2sx}e^{-x^2}x^p\,dx.
+\end{align}
+Making the same form of the exponent, consider the $e^{2\lambda x}$. Then,
+\begin{align}
+  e^{2\lambda x} = \sum_{p=0}^{\infty}\frac{(2\lambda)^p}{p!}x^p
+  \Longrightarrow \sum_{n=0}^\infty\sum_{k=0}^\infty\sum_{p=0}^{\infty}
+  \frac{t^n}{n!}\frac{s^k}{k!}\frac{(2\lambda)^p}{p!}
+  I_{nkp}
+  = \int^{\infty}_{-\infty}e^{-t^2+2tx}e^{-s^2+2sx}e^{-x^2+2\lambda x}\,dx.
+\end{align}
+It is the gaussian integration for $x$.
+\begin{align}
+  \begin{split}
+    \int^{\infty}_{-\infty}e^{-t^2+2tx}e^{-s^2+2sx}e^{-x^2+2\lambda x}\,dx
+    &=e^{-t^2-s^2}\int^{\infty}_{-\infty}e^{-x^2+2(t+s+\lambda) x}\,dx \\
+    &=e^{-t^2-s^2+(t+s+\lambda)^2}\int^{\infty}_{-\infty}e^{-(x-t-s-\lambda)^2}\,dx \\
+    &=\sqrt{\pi}e^{-t^2-s^2+(t+s+\lambda)^2}.
+  \end{split}
+\end{align}
+Therefore we obtain the result of the integration associated with $I_{nkp}$.
+\begin{align}
+  \sum_{n=0}^\infty\sum_{k=0}^\infty\sum_{p=0}^{\infty}
+  \frac{t^n}{n!}\frac{s^k}{k!}\frac{(2\lambda)^p}{p!}
+  I_{nkp}
+  =\sqrt{\pi}e^{-t^2-s^2+(t+s+\lambda)^2}.
+\end{align}
+\begin{itemize}
+  \item[(5)] Let us use the integration by parts.
+  \begin{align}
+    \int_{-\infty}^\infty x e^{-x^2} H_n(x) H_m(x) dx 
+    = 
+  \end{align}
+  \item[(6)] 
+\end{itemize}
 \vspace{0.5cm}
 
 \noindent \textbf{Problem 3.} 
