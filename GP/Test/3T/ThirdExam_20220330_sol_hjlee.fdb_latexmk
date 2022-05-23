@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex ThirdExam_20220330_sol_hjlee(1)"] 1653283310 "ThirdExam_20220330_sol_hjlee(1).aux" "ThirdExam_20220330_sol_hjlee(1).bbl" "ThirdExam_20220330_sol_hjlee(1)" 1653284998
+["bibtex ThirdExam_20220330_sol_hjlee"] 1653285018 "ThirdExam_20220330_sol_hjlee.aux" "ThirdExam_20220330_sol_hjlee.bbl" "ThirdExam_20220330_sol_hjlee" 1653296779
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1547851249 69612 d43c8740409d8c756864ce4e3d57a214 ""
-  "ThirdExam_20220330_sol_hjlee(1).aux" 1653284997 363 aade68cd37cadf4f02bae0be65aa7266 "pdflatex"
-  "ThirdExam_20220330_sol_hjlee(1)Notes.bib" 1653284997 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "ThirdExam_20220330_sol_hjlee.aux" 1653285019 360 ee1eaa9bc19cbd363c6c9a90b6c421c0 "pdflatex"
+  "ThirdExam_20220330_sol_hjleeNotes.bib" 1653285019 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   (generated)
-  "ThirdExam_20220330_sol_hjlee(1).blg"
-  "ThirdExam_20220330_sol_hjlee(1).bbl"
-["pdflatex"] 1653284997 "/home/sigma/Lab/GP/Test/3T/ThirdExam_20220330_sol_hjlee(1).tex" "/home/sigma/Lab/GP/Test/3T/ThirdExam_20220330_sol_hjlee(1).pdf" "ThirdExam_20220330_sol_hjlee(1)" 1653284998
+  "ThirdExam_20220330_sol_hjlee.blg"
+  "ThirdExam_20220330_sol_hjlee.bbl"
+["pdflatex"] 1653285018 "/home/sigma/Lab/GP/Test/3T/ThirdExam_20220330_sol_hjlee.tex" "/home/sigma/Lab/GP/Test/3T/ThirdExam_20220330_sol_hjlee.pdf" "ThirdExam_20220330_sol_hjlee" 1653296779
   "/etc/texmf/web2c/texmf.cnf" 1645612576 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sigma/Lab/GP/Test/3T/ThirdExam_20220330_sol_hjlee(1).aux" 1653284997 363 aade68cd37cadf4f02bae0be65aa7266 ""
-  "/home/sigma/Lab/GP/Test/3T/ThirdExam_20220330_sol_hjlee(1).tex" 1653284997 10987 eafdf4e3aef956d488fc52a8d7160009 ""
+  "/home/sigma/Lab/GP/Test/3T/ThirdExam_20220330_sol_hjlee.aux" 1653285019 360 ee1eaa9bc19cbd363c6c9a90b6c421c0 ""
+  "/home/sigma/Lab/GP/Test/3T/ThirdExam_20220330_sol_hjlee.tex" 1653296779 10987 eafdf4e3aef956d488fc52a8d7160009 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -279,14 +279,14 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1645685134 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1645685152 8258281 06978915380d3cf57d3fcd5054406eef ""
-  "ThirdExam_20220330_sol_hjlee(1).aux" 1653284997 363 aade68cd37cadf4f02bae0be65aa7266 "pdflatex"
-  "ThirdExam_20220330_sol_hjlee(1).bbl" 1653283310 1982 35453d3875d823f0ec9445e740a573d9 "bibtex ThirdExam_20220330_sol_hjlee(1)"
-  "ThirdExam_20220330_sol_hjlee(1).tex" 1653284997 10987 eafdf4e3aef956d488fc52a8d7160009 ""
+  "ThirdExam_20220330_sol_hjlee.aux" 1653285019 360 ee1eaa9bc19cbd363c6c9a90b6c421c0 "pdflatex"
+  "ThirdExam_20220330_sol_hjlee.bbl" 1653285018 1982 35453d3875d823f0ec9445e740a573d9 "bibtex ThirdExam_20220330_sol_hjlee"
+  "ThirdExam_20220330_sol_hjlee.tex" 1653296779 10987 eafdf4e3aef956d488fc52a8d7160009 ""
   "defcolor.sty" 1652956091 30932 ee3b4786a49446d3c1adb266588a4d63 ""
   (generated)
-  "ThirdExam_20220330_sol_hjlee(1).log"
-  "ThirdExam_20220330_sol_hjlee(1)Notes.bib"
-  "ThirdExam_20220330_sol_hjlee(1).aux"
-  "ThirdExam_20220330_sol_hjlee(1).pdf"
-  "/home/sigma/Lab/GP/Test/3T/ThirdExam_20220330_sol_hjlee(1).pdf"
-  "/home/sigma/Lab/GP/Test/3T/ThirdExam_20220330_sol_hjlee(1).log"
+  "/home/sigma/Lab/GP/Test/3T/ThirdExam_20220330_sol_hjlee.pdf"
+  "ThirdExam_20220330_sol_hjlee.pdf"
+  "ThirdExam_20220330_sol_hjleeNotes.bib"
+  "ThirdExam_20220330_sol_hjlee.log"
+  "ThirdExam_20220330_sol_hjlee.aux"
+  "/home/sigma/Lab/GP/Test/3T/ThirdExam_20220330_sol_hjlee.log"
