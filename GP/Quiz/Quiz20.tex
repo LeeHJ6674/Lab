@@ -1,0 +1,165 @@
+\documentclass[floatfix,nofootinbib,superscriptaddress,fleqn]{revtex4-2}  
+%\documentclass[aps,epsfig,tightlines,fleqn]{revtex4}
+\usepackage[utf]{kotex}
+\usepackage[HWP]{dhucs-interword}
+\usepackage[dvips]{color}
+\usepackage{graphicx}
+\usepackage{bm}
+%\usepackage{fancyhdr}
+%\usepackage{dcolumn}
+\usepackage{defcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage[utf8]{inputenc}
+ \usepackage{setspace}
+%\pagestyle{fancy}
+
+\begin{document}
+
+\title{\Large 2022년 1학기 물리학 I: Quiz 19}
+\author{김현철\footnote{Office: 5S-436D (면담시간 매주
+    화요일-16:00$\sim$20:00)}} 
+\email{hchkim@inha.ac.kr}
+\author{Lee Hui-Jae} 
+\email{hjlee6674@inha.edu}
+\affiliation{Hadron Theory Group, Department of Physics,
+Inha University, Incheon 22212, Republic of Korea }
+\date{Spring semester, 2022}
+
+
+\vspace{1.cm}
+
+\maketitle
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\noindent {\bf 풀이 :   }
+온도가 $20\,\mathrm{^\circ C}$일 때 강철자의 길이를 $L_{st}$,
+물체의 길이를 $L'$이라 하자.
+선팽창계수를 고려하면 강철자가 늘어난 길이 $\Delta L_{st}$와
+물체가 늘어난 길이 $\Delta L'$은
+\begin{align}\label{eq:1-1}
+  \Delta L_{st} =L_{st}\alpha_{st}\Delta T,\,\,\,
+  \Delta L' =L'\alpha'\Delta T
+\end{align}
+이다. $\alpha_{st}$와 $\alpha'$은 각각 강철과 물체의 선팽창계수이다. 
+강철자의 길이가 $20\,\mathrm{^\circ C}$에서 1 cm라고 생각해보자. 
+오븐의 넣기 전 강철자로 잰 막대의 길이가 20.05 cm이므로
+\begin{align}\label{eq:1-2}
+  \frac{L'}{L_{st}} = \frac{20.05\,\mathrm{cm}}{1\,\mathrm{cm}}
+  =20.05 \Longrightarrow L' = 20.05 L_{st}
+\end{align}
+이고 오븐에 넣고서 강철자로 잰 막대의 길이가 20.11 cm이므로
+\begin{align}\label{eq:1-3}
+  \frac{L'+\Delta L'}{L_{st}+\Delta L_{st}} = 20.11
+  \Longrightarrow 
+  L'+\Delta L' = (20.11)(L_{st}+\Delta L_{st})
+\end{align}
+이다. 식~\eqref{eq:1-1}과~\eqref{eq:1-2}를 식~\eqref{eq:1-3}에 대입하면
+다음과 같다.
+\begin{align}
+  \begin{split}
+    &L'(1+\alpha'\Delta T) = L_{st}(20.05)(1+\alpha'\Delta T)
+    = L_{st}(20.11)(1+\alpha_{st}\Delta T)  \\
+    &\Longrightarrow \alpha' = \frac{1}{\Delta T}\left(\frac{20.11}{20.05}
+    (1+\alpha_{st}\Delta T)-1\right).
+  \end{split}
+\end{align}
+따라서 물체의 열팽창계수 $\alpha'$는
+\begin{align}
+  \begin{split}
+    \alpha' &= \frac{1}{250\,\mathrm{^\circ C}}\left(\frac{20.11}{20.05}
+    \left(1+(11\times 10^{-6}\,\mathrm{^\circ C^{-1}})
+    (250\,\mathrm{^\circ C})\right)-1\right)  \\
+    &=2.3\times 10^{-5}\,\mathrm{^\circ C^{-1}}
+  \end{split}
+\end{align}
+이다.
+
+\vspace{1.cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\noindent {\bf 풀이 :   }
+비열이 $c$이고 질량이 $m$인 물질의 온도를 아주 작은 $dT$만큼 올리는데 필요한 에너지 $dQ$는
+\begin{align}
+ dQ = cm\,d T
+\end{align}
+이다. 이 물질의 온도를 $T_1$에서 $T_2$까지 가열한다고 할 때 필요한 에너지 $Q$는
+\begin{align}
+  \begin{split}
+    Q &= m\int^{T_2}_{T_1}c\,dT
+    = m \int^{T_2}_{T_1}0.20 +0.14T+0.023T^2\,dT  \\
+    &= m\left( 0.20\left(T_2-T_1\right)+0.07\left(T_2^2-T_1^2\right)
+    +\frac{0.023}{3}\left(T_2^3-T_1^3\right) \right)
+  \end{split}
+\end{align}
+이다. $m$=2.0 g, $T_1$=5.0 $\mathrm{^\circ C}$이고 $T_2$=15 $\mathrm{^\circ C}$이므로
+에너지 $Q$를 다음과 같이 얻는다.
+\begin{align}
+  \begin{split}
+    Q &= (2.0\,\mathrm{g})\left(  
+      (0.20)(10\,\mathrm{^\circ C})+(0.07)\left(
+        (15\,\mathrm{^\circ C})^2-  
+      (5.0\,\mathrm{^\circ C})^2\right)
+      +\frac{0.023}{3}\left((15\,\mathrm{^\circ C})^3-  
+      (5.0\,\mathrm{^\circ C})^3\right)
+      \right) \\
+      &= 82\,\mathrm{cal}.
+    \end{split}
+\end{align}
+\vspace{1.cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\noindent {\bf 풀이 :   }
+물과 얼음의 처음 온도를 $T_w$, $T_i$라 하고
+물이 얼음에 전달한 열을 $Q_{w}$, 얼음이 흡수한 열을 $Q_{i}$라고 하자.
+$Q_{w}$과 $Q_{i}$는
+\begin{align}
+  \begin{split}
+    Q_{w}  = c_{w}m_{w}\Delta T_w ,\,\,\,Q_{i} = c_{i}m_{i}\Delta T_i
+  \end{split}
+\end{align}
+이다. 열평형일 때 온도를 $T_e$라고 하면
+
+
+
+
+\vspace{1.cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\noindent {\bf 풀이 :   }
+열역학 제 1법칙은 다음과 같다.
+\begin{align}\label{eq:4-1}
+  dU = dQ -PdV.
+\end{align}
+\begin{itemize}
+  \item[(가)]
+  경로 $ab$는 등압과정, 경로 $ca$는 등적과정이다. 경로 $ab$를 거치면서 내부에너지가 
++3.0 J만큼 변하였고 외부에 5.0 J만큼 일을 해주었다. 식~\eqref{eq:4-1}에 의해 경로 $ab$를
+다라가는 동안 기체에 전달된 열의 크기 $Q$는
+\begin{align}
+  Q = 3.0\,\mathrm{J} + 5.0\,\mathrm{J} 
+  =8.0\,\mathrm{J}
+\end{align}
+이다. 
+  \item[(나)] 전체 과정을 한번 순환하면 기체의 내부에너지의 변화는 없으므로  
+  순환경로 $abca$를 한번 따라가면서 기체에 전달된 열에너지는 모두 기체가 외부에
+  한 일로 변환된다. 기체에 전달된 열에너지의 합은
+  \begin{align}
+    Q_{ab}+Q_{bc}+Q_{ca} = 8.0\,\mathrm{J} +Q_{bc}+2.5\,\mathrm{J}
+  \end{align}
+  이고 기체가 외부에 한 일의 합은
+  \begin{align}
+    W_{ab}+W_{bc}+W_{ca} = 1.2\,\mathrm{J}
+  \end{align}
+  이다. 따라서 경로 $bc$를 따라갈 때 기체에 전달된 열에너지 $Q_{bc}$는
+  \begin{align}
+    Q_{bc} = 1.2\,\mathrm{J} - (8.0\,\mathrm{J} +2.5\,\mathrm{J})
+    =-9.3\,\mathrm{J}
+  \end{align}
+  이다. $-$부호는 기체로부터 열에너지가 빠져나갔음을 의미한다.
+\end{itemize}
+
+\end{document}
